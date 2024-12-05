@@ -1,0 +1,36 @@
+@import 'styles/fonts.scss';
+@import "styles/mixins.module.scss";
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
+
+html,
+body {
+ padding: 0;
+ margin: 0;
+ font-family: Lato, sans-serif;
+ background-color: $white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  @include link-focus-outline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

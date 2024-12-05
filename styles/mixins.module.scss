@@ -1,0 +1,83 @@
+@import "./variables.module.scss";
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$tablet-large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-large-width}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$desktop-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin make-side-margin($max-width: $max-content-width) {
+  margin-left: $mobile-side-margin;
+  margin-right: $mobile-side-margin;
+
+  @include tablet {
+    margin-left: $tablet-side-margin;
+    margin-right: $tablet-side-margin;
+  }
+
+  @include desktop() {
+    margin-left: $desktop-side-margin;
+    margin-right: $desktop-side-margin;
+  }
+
+  // centering content when max-width reached (+ margin)
+  @media (min-width: #{$max-width + 2 * $desktop-side-margin + 1px}) {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin make-side-padding($max-width: $max-content-width) {
+  padding-left: $mobile-side-margin;
+  padding-right: $mobile-side-margin;
+
+  @include tablet {
+    padding-left: $tablet-side-margin;
+    padding-right: $tablet-side-margin;
+  }
+
+  @include desktop() {
+    padding-left: $desktop-side-margin;
+    padding-right: $desktop-side-margin;
+  }
+
+  // centering content when max-width reached (+ paddings)
+  @media (min-width: #{$max-width + 2 * $desktop-side-margin + 1px}) {
+    padding-left: calc((100vw - $max-width) / 2);
+    padding-right: calc((100vw - $max-width) / 2);
+  }
+}
+
+@mixin link-focus-outline {
+  outline: none;
+
+  &:focus-visible {
+    outline: 2x solid green;
+    outline-offset: 4px;
+  }
+}
