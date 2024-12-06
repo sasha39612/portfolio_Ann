@@ -1,4 +1,5 @@
 import '../styles/globals.scss'
+import styles from './layout.module.scss'
 
 export default function RootLayout({
   children,
@@ -7,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
+      <body className={styles.root}>
         {children}
       </body>
     </html>

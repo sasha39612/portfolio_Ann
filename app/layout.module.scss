@@ -1,0 +1,7 @@
+@import "/styles/mixins.module.scss";
+@import "/styles/colors.module.scss";
+@import "/styles/variables.module.scss";
+
+.root {
+  @include make-side-padding($max-width: $max-content-width)
+}

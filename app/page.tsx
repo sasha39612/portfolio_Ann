@@ -1,16 +1,27 @@
 import getPropsData from "../lib/getPropsData";
+import TextImage from "../components/textImage/TextImage";
+import { TextImageType } from "../interfaces/common";
 
 export default function Home() {
-  const propsCustom = getPropsData('home', 'hero.mdx')
+  const props = getPropsData('home', 'hero.mdx');
+  const { textImageProps, textImagePropsProjects } = props
 
   return (
     <>
       <main >
-        Main
+        <section>
+          <TextImage {...textImageProps} />
+        </section>
+        <section>
+          <ul>
+            {textImagePropsProjects.length ? textImagePropsProjects.map((project: TextImageType) => (
+              <li key={project.id}>
+                <TextImage {...project} />
+              </li>
+            )) : null}
+          </ul>
+        </section>
       </main>
-      <footer >
-        Footer
-      </footer>
     </>
   );
 }
