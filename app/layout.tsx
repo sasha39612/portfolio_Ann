@@ -9,7 +9,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={styles.root}>
-        {children}
+        <main>
+          {children}
+        </main>
+        <div id="portal-root"></div>
       </body>
     </html>
   );

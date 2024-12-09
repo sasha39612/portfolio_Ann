@@ -7,7 +7,6 @@ import styles from './image.module.scss'
 
 const ImageComponent: React.FC<ImagePropsType> = (props) => {
     const { className, imageClassName, objectFit, ...rest } = props;
-
     const wrapperClassNames = cn(styles.wrapper, className);
 
     const imageClassNames = cn(

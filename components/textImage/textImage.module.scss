@@ -115,50 +115,40 @@
 
   @include tablet-up {
     max-width: 352px;
+    margin: 0 40px;
   }
 }
 
 .mainImageProject_1 {
-  width: 100%;
-  height: 100%;
   aspect-ratio: 0.65;
 
   @include tablet-up {
     max-width: 235px;
-    margin: 0 40px;
   }
 }
 
 .mainImageProject_2 {
-  width: 100%;
-  height: 100%;
   aspect-ratio: 2.65;
 
   @include tablet-up {
     max-width: 722px;
-    margin: 0 40px;
   }
 }
 
 .mainImageProject_3 {
-  width: 100%;
-  height: 100%;
   aspect-ratio: 0.85;
 
   @include tablet-up {
     max-width: 333px;
-    margin: 0 40px;
+
   }
 }
 
 .mainImageProject_4 {
-  width: 100%;
-  height: 100%;
   aspect-ratio: 0.85;
 
   @include tablet-up {
     max-width: 333px;
-    margin: 0 40px;
   }
 }
 

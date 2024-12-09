@@ -1,0 +1,64 @@
+@import "/styles/mixins.module.scss";
+@import "/styles/colors.module.scss";
+@import "/styles/variables.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.containerDown {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.titleAboutMain {
+  @include font32_weight600;
+}
+
+.titleAbout {
+  @include font20_weight400;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin: 40px 0px;
+
+  @include tablet-up {
+    max-width: 352px;
+    margin: 0px 40px 40px 0px;
+  }
+}
+
+.containerLogos {
+  display: flex;
+  gap: 14px;
+}
+
+.figmaLogo {
+  width: 67px;
+  height: 33px;
+}
+
+.adobeLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.psLogo {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,67 @@
+@import "/styles/mixins.module.scss";
+@import "/styles/colors.module.scss";
+@import "/styles/variables.module.scss";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.popupsPhotos {
+  width: 330px;
+  height: 100%;
+  aspect-ratio: 0.75;
+
+  @include tablet {
+    width: 120px;
+    height: 160px;
+  }
+
+  @include desktop {
+    width: 120px;
+    height: 160px;
+  }
+
+  @include desktop-large {
+    width: 240px;
+    height: 320px;
+  }
+}
+
+.popupsPhotosDiploma {
+  width: 330px;
+  height: 100%;
+  aspect-ratio: 1.41;
+
+  @include tablet-up {
+    width: 600px;
+  }
+
+  @include desktop {
+    width: 1098px;
+  }
+
+  @include desktop-large {
+    width: 1098px;
+  }
+}
+
+.popupsPhotosCertificates {
+  width: 330px;
+  height: 100%;
+  aspect-ratio: 0.88;
+
+  @include tablet-up {
+    width: 600px;
+  }
+
+  @include desktop {
+    width: 743;
+  }
+
+  @include desktop-large {
+    width: 743;
+  }
+}

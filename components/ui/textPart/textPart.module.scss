@@ -12,6 +12,12 @@
   }
 }
 
+.textImagePropsAboutContainer {
+  @include tablet-up {
+    max-width: 100%;
+  }
+}
+
 .textImagePropsTitle {
   @include font32_weight400;
 }
@@ -51,6 +57,45 @@
   padding-bottom: 32px;
 }
 
+.textImagePropsTitleDescription {
+  @include font12_weight300;
+  font-size: 26px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+}
+
+.textImagePropsAboutDescription {
+  @include font18_weight300;
+  margin-bottom: 10px;
+}
+
 .textImagePropsProjectsDescription {
   @include font14_weight400;
+}
+
+.titleAboutMain {
+  @include font32_weight600;
+}
+
+.titleAbout {
+  @include font20_weight400;
+}
+
+.descriptionAbout {
+  @include font16_weight300;
+}
+
+.icon {
+  &::before {
+    content: var(--icon-content);
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    margin-left: 5px;
+  }
+}
+
+.imageAboutCamera {
+  width: 22px;
+  height: 16px;
 }

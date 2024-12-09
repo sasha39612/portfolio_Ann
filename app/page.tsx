@@ -8,20 +8,18 @@ export default function Home() {
 
   return (
     <>
-      <main >
-        <section>
-          <TextImage {...textImageProps} />
-        </section>
-        <section>
-          <ul>
-            {textImagePropsProjects.length ? textImagePropsProjects.map((project: TextImageType) => (
-              <li key={project.id}>
-                <TextImage {...project} />
-              </li>
-            )) : null}
-          </ul>
-        </section>
-      </main>
+      <section>
+        <TextImage {...textImageProps} />
+      </section>
+      <section>
+        <ul>
+          {textImagePropsProjects.length ? textImagePropsProjects.map((project: TextImageType) => (
+            <li key={project.id}>
+              <TextImage {...project} />
+            </li>
+          )) : null}
+        </ul>
+      </section>
     </>
   );
 }
