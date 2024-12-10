@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react";
+import Link from "next/link";
 import cn from 'classnames';;
 import ButtonComponent from "../ui/button/button";
 import ImageComponent from "../ui/image/Image";
@@ -44,9 +45,11 @@ const Projects = ({ proudText, buttonTitle, projectsUX_UI, projectsGraphicDesign
                       <li key={project.id} className={styles.projectsUXContainer}>
                         <h2 className={styles.projectTitle}>{project.title}</h2>
                         <ImageComponent {...project.image} className={getImageStyles(project.image.imageClassName)} />
-                        <ButtonComponent background={'black'} className={styles[project?.button?.className ? project.button.className : '']}>
-                          {project.button.text}
-                        </ButtonComponent>
+                        <Link href={project?.link?.href ?? '/'}>
+                          <ButtonComponent background={'black'} className={styles[project?.button?.className ? project.button.className : '']}>
+                            {project.button.text}
+                          </ButtonComponent>
+                        </Link>
                       </li>
                     ))
                   }

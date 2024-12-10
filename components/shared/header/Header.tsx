@@ -1,4 +1,5 @@
 
+import { notFound } from 'next/navigation';
 import cn from 'classnames';
 import DesktopHeader from './desktopHeader/DesktopHeader';
 import MobileHeader from './mobileHeder/MobileHeader';
@@ -7,6 +8,9 @@ import styles from './header.module.scss';
 
 const Header = () => {
     const props = getPropsData('header', 'links.mdx');
+    if (!props) {
+        notFound()
+    }
     const { logoImage, links, menuManageImage } = props
 
     return (

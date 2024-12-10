@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import ImageComponent from "../../ui/image/Image";
 import {
     FooterPropsType, ImageNavBrandProps,
@@ -25,6 +26,9 @@ const ImageNavBrand = (props: ImageNavBrandProps) => {
 
 const Footer = () => {
     const props = getPropsData('footer', 'links.mdx') as FooterPropsType;
+    if (!props) {
+        notFound()
+    }
     const { logoImage, footerLinks, footerSocialLinks } = props
 
     return (

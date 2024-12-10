@@ -11,6 +11,7 @@ export interface ProjectsGraphicDesignType {
 export interface ProjectsUX_UI_Type extends ProjectsGraphicDesignType{
   title: string,
   button: TextBlockElem;
+  link?: { href: string };
 }
 
 

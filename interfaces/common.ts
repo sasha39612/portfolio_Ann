@@ -33,6 +33,7 @@ export interface TextBlock {
   subTitle?: TextBlockElem;
   description?: TextBlockElem | TextBlockElemArr[];
   button?: TextBlockElem;
+  link?: { href: string };
   container?: TextBlockElem;
   image?: ImagePropsType;
   popupContent?: ImagePropsType[];
