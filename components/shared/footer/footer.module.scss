@@ -1,0 +1,44 @@
+@import "../../../styles/mixins.module.scss";
+@import "../../../styles/colors.module.scss";
+@import "../../../styles/variables.module.scss";
+
+.wrapper {
+  padding: 52px 0 100px;
+  max-height: 344px;
+  color: $white;
+  background-color: $black;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+  grid-template-areas:
+    "a"
+    "b";
+
+  @include tablet-up {
+    justify-items: start;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "a b";
+  }
+}
+
+.logo {
+  grid-area: a;
+  width: 82px;
+  height: 35px;
+  cursor: pointer;
+
+  @include tablet-up {
+    margin-left: 40px;
+  }
+}
+
+.contacts {
+  grid-area: b;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}

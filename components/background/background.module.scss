@@ -1,0 +1,16 @@
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
+
+
+.backgroundWrapper {
+    width: 100%;
+}
+
+.white {
+    background-color: $white;
+}
+
+.black {
+    background-color: $black;
+}

@@ -1,0 +1,48 @@
+@import "../../../../styles/mixins.module.scss";
+@import "../../../../styles/colors.module.scss";
+@import "../../../../styles/variables.module.scss";
+
+.contactLinkWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    cursor: pointer;
+}
+
+.footerContactLinkWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.icon {
+    cursor: pointer;
+
+    width: 25px;
+    height: 25px;
+
+    @include desktop {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+.footerSocialLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include tablet-up {
+        width: 75%;
+    }
+   
+    @include desktop-large {
+        width: 42%
+    }
+}
+
+.footerSocialLink {
+    margin-right: 5px;
+}

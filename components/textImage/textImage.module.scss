@@ -130,7 +130,16 @@
 .mainImageProject_2 {
   aspect-ratio: 2.65;
 
-  @include tablet-up {
+  @include tablet {
+    max-width: 300px;
+    max-height: 180px;
+  }
+ 
+  @include desktop {
+    max-width: 722px;
+  }
+  
+  @include desktop-large {
     max-width: 722px;
   }
 }

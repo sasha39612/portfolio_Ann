@@ -1,11 +1,10 @@
-import React from "react";
-import cn from 'classnames';
 import NextImage from "next/legacy/image";
+import cn from 'classnames';
 import { ImagePropsType } from '../../../interfaces/common';
 import styles from './image.module.scss'
 
 
-const ImageComponent: React.FC<ImagePropsType> = (props) => {
+const ImageComponent = (props: ImagePropsType) => {
     const { className, imageClassName, objectFit, ...rest } = props;
     const wrapperClassNames = cn(styles.wrapper, className);
 

@@ -1,7 +1,7 @@
 import { ImagePropsType } from "../../../interfaces/common"
 import ImageComponent from "../image/Image"
 import Popup from "../popup/Popup"
-import styles from './ImageComponentPopup.module.scss'
+import styles from './imageComponentPopup.module.scss'
 
 interface ImageComponentPopupType {
   handleClosePopup: () => void;
@@ -16,7 +16,6 @@ const ImageComponentPopup = ({ handleClosePopup, content }: ImageComponentPopupT
         {
           Array.isArray(content) ? <ul className={styles.container}>
             {content.map((img) => {
-              console.log('img', img)
               return (
                 <li key={img.id}>
                   <ImageComponent src={img.src} alt={img.alt} className={styles?.[img.className ?? '']} />

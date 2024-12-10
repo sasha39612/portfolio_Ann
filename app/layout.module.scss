@@ -5,3 +5,7 @@
 .root {
   @include make-side-padding($max-width: $max-content-width)
 }
+
+.mainStyles {
+  margin-top: 130px;
+}
