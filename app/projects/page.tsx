@@ -1,6 +1,12 @@
+import Projects from "../../components/projects/Projects"
+import { ProjectTypes } from "../../components/projects/type";
+import getPropsData from "../../lib/getPropsData";
+
 const MyProjects = () => {
+    const projectsProps = getPropsData('projects', 'projects.mdx') as ProjectTypes;
+
     return (
-        <div>My Projects</div>
+        <Projects {...projectsProps} />
     )
 }
 

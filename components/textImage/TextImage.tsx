@@ -13,7 +13,6 @@ const TextImage = (props: TextImageType) => {
     const projectNameStyles = cn(isReverse ? styles.projectNameStylesReverse : styles.projectNameStyles)
     const containerStyles = cn(styles.container, isReverse ? styles.containerProjectReverse : '', styles[`project_${projectNumber}`])
     const textPartContainerStyles = cn(isProject ? styles.textPartContainerProject : styles.textPartContainer)
-    const labelStyles = cn(textPart?.image?.imageClassName ? `${styles[textPart.image.imageClassName]}` : '')
     const buttonStyles = cn(textPart?.button?.className ? `${styles[textPart.button.className]}` : '')
     const imageStyles = cn(styles.mainImage, imagePart?.imageClassName ? `${styles[imagePart.imageClassName]}` : '')
 
@@ -22,7 +21,6 @@ const TextImage = (props: TextImageType) => {
             <div className={projectNameStyles}>{projectName}</div>
             <div className={containerStyles}>
                 <div className={textPartContainerStyles}>
-                    {textPart?.image?.src ? <ImageComponent src={textPart.image.src} alt={textPart.image.alt} className={labelStyles} /> : null}
                     <TextPart {...textPart} />
                     {textPart?.button?.text ? <ButtonComponent background={'black'} className={buttonStyles}>{textPart.button.text}</ButtonComponent> : null}
                 </div>

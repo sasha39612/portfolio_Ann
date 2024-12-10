@@ -1,0 +1,166 @@
+@import "styles/mixins.module.scss";
+@import "styles/colors.module.scss";
+@import "styles/variables.module.scss";
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0px;
+}
+
+.buttonTitle {
+  border: none;
+  background: none;
+  color: #00000080;
+  @include font20_weight400;
+
+  @include tablet-up {
+    @include font30_weight400;
+  }
+}
+
+.buttonTitleActive {
+  color: #000000;
+}
+
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.projectNameStylesReverse {
+  @include font32_weight400;
+  color: $projectName;
+  text-align: center;
+  margin-top: 40px;
+
+  @include tablet-up {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    text-orientation: mixed;
+    -webkit-text-orientation: mixed;
+    transform: rotateZ(-180deg);
+    margin-top: 0px;
+  }
+}
+
+.projectsUXWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px 20px;
+  margin: 50px 0px 150px;
+}
+
+.projectsGraphicDesignWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  margin: 50px 0px 150px;
+}
+
+.projectsUXContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  
+  @include tablet-up {
+    width: 45%;
+    flex-direction: column;
+  }
+}
+
+.projectsGraphicContainer {
+  gap: 40px;
+  width: 100%;
+  
+  @include tablet-up {
+    width: 45%;
+  }
+}
+
+.projectTitle {
+  @include font32_weight400;
+
+  @include tablet-up {
+    @include font45_weight400;
+  }
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  @include tablet-up {
+    max-width: 352px;
+    margin: 0 40px;
+  }
+}
+
+.mainImageProject_1 {
+  width: 112px;
+  aspect-ratio: 0.42;
+
+  @include tablet-up {
+    max-width: 235px;
+  }
+}
+
+.mainImageProject_2 {
+  aspect-ratio: 2.19;
+
+  @include tablet {
+    max-width: 300px;
+    max-height: 180px;
+  }
+
+  @include desktop {
+    max-width: 389px;
+  }
+
+  @include desktop-large {
+    max-width: 389px;
+  }
+}
+
+.mainImageProject_3 {
+  aspect-ratio: 0.85;
+
+  @include tablet-up {
+    max-width: 333px;
+  }
+}
+
+.mainImageProject_4 {
+  aspect-ratio: 0.85;
+
+  @include tablet-up {
+    max-width: 333px;
+  }
+}
+
+.imageGraphicDesign {
+  aspect-ratio: 1.53;
+
+  @include tablet-up {
+    max-width: 550px;
+  }
+}
+
+.textImagePropsProjectsButton {
+  width: 172px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px 20px 30px;
+  gap: 10px;
+  border-radius: 12px;
+}
