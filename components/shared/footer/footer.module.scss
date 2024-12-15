@@ -3,42 +3,77 @@
 @import "../../../styles/variables.module.scss";
 
 .wrapper {
-  padding: 52px 0 100px;
-  max-height: 344px;
-  color: $white;
-  background-color: $black;
+  color: $black;
+  background-color: $white;
+  height: 330px;
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
-  gap: 50px;
+  border: 1px solid $black;
   grid-template-areas:
     "a"
     "b";
 
   @include tablet-up {
+    height: 250px;
     justify-items: start;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: "a b";
+    grid-template-areas: "b a";
+    margin-bottom: 30px;
+  }
+}
+
+.classNameLink {
+  grid-area: a;
+  justify-self: center;
+
+  @include tablet-up {
+    justify-self: end;
+    align-self: center;
+    margin-right: 40px;
   }
 }
 
 .logo {
-  grid-area: a;
-  width: 82px;
-  height: 35px;
+  width: 104px;
+  height: 67px;
   cursor: pointer;
 
   @include tablet-up {
-    margin-left: 40px;
+    // margin-left: 40px;
   }
 }
 
 .contacts {
   grid-area: b;
   display: flex;
-  gap: 20px;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  
+  @include tablet-up {
+    margin-left: 40px;
+    align-items: start;
+  }
+}
+
+.contactLinkTitle {
+  @include font24_weight400;
+
+  @include tablet-up {
+    margin-top: 27px;
+  }
+}
+
+.contactLinkWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+  gap: 32px 0px;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 32px 100px;
+  }
+  @include tablet {
+    gap: 32px 60px;
+  }
 }

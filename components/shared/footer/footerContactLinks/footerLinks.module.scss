@@ -3,46 +3,43 @@
 @import "../../../../styles/variables.module.scss";
 
 .contactLinkWrapper {
-    display: flex;
-    align-items: center;
-    gap: 0 15px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  cursor: pointer;
 }
 
 .footerContactLinkWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0px;
+
+  @include tablet-up {
+    gap: 32px 60px;
+  }
 }
 
-.icon {
-    cursor: pointer;
-
-    width: 25px;
-    height: 25px;
-
-    @include desktop {
-        width: 35px;
-        height: 35px;
-    }
+.footerLinkEmail {
+  cursor: pointer;
+  width: 16px;
+  height: 12px;
+}
+.footerLinkProfile {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.footerLinkPhone {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.footerLinkLocation {
+  cursor: pointer;
+  width: 12px;
+  height: 18px;
 }
 
-
-.footerSocialLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-    @include tablet-up {
-        width: 75%;
-    }
-   
-    @include desktop-large {
-        width: 42%
-    }
-}
-
-.footerSocialLink {
-    margin-right: 5px;
+.title {
+  @include font14_weight300;
 }

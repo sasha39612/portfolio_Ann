@@ -1,84 +1,51 @@
 ---
 {
+  footerTitle: "Let's connect :)",
   logoImage:
     [
-      {
-        src: /images/header/logoImageWhite.svg,
-        alt: "Main logo image",
-        className: mainLogoImage,
-      },
       {
         src: /images/header/logoImageBlack.svg,
         alt: "Main logo image",
         className: mainLogoImage,
       },
+      {
+        src: /images/header/logoImageWhite.svg,
+        alt: "Main logo image",
+        className: mainLogoImage,
+      },
     ],
-  footerLinks:
+  footerLinksLeft:
     [
       {
         id: 1,
         href: "mailto:ann.stoliarova@ukr.net",
         title: "ann.stoliarova@ukr.net",
+        className: "footerLinkEmail",
+        icon: { src: "/images/footer/EM.svg", alt: "icon of Email", className: "footerLinkEmail" },
+      },
+      {
+        id: 2,
+        href: "https://www.linkedin.com/in/anna-stoliarova-804265195/",
+        title: "Profile",
         className: "",
-        icon:
-          {
-            src: "/images/footer/EM.svg",
-            alt: "icon of Email",
-          },
+        icon: { src: "/images/footer/IN.svg", alt: "icon of linkedin", className: "footerLinkProfile", },
+      },
+    ],
+  footerLinksRight:
+    [
+      {
+        id: 1,
+        href: "https://www.google.com/maps/place/Hamburg/@53.5581675,9.6163676,11z/data=!4m12!1m5!3m4!2zNDHCsDE3JzQ5LjUiTiAxOcKwNDgnMzAuMiJF!8m2!3d41.297076!4d19.808381!3m5!1s0x47b161837e1813b9:0x4263df27bd63aa0!8m2!3d53.5488282!4d9.9871703!16zL20vMDNocno?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D",
+        title: "Hamburg, Germany",
+        className: "",
+        icon: { src: "/images/footer/LOC.svg", alt: "icon of Location", className: "footerLinkLocation" },
       },
       {
         id: 2,
         href: "tel:+491777441677",
         title: "+491777441677",
         className: "",
-        icon:
-          {
-            src: "/images/footer/PH.svg",
-            alt: "icon of Phone",
-          },
-      },
-    ],
-  footerSocialLinks:
-    [
-      {
-        id: 1,
-        href: "https://www.linkedin.com/in/anna-stoliarova-804265195/",
-        className: "",
-        icon:
-          {
-            src: "/images/footer/IN.svg",
-            alt: "icon of linkedin",
-          },
-      },
-      {
-        id: 2,
-        href: "www.facebook.com/learnbuildteach/",
-        className: "",
-        icon:
-          {
-            src: "/images/footer/FACE.svg",
-            alt: "icon of Facebook",
-          },
-      },
-      {
-        id: 3,
-        href: "https://www.twitter.com/jamesqquick",
-        className: "",
-        icon:
-          {
-            src: "/images/footer/TW.svg",
-            alt: "icon of Twitter",
-          },
-      },
-      {
-        id: 4,
-        href: "https://www.instagram.com/learnbuildteach",
-        className: "",
-        icon:
-          {
-            src: "/images/footer/inst.svg",
-            alt: "icon of Instagram",
-          },
+        icon: { src: "/images/footer/PH.svg", alt: "icon of Phone", className: "footerLinkPhone" },
       },
     ],
 }

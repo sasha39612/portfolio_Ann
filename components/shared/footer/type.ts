@@ -9,18 +9,12 @@ export interface FooterLinkTypes {
     icon: ImagePropsType;
 }
 
-export interface FooterSocialLinkTypes {
-    id: number,
-    href: string;
-    className?: string;
-    icon: ImagePropsType;
-}
-
 export interface FooterPropsType {
+    footerTitle: string;
     logoImage: ImagePropsType[];
     className?: string;
-    footerLinks: FooterLinkTypes[];
-    footerSocialLinks: FooterSocialLinkTypes[];
+    footerLinksLeft: FooterLinkTypes[];
+    footerLinksRight: FooterLinkTypes[];
 }
 
 export interface ImageNavBrandProps {
@@ -30,10 +24,6 @@ export interface ImageNavBrandProps {
 
 export interface FooterLinksType {
     footerLinks: FooterLinkTypes[];
-}
-
-export interface FooterSocialLinksType {
-    footerSocialLinks: FooterSocialLinkTypes[];
 }
 
 export interface NavLinkProps extends LinkTypes {

@@ -1,19 +1,18 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import FooterContactLinks from "./footerContactLinks/footerContactLinks";
+import getPropsData from '../../../lib/getPropsData';
 import ImageComponent from "../../ui/image/Image";
 import {
     FooterPropsType, ImageNavBrandProps,
 } from './type';
 import styles from './footer.module.scss';
-import FooterContactLinks from "./footerContactLinks/footerContactLinks";
-import FooterSocialLinks from "./footerContactLinks/footerSocialLinks";
-import getPropsData from '../../../lib/getPropsData';
 
 const ImageNavBrand = (props: ImageNavBrandProps) => {
     const { logoImage } = props;
 
     return (
-        <Link href="/">
+        <Link href="/" className={styles.classNameLink}>
             <ImageComponent
                 {...logoImage}
                 layout='fill'
@@ -29,15 +28,18 @@ const Footer = () => {
     if (!props) {
         notFound()
     }
-    const { logoImage, footerLinks, footerSocialLinks } = props
+    const { logoImage, footerTitle, footerLinksLeft, footerLinksRight } = props
 
     return (
         <div className={styles.wrapper}>
-            <ImageNavBrand logoImage={logoImage[0]} />
             <div className={styles.contacts}>
-                <FooterContactLinks footerLinks={footerLinks} />
-                <FooterSocialLinks footerSocialLinks={footerSocialLinks} />
+                <h3 className={styles.contactLinkTitle}>{footerTitle}</h3>
+                <div className={styles.contactLinkWrapper}>
+                    <FooterContactLinks footerLinks={footerLinksLeft} />
+                    <FooterContactLinks footerLinks={footerLinksRight} />
+                </div>
             </div>
+            <ImageNavBrand logoImage={logoImage[0]} />
         </div>
     )
 }

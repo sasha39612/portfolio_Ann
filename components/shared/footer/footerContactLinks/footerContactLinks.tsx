@@ -14,9 +14,9 @@ const FooterLinks = (props: FooterLinkTypes) => {
                     {...icon}
                     layout='fill'
                     objectFit='contain'
-                    className={styles.icon}
+                    className={styles[icon?.className ?? '']}
                 />
-                <span>{title}</span>
+                <span className={styles.title}>{title}</span>
             </div>
         </Link>
     )
