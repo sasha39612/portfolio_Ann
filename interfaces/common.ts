@@ -54,3 +54,18 @@ export interface AboutType {
   skillsBlock: TextBlock;
   programsBlock: { title: TextBlockElem; images: ImagePropsType[] };
 }
+
+export interface contactInputType {
+  name: string;
+  placeHolder: string;
+}
+
+
+export interface ContactType {
+  contactTitle: string;
+  contactDescription: string;
+  inputName: contactInputType;
+  inputEmail: contactInputType;
+  inputMessage: contactInputType;
+  button: TextBlockElem;
+}

@@ -3,13 +3,14 @@ import cn from 'classnames';
 import styles from './button.module.scss'
 
 export interface ButtonComponentType {
+    type?: "button" | "submit" | "reset";
     className?: string;
     background: 'black' | 'white';
     children: ReactNode;
 }
 
 const ButtonComponent = (props: ButtonComponentType) => {
-    const { background, children, className = '' } = props;
+    const { type = "button", background, children, className = '' } = props;
 
     const backgroundColor = cn(styles.backgroundWrapper, {
         [styles.black]: background === 'black',
@@ -17,7 +18,7 @@ const ButtonComponent = (props: ButtonComponentType) => {
     });
 
     return (
-        <button className={cn(backgroundColor, className)}>
+        <button type={type} className={cn(backgroundColor, className)}>
             {children}
         </button>
     )

@@ -1,0 +1,71 @@
+@import "styles/mixins.module.scss";
+@import "styles/colors.module.scss";
+@import "styles/variables.module.scss";
+
+.contactWrapper {
+  border: 1px $contactBorder solid;
+  margin: 150px auto;
+  padding: 25px;
+
+  @include tablet-up {
+    max-width: 564px;
+    padding: 35px;
+    margin: 200px 0px;
+  }
+}
+
+.contactDescription {
+  @include font18_weight300;
+  margin-top: 15px;
+}
+
+.contactInputBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 31px;
+}
+
+.contactInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.inputStyle {
+  display: flex;
+  flex-direction: column;
+
+  & > input {
+    @include inputStyles;
+    width: 100%;
+
+    @include tablet-up {
+      width: 248px;
+    }
+  }
+
+  & > textarea {
+    @include inputStyles;
+    width: 100%;
+    height: 132px;
+  }
+
+  & > textarea::placeholder {
+    padding-top: 10px;
+  }
+}
+
+.submitButton {
+  width: 182px;
+  height: 56px;
+  padding: 20px 30px;
+  gap: 10px;
+  border-radius: 12px;
+  margin-top: 31px;
+}
