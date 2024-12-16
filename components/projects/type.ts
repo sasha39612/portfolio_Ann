@@ -14,9 +14,7 @@ export interface ProjectsUX_UI_Type extends ProjectsGraphicDesignType{
   link?: { href: string };
 }
 
-
-
-export interface ProjectTypes {
+export interface ProjectsTypes {
   proudText: string;
   buttonTitle: ButtonTitleType; 
   projectsUX_UI: ProjectsUX_UI_Type; 

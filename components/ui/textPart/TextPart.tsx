@@ -22,14 +22,14 @@ const getIconContent = (iconContent?: string) => {
   return style
 }
 
-const TextPart = ({ title, subTitle, description, container, image, popupContent }: TextBlock) => {
+const TextPart = ({ title, subTitle, description, container, image, popupContent, className = ' ' }: TextBlock) => {
   const [popupVisible, setPopupVisible] = useState(false);
   const [popupContentSaved, setPopupContentSaved] = useState<ImagePropsType[]>([]);
 
-  const containerStyles = cn(styles.container, container?.className ? styles[container.className] : '')
-  const titleStyle = cn(title?.className ? `${styles[title.className]}` : '')
-  const subTitleStyle = cn(subTitle?.className ? `${styles[subTitle.className]}` : '')
-  const descriptionStyle = !Array.isArray(description) ? cn(description?.className ? `${styles[description.className]}` : '') : ''
+  const containerStyles = cn(styles.container, container?.className ? styles[container.className] : '', className)
+  const titleStyle = cn(title?.className ? `${styles[title.className]}` : '', className)
+  const subTitleStyle = cn(subTitle?.className ? `${styles[subTitle.className]}` : '', className)
+  const descriptionStyle = !Array.isArray(description) ? cn(description?.className ? `${styles[description.className]}` : '', className) : ''
 
   const handleClosePopup = () => setPopupVisible(false);
 
@@ -56,7 +56,6 @@ const TextPart = ({ title, subTitle, description, container, image, popupContent
             </li>
           ))}
         </ul>
-
         :
         <>
           <p className={descriptionStyle}>{description?.text}

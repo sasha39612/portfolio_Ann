@@ -8,14 +8,13 @@ import styles from './textImage.module.scss'
 
 
 const TextImage = (props: TextImageType) => {
-    const { textPart, imagePart, isProject, isReverse, projectName } = props
-    const projectNumber = projectName?.split('#')?.[1]
-    const wrapperStyles = cn(styles.wrapper, isProject ? isReverse ? styles.wrapperProjectReverse : styles.wrapperProject : '')
-    const projectNameStyles = cn(isReverse ? styles.projectNameStylesReverse : styles.projectNameStyles)
-    const containerStyles = cn(styles.container, isReverse ? styles.containerProjectReverse : '', styles[`project_${projectNumber}`])
-    const textPartContainerStyles = cn(isProject ? styles.textPartContainerProject : styles.textPartContainer)
-    const buttonStyles = cn(textPart?.button?.className ? `${styles[textPart.button.className]}` : '')
-    const imageStyles = cn(styles.mainImage, imagePart?.imageClassName ? `${styles[imagePart.imageClassName]}` : '')
+    const { textPart, imagePart, isProject, isReverse, projectName, container, className = ' ' } = props
+    const wrapperStyles = cn(styles.wrapper, isProject ? isReverse ? styles.wrapperProjectReverse : styles.wrapperProject : '', className)
+    const projectNameStyles = cn(isReverse ? styles.projectNameStylesReverse : styles.projectNameStyles, className)
+    const containerStyles = cn(styles.container, isReverse ? styles.containerProjectReverse : '', styles[container?.className ?? ''], className)
+    const textPartContainerStyles = cn(isProject ? styles.textPartContainerProject : styles.textPartContainer, className)
+    const buttonStyles = cn(textPart?.button?.className ? `${styles[textPart.button.className]}` : '', className)
+    const imageStyles = cn(styles.mainImage, imagePart?.imageClassName ? `${styles[imagePart.imageClassName]}` : '', className)
 
     return (
         <article className={wrapperStyles}>
@@ -32,7 +31,7 @@ const TextImage = (props: TextImageType) => {
                         : null
                     }
                 </div>
-                <ImageComponent src={imagePart?.src ?? ''} alt={imagePart?.alt ?? 'Some image'} className={imageStyles} />
+                <ImageComponent src={imagePart?.src ?? ''} alt={imagePart?.alt ?? 'Some image'} priority={imagePart?.priority} loading={imagePart?.loading} className={imageStyles} />
             </div>
         </article>
     )

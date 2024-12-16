@@ -55,7 +55,7 @@ const ContactComponent = ({ contactTitle, contactDescription, inputName, inputEm
           </div>
           <div className={styles.inputStyle}>
             <label htmlFor="form-email">{inputEmail.name}</label>
-            <input id="form-email" name="email" maxLength={80} autoComplete="email" type="text" placeholder={inputEmail.placeHolder} required />
+            <input id="form-email" name="email" maxLength={80} autoComplete="email" type="email" placeholder={inputEmail.placeHolder} required />
           </div>
         </div>
         <div className={styles.inputStyle}>

@@ -5,7 +5,7 @@ import styles from './image.module.scss'
 
 
 const ImageComponent = (props: ImagePropsType) => {
-    const { className, imageClassName, objectFit, ...rest } = props;
+    const { className, imageClassName, objectFit, priority, loading, ...rest } = props;
     const wrapperClassNames = cn(styles.wrapper, className);
 
     const imageClassNames = cn(
@@ -23,6 +23,8 @@ const ImageComponent = (props: ImagePropsType) => {
                 layout="fill"
                 sizes="(max-width: 1280px) 150vw, 100vw"
                 className={imageClassNames}
+                priority={priority}
+                loading={loading ?? 'lazy'}
                 {...rest}
             />
         </div>

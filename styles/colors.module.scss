@@ -8,17 +8,19 @@ $backgroundProject_3: #f2f2f2;
 $backgroundProject_4: #f5f7ff;
 $projectName: #989696;
 $projectTitle: #f0923f;
-$contactBorder: #B5AEDE;
+$contactBorder: #b5aede;
+$projectBorder: #B4AEAE;
 
 :export {
-  white: $white;
-  black: $black;
-  green: $gree;
-  projectName: $projectName;
-  projectTitle: $projectTitle;
-  backgroundProject_1: $backgroundProject_1;
-  backgroundProject_2: $backgroundProject_2;
-  backgroundProject_3: $backgroundProject_3;
-  backgroundProject_4: $backgroundProject_4;
-  contactBorder: $contactBorder;
+    white: $white;
+    black: $black;
+    green: $gree;
+    projectName: $projectName;
+    projectTitle: $projectTitle;
+    backgroundProject_1: $backgroundProject_1;
+    backgroundProject_2: $backgroundProject_2;
+    backgroundProject_3: $backgroundProject_3;
+    backgroundProject_4: $backgroundProject_4;
+    contactBorder: $contactBorder;
+    projectBorder: $projectBorder;
 }

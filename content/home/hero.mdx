@@ -1,177 +1,183 @@
 ---
 {
-  textImageProps:
-    {
-      id: 1,
-      textPart:
+    textImageProps:
         {
-          title: { text, className },
-          subTitle,
-          description:
+            id: 1,
+            textPart:
+                {
+                    title: { text, className },
+                    subTitle,
+                    description:
+                        {
+                            text: "Hi there 👋  my name is Anna and I am a UX/UI designer with a marketing, project management, and graphic design background based in Hamburg, Germany.",
+                            className: textImagePropsTitleDescription,
+                        },
+                    buttonText,
+                },
+            imagePart:
+                {
+                    src: /images/home/Group_2.png,
+                    alt: "Main image",
+                    imageClassName: mainImage,
+                    priority: true,
+                    loading: "eager",
+                },
+        },
+    textImagePropsProjects:
+        [
             {
-              text: "Hi there 👋  my name is Anna and I am a UX/UI designer with a marketing, project management, and graphic design background based in Hamburg, Germany.",
-              className: textImagePropsTitleDescription,
+                id: 2,
+                isProject: true,
+                isReverse: true,
+                projectName: "Project #1",
+                container: { className: project_1 },
+                textPart:
+                    {
+                        image:
+                            {
+                                src: /images/home/Group_1_2_1.png,
+                                alt: "Mikro label",
+                                imageClassName: labelImageProject1,
+                            },
+                        title,
+                        subTitle:
+                            {
+                                text: "Small step towards financial goals",
+                                className: textImagePropsProjects_1_subTitle,
+                            },
+                        description:
+                            {
+                                text: "All-in-one solution for setting and achieving financial goals while saving money effortlessly. The app streamlines the process of budgeting, tracking expenses and incomes.",
+                                className: textImagePropsProjectsDescription,
+                            },
+                        link: { href: "projects/saving" },
+                        button:
+                            {
+                                text: "go to project",
+                                className: textImagePropsProjectsButton,
+                            },
+                    },
+                imagePart:
+                    {
+                        src: /images/home/iphone_15_Mockup.png,
+                        alt: "Cell phone",
+                        imageClassName: mainImageProject_1,
+                    },
             },
-          buttonText,
-        },
-      imagePart:
-        {
-          src: /images/home/Group_2.png,
-          alt: "Main image",
-          imageClassName: mainImage,
-        },
-    },
-  textImagePropsProjects:
-    [
-      {
-        id: 2,
-        isProject: true,
-        isReverse: true,
-        projectName: "Project #1",
-        textPart:
-          {
-            image:
-              {
-                src: /images/home/Group_1_2_1.png,
-                alt: "Mikro label",
-                imageClassName: labelImageProject1,
-              },
-            title,
-            subTitle:
-              {
-                text: "Small step towards financial goals",
-                className: textImagePropsProjects_1_subTitle,
-              },
-            description:
-              {
-                text: "All-in-one solution for setting and achieving financial goals while saving money effortlessly. The app streamlines the process of budgeting, tracking expenses and incomes.",
-                className: textImagePropsProjectsDescription,
-              },
-            link: { href: "projects/saving" },
-            button:
-              {
-                text: "go to project",
-                className: textImagePropsProjectsButton,
-              },
-          },
-        imagePart:
-          {
-            src: /images/home/iphone_15_Mockup.png,
-            alt: "Cell phone",
-            imageClassName: mainImageProject_1,
-          },
-      },
-      {
-        id: 3,
-        isProject: true,
-        isReverse: false,
-        projectName: "Project #2",
-        textPart:
-          {
-            image,
-            title:
-              {
-                text: "EasyKitchen.",
-                className: textImagePropsProjects_2_title,
-              },
-            subTitle:
-              {
-                text: "Your simple cooking solution",
-                className: textImagePropsProjects_2_subTitle,
-              },
-            description:
-              {
-                text: "Responsive design of the recipe web app. The app is designed for people with a lack of inspiration, busy schedules, and limited abilities to cook.",
-                className: textImagePropsProjectsDescription,
-              },
-            link: { href: "projects/recipe" },
-            button:
-              {
-                text: "go to project",
-                className: textImagePropsProjectsButton,
-              },
-          },
-        imagePart:
-          {
-            src: /images/home/Group_22.png,
-            alt: "Cell phone, table, laptop",
-            imageClassName: mainImageProject_2,
-          },
-      },
-      {
-        id: 4,
-        isProject: true,
-        isReverse: true,
-        projectName: "Project #3",
-        textPart:
-          {
-            image,
-            title:
-              {
-                text: "Vintage clothing app.",
-                className: textImagePropsProjects_3_title,
-              },
-            subTitle:
-              {
-                text: "Project in E-commerce industry",
-                className: textImagePropsProjects_1_subTitle,
-              },
-            description:
-              {
-                text: "Vintage clothing app with a touch of environmental awareness.",
-                className: textImagePropsProjectsDescription,
-              },
-            link: { href: "projects/vintage" },
-            button:
-              {
-                text: "go to project",
-                className: textImagePropsProjectsButton,
-              },
-          },
-        imagePart:
-          {
-            src: /images/home/Group_6851.png,
-            alt: "Cell phones",
-            imageClassName: mainImageProject_3,
-          },
-      },
-      {
-        id: 5,
-        isProject: true,
-        isReverse: false,
-        projectName: "Project #4",
-        textPart:
-          {
-            image,
-            title:
-              {
-                text: "Literary podcast app",
-                className: textImagePropsProjects_3_title,
-              },
-            subTitle:
-              {
-                text: "Designed for iOS and Android platforms",
-                className: textImagePropsProjects_1_subTitle,
-              },
-            description:
-              {
-                text: "The app where users can find everything about the literature and even like-minded people.",
-                className: textImagePropsProjectsDescription,
-              },
-            link: { href: "projects/literary" },
-            button:
-              {
-                text: "go to project",
-                className: textImagePropsProjectsButton,
-              },
-          },
-        imagePart:
-          {
-            src: /images/home/Group_6884.png,
-            alt: "Cell phones",
-            imageClassName: mainImageProject_4,
-          },
-      },
-    ],
+            {
+                id: 3,
+                isProject: true,
+                isReverse: false,
+                projectName: "Project #2",
+                container: { className: project_2 },
+                textPart:
+                    {
+                        image,
+                        title:
+                            {
+                                text: "EasyKitchen.",
+                                className: textImagePropsProjects_2_title,
+                            },
+                        subTitle:
+                            {
+                                text: "Your simple cooking solution",
+                                className: textImagePropsProjects_2_subTitle,
+                            },
+                        description:
+                            {
+                                text: "Responsive design of the recipe web app. The app is designed for people with a lack of inspiration, busy schedules, and limited abilities to cook.",
+                                className: textImagePropsProjectsDescription,
+                            },
+                        link: { href: "projects/recipe" },
+                        button:
+                            {
+                                text: "go to project",
+                                className: textImagePropsProjectsButton,
+                            },
+                    },
+                imagePart:
+                    {
+                        src: /images/home/Group_22.png,
+                        alt: "Cell phone, table, laptop",
+                        imageClassName: mainImageProject_2,
+                    },
+            },
+            {
+                id: 4,
+                isProject: true,
+                isReverse: true,
+                projectName: "Project #3",
+                container: { className: project_3 },
+                textPart:
+                    {
+                        image,
+                        title:
+                            {
+                                text: "Vintage clothing app.",
+                                className: textImagePropsProjects_3_title,
+                            },
+                        subTitle:
+                            {
+                                text: "Project in E-commerce industry",
+                                className: textImagePropsProjects_1_subTitle,
+                            },
+                        description:
+                            {
+                                text: "Vintage clothing app with a touch of environmental awareness.",
+                                className: textImagePropsProjectsDescription,
+                            },
+                        link: { href: "projects/vintage" },
+                        button:
+                            {
+                                text: "go to project",
+                                className: textImagePropsProjectsButton,
+                            },
+                    },
+                imagePart:
+                    {
+                        src: /images/home/Group_6851.png,
+                        alt: "Cell phones",
+                        imageClassName: mainImageProject_3,
+                    },
+            },
+            {
+                id: 5,
+                isProject: true,
+                isReverse: false,
+                projectName: "Project #4",
+                container: { className: project_4 },
+                textPart:
+                    {
+                        image,
+                        title:
+                            {
+                                text: "Literary podcast app",
+                                className: textImagePropsProjects_3_title,
+                            },
+                        subTitle:
+                            {
+                                text: "Designed for iOS and Android platforms",
+                                className: textImagePropsProjects_1_subTitle,
+                            },
+                        description:
+                            {
+                                text: "The app where users can find everything about the literature and even like-minded people.",
+                                className: textImagePropsProjectsDescription,
+                            },
+                        link: { href: "projects/literary" },
+                        button:
+                            {
+                                text: "go to project",
+                                className: textImagePropsProjectsButton,
+                            },
+                    },
+                imagePart:
+                    {
+                        src: /images/home/Group_6884.png,
+                        alt: "Cell phones",
+                        imageClassName: mainImageProject_4,
+                    },
+            },
+        ],
 }
 ---

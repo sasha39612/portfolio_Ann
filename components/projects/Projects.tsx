@@ -4,7 +4,7 @@ import Link from "next/link";
 import cn from 'classnames';;
 import ButtonComponent from "../ui/button/button";
 import ImageComponent from "../ui/image/Image";
-import { ProjectsGraphicDesignType, ProjectsUX_UI_Type, ProjectTypes } from "./type";
+import { ProjectsGraphicDesignType, ProjectsUX_UI_Type, ProjectsTypes } from "./type";
 import styles from './projects.module.scss'
 
 const getButtonStyles = (buttonName: string, buttonTitle: string) => {
@@ -15,7 +15,7 @@ const getButtonStyles = (buttonName: string, buttonTitle: string) => {
 const getImageStyles = (projectClassNames?: string) => cn(styles.mainImage, projectClassNames ? styles[projectClassNames] : '')
 
 
-const Projects = ({ proudText, buttonTitle, projectsUX_UI, projectsGraphicDesign }: ProjectTypes) => {
+const Projects = ({ proudText, buttonTitle, projectsUX_UI, projectsGraphicDesign }: ProjectsTypes) => {
   const [buttonName, setButtonName] = useState<string>(buttonTitle[0]);
 
   const handlerOnclick = () => {
@@ -44,7 +44,7 @@ const Projects = ({ proudText, buttonTitle, projectsUX_UI, projectsGraphicDesign
                     projectsUX_UI.map((project: ProjectsUX_UI_Type) => (
                       <li key={project.id} className={styles.projectsUXContainer}>
                         <h2 className={styles.projectTitle}>{project.title}</h2>
-                        <ImageComponent {...project.image} className={getImageStyles(project.image.imageClassName)} />
+                        <ImageComponent {...project.image} className={getImageStyles(project.image.imageClassName)} objectFit="contain" />
                         <Link href={project?.link?.href ?? '/'}>
                           <ButtonComponent background={'black'} className={styles[project?.button?.className ? project.button.className : '']}>
                             {project.button.text}

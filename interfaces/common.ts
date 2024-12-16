@@ -37,6 +37,7 @@ export interface TextBlock {
   container?: TextBlockElem;
   image?: ImagePropsType;
   popupContent?: ImagePropsType[];
+  className?: string;
 }
 
 export interface TextImageType {
@@ -46,6 +47,8 @@ export interface TextImageType {
   projectName?: string;
   textPart?: TextBlock,
   imagePart?: ImagePropsType;
+  className?: string;
+  container?: TextBlockElem;
 }
 
 export interface AboutType {
