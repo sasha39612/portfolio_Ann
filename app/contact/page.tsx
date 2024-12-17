@@ -1,17 +1,15 @@
-import { notFound } from "next/navigation";
-import { ContactType } from "../../interfaces/common";
-import getPropsData from "../../lib/getPropsData";
-import ContactComponent from "../../components/contact/Contact";
+import { notFound } from 'next/navigation';
+import { ContactType } from '../../interfaces/common';
+import getPropsData from '../../lib/getPropsData';
+import ContactComponent from '../../components/contact/Contact';
 
 const Contact = () => {
   const props = getPropsData('contact', 'contact.mdx') as ContactType;
   if (!props) {
-    notFound()
+    notFound();
   }
 
-  return (
-    <ContactComponent {...props} />
-  )
-}
+  return <ContactComponent {...props} />;
+};
 
-export default Contact
+export default Contact;

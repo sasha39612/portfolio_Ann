@@ -1,7 +1,5 @@
-
 const Saving = () => {
+  return <h1>My Page Vintage</h1>;
+};
 
-    return <h1>My Page Vintage</h1>
-}
-
-export default Saving
+export default Saving;

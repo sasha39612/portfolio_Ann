@@ -1,4 +1,3 @@
-
 // "use client"
 import React, { Children, ReactElement } from 'react';
 import { usePathname } from 'next/navigation';
@@ -16,16 +15,27 @@ export interface ActiveLinkPropsType {
   [x: string]: unknown;
 }
 
-const ActiveLink = ({ children, activeLinkClassName, href, ...props }: ActiveLinkPropsType) => {
+const ActiveLink = ({
+  children,
+  activeLinkClassName,
+  href,
+  ...props
+}: ActiveLinkPropsType) => {
   const pathName = usePathname();
-  const child = Children.only(children) as React.ReactElement<{ className?: string }>;
+  const child = Children.only(children) as React.ReactElement<{
+    className?: string;
+  }>;
   let className = child.props.className || '';
 
   if (pathName === href && activeLinkClassName && pathName !== '/') {
-    className = cn(className, activeLinkClassName)
+    className = cn(className, activeLinkClassName);
   }
 
-  return <Link href={href} {...props}>{React.cloneElement(child, { className })}</Link>
-}
+  return (
+    <Link href={href} {...props}>
+      {React.cloneElement(child, { className })}
+    </Link>
+  );
+};
 
 export default ActiveLink;

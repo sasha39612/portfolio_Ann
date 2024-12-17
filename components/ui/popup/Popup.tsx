@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import styles from './popup.module.scss'
+import styles from './popup.module.scss';
 
 interface PopupProps {
   children: ReactNode;
@@ -8,7 +8,6 @@ interface PopupProps {
 }
 
 const Popup = ({ children, onClose }: PopupProps) => {
-
   const el = document.createElement('div');
 
   useEffect(() => {
@@ -25,17 +24,14 @@ const Popup = ({ children, onClose }: PopupProps) => {
 
   return ReactDOM.createPortal(
     <div className={styles.popupOverlay} onClick={onClose}>
-      <div
-        className={styles.popupContent}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
         <button className={styles.closeButton} onClick={onClose}>
           ×
         </button>
         {children}
       </div>
     </div>,
-    el
+    el,
   );
 };
 

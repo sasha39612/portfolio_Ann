@@ -1,12 +1,14 @@
 import cn from 'classnames';
-import { TextImageWithFlexType, TextSimpleBlock } from '../../interfaces/common';
+import {
+  TextImageWithFlexType,
+  TextSimpleBlock,
+} from '../../interfaces/common';
 import ImageComponent from '../ui/image/Image';
 import styles from './textImageWithFlex.module.scss';
 
-
 const TextImageWithFlex = (props: TextImageWithFlexType) => {
-  const { textPart, imagePart } = props
-  const imageStyles = cn(styles.image, styles[imagePart?.className ?? ''])
+  const { textPart, imagePart } = props;
+  const imageStyles = cn(styles.image, styles[imagePart?.className ?? '']);
 
   return (
     <article className={styles.wrapper}>
@@ -14,23 +16,27 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
         <div className={styles.title}>{textPart?.title}</div>
         <div className={styles.description}>{textPart?.description}</div>
         <ul className={styles.textPartContainer}>
-          {Array.isArray(textPart?.textGrid) ? textPart.textGrid.map((textBlock: TextSimpleBlock) => (
-            <li key={textBlock.id} className={styles.textGridContainer}>
-              <div className={styles.titleTextBlock}>
-                {textBlock.title}
-              </div>
-              <div className={styles.descriptionTextBlock}>
-                {textBlock.description}
-              </div>
-            </li>
-          ))
-            : null
-          }
+          {Array.isArray(textPart?.textGrid)
+            ? textPart.textGrid.map((textBlock: TextSimpleBlock) => (
+                <li key={textBlock.id} className={styles.textGridContainer}>
+                  <div className={styles.titleTextBlock}>{textBlock.title}</div>
+                  <div className={styles.descriptionTextBlock}>
+                    {textBlock.description}
+                  </div>
+                </li>
+              ))
+            : null}
         </ul>
       </div>
-      <ImageComponent src={imagePart?.src ?? ''} alt={imagePart?.alt ?? 'Some image'} priority={imagePart?.priority} loading={imagePart?.loading} className={imageStyles} />
+      <ImageComponent
+        src={imagePart?.src ?? ''}
+        alt={imagePart?.alt ?? 'Some image'}
+        priority={imagePart?.priority}
+        loading={imagePart?.loading}
+        className={imageStyles}
+      />
     </article>
-  )
-}
+  );
+};
 
-export default TextImageWithFlex
+export default TextImageWithFlex;
