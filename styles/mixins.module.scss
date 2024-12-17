@@ -206,6 +206,17 @@
     text-decoration-skip-ink: none;
 }
 
+@mixin Grotesk_font14_weight400 {
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.86px;
+    letter-spacing: 0.013em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
 @mixin Grotesk_font16_weight400 {
     font-family: Space Grotesk;
     font-size: 16px;
@@ -222,6 +233,17 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20.42px;
+    letter-spacing: 0.013em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font24_weight500 {
+    font-family: Space Grotesk;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30.62px;
     letter-spacing: 0.013em;
     text-align: left;
     text-underline-position: from-font;

@@ -40,17 +40,20 @@ export interface TextBlock {
   className?: string;
 }
 
-export interface TextGridBlock {
+export interface TextSimpleBlock {
   id: string;
   title: string;
   description: string;
+  classNameContainer?: string;
+  classNameTitle?: string;
+  classNameDescription?: string;
 }
 
-export interface TextBlockWithGrid {
+export interface TextBlockWithFlex {
   id?: string;
   title?: string;
   description?: string;
-  textGrid: Array<TextGridBlock>;
+  textGrid: Array<TextSimpleBlock>;
   className?: string;
 }
 
@@ -65,9 +68,9 @@ export interface TextImageType {
   container?: TextBlockElem;
 }
 
-export interface TextImageWithGridType {
+export interface TextImageWithFlexType {
   id: string;
-  textPart?: TextBlockWithGrid,
+  textPart?: TextBlockWithFlex,
   imagePart?: ImagePropsType;
   className?: string;
 }

@@ -1,10 +1,10 @@
 "use client";
 
-import { ImagePropsType, TextBlock, TextBlockElemArr } from "../../../interfaces/common"
-import cn from 'classnames'
-import styles from './textPart.module.scss'
 import { CSSProperties, MouseEvent, useState } from "react"
+import cn from 'classnames'
+import { ImagePropsType, TextBlock, TextBlockElemArr } from "../../../interfaces/common"
 import ImageComponentPopup from "../imageContentPopup/ImageContentPopup";
+import styles from './textPart.module.scss'
 
 const getIconStyles = (iconClassName?: string) => {
   return cn(styles.icon, iconClassName ? styles[iconClassName] : '')

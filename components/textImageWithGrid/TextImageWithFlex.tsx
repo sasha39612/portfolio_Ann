@@ -1,10 +1,10 @@
 import cn from 'classnames';
-import { TextImageWithGridType, TextGridBlock } from '../../interfaces/common';
+import { TextImageWithFlexType, TextSimpleBlock } from '../../interfaces/common';
 import ImageComponent from '../ui/image/Image';
 import styles from './textImageWithFlex.module.scss';
 
 
-const TextImageWithFlex = (props: TextImageWithGridType) => {
+const TextImageWithFlex = (props: TextImageWithFlexType) => {
   const { textPart, imagePart } = props
   const imageStyles = cn(styles.image, styles[imagePart?.className ?? ''])
 
@@ -14,7 +14,7 @@ const TextImageWithFlex = (props: TextImageWithGridType) => {
         <div className={styles.title}>{textPart?.title}</div>
         <div className={styles.description}>{textPart?.description}</div>
         <ul className={styles.textPartContainer}>
-          {Array.isArray(textPart?.textGrid) ? textPart.textGrid.map((textBlock: TextGridBlock) => (
+          {Array.isArray(textPart?.textGrid) ? textPart.textGrid.map((textBlock: TextSimpleBlock) => (
             <li key={textBlock.id} className={styles.textGridContainer}>
               <div className={styles.titleTextBlock}>
                 {textBlock.title}

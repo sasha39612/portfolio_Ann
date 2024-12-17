@@ -1,7 +1,9 @@
-import { TextBlock, TextImageType, TextImageWithGridType } from "../../interfaces/common";
+import { TextBlock, TextImageType, TextImageWithFlexType, TextSimpleBlock } from "../../interfaces/common";
 
 export interface ProjectSavingTypes {
   imageText: TextBlock;
   imageTextSaving: TextImageType;
-  imageTextWithGridSaving: TextImageWithGridType;
+  imageTextWithFlexSaving: TextImageWithFlexType;
+  textWithTitleSaving: TextSimpleBlock[];
+  textWithoutTitleSaving: TextSimpleBlock[];
 }
