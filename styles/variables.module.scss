@@ -3,14 +3,13 @@ $tablet-width: 768px;
 $tablet-large-width: 1024px;
 $desktop-width: 1440px;
 
-$mobile-side-margin: 24px;
+$mobile-side-margin: 20px;
 $tablet-side-margin: 48px;
 $desktop-side-margin: 80px;
 $desktop-side-large-margin: 140px;
 
 $max-content-width: 1400px;
 $max-header-footer-width: 1900px;
-
 
 :export {
     mobileWidth: $mobile-width;
