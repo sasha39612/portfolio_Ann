@@ -12,6 +12,8 @@ import ImageTextSaving_5 from './imageTextSaving_5/ImageTextSaving_5';
 import ImageTextSaving_6 from './imageTextSaving_6/ImageTextSaving_6';
 import ImageTextSaving_7 from './imageTextSaving_7/ImageTextSaving_7';
 import ImageTextSaving_8 from './imageTextSaving_8/ImageTextSaving_8';
+import ImageTextSaving_9 from './imageTextSaving_9/ImageTextSaving_9';
+import ImageTextSaving_10 from './imageTextSaving_10/ImageTextSaving_10';
 
 const ProjectSaving = (props: ProjectSavingTypes) => {
   const {
@@ -27,6 +29,8 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
     imageTextSaving_6,
     imageTextSaving_7,
     imageTextSaving_8,
+    imageTextSaving_9,
+    imageTextSaving_10,
   } = props;
 
   return (
@@ -43,6 +47,8 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
       <ImageTextSaving_6 {...imageTextSaving_6} />
       <ImageTextSaving_7 {...imageTextSaving_7} />
       <ImageTextSaving_8 {...imageTextSaving_8} />
+      <ImageTextSaving_9 {...imageTextSaving_9} />
+      <ImageTextSaving_10 {...imageTextSaving_10} />
     </>
   );
 };

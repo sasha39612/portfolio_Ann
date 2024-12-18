@@ -34,4 +34,6 @@ export interface ProjectSavingTypes {
   imageTextSaving_6: ImageTextSaving;
   imageTextSaving_7: ImageTextSaving;
   imageTextSaving_8: ImageTextSaving;
+  imageTextSaving_9: ImageTextSaving;
+  imageTextSaving_10: ImageTextSaving;
 }
