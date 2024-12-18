@@ -8,12 +8,14 @@ import styles from './swiper.module.scss';
 
 export interface SwiperType {
   images: ImagePropsType[];
+  slidesPerView: number;
   classNameSwiper?: string;
   classNameImage?: string;
 }
 
 const SwiperCustom = ({
   images,
+  slidesPerView,
   classNameSwiper,
   classNameImage,
 }: SwiperType) => {
@@ -23,7 +25,7 @@ const SwiperCustom = ({
     <Swiper
       pagination={{ clickable: true }}
       spaceBetween={8}
-      slidesPerView={2.5}
+      slidesPerView={slidesPerView}
       modules={[Pagination]}
       className={swiperStyles}
     >

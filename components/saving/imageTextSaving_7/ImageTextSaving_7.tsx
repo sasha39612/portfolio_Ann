@@ -2,13 +2,13 @@
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
 import Text from '../../ui/text/Text';
 import { ImageTextSaving } from '../type';
-import styles from './imageTextSaving_2.module.scss';
+import styles from './imageTextSaving_7.module.scss';
 import ImageComponent from '../../ui/image/Image';
 import SwiperCustom from '../../ui/swiper/Swiper';
 
-const slidesPerView = 2.5;
+const slidesPerView = 1;
 
-const ImageTextSaving_2 = ({
+const ImageTextSaving_7 = ({
   textPart,
   imagePartDesktop,
   imagePartMobileSlider,
@@ -31,8 +31,8 @@ const ImageTextSaving_2 = ({
           {isMobileView ? (
             <SwiperCustom
               images={imagePartMobileSlider}
-              classNameSwiper={styles.swiper}
               slidesPerView={slidesPerView}
+              classNameSwiper={styles.swiper}
               classNameImage={
                 styles[imagePartMobileSlider?.[0].className ?? ' ']
               }
@@ -49,4 +49,4 @@ const ImageTextSaving_2 = ({
   );
 };
 
-export default ImageTextSaving_2;
+export default ImageTextSaving_7;
