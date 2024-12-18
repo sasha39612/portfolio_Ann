@@ -2,6 +2,7 @@
 import TextImage from '../textImage/TextImage';
 import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
 import TextImageWithFlex from '../textImageWithGrid/TextImageWithFlex';
+import SwiperCustom from '../ui/swiper/Swiper';
 import Text from '../ui/text/Text';
 import { ProjectSavingTypes } from './type';
 import styles from './saving.module.scss';
@@ -14,9 +15,10 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
     textWithTitleSaving,
     textWithoutTitleSaving,
     imageTextSaving_1,
+    imageTextSaving_2,
   } = props;
   const isMobileView = useCheckMobileScreen();
-  console.log('isMobileView', isMobileView);
+
   return (
     <>
       <TextImage {...imageTextSaving} />
@@ -62,12 +64,49 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
         {isMobileView ? (
           <ImageComponent
             {...imageTextSaving_1.imagePartMobile}
-            className={styles.imageTextSavingMobile_1}
+            className={
+              styles[imageTextSaving_1.imagePartMobile?.className ?? '']
+            }
           />
         ) : (
           <ImageComponent
             {...imageTextSaving_1.imagePartDesktop}
-            className={styles.imageTextSavingDesktop_1}
+            className={
+              styles[imageTextSaving_1.imagePartDesktop.className ?? '']
+            }
+          />
+        )}
+      </>
+      <>
+        <Text
+          id={imageTextSaving_2.textPart.id}
+          classNameContainer={styles.containerImageTextSaving_1}
+          title={imageTextSaving_2.textPart.title}
+          classNameTitle={
+            styles[imageTextSaving_2.textPart.classNameTitle ?? '']
+          }
+          description={imageTextSaving_2.textPart.description}
+          classNameDescription={
+            styles[imageTextSaving_2.textPart.classNameDescription ?? '']
+          }
+        />
+        {isMobileView &&
+        Array.isArray(imageTextSaving_2.imagePartMobileSlider) ? (
+          <SwiperCustom
+            images={imageTextSaving_2.imagePartMobileSlider}
+            classNameSwiper={styles.swiper}
+            classNameImage={
+              styles[
+                imageTextSaving_2.imagePartMobileSlider?.[0].className ?? ' '
+              ]
+            }
+          />
+        ) : (
+          <ImageComponent
+            {...imageTextSaving_2.imagePartDesktop}
+            className={
+              styles[imageTextSaving_2.imagePartDesktop.className ?? '']
+            }
           />
         )}
       </>

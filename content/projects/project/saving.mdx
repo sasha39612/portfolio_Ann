@@ -1,147 +1,225 @@
 ---
 {
-    imageTextSaving:
+  imageTextSaving:
+    {
+      container: { className: project_saving },
+      textPart:
         {
-            container: { className: project_saving },
-            textPart:
-                {
-                    image:
-                        {
-                            src: /images/home/Group_1_2_1.png,
-                            alt: "Mikro label",
-                            imageClassName: labelImageProjectSaving1,
-                        },
-                    title,
-                    subTitle:
-                        {
-                            text: "Small step towards financial goals",
-                            className: textImagePropsProjectsSaving_1_subTitle,
-                        },
-                    description,
-                    link,
-                    button,
-                },
-            imagePart:
-                {
-                    src: /images/home/iphone_15_Mockup.png,
-                    alt: "Cell phone",
-                    imageClassName: mainImageProjectSaving_1,
-                    priority: true,
-                    loading: "eager",
-                },
+          image:
+            {
+              src: /images/home/Group_1_2_1.png,
+              alt: 'Mikro label',
+              imageClassName: labelImageProjectSaving1,
+            },
+          title,
+          subTitle:
+            {
+              text: 'Small step towards financial goals',
+              className: textImagePropsProjectsSaving_1_subTitle,
+            },
+          description,
+          link,
+          button,
         },
-    imageTextWithFlexSaving:
+      imagePart:
         {
+          src: /images/home/iphone_15_Mockup.png,
+          alt: 'Cell phone',
+          imageClassName: mainImageProjectSaving_1,
+          priority: true,
+          loading: 'eager',
+        },
+    },
+  imageTextWithFlexSaving:
+    {
+      id: 1,
+      textPart:
+        {
+          id?: 1;,
+          title: 'Project overview',
+          description: 'The application helps people save money quickly for particular goals. In addition, users receive information about their spending, which helps them successfully plan new goals.',
+          textGrid:
+            [
+              { id: 1, title: 'Role', description: 'UX/UI Designer' },
+              { id: 2, title: 'Duration', description: 'Feb 2024 (5 days)' },
+              { id: 3, title: 'Tools', description: 'Figma' },
+              {
+                id: 4,
+                title: 'Mentored',
+                description: 'Shahriyar Mohammadi (Senior PD at Bumble) ',
+              },
+            ],
+          className?: string,
+        },
+      imagePart:
+        {
+          src: /images/projects/saving/Frame_6924.png,
+          alt: 'Donut chart',
+          className: mainImageProjectSaving_2,
+          priority: true,
+          loading: 'eager',
+        },
+    },
+  textWithTitleSaving:
+    [
+      {
+        id: 1,
+        title: 'Problem',
+        description: 'Many people may think that finance is always difficult and unclear. It also may be challenging to stay motivated to save money and not lose interest. However the main problem is trust and security because users may hesitate to input sensitive financial information into the app. ',
+        classNameContainer: containerTextWithTitleSaving,
+        classNameTitle: titleTextWithTitleSaving,
+        classNameDescription: descriptionTextWithTitleSaving,
+      },
+      {
+        id: 2,
+        title: 'Goal',
+        description: 'Create an application that will inspire security and trust, so all data can be easily understood and interpreted. Create a feeling among users that finance is easy, and also apply gamification elements so that users are more motivated to use the application.',
+        classNameContainer: containerTextWithTitleSaving,
+        classNameTitle: titleTextWithTitleSaving,
+        classNameDescription: descriptionTextWithTitleSaving,
+      },
+      {
+        id: 3,
+        title: 'User story',
+        description: 'After my quick research, I developed three user stories that were a guide for me and helped me form priorities. I concentrated on the screens where all the important information would be presented clearly and understandable and on adding a new goal (one of the main features of the app).',
+        classNameContainer: containerTextWithTitleSaving,
+        classNameTitle: titleTextWithTitleSaving,
+        classNameDescription: descriptionTextWithTitleSaving,
+      },
+    ],
+  textWithoutTitleSaving:
+    [
+      {
+        id: 1,
+        description: 'As a user, I want to see an overview of how much my finances have changed and how much I am saving throughout the saving period, so that I can stay on track.',
+        classNameContainer: containerTextWithoutTitleSaving,
+        classNameDescription: DescriptionTextWithoutTitleSaving,
+      },
+      {
+        id: 2,
+        description: 'As a user, I want to see a dashboard of my finances clearly and visually, so that I can see how much I am spending on what at a glance.',
+        classNameContainer: containerTextWithoutTitleSaving,
+        classNameDescription: DescriptionTextWithoutTitleSaving,
+      },
+      {
+        id: 3,
+        description: 'As a user, I need to be able to tell the tool what my savings goal is and how long I have to reach it, so that I can save accordingly.',
+        classNameContainer: containerTextWithoutTitleSaving,
+        classNameDescription: DescriptionTextWithoutTitleSaving,
+      },
+    ],
+  imageTextSaving_1:
+    {
+      textPart:
+        {
+          id: 1,
+          title: 'User Flow',
+          description: 'I created a user flow where I presented the user’s path of creating a new goal.',
+          classNameTitle: titleImageTextSaving_1,
+          classNameDescription: descriptionImageTextSaving_1,
+        },
+      imagePartDesktop:
+        {
+          src: /images/projects/saving/Group_6855_Des.png,
+          alt: 'Schema',
+          className: imageTextSavingDesktop_1,
+          priority: false,
+          loading: 'lazy',
+        },
+      imagePartMobile:
+        {
+          src: /images/projects/saving/Group_6855_Mob.png,
+          alt: 'Schema',
+          className: imageTextSavingMobile_1,
+          priority: false,
+          loading: 'lazy',
+        },
+    },
+  imageTextSaving_2:
+    {
+      textPart:
+        {
+          id: 1,
+          title: 'Mid-Fi Wireframes',
+          description: 'After I formed priorities based on the problem, user stories, and understanding of how the user will move through my application, I created wireframes.',
+          classNameTitle: titleImageTextSaving_1,
+          classNameDescription: descriptionImageTextSaving_1,
+        },
+      imagePartDesktop:
+        {
+          src: /images/projects/saving/Frame_392.png,
+          alt: 'Schema',
+          className: imageTextSavingDesktop_2,
+          priority: false,
+          loading: 'lazy',
+        },
+      imagePartMobileSlider:
+        [
+          {
             id: 1,
-            textPart:
-                {
-                    id?: 1;,
-                    title: "Project overview",
-                    description: "The application helps people save money quickly for particular goals. In addition, users receive information about their spending, which helps them successfully plan new goals.",
-                    textGrid:
-                        [
-                            {
-                                id: 1,
-                                title: "Role",
-                                description: "UX/UI Designer",
-                            },
-                            {
-                                id: 2,
-                                title: "Duration",
-                                description: "Feb 2024 (5 days)",
-                            },
-                            { id: 3, title: "Tools", description: "Figma" },
-                            {
-                                id: 4,
-                                title: "Mentored",
-                                description: "Shahriyar Mohammadi (Senior PD at Bumble) ",
-                            },
-                        ],
-                    className?: string,
-                },
-            imagePart:
-                {
-                    src: /images/projects/saving/Frame_6924.png,
-                    alt: "Donut chart",
-                    className: mainImageProjectSaving_2,
-                    priority: true,
-                    loading: "eager",
-                },
-        },
-    textWithTitleSaving:
-        [
-            {
-                id: 1,
-                title: "Problem",
-                description: "Many people may think that finance is always difficult and unclear. It also may be challenging to stay motivated to save money and not lose interest. However the main problem is trust and security because users may hesitate to input sensitive financial information into the app. ",
-                classNameContainer: containerTextWithTitleSaving,
-                classNameTitle: titleTextWithTitleSaving,
-                classNameDescription: descriptionTextWithTitleSaving,
-            },
-            {
-                id: 2,
-                title: "Goal",
-                description: "Create an application that will inspire security and trust, so all data can be easily understood and interpreted. Create a feeling among users that finance is easy, and also apply gamification elements so that users are more motivated to use the application.",
-                classNameContainer: containerTextWithTitleSaving,
-                classNameTitle: titleTextWithTitleSaving,
-                classNameDescription: descriptionTextWithTitleSaving,
-            },
-            {
-                id: 3,
-                title: "User story",
-                description: "After my quick research, I developed three user stories that were a guide for me and helped me form priorities. I concentrated on the screens where all the important information would be presented clearly and understandable and on adding a new goal (one of the main features of the app).",
-                classNameContainer: containerTextWithTitleSaving,
-                classNameTitle: titleTextWithTitleSaving,
-                classNameDescription: descriptionTextWithTitleSaving,
-            },
+            src: /images/projects/saving/slider/11.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 2,
+            src: /images/projects/saving/slider/22.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 3,
+            src: /images/projects/saving/slider/33.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 4,
+            src: /images/projects/saving/slider/44.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 5,
+            src: /images/projects/saving/slider/55.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 6,
+            src: /images/projects/saving/slider/66.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 7,
+            src: /images/projects/saving/slider/77.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
+          {
+            id: 8,
+            src: /images/projects/saving/slider/88.png,
+            alt: 'Cell phone',
+            className: imageTextSavingMobile_2,
+            priority: false,
+            loading: 'lazy',
+          },
         ],
-    textWithoutTitleSaving:
-        [
-            {
-                id: 1,
-                description: "As a user, I want to see an overview of how much my finances have changed and how much I am saving throughout the saving period, so that I can stay on track.",
-                classNameContainer: containerTextWithoutTitleSaving,
-                classNameDescription: DescriptionTextWithoutTitleSaving,
-            },
-            {
-                id: 2,
-                description: "As a user, I want to see a dashboard of my finances clearly and visually, so that I can see how much I am spending on what at a glance.",
-                classNameContainer: containerTextWithoutTitleSaving,
-                classNameDescription: DescriptionTextWithoutTitleSaving,
-            },
-            {
-                id: 3,
-                description: "As a user, I need to be able to tell the tool what my savings goal is and how long I have to reach it, so that I can save accordingly.",
-                classNameContainer: containerTextWithoutTitleSaving,
-                classNameDescription: DescriptionTextWithoutTitleSaving,
-            },
-        ],
-    imageTextSaving_1:
-        {
-            textPart:
-                {
-                    id: 1,
-                    title: "User Flow",
-                    description: "I created a user flow where I presented the user’s path of creating a new goal.",
-                    classNameTitle: titleImageTextSaving_1,
-                    classNameDescription: descriptionImageTextSaving_1,
-                },
-            imagePartDesktop:
-                {
-                    src: /images/projects/saving/Group_6855_Des.png,
-                    alt: "Schema",
-                    className: imageTextSavingDesktop_1,
-                    priority: false,
-                    loading: "lazy",
-                },
-            imagePartMobile:
-                {
-                    src: /images/projects/saving/Group_6855_Mob.png,
-                    alt: "Schema",
-                    className: imageTextSavingMobile_1,
-                    priority: false,
-                    loading: "lazy",
-                },
-        },
+    },
 }
 ---
