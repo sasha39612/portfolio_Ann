@@ -14,9 +14,10 @@ export interface ImageTextSaving {
     classNameTitle: string;
     classNameDescription: string;
   };
-  imagePartDesktop: ImagePropsType;
-  imagePartMobile: ImagePropsType;
-  imagePartMobileSlider: ImagePropsType[];
+  imagePartDesktop?: ImagePropsType;
+  imagePartMobile?: ImagePropsType;
+  imagePartDesktopSlider?: ImagePropsType[];
+  imagePartMobileSlider?: ImagePropsType[];
 }
 
 export interface ProjectSavingTypes {
@@ -27,4 +28,5 @@ export interface ProjectSavingTypes {
   textWithoutTitleSaving: TextSimpleBlock[];
   imageTextSaving_1: ImageTextSaving;
   imageTextSaving_2: ImageTextSaving;
+  imageTextSaving_3: ImageTextSaving;
 }

@@ -36,6 +36,7 @@
 
 .descriptionTextWithTitleSaving {
   @include Grotesk_font14_weight400;
+  color: #545454;
 }
 
 .wrapperWithoutTitle {
@@ -77,6 +78,7 @@
   @include Grotesk_font14_weight400;
   line-height: 17.86px;
   letter-spacing: 0.013em;
+  color: #545454;
 }
 
 .titleImageTextSaving_1 {
@@ -100,6 +102,8 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
+  color: #545454;
 }
 
 .containerImageTextSaving_1 {
@@ -137,6 +141,45 @@
 .imageTextSavingDesktop_2 {
   @extend .image;
   aspect-ratio: 1.62;
+}
+
+.imageTextSavingMobile_3 {
+  @extend .image;
+  aspect-ratio: 1.47;
+}
+
+.imageTextSavingDesktop_3 {
+  @extend .image;
+  aspect-ratio: 2.72;
+}
+
+.imageTextSavingButtonMobile_3 {
+  @extend .image;
+  aspect-ratio: 3.51;
+
+  @include tablet-up {
+    margin-top: 0px;
+    min-width: 229px;
+  }
+}
+
+.imageTextSavingButtonDesktop_3 {
+  @extend .image;
+  aspect-ratio: 2.72;
+
+  @include tablet-up {
+    margin-top: 0px;
+  }
+}
+
+.imageTextSaving_3TextImageWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 60px;
+  }
 }
 
 .swiper {

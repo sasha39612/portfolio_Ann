@@ -1,15 +1,15 @@
-import { ImageProps as NextImagePropsType } from "next/legacy/image";
+import { ImageProps as NextImagePropsType } from 'next/legacy/image';
 
 export interface ImagePropsType extends NextImagePropsType {
   src: string;
   alt: string;
   id?: string;
-    width?: number;
-    height?: number;
-    placeholder?: 'blur' | 'empty';
-    className?: string;
-    imageClassName?: string;
-    objectFit?: 'contain' | 'cover' | 'fill';
+  width?: number;
+  height?: number;
+  placeholder?: 'blur' | 'empty';
+  className?: string;
+  imageClassName?: string;
+  objectFit?: 'contain' | 'cover' | 'fill';
 }
 
 export interface TextBlockElem {
@@ -42,8 +42,8 @@ export interface TextBlock {
 
 export interface TextSimpleBlock {
   id: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   classNameContainer?: string;
   classNameTitle?: string;
   classNameDescription?: string;
@@ -62,7 +62,7 @@ export interface TextImageType {
   isProject?: boolean;
   isReverse?: boolean;
   projectName?: string;
-  textPart?: TextBlock,
+  textPart?: TextBlock;
   imagePart?: ImagePropsType;
   className?: string;
   container?: TextBlockElem;
@@ -70,7 +70,7 @@ export interface TextImageType {
 
 export interface TextImageWithFlexType {
   id: string;
-  textPart?: TextBlockWithFlex,
+  textPart?: TextBlockWithFlex;
   imagePart?: ImagePropsType;
   className?: string;
 }
@@ -86,7 +86,6 @@ export interface contactInputType {
   name: string;
   placeHolder: string;
 }
-
 
 export interface ContactType {
   contactTitle: string;
