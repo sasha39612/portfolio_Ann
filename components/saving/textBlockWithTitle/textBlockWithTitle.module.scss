@@ -1,0 +1,40 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.wrapperWithTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @include tablet-up {
+    margin: 78px 0px 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.containerTextWithTitleSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  @include tablet-up {
+    max-width: 430px;
+    &:last-child {
+      max-width: 600px;
+    }
+  }
+}
+
+.titleTextWithTitleSaving {
+  @include Grotesk_font24_weight500;
+}
+
+.descriptionTextWithTitleSaving {
+  @include Grotesk_font14_weight400;
+  color: #545454;
+}
