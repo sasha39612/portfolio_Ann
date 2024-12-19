@@ -38,4 +38,5 @@ export interface ProjectSavingTypes {
   imageTextSaving_10: ImageTextSaving;
   imageTextSaving_11: ImageTextSaving;
   imageTextSaving_12: ImageTextSaving;
+  imageTextSaving_13: TextSimpleBlock[];
 }

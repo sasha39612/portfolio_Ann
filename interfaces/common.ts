@@ -43,9 +43,11 @@ export interface TextBlock {
 export interface TextSimpleBlock {
   id: string;
   title?: string;
+  subTitle?: string;
   description?: string;
   classNameContainer?: string;
   classNameTitle?: string;
+  classNameSubTitle?: string;
   classNameDescription?: string;
 }
 
