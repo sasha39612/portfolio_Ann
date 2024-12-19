@@ -34,6 +34,7 @@ const FooterProject = (props: FooterProjectProps) => {
     imageArrowLeftHref,
     imageArrowRightHref,
     className,
+    classImageArrowName,
     classNameTitle,
     classNameImage,
     classNameLink,
@@ -51,7 +52,7 @@ const FooterProject = (props: FooterProjectProps) => {
             classNameImage={classNameImage}
             classNameLink={classNameLink}
           />
-          <p className={styles.imageArrowName}>{imageArrowLeftName}</p>
+          <p className={classImageArrowName}>{imageArrowLeftName}</p>
         </div>
       ) : (
         <div className={styles.linkUnvisitableStyles} />
@@ -65,7 +66,7 @@ const FooterProject = (props: FooterProjectProps) => {
             classNameImage={classNameImage}
             classNameLink={classNameLink}
           />
-          <p className={styles.imageArrowName}>{imageArrowRightName}</p>
+          <p className={classImageArrowName}>{imageArrowRightName}</p>
         </div>
       ) : (
         <div className={styles.linkUnvisitableStyles} />

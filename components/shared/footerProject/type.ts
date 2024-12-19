@@ -16,6 +16,7 @@ export interface FooterProjectProps {
   imageArrowLeftHref: string;
   imageArrowRightHref: string;
   className: string;
+  classImageArrowName?: string;
   classNameTitle: string;
   classNameImage: string;
   classNameLink?: string;

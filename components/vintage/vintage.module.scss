@@ -1,0 +1,28 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.footerProjectVintage {
+  background: #596e65;
+}
+
+.classNameTitle {
+  @include Grotesk_font24_weight400;
+  max-width: 160px;
+  color: #ffffff;
+
+  @include tablet-up {
+    max-width: 100%;
+  }
+}
+
+.classNameLink {
+  @include Zabal_font48_weight_700;
+  background: #ffffff80;
+}
+
+.imageArrowName {
+  @include Zabal_font16_weight_400;
+  text-align: center;
+  color: #ffffff;
+}
