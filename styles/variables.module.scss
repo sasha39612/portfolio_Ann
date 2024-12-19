@@ -1,6 +1,7 @@
 $mobile-width: 375px;
 $tablet-width: 768px;
 $tablet-large-width: 1024px;
+$desktop-large-width: 1280px;
 $desktop-width: 1440px;
 
 $mobile-side-margin: 20px;
@@ -12,14 +13,15 @@ $max-content-width: 1400px;
 $max-header-footer-width: 1900px;
 
 :export {
-    mobileWidth: $mobile-width;
-    tabletWidth: $tablet-width;
-    tabletLargeWidth: $tablet-large-width;
-    desktopWidth: $desktop-width;
-    sideMobileMargin: $mobile-side-margin;
-    sideTabletMargin: $tablet-side-margin;
-    sideDesktopMargin: $desktop-side-margin;
-    sideDesktopLargeMargin: $desktop-side-large-margin;
-    maxContentWidth: $max-content-width;
-    maxHeaderFooterWidth: $max-header-footer-width;
+  mobileWidth: $mobile-width;
+  tabletWidth: $tablet-width;
+  tabletLargeWidth: $tablet-large-width;
+  desktop-large-width: $desktop-large-width;
+  desktopWidth: $desktop-width;
+  sideMobileMargin: $mobile-side-margin;
+  sideTabletMargin: $tablet-side-margin;
+  sideDesktopMargin: $desktop-side-margin;
+  sideDesktopLargeMargin: $desktop-side-large-margin;
+  maxContentWidth: $max-content-width;
+  maxHeaderFooterWidth: $max-header-footer-width;
 }

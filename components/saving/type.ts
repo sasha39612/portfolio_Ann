@@ -1,4 +1,5 @@
 import {
+  FooterProject,
   ImagePropsType,
   TextBlock,
   TextImageType,
@@ -39,4 +40,5 @@ export interface ProjectSavingTypes {
   imageTextSaving_11: ImageTextSaving;
   imageTextSaving_12: ImageTextSaving;
   imageTextSaving_13: TextSimpleBlock[];
+  footerProject: FooterProject;
 }

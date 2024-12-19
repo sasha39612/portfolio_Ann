@@ -239,6 +239,16 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin Grotesk_font24_weight400 {
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30.62px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Grotesk_font24_weight500 {
   font-family: Space Grotesk;
   font-size: 24px;

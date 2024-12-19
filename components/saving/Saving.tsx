@@ -17,6 +17,8 @@ import ImageTextSaving_10 from './imageTextSaving_10/ImageTextSaving_10';
 import ImageTextSaving_11 from './imageTextSaving_11/ImageTextSaving_11';
 import ImageTextSaving_12 from './imageTextSaving_12/ImageTextSaving_12';
 import TextBlock from './textBlock/TextBlock';
+import FooterProject from '../shared/footerProject/FooterProject';
+import styles from './saving.module.scss';
 
 const ProjectSaving = (props: ProjectSavingTypes) => {
   const {
@@ -37,6 +39,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
     imageTextSaving_11,
     imageTextSaving_12,
     imageTextSaving_13,
+    footerProject,
   } = props;
 
   return (
@@ -57,7 +60,13 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
       <ImageTextSaving_10 {...imageTextSaving_10} />
       <ImageTextSaving_11 {...imageTextSaving_11} />
       <ImageTextSaving_12 {...imageTextSaving_12} />
-      <TextBlock {...imageTextSaving_13} />
+      <TextBlock textPart={imageTextSaving_13} />
+      <FooterProject
+        {...footerProject}
+        className={styles[footerProject.className ?? ' ']}
+        classNameTitle={styles.classNameTitle}
+        classNameImage={''}
+      />
     </>
   );
 };

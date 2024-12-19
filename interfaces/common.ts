@@ -97,3 +97,15 @@ export interface ContactType {
   inputMessage: contactInputType;
   button: TextBlockElem;
 }
+
+export interface FooterProject {
+  title: string;
+  className: string;
+  classNameContainer: string;
+  imageArrowLeftName: string;
+  imageArrowRightName: string;
+  imageArrowLeftHref: string;
+  imageArrowRightHref: string;
+  imageArrowLeft: ImagePropsType;
+  imageArrowRight: ImagePropsType;
+}
