@@ -1,17 +1,17 @@
 'use client';
-import Text from '../../ui/text/Text';
+import Text from '../text/Text';
 import { TextSimpleBlock } from '../../../interfaces/common';
 import styles from './textBlockWithTitle.module.scss';
 
 const TextBlockWithTitle = ({
-  textWithTitleSaving,
+  textWithTitle,
 }: {
-  textWithTitleSaving: TextSimpleBlock[];
+  textWithTitle: TextSimpleBlock[];
 }) => {
   return (
-    <ul className={styles.wrapperWithTitle}>
-      {Array.isArray(textWithTitleSaving)
-        ? textWithTitleSaving.map((item) => (
+    <ul className={styles[textWithTitle[0]?.className ?? '']}>
+      {Array.isArray(textWithTitle)
+        ? textWithTitle.map((item) => (
             <li key={item.id} className={styles[item.classNameContainer ?? '']}>
               <Text
                 {...item}

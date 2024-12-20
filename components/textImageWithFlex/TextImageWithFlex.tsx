@@ -1,4 +1,5 @@
 import cn from 'classnames';
+import he from 'he';
 import {
   TextImageWithFlexType,
   TextSimpleBlock,
@@ -10,15 +11,32 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
   const { textPart, imagePart, className, classNameContainer } = props;
   const imageStyles = cn(styles.image, styles[imagePart?.className ?? '']);
 
+  const getDangerousHTML = (text: string) => {
+    return {
+      __html: he.decode(text),
+    };
+  };
+
   return (
     <article className={styles[className ?? '']}>
       <div className={styles[classNameContainer ?? '']}>
-        <div className={styles[textPart?.title?.className ?? '']}>
-          {textPart?.title?.text}
-        </div>
-        <div className={styles[textPart?.description?.className ?? '']}>
-          {textPart?.description?.text}
-        </div>
+        {textPart?.title?.text ? (
+          <div className={styles[textPart?.title?.className ?? '']}>
+            {textPart?.title?.text}
+          </div>
+        ) : null}
+        {textPart?.description?.isDangerousHTML ? (
+          <div
+            className={styles[textPart?.description?.className ?? '']}
+            dangerouslySetInnerHTML={getDangerousHTML(
+              textPart?.description?.text ?? '',
+            )}
+          />
+        ) : (
+          <div className={styles[textPart?.description?.className ?? '']}>
+            {textPart?.description?.text}
+          </div>
+        )}
         <ul className={styles[textPart?.classNameTextPartGridContainer ?? '']}>
           {Array.isArray(textPart?.textGrid)
             ? textPart.textGrid.map((textBlock: TextSimpleBlock) => (

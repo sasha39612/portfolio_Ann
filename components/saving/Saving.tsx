@@ -6,7 +6,7 @@ import ImageTextSaving_4 from './imageTextSaving_4/ImageTextSaving_4';
 import ImageTextSaving_3 from './imageTextSaving_3/ImageTextSaving_3';
 import ImageTextSaving_2 from './imageTextSaving_2/ImageTextSaving_2';
 import ImageTextSaving_1 from './imageTextSaving_1/ImageTextSaving_1';
-import TextBlockWithTitle from './textBlockWithTitle/TextBlockWithTitle';
+import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
 import TextBlockWithoutTitle from './textBlockWithoutTitle/TextBlockWithoutTitle';
 import ImageTextSaving_5 from './imageTextSaving_5/ImageTextSaving_5';
 import ImageTextSaving_6 from './imageTextSaving_6/ImageTextSaving_6';
@@ -46,7 +46,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
     <>
       <TextImage {...imageTextSaving} />
       <TextImageWithFlex {...imageTextWithFlexSaving} />
-      <TextBlockWithTitle textWithTitleSaving={textWithTitleSaving} />
+      <TextBlockWithTitle textWithTitle={textWithTitleSaving} />
       <TextBlockWithoutTitle textWithoutTitleSaving={textWithoutTitleSaving} />
       <ImageTextSaving_1 {...imageTextSaving_1} />
       <ImageTextSaving_2 {...imageTextSaving_2} />

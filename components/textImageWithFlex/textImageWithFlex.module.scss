@@ -18,11 +18,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
+  margin: 60px 0;
   gap: 65px;
+}
+
+.classNameWrapperVintage_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+  gap: 20px;
 
   @include tablet-up {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 65px;
   }
 }
 
@@ -56,9 +65,29 @@
   }
 }
 
+.classNameTitleVintage_1 {
+  @include Zabal_font36_weight_700;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
 .classNameDescriptionSaving {
   @include Grotesk_font16_weight400;
   text-align: center;
+
+  @include tablet-up {
+    text-align: start;
+  }
+}
+
+.classNameDescriptionVintage_1 {
+  @include Zabal_font16_weight_300;
+
+  span {
+    @include Zabal_font16_weight_600;
+  }
 
   @include tablet-up {
     text-align: start;
@@ -179,5 +208,16 @@
   @include tablet-up {
     // aspect-ratio: 375/233;
     max-width: 700px;
+  }
+}
+
+.mainImageProjectVintage_22 {
+  aspect-ratio: 335/262;
+  max-width: 335px;
+  border-radius: 32px;
+
+  @include tablet-up {
+    aspect-ratio: 489/301;
+    max-width: 614px;
   }
 }

@@ -17,6 +17,7 @@ export interface TextBlockElem {
   image?: ImagePropsType;
   className?: string;
   popupContent?: ImagePropsType[];
+  isDangerousHTML?: boolean;
 }
 
 export interface TextBlockElemArr {
@@ -45,6 +46,7 @@ export interface TextSimpleBlock {
   title?: string;
   subTitle?: string;
   description?: string;
+  className?: string;
   classNameContainer?: string;
   classNameTitle?: string;
   classNameSubTitle?: string;

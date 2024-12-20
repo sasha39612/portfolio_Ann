@@ -21,6 +21,8 @@ export interface ImageTextSaving {
 
 export interface ProjectVintageTypes {
   imageTextWithFlexVintage: TextImageWithFlexType;
+  imageTextWithFlexVintage_1: TextImageWithFlexType;
+  textWithTitleVintage:;
   imageTextVintage_13: TextSimpleBlock[];
   footerProject: FooterProject;
 }
