@@ -33,23 +33,51 @@
   imageTextWithFlexSaving:
     {
       id: 1,
+      className: classNameWrapperSaving,
+      classNameContainer: classNameContainerSaving,
       textPart:
         {
           id?: 1;,
-          title: 'Project overview',
-          description: 'The application helps people save money quickly for particular goals. In addition, users receive information about their spending, which helps them successfully plan new goals.',
+          title:
+            { text: 'Project overview', className: 'classNameTitleSaving' },
+          description:
+            {
+              text: 'The application helps people save money quickly for particular goals. In addition, users receive information about their spending, which helps them successfully plan new goals.',
+              className: 'classNameDescriptionSaving',
+            },
+          classNameTextPartGridContainer: classNameTextPartGridContainerSaving,
+          classNameGridContainer: classNameGridContainerSaving,
           textGrid:
             [
-              { id: 1, title: 'Role', description: 'UX/UI Designer' },
-              { id: 2, title: 'Duration', description: 'Feb 2024 (5 days)' },
-              { id: 3, title: 'Tools', description: 'Figma' },
+              {
+                id: 1,
+                title: 'Role',
+                description: 'UX/UI Designer',
+                classNameTitle: 'classNameTextGridTitleSaving',
+                classNameDescription: 'classNameTextGridDescriptionSaving',
+              },
+              {
+                id: 2,
+                title: 'Duration',
+                description: 'Feb 2024 (5 days)',
+                classNameTitle: 'classNameTextGridTitleSaving',
+                classNameDescription: 'classNameTextGridDescriptionSaving',
+              },
+              {
+                id: 3,
+                title: 'Tools',
+                description: 'Figma',
+                classNameTitle: 'classNameTextGridTitleSaving',
+                classNameDescription: 'classNameTextGridDescriptionSaving',
+              },
               {
                 id: 4,
                 title: 'Mentored',
                 description: 'Shahriyar Mohammadi (Senior PD at Bumble) ',
+                classNameTitle: 'classNameTextGridTitleSaving',
+                classNameDescription: 'classNameTextGridDescriptionSaving',
               },
             ],
-          className?: string,
         },
       imagePart:
         {

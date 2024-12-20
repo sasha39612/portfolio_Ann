@@ -1,6 +1,6 @@
 'use client';
 import TextImage from '../textImage/TextImage';
-import TextImageWithFlex from '../textImageWithGrid/TextImageWithFlex';
+import TextImageWithFlex from '../textImageWithFlex/TextImageWithFlex';
 import { ProjectSavingTypes } from './type';
 import ImageTextSaving_4 from './imageTextSaving_4/ImageTextSaving_4';
 import ImageTextSaving_3 from './imageTextSaving_3/ImageTextSaving_3';

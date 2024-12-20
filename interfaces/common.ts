@@ -13,9 +13,9 @@ export interface ImagePropsType extends NextImagePropsType {
 }
 
 export interface TextBlockElem {
-  className?: string;
   text?: string;
   image?: ImagePropsType;
+  className?: string;
   popupContent?: ImagePropsType[];
 }
 
@@ -53,10 +53,12 @@ export interface TextSimpleBlock {
 
 export interface TextBlockWithFlex {
   id?: string;
-  title?: string;
-  description?: string;
+  title?: TextBlockElem;
+  description?: TextBlockElem;
   textGrid: Array<TextSimpleBlock>;
   className?: string;
+  classNameTextPartGridContainer?: string;
+  classNameGridContainer?: string;
 }
 
 export interface TextImageType {
@@ -75,6 +77,7 @@ export interface TextImageWithFlexType {
   textPart?: TextBlockWithFlex;
   imagePart?: ImagePropsType;
   className?: string;
+  classNameContainer?: string;
 }
 
 export interface AboutType {

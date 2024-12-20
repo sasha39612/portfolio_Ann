@@ -1,0 +1,183 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.classNameWrapperSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  gap: 65px;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.classNameWrapperVintage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  gap: 65px;
+
+  @include tablet-up {
+    flex-direction: column;
+  }
+}
+
+.classNameContainerSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 14px;
+
+  @include tablet-up {
+    gap: 10px;
+    align-items: start;
+  }
+}
+.classNameContainerVintage {
+  display: flex;
+  flex-direction: column;
+}
+
+.classNameTitleSaving {
+  @include Grotesk_font30_weight_500;
+}
+
+.classNameTitleVintage {
+  @include Zabal_font42_weight_700;
+  color: #101110;
+
+  @include tablet-up {
+    @include Zabal_font60_weight_700;
+  }
+}
+
+.classNameDescriptionSaving {
+  @include Grotesk_font16_weight400;
+  text-align: center;
+
+  @include tablet-up {
+    text-align: start;
+  }
+}
+
+.classNameTextPartGridContainerSaving {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include tablet-up {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.classNameTextPartGridContainerVintage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  padding: 20px 0px;
+  gap: 15px;
+
+  li {
+    flex: 1 1 calc(50% - 15px);
+    list-style-type: disc;
+  }
+
+  @include tablet-up {
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
+.classNameGridContainerSaving {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+
+  &:nth-child(odd) {
+    width: 122px;
+
+    @include tablet-up {
+      width: 225px;
+    }
+  }
+
+  &:nth-child(even) {
+    width: 202px;
+
+    @include tablet-up {
+      width: 225px;
+    }
+  }
+}
+
+.classNameGridContainerVintage {
+  width: 100%;
+}
+
+.classNameTextGridTitleSaving {
+  @include Grotesk_font16_weight500;
+  width: 63px;
+
+  @include tablet-up {
+    width: 80px;
+  }
+}
+
+.classNameTextGridTitleVintage {
+  @include Zabal_font14_weight_500;
+  text-transform: uppercase;
+  color: #434343;
+
+  @include tablet-up {
+    @include Zabal_font12_weight_500;
+  }
+}
+
+.classNameTextGridDescriptionSaving {
+  @include Grotesk_font12_weight400;
+  width: 119px;
+
+  @include tablet-up {
+    width: 130px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  @include tablet-up {
+    margin: 0 40px;
+  }
+}
+
+.mainImageProjectSaving_2 {
+  aspect-ratio: 335/233;
+  max-width: 335px;
+
+  @include tablet-up {
+    aspect-ratio: 414/233;
+    max-width: 414px;
+  }
+}
+
+.mainImageProjectVintage_2 {
+  aspect-ratio: 355/205;
+  max-width: 375px;
+
+  @include tablet-up {
+    // aspect-ratio: 375/233;
+    max-width: 700px;
+  }
+}

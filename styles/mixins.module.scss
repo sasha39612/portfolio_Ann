@@ -272,6 +272,26 @@
 }
 
 //Zabal DEMO
+@mixin Zabal_font12_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.58px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font14_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.01px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Zabal_font16_weight_400 {
   font-family: Zabal DEMO;
   font-size: 16px;
@@ -282,11 +302,33 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin Zabal_font42_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51.03px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Zabal_font48_weight_700 {
   font-family: Zabal DEMO;
   font-size: 48px;
   font-weight: 700;
   line-height: 58.32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font60_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72.9px;
+  letter-spacing: 0.02em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
