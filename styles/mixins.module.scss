@@ -282,6 +282,16 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin Zabal_font14_weight_400 {
+  font-family: Zabal DEMO;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Zabal_font14_weight_500 {
   font-family: Zabal DEMO;
   font-size: 14px;

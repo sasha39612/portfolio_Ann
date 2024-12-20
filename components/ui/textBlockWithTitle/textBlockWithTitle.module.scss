@@ -5,11 +5,11 @@
 .wrapperTextWithTitle {
   display: flex;
   flex-direction: column;
-  margin: 60px 0px;
+  margin: 60px 0px 30px;
   gap: 36px;
 
   @include tablet-up {
-    margin: 78px 0px 40px;
+    margin: 78px 0px 20px;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -30,6 +30,63 @@
     flex-wrap: nowrap;
     li {
       flex: 1 1 50%;
+    }
+  }
+}
+
+.wrapperTextWithTitleVintage_1 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 0px 20px 0px;
+  margin: 0px -20px 0px;
+  justify-content: flex-start;
+
+  @include tablet {
+    padding: 0px 48px 0px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 0px 80px 0px;
+    margin: 0px -80px 0px;
+  }
+}
+
+.wrapperTextWithTitleVintage_2 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 30px 20px 60px;
+  margin: 0px -20px 0px;
+  align-items: center;
+
+  @include tablet {
+    padding: 30px 48px 60px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 34px 80px 80px;
+    margin: 0px -80px 0px;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+
+    li {
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      flex: 1 1 50%;
+
+      &:first-child {
+        div:first-child {
+          @include Zabal_font60_weight_700;
+          line-height: 1;
+        }
+        div:nth-child(2) {
+          margin-top: -30px;
+        }
+      }
     }
   }
 }
@@ -55,6 +112,16 @@
   gap: 8px;
 }
 
+.containerTextWithTitleVintage_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 220px;
+  width: 280px;
+  padding: 20px;
+  background: $white;
+}
+
 .titleTextWithTitleSaving {
   @include Grotesk_font24_weight500;
 }
@@ -67,6 +134,16 @@
   }
 }
 
+.titleTextWithTitleVintage_1 {
+  @include Zabal_font24_weight_600;
+  margin-left: 30px;
+}
+
+.titleTextWithTitleVintage_2 {
+  @include Zabal_font24_weight_600;
+  text-align: center;
+}
+
 .descriptionTextWithTitleSaving {
   @include Grotesk_font14_weight400;
   color: #545454;
@@ -74,4 +151,8 @@
 
 .descriptionTextWithTitleVintage {
   @include Zabal_font16_weight_300;
+}
+
+.descriptionTextWithTitleVintage_2 {
+  @include Zabal_font14_weight_400;
 }

@@ -20,11 +20,19 @@ export interface ImageTextSaving {
   imagePartMobileSlider?: ImagePropsType[];
 }
 
+export interface ImageBackground {
+  imagePartDesktop: ImagePropsType;
+  imagePartMobile: ImagePropsType;
+}
+
 export interface ProjectVintageTypes {
   imageTextWithFlexVintage: TextImageWithFlexType;
   imageTextWithFlexVintage_1: TextImageWithFlexType;
   textWithTitleVintage: TextSimpleBlock[];
   imageTextVintageDesMob: ImageTextDesMobType;
+  textWithTitleVintage_1: TextSimpleBlock[];
+  textWithTitleVintage_2: TextSimpleBlock[];
+  imageBackground: ImageBackground;
   imageTextVintage_13: TextSimpleBlock[];
   footerProject: FooterProject;
 }

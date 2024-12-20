@@ -26,3 +26,24 @@
   text-align: center;
   color: #ffffff;
 }
+
+.imageBackgroundVintageDesktop {
+  aspect-ratio: 1001/316;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+
+  @include desktop {
+    margin: 0px -80px 60px;
+  }
+}
+
+.imageBackgroundVintageMobile {
+  aspect-ratio: 375/269;
+  margin: 0px -20px 40px;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+}
