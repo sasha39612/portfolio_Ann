@@ -5,12 +5,14 @@ import FooterProject from '../shared/footerProject/FooterProject';
 import TextBlock from './textBlock/TextBlock';
 import TextImageWithFlex from '../textImageWithFlex/TextImageWithFlex';
 import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
+import ImageTextDesMob from './imageTextDesMob/ImageTextDesMob';
 
 const ProjectVintage = (props: ProjectVintageTypes) => {
   const {
     imageTextWithFlexVintage,
     imageTextWithFlexVintage_1,
     textWithTitleVintage,
+    imageTextVintageDesMob,
     imageTextVintage_13,
     footerProject,
   } = props;
@@ -20,6 +22,7 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
       <TextImageWithFlex {...imageTextWithFlexVintage} />
       <TextImageWithFlex {...imageTextWithFlexVintage_1} />
       <TextBlockWithTitle textWithTitle={textWithTitleVintage} />
+      <ImageTextDesMob {...imageTextVintageDesMob} />
       <TextBlock textPart={imageTextVintage_13} />
       <FooterProject
         {...footerProject}

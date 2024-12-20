@@ -1,6 +1,7 @@
 import {
   FooterProject,
   ImagePropsType,
+  ImageTextDesMobType,
   TextImageWithFlexType,
   TextSimpleBlock,
 } from '../../interfaces/common';
@@ -22,7 +23,8 @@ export interface ImageTextSaving {
 export interface ProjectVintageTypes {
   imageTextWithFlexVintage: TextImageWithFlexType;
   imageTextWithFlexVintage_1: TextImageWithFlexType;
-  textWithTitleVintage:;
+  textWithTitleVintage: TextSimpleBlock[];
+  imageTextVintageDesMob: ImageTextDesMobType;
   imageTextVintage_13: TextSimpleBlock[];
   footerProject: FooterProject;
 }

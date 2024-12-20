@@ -114,3 +114,21 @@ export interface FooterProject {
   imageArrowLeft: ImagePropsType;
   imageArrowRight: ImagePropsType;
 }
+
+export interface ImageTextDesMobType {
+  textPart: {
+    id: string;
+    title: string;
+    subTitle: string;
+    description: string;
+    classNameSubTitle: string;
+    classNameTitle: string;
+    classNameDescription: string;
+  };
+  className?: string;
+  classNameTextContainer: string;
+  imagePartDesktop?: ImagePropsType;
+  imagePartMobile?: ImagePropsType;
+  imagePartDesktopSlider?: ImagePropsType[];
+  imagePartMobileSlider?: ImagePropsType[];
+}
