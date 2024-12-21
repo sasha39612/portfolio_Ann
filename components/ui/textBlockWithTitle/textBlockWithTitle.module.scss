@@ -55,7 +55,7 @@
 .wrapperTextWithTitleVintage_2 {
   @extend .wrapperTextWithTitle;
   background: #f2f2f2;
-  padding: 30px 20px 60px;
+  padding: 30px 47px 60px;
   margin: 0px -20px 0px;
   align-items: center;
 
@@ -75,6 +75,7 @@
     li {
       justify-content: flex-start;
       align-items: center;
+      min-height: 250px;
       gap: 20px;
       flex: 1 1 50%;
 
@@ -120,6 +121,8 @@
   width: 280px;
   padding: 20px;
   background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .titleTextWithTitleSaving {
@@ -134,9 +137,14 @@
   }
 }
 
-.titleTextWithTitleVintage_1 {
+.titleTextWithTitleVintage_01 {
   @include Zabal_font24_weight_600;
   margin-left: 30px;
+}
+
+.titleTextWithTitleVintage_1 {
+  @include Zabal_font24_weight_600;
+  text-align: center;
 }
 
 .titleTextWithTitleVintage_2 {
@@ -155,4 +163,5 @@
 
 .descriptionTextWithTitleVintage_2 {
   @include Zabal_font14_weight_400;
+  line-height: 30px;
 }

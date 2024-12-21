@@ -8,6 +8,7 @@ import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
 import ImageTextDesMob from './imageTextDesMob/ImageTextDesMob';
 import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
 import ImageComponent from '../ui/image/Image';
+import PersonData from '../ui/personData/PersonData';
 
 const ProjectVintage = (props: ProjectVintageTypes) => {
   const {
@@ -18,6 +19,7 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
     textWithTitleVintage_1,
     textWithTitleVintage_2,
     imageBackground,
+    personDataVintage,
     imageTextVintage_13,
     footerProject,
   } = props;
@@ -43,6 +45,7 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
           className={styles[imagePartDesktop?.className ?? '']}
         />
       )}
+      <PersonData {...personDataVintage} />
       <TextBlock textPart={imageTextVintage_13} />
       <FooterProject
         {...footerProject}

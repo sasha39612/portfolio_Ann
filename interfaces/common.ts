@@ -132,3 +132,18 @@ export interface ImageTextDesMobType {
   imagePartDesktopSlider?: ImagePropsType[];
   imagePartMobileSlider?: ImagePropsType[];
 }
+
+export interface PersonDataType {
+  textPart: {
+    title: { text: string; className: string };
+    mainInfo: TextBlock[];
+    additionalInfo: TextBlock;
+    attachment: TextBlock[];
+    classNameContainer: string;
+    classNameAttachmentsContainer: string;
+    classNameAttachmentContainer: string;
+  };
+  imagePart: ImagePropsType;
+  className?: string;
+  classNameContainer: string;
+}

@@ -2,6 +2,7 @@ import {
   FooterProject,
   ImagePropsType,
   ImageTextDesMobType,
+  PersonDataType,
   TextImageWithFlexType,
   TextSimpleBlock,
 } from '../../interfaces/common';
@@ -33,6 +34,7 @@ export interface ProjectVintageTypes {
   textWithTitleVintage_1: TextSimpleBlock[];
   textWithTitleVintage_2: TextSimpleBlock[];
   imageBackground: ImageBackground;
+  personDataVintage: PersonDataType;
   imageTextVintage_13: TextSimpleBlock[];
   footerProject: FooterProject;
 }
