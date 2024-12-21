@@ -1,15 +1,15 @@
 'use client';
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
-import Text from '../../ui/text/Text';
-import { ImageTextSaving } from '../type';
-import styles from './imageTextSaving_1.module.scss';
-import ImageComponent from '../../ui/image/Image';
+import Text from '../text/Text';
+import ImageComponent from '../image/Image';
+import { ImageText } from '../../../interfaces/common';
+import styles from './imageTextSimple.module.scss';
 
-const ImageTextSaving_1 = ({
+const ImageTextSimple = ({
   textPart,
   imagePartDesktop,
   imagePartMobile,
-}: ImageTextSaving) => {
+}: ImageText) => {
   const isMobileView = useCheckMobileScreen();
 
   return (
@@ -42,4 +42,4 @@ const ImageTextSaving_1 = ({
   );
 };
 
-export default ImageTextSaving_1;
+export default ImageTextSimple;

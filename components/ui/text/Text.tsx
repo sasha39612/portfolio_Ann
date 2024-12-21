@@ -13,7 +13,9 @@ const Text = ({
     <>
       {title ? <div className={classNameTitle}>{title}</div> : null}
       {subTitle ? <div className={classNameSubTitle}>{subTitle}</div> : null}
-      <div className={classNameDescription}>{description}</div>
+      {description ? (
+        <div className={classNameDescription}>{description}</div>
+      ) : null}
     </>
   );
 };

@@ -147,3 +147,25 @@ export interface PersonDataType {
   className?: string;
   classNameContainer: string;
 }
+
+export interface ImageText {
+  textPart: {
+    id: string;
+    title: string;
+    description: string;
+    classNameTitle: string;
+    classNameDescription: string;
+  };
+  imagePartDesktop?: ImagePropsType;
+  imagePartMobile?: ImagePropsType;
+  imagePartMobileSliders?: {
+    imagePartMobileSlider: ImagePropsType[];
+    id: string;
+    imagePartDesktopSlider?: ImagePropsType[];
+  }[];
+  imagePartMobileSlider?: ImagePropsType[];
+  className?: string;
+  classNameContainer?: string;
+  classNameImageContainer?: string;
+  classNameSwiperWrapper?: string;
+}

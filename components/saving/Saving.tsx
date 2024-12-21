@@ -5,7 +5,6 @@ import { ProjectSavingTypes } from './type';
 import ImageTextSaving_4 from './imageTextSaving_4/ImageTextSaving_4';
 import ImageTextSaving_3 from './imageTextSaving_3/ImageTextSaving_3';
 import ImageTextSaving_2 from './imageTextSaving_2/ImageTextSaving_2';
-import ImageTextSaving_1 from './imageTextSaving_1/ImageTextSaving_1';
 import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
 import ImageTextSaving_5 from './imageTextSaving_5/ImageTextSaving_5';
 import ImageTextSaving_6 from './imageTextSaving_6/ImageTextSaving_6';
@@ -18,6 +17,7 @@ import ImageTextSaving_12 from './imageTextSaving_12/ImageTextSaving_12';
 import TextBlock from './textBlock/TextBlock';
 import FooterProject from '../shared/footerProject/FooterProject';
 import TextBlockWithoutTitle from '../ui/textBlockWithoutTitle/TextBlockWithoutTitle';
+import ImageTextSimple from '../ui/imageTextSimple/ImageTextSimple';
 import styles from './saving.module.scss';
 
 const ProjectSaving = (props: ProjectSavingTypes) => {
@@ -48,7 +48,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
       <TextImageWithFlex {...imageTextWithFlexSaving} />
       <TextBlockWithTitle textWithTitle={textWithTitleSaving} />
       <TextBlockWithoutTitle textWithoutTitle={textWithoutTitleSaving} />
-      <ImageTextSaving_1 {...imageTextSaving_1} />
+      <ImageTextSimple {...imageTextSaving_1} />
       <ImageTextSaving_2 {...imageTextSaving_2} />
       <ImageTextSaving_3 {...imageTextSaving_3} />
       <ImageTextSaving_4 {...imageTextSaving_4} />

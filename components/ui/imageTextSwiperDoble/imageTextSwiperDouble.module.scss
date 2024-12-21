@@ -1,0 +1,99 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.titleImageTextSaving_1 {
+  @include Grotesk_font30_weight_500;
+  height: 38px;
+}
+
+.titleImageTextVintage_2 {
+  @include Zabal_font36_weight_700;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
+.descriptionImageTextSaving_1 {
+  @include Grotesk_font16_weight400;
+  text-align: center;
+  color: #545454;
+}
+
+.containerImageTextSaving_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 8px;
+
+  @include tablet-up {
+    gap: 24px;
+    align-items: flex-start;
+  }
+}
+
+.containerImageTextVintage_2 {
+  @include desktop {
+    margin: 0px -80px 60px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin: 30px 0px 60px;
+}
+
+.imageTextSavingMobile_9 {
+  @extend .image;
+  aspect-ratio: 0.46;
+}
+
+.imageTextVintageMobile_2 {
+  @extend .image;
+  aspect-ratio: 0.46;
+}
+
+.imageTextSavingDesktop_9 {
+  @extend .image;
+  aspect-ratio: 1.28;
+}
+
+.imageTextVintageDesktop_2 {
+  @extend .image;
+  aspect-ratio: 1.47;
+}
+
+.swiperWrapper {
+  margin: 0px -20px;
+  padding-left: 20px;
+  background: linear-gradient(
+    180deg,
+    #eae9f8 0%,
+    rgba(248, 248, 248, 0.2) 100%
+  );
+
+  @include tablet {
+    margin: 0px -48px;
+    padding-left: 48px;
+  }
+}
+
+.wrapperSwiperImageTextVintage_2 {
+  @extend .swiperWrapper;
+  background: #262c29;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+.swiper {
+  background: inherit;
+}

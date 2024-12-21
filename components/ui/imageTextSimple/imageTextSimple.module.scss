@@ -8,20 +8,28 @@
   height: 38px;
 }
 
+.titleImageTextVintage_1 {
+  @include Zabal_font36_weight_700;
+  height: 38px;
+  margin-bottom: 20px;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
 .descriptionImageTextSaving_1 {
   @include Grotesk_font16_weight400;
   text-align: center;
   color: #545454;
 }
 
-.containerImageTextSaving_1 {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 8px;
+.descriptionImageTextVintage_1 {
+  @include Grotesk_font16_weight400;
+  color: #545454;
 
   @include tablet-up {
-    gap: 24px;
+    text-align: left;
   }
 }
 
@@ -36,11 +44,17 @@
   aspect-ratio: 0.52;
 }
 
+.imageTextVintageMobile_1 {
+  @extend .image;
+  aspect-ratio: 0.5;
+}
+
 .imageTextSavingDesktop_1 {
   @extend .image;
   aspect-ratio: 3.74;
 }
 
-.swiper {
-  margin: 30px 0px 60px;
+.imageTextVintageDesktop_1 {
+  @extend .image;
+  aspect-ratio: 925/538;
 }
