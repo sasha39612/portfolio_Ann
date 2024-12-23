@@ -3,6 +3,7 @@ import {
   ImagePropsType,
   ImageText,
   ImageTextDesMobType,
+  ImageTextDesMobTypeWrapper,
   PersonDataType,
   TextImageWithFlexType,
   TextSimpleBlock,
@@ -38,6 +39,7 @@ export interface ProjectVintageTypes {
   personDataVintage: PersonDataType;
   imageTextVintage_1: ImageText;
   imageTextVintage_2: ImageText;
+  imageTextVintageDesMobWrapper_1: ImageTextDesMobTypeWrapper;
   imageTextVintage_13: TextSimpleBlock[];
   footerProject: FooterProject;
 }

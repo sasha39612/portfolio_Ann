@@ -19,8 +19,15 @@
     flex-direction: row;
     justify-content: left;
     gap: 70px;
-    padding: 0px 0px 60px 40px;
+    padding: 0px 0px 60px 80px;
     margin: 68px -80px 0px;
+  }
+
+  @include desktop-large {
+    flex-direction: row;
+    justify-content: left;
+    gap: 70px;
+    padding: 0px 0px 60px 40px;
   }
 }
 
@@ -44,10 +51,10 @@
   }
 }
 
-.titleImageTextVintage {
+.titleImageTextVintage_1 {
   @include Zabal_font36_weight_700;
   text-align: center;
-  margin-bottom: 1cqb;
+  margin-bottom: 30px;
 
   @include tablet-up {
     @include Zabal_font50_weight_700;
@@ -55,17 +62,16 @@
   }
 }
 
-.subTitleImageTextVintage {
+.subTitleImageTextVintage_1 {
   @include Zabal_font20_weight_600;
-  text-align: center;
+  margin: 30px 0px;
 
   @include tablet-up {
     @include Zabal_font24_weight_600;
-    text-align: left;
   }
 }
 
-.descriptionImageTextVintage {
+.descriptionImageTextVintage_1 {
   @include Zabal_font16_weight_300;
 
   @include tablet-up {
@@ -82,6 +88,26 @@
 .imageTextVintageMobile {
   @extend .image;
   aspect-ratio: 375/319;
+  margin: 0;
+}
+
+.imageTextVintageMobWrapper_1 {
+  @extend .image;
+  aspect-ratio: 335/190;
+  margin: 0px 0px 30px;
+}
+
+.imageTextVintageMobWrapper_2 {
+  @extend .image;
+  aspect-ratio: 335/71;
+  margin: 0px 0px 30px;
+}
+
+.imageTextVintageMobWrapper_3 {
+  @extend .image;
+  aspect-ratio: 240/120;
+  max-width: 240px;
+  margin: 0px 0px 30px;
 }
 
 .imageTextVintageDesktop {
@@ -91,5 +117,35 @@
     margin: 0px 0px 36px;
     aspect-ratio: 385/329;
     max-width: 487px;
+  }
+}
+
+.imageTextVintageDesWrapper_1 {
+  @extend .imageTextVintageMobile;
+  max-width: 345px;
+
+  @include tablet-up {
+    margin: 0px 0px 36px;
+    aspect-ratio: 345/219;
+    max-width: 678px;
+  }
+}
+.imageTextVintageDesWrapper_2 {
+  @extend .imageTextVintageMobile;
+  max-width: 345px;
+  aspect-ratio: 335/71;
+
+  @include tablet-up {
+    margin: 0px 0px 36px;
+    aspect-ratio: 268/78;
+  }
+}
+.imageTextVintageDesWrapper_3 {
+  @extend .imageTextVintageMobile;
+
+  @include tablet-up {
+    margin: 0px 0px 36px;
+    aspect-ratio: 621/150;
+    max-width: 800px;
   }
 }

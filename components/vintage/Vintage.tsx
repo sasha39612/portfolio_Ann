@@ -1,16 +1,17 @@
 'use client';
-import styles from './vintage.module.scss';
-import { ProjectVintageTypes } from './type';
 import FooterProject from '../shared/footerProject/FooterProject';
 import TextBlock from './textBlock/TextBlock';
 import TextImageWithFlex from '../textImageWithFlex/TextImageWithFlex';
 import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
-import ImageTextDesMob from './imageTextDesMob/ImageTextDesMob';
-import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
+import ImageTextDesMob from '../ui/imageTextDesMob/ImageTextDesMob';
 import ImageComponent from '../ui/image/Image';
-import PersonData from '../ui/personData/PersonData';
 import ImageTextSimple from '../ui/imageTextSimple/ImageTextSimple';
 import ImageTextSwiperDouble from '../ui/imageTextSwiperDoble/ImageTextSwiperDouble';
+import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
+import PersonData from '../ui/personData/PersonData';
+import { ProjectVintageTypes } from './type';
+import ImageTextDesMobWrapper from './imageTextDesMobWrapper/ImageTextDesMobWrapper';
+import styles from './vintage.module.scss';
 
 const ProjectVintage = (props: ProjectVintageTypes) => {
   const {
@@ -24,6 +25,7 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
     personDataVintage,
     imageTextVintage_1,
     imageTextVintage_2,
+    imageTextVintageDesMobWrapper_1,
     imageTextVintage_13,
     footerProject,
   } = props;
@@ -52,6 +54,7 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
       <PersonData {...personDataVintage} />
       <ImageTextSimple {...imageTextVintage_1} />
       <ImageTextSwiperDouble {...imageTextVintage_2} />
+      <ImageTextDesMobWrapper {...imageTextVintageDesMobWrapper_1} />
       <TextBlock textPart={imageTextVintage_13} />
       <FooterProject
         {...footerProject}

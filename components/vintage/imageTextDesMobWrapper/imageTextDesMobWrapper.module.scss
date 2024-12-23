@@ -1,0 +1,58 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.classNameWrapperVintageDesMob_1 {
+  margin-bottom: 60px;
+}
+
+.titleImageTextVintage_1 {
+  @include Zabal_font36_weight_700;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+    margin-bottom: 30px;
+  }
+}
+
+.classNameWrapperVintageDesMob_1 {
+  display: grid;
+  grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd';
+  grid-template-columns: 1fr;
+
+  @include tablet-up {
+    grid-template-areas:
+      'a b'
+      'c c'
+      'd e';
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.classNameTextContainerVintageDesMob_1 {
+  // border-bottom: 1.5px solid #f4f7f6;
+  border-top: 1.5px solid $black;
+  margin: 0px -20px;
+  padding: 0px 20px;
+
+  &:nth-child(1) {
+    grid-area: a;
+  }
+  &:nth-child(2) {
+    grid-area: b;
+  }
+
+  &:nth-child(3) {
+    grid-area: c;
+  }
+
+  &:last-child {
+    grid-area: d;
+    border-top: 1.5px solid $white;
+  }
+}

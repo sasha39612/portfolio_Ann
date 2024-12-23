@@ -133,6 +133,14 @@ export interface ImageTextDesMobType {
   imagePartMobileSlider?: ImagePropsType[];
 }
 
+export interface ImageTextDesMobTypeWrapper {
+  title: string;
+  classNameTitle: string;
+  classNameWrapper: string;
+  classNameContainer: string;
+  imageTextVintageDesMob: ImageTextDesMobType & { id: string };
+}
+
 export interface PersonDataType {
   textPart: {
     title: { text: string; className: string };

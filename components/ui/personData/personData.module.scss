@@ -74,6 +74,11 @@
   display: flex;
   gap: 16px;
   justify-content: space-between;
+
+  @include tablet-up {
+    justify-content: flex-start;
+    gap: 70px;
+  }
 }
 
 .attachmentTitlePersonDataVintage {

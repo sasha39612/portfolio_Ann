@@ -1,7 +1,7 @@
 'use client';
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
-import Text from '../../ui/text/Text';
-import ImageComponent from '../../ui/image/Image';
+import Text from '../text/Text';
+import ImageComponent from '../image/Image';
 import { ImageTextDesMobType } from '../../../interfaces/common';
 import styles from './imageTextDesMob.module.scss';
 
