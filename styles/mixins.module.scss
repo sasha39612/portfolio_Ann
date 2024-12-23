@@ -445,3 +445,104 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+//Avenir
+@mixin Avenir_font13_weight_400 {
+  font-family: Avenir;
+  font-size: 13.32px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_400 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_400 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.86px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_500 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font24_weight_400 {
+  font-family: Avenir;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.78px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font40_weight_800 {
+  font-family: Avenir;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font44_weight_300 {
+  font-family: Avenir;
+  font-size: 44.41px;
+  font-weight: 300;
+  line-height: 60.66px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font44_weight_500 {
+  font-family: Avenir;
+  font-size: 44.41px;
+  font-weight: 500;
+  line-height: 60.66px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font80_weight_300 {
+  font-family: Avenir;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 109.28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font80_weight_500 {
+  font-family: Avenir;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 109.28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

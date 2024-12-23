@@ -1,10 +1,8 @@
 import cn from 'classnames';
 import he from 'he';
-import {
-  TextImageWithFlexType,
-  TextSimpleBlock,
-} from '../../interfaces/common';
+import { TextImageWithFlexType } from '../../interfaces/common';
 import ImageComponent from '../ui/image/Image';
+import TextBlockListFlex from '../ui/textBlockListFlex/TextBlockListFlex';
 import styles from './textImageWithFlex.module.scss';
 
 const TextImageWithFlex = (props: TextImageWithFlexType) => {
@@ -20,7 +18,14 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
   return (
     <article className={styles[className ?? '']}>
       <div className={styles[classNameContainer ?? '']}>
-        {textPart?.title?.text ? (
+        {textPart?.title?.isDangerousHTML ? (
+          <div
+            className={styles[textPart?.title?.className ?? '']}
+            dangerouslySetInnerHTML={getDangerousHTML(
+              textPart?.title?.text ?? '',
+            )}
+          />
+        ) : textPart?.title?.text ? (
           <div className={styles[textPart?.title?.className ?? '']}>
             {textPart?.title?.text}
           </div>
@@ -37,7 +42,12 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             {textPart?.description?.text}
           </div>
         )}
-        <ul className={styles[textPart?.classNameTextPartGridContainer ?? '']}>
+        <TextBlockListFlex
+          textGrid={textPart?.textGrid ?? []}
+          className={textPart?.classNameGridContainer}
+          classNameContainer={textPart?.classNameTextPartGridContainer}
+        />
+        {/* <ul className={styles[textPart?.classNameTextPartGridContainer ?? '']}>
           {Array.isArray(textPart?.textGrid)
             ? textPart.textGrid.map((textBlock: TextSimpleBlock) => (
                 <li
@@ -55,7 +65,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
                 </li>
               ))
             : null}
-        </ul>
+        </ul> */}
       </div>
       <ImageComponent
         src={imagePart?.src ?? ''}

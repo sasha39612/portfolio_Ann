@@ -1,58 +1,63 @@
 ---
 {
-  imageTextWithFlexVintage:
+  imageTextWithFlexRecipe:
     {
       id: 1,
-      className: classNameContainerSaving,
+      className: classNameWrapperRecipe,
+      classNameContainer: classNameContainerRecipe,
       textPart:
         {
           id?: 1;,
           title:
-            { text: 'Project overview', className: 'classNameTitleSaving' },
+            {
+              text: '<span>Easy</span>Kitchen.',
+              className: 'classNameTitleRecipe',
+              isDangerousHTML: true,
+            },
           description:
             {
-              text: 'The application helps people save money quickly for particular goals. In addition, users receive information about their spending, which helps them successfully plan new goals.',
-              className: 'classNameDescriptionSaving',
+              text: 'your simple cooking solution',
+              className: 'classNameDescriptionRecipe',
             },
-          classNameTextPartGridContainer: classNameTextPartGridContainerSaving,
-          classNameGridContainer: classNameGridContainerSaving,
+          classNameTextPartGridContainer: classNameTextPartGridContainerRecipe,
+          classNameGridContainer: classNameGridContainerRecipe,
           textGrid:
             [
               {
                 id: 1,
-                title: 'Role',
-                description: 'UX/UI Designer',
-                classNameTitle: 'classNameTextGridTitleSaving',
-                classNameDescription: 'classNameTextGridDescriptionSaving',
+                title: 'Duration',
+                description: 'Nov - Dec 2023',
+                classNameTitle: 'classNameTextGridTitleRecipe',
+                classNameDescription: 'classNameTextGridDescriptionRecipe',
               },
               {
                 id: 2,
-                title: 'Duration',
-                description: 'Feb 2024 (5 days)',
-                classNameTitle: 'classNameTextGridTitleSaving',
-                classNameDescription: 'classNameTextGridDescriptionSaving',
+                title: 'Role',
+                description: 'UX/UI Designer',
+                classNameTitle: 'classNameTextGridTitleRecipe',
+                classNameDescription: 'classNameTextGridDescriptionRecipe',
               },
               {
                 id: 3,
-                title: 'Tools',
-                description: 'Figma',
-                classNameTitle: 'classNameTextGridTitleSaving',
-                classNameDescription: 'classNameTextGridDescriptionSaving',
+                title: 'Mentored',
+                description: 'S. Mohammadi (Senior PD at Bumble)',
+                classNameTitle: 'classNameTextGridTitleRecipe',
+                classNameDescription: 'classNameTextGridDescriptionRecipe',
               },
               {
                 id: 4,
-                title: 'Mentored',
-                description: 'Shahriyar Mohammadi (Senior PD at Bumble) ',
-                classNameTitle: 'classNameTextGridTitleSaving',
-                classNameDescription: 'classNameTextGridDescriptionSaving',
+                title: 'Tools',
+                description: 'Figma, FigJam, Lyssna',
+                classNameTitle: 'classNameTextGridTitleRecipe',
+                classNameDescription: 'classNameTextGridDescriptionRecipe',
               },
             ],
         },
       imagePart:
         {
-          src: /images/projects/vintage/Frame_291.png,
-          alt: 'Donut chart',
-          className: mainImageProjectSaving_2,
+          src: /images/projects/recipe/Group_22_Des_Mob.png,
+          alt: 'The desktop, the mobile, the sell phone',
+          className: mainImageProjectRecipe_2,
           priority: true,
           loading: 'eager',
         },
@@ -60,7 +65,7 @@
   footerProject:
     {
       title: 'Thank you for you attention!',
-      className: footerProjectSaving,
+      className: footerProjectRecipe,
       imageArrowLeftName: 'previous project',
       imageArrowRightName: 'next project',
       imageArrowLeftHref: '',

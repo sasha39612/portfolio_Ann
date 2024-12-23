@@ -190,3 +190,9 @@ export interface DesktopMultiType {
   imagePartDesktopSliders: ImagePartDesktopSliders[];
   className: string;
 }
+
+export interface TextBlockListFlexType {
+  textGrid: TextSimpleBlock[];
+  className?: string;
+  classNameContainer?: string;
+}

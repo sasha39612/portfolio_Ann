@@ -1,0 +1,125 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.classNameTextPartGridContainerSaving {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include tablet-up {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.classNameTextPartGridContainerVintage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  padding: 20px 0px;
+  gap: 15px;
+
+  li {
+    flex: 1 1 calc(50% - 15px);
+    list-style-type: disc;
+  }
+
+  @include tablet-up {
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
+.classNameTextPartGridContainerRecipe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+
+  li {
+    flex: 1 1 calc(50% - 7px);
+    text-align: center;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.classNameGridContainerSaving {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+
+  &:nth-child(odd) {
+    width: 122px;
+
+    @include tablet-up {
+      width: 225px;
+    }
+  }
+
+  &:nth-child(even) {
+    width: 202px;
+
+    @include tablet-up {
+      width: 225px;
+    }
+  }
+}
+
+.classNameGridContainerVintage {
+  width: 100%;
+}
+
+.classNameGridContainerRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.classNameTextGridTitleSaving {
+  @include Grotesk_font16_weight500;
+  width: 63px;
+
+  @include tablet-up {
+    width: 80px;
+  }
+}
+
+.classNameTextGridTitleVintage {
+  @include Zabal_font14_weight_500;
+  text-transform: uppercase;
+  color: #434343;
+
+  @include tablet-up {
+    @include Zabal_font12_weight_500;
+  }
+}
+
+.classNameTextGridTitleRecipe {
+  @include Avenir_font14_weight_400;
+  color: #4a4a49;
+}
+
+.classNameTextGridDescriptionSaving {
+  @include Grotesk_font12_weight400;
+  width: 119px;
+
+  @include tablet-up {
+    width: 130px;
+  }
+}
+
+.classNameTextGridDescriptionRecipe {
+  @include Avenir_font16_weight_500;
+  color: #4a4a49;
+}

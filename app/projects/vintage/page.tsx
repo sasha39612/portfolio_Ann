@@ -1,13 +1,13 @@
 import { notFound } from 'next/navigation';
 import getPropsData from '../../../lib/getPropsData';
-import { ProjectSavingTypes } from '../../../components/saving/type';
 import ProjectVintage from '../../../components/vintage/Vintage';
+import { ProjectVintageTypes } from '../../../components/vintage/type';
 
 const Vintage = () => {
   const projectProps = getPropsData(
     'projects/project',
     'vintage.mdx',
-  ) as ProjectSavingTypes;
+  ) as ProjectVintageTypes;
   if (!projectProps) {
     notFound();
   }

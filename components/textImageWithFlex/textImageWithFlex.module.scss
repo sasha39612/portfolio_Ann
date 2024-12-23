@@ -35,6 +35,22 @@
   }
 }
 
+.classNameWrapperRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px -20px 40px;
+  gap: 20px;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+
+  @include desktop {
+    margin: 0px -80px 60px;
+  }
+}
+
 .classNameContainerSaving {
   display: flex;
   flex-direction: column;
@@ -47,9 +63,30 @@
     align-items: start;
   }
 }
+
 .classNameContainerVintage {
   display: flex;
   flex-direction: column;
+}
+
+.classNameContainerRecipe {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+
+  @include tablet-up {
+    width: 100%;
+
+    ul {
+      order: 1;
+      align-items: baseline;
+      margin-top: 40px;
+    }
+
+    div {
+      order: 2;
+    }
+  }
 }
 
 .classNameTitleSaving {
@@ -70,6 +107,24 @@
 
   @include tablet-up {
     @include Zabal_font50_weight_700;
+  }
+}
+
+.classNameTitleRecipe {
+  @include Avenir_font44_weight_300;
+  color: #f0923f;
+
+  span {
+    @include Avenir_font44_weight_500;
+  }
+
+  @include tablet-up {
+    @include Avenir_font80_weight_300;
+    margin-top: 70px;
+
+    span {
+      @include Avenir_font80_weight_500;
+    }
   }
 }
 
@@ -94,90 +149,12 @@
   }
 }
 
-.classNameTextPartGridContainerSaving {
-  padding: 20px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.classNameDescriptionRecipe {
+  @include Avenir_font13_weight_400;
+  color: #4a4a49;
 
   @include tablet-up {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-
-.classNameTextPartGridContainerVintage {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 30px;
-  padding: 20px 0px;
-  gap: 15px;
-
-  li {
-    flex: 1 1 calc(50% - 15px);
-    list-style-type: disc;
-  }
-
-  @include tablet-up {
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 20px;
-  }
-}
-
-.classNameGridContainerSaving {
-  display: flex;
-  height: 30px;
-  align-items: center;
-  justify-content: space-between;
-
-  &:nth-child(odd) {
-    width: 122px;
-
-    @include tablet-up {
-      width: 225px;
-    }
-  }
-
-  &:nth-child(even) {
-    width: 202px;
-
-    @include tablet-up {
-      width: 225px;
-    }
-  }
-}
-
-.classNameGridContainerVintage {
-  width: 100%;
-}
-
-.classNameTextGridTitleSaving {
-  @include Grotesk_font16_weight500;
-  width: 63px;
-
-  @include tablet-up {
-    width: 80px;
-  }
-}
-
-.classNameTextGridTitleVintage {
-  @include Zabal_font14_weight_500;
-  text-transform: uppercase;
-  color: #434343;
-
-  @include tablet-up {
-    @include Zabal_font12_weight_500;
-  }
-}
-
-.classNameTextGridDescriptionSaving {
-  @include Grotesk_font12_weight400;
-  width: 119px;
-
-  @include tablet-up {
-    width: 130px;
+    @include Avenir_font24_weight_400;
   }
 }
 
@@ -219,5 +196,16 @@
   @include tablet-up {
     aspect-ratio: 489/301;
     max-width: 614px;
+  }
+}
+
+.mainImageProjectRecipe_2 {
+  @extend .image;
+  width: 100%;
+  aspect-ratio: 375/138;
+  margin: 30px -20px;
+
+  @include tablet-up {
+    aspect-ratio: 975/304;
   }
 }
