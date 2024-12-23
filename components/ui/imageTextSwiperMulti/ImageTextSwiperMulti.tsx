@@ -1,17 +1,19 @@
 'use client';
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
-import Text from '../../ui/text/Text';
-import ImageComponent from '../../ui/image/Image';
-import SwiperCustom from '../../ui/swiper/Swiper';
+import Text from '../text/Text';
+import SwiperCustom from '../swiper/Swiper';
+import ImageComponent from '../image/Image';
 import { ImageText } from '../../../interfaces/common';
-import styles from './imageTextSwiperDouble.module.scss';
+import DesktopMulti from '../desktopMulti/DesktopMulti';
+import styles from './imageTextSwiperMulti.module.scss';
 
 const slidesPerView = 2.5;
 
-const ImageTextSwiperDouble = ({
+const ImageTextSwiperMulti = ({
   textPart,
   imagePartDesktop,
   imagePartMobileSliders,
+  imagePartDesktopSliders,
   className,
   classNameImageContainer,
   classNameSwiperWrapper,
@@ -27,20 +29,24 @@ const ImageTextSwiperDouble = ({
           classNameTitle={styles[textPart.classNameTitle ?? '']}
         />
       </div>
-      {imagePartDesktop?.src && imagePartMobileSliders?.length ? (
+      {imagePartDesktop?.src ||
+      (imagePartDesktopSliders && imagePartMobileSliders?.length) ? (
         <div className={styles[classNameImageContainer ?? '']}>
           {isMobileView ? (
             <ul className={styles[classNameSwiperWrapper ?? '']}>
               {Array.isArray(imagePartMobileSliders)
-                ? imagePartMobileSliders.map((slider) => (
-                    <li key={slider.id}>
+                ? imagePartMobileSliders.map((item) => (
+                    <li key={item.id}>
+                      <p className={styles[item.subTitle?.className ?? '']}>
+                        {item.subTitle?.text}
+                      </p>
                       <SwiperCustom
-                        images={slider.imagePartMobileSlider}
+                        images={item.imagePartMobileSlider}
                         classNameSwiper={styles.swiper}
                         slidesPerView={slidesPerView}
                         classNameImage={
                           styles[
-                            slider.imagePartMobileSlider?.[0].className ?? ' '
+                            item.imagePartMobileSlider?.[0].className ?? ' '
                           ]
                         }
                       />
@@ -49,10 +55,19 @@ const ImageTextSwiperDouble = ({
                 : null}
             </ul>
           ) : (
-            <ImageComponent
-              {...imagePartDesktop}
-              className={styles[imagePartDesktop.className ?? '']}
-            />
+            <>
+              {Array.isArray(imagePartDesktopSliders) ? (
+                <DesktopMulti
+                  imagePartDesktopSliders={imagePartDesktopSliders}
+                  className={styles[classNameSwiperWrapper ?? '']}
+                />
+              ) : imagePartDesktop?.src ? (
+                <ImageComponent
+                  {...imagePartDesktop}
+                  className={styles[imagePartDesktop?.className ?? '']}
+                />
+              ) : null}
+            </>
           )}
         </div>
       ) : null}
@@ -60,4 +75,4 @@ const ImageTextSwiperDouble = ({
   );
 };
 
-export default ImageTextSwiperDouble;
+export default ImageTextSwiperMulti;

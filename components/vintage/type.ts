@@ -40,6 +40,7 @@ export interface ProjectVintageTypes {
   imageTextVintage_1: ImageText;
   imageTextVintage_2: ImageText;
   imageTextVintageDesMobWrapper_1: ImageTextDesMobTypeWrapper;
+  imageTextVintage_3: ImageText;
   imageTextVintage_13: TextSimpleBlock[];
   footerProject: FooterProject;
 }

@@ -6,7 +6,7 @@ import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
 import ImageTextDesMob from '../ui/imageTextDesMob/ImageTextDesMob';
 import ImageComponent from '../ui/image/Image';
 import ImageTextSimple from '../ui/imageTextSimple/ImageTextSimple';
-import ImageTextSwiperDouble from '../ui/imageTextSwiperDoble/ImageTextSwiperDouble';
+import ImageTextSwiperMulti from '../ui/imageTextSwiperMulti/ImageTextSwiperMulti';
 import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
 import PersonData from '../ui/personData/PersonData';
 import { ProjectVintageTypes } from './type';
@@ -26,6 +26,7 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
     imageTextVintage_1,
     imageTextVintage_2,
     imageTextVintageDesMobWrapper_1,
+    imageTextVintage_3,
     imageTextVintage_13,
     footerProject,
   } = props;
@@ -53,8 +54,9 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
       )}
       <PersonData {...personDataVintage} />
       <ImageTextSimple {...imageTextVintage_1} />
-      <ImageTextSwiperDouble {...imageTextVintage_2} />
+      <ImageTextSwiperMulti {...imageTextVintage_2} />
       <ImageTextDesMobWrapper {...imageTextVintageDesMobWrapper_1} />
+      <ImageTextSwiperMulti {...imageTextVintage_3} />
       <TextBlock textPart={imageTextVintage_13} />
       <FooterProject
         {...footerProject}

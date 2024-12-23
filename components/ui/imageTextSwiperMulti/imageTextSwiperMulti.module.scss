@@ -15,6 +15,14 @@
   }
 }
 
+.titleImageTextVintage_3 {
+  @include Zabal_font36_weight_700;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
 .descriptionImageTextSaving_1 {
   @include Grotesk_font16_weight400;
   text-align: center;
@@ -24,7 +32,19 @@
 .containerImageTextSaving_1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  list-style: none;
+  gap: 8px;
+
+  @include tablet-up {
+    gap: 24px;
+    align-items: flex-start;
+  }
+}
+.containerImageTextSaving_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
   list-style: none;
   gap: 8px;
 
@@ -56,6 +76,11 @@
   aspect-ratio: 0.46;
 }
 
+.imageTextVintageMobile_3 {
+  @extend .image;
+  aspect-ratio: 0.46;
+}
+
 .imageTextSavingDesktop_9 {
   @extend .image;
   aspect-ratio: 1.28;
@@ -69,6 +94,7 @@
 .swiperWrapper {
   margin: 0px -20px;
   padding-left: 20px;
+  padding-right: 20px;
   background: linear-gradient(
     180deg,
     #eae9f8 0%,
@@ -78,6 +104,7 @@
   @include tablet {
     margin: 0px -48px;
     padding-left: 48px;
+    padding-right: 48px;
   }
 }
 
@@ -94,6 +121,31 @@
   }
 }
 
+.wrapperSwiperImageTextVintage_3 {
+  @extend .swiperWrapper;
+  background: #f2f2f2;
+  padding-top: 50px;
+  &:first-child {
+    margin-top: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}
+
 .swiper {
   background: inherit;
+}
+
+.subTitleImageTextVintage_3 {
+  @include Zabal_font24_weight_500;
+  text-align: left;
+  margin: 30px 0px -20px;
+
+  @include tablet-up {
+    @include Zabal_font32_weight_500;
+    text-align: left;
+    margin-bottom: -30px;
+  }
 }
