@@ -35,7 +35,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
     imageTextSaving_7,
     imageTextSaving_8,
     imageTextSaving_9,
-    imageTextSaving_10,
+    imagePartMobileSlider,
     imageTextSaving_11,
     imageTextSaving_12,
     imageTextSaving_13,
@@ -57,7 +57,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
       <ImageTextSaving_7 {...imageTextSaving_7} />
       <ImageTextSaving_8 {...imageTextSaving_8} />
       <ImageTextSaving_9 {...imageTextSaving_9} />
-      <ImageTextSaving_10 {...imageTextSaving_10} />
+      <ImageTextSaving_10 imagePartMobileSlider={imagePartMobileSlider} />
       <ImageTextSaving_11 {...imageTextSaving_11} />
       <ImageTextSaving_12 {...imageTextSaving_12} />
       <TextBlock textPart={imageTextSaving_13} />

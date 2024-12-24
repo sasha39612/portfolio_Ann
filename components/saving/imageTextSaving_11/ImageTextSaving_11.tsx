@@ -1,13 +1,10 @@
 'use client';
-import { ImageTextSaving } from '../type';
+import { ImageText } from '../../../interfaces/common';
 import ImageComponent from '../../ui/image/Image';
 import Text from '../../ui/text/Text';
 import styles from './imageTextSaving_11.module.scss';
 
-const ImageTextSaving_11 = ({
-  textPart,
-  imagePartDesktop,
-}: ImageTextSaving) => {
+const ImageTextSaving_11 = ({ textPart, imagePartDesktop }: ImageText) => {
   return (
     <>
       <div className={styles.containerImageTextSaving_1}>

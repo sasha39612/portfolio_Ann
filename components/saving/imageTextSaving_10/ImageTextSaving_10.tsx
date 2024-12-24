@@ -1,12 +1,16 @@
 'use client';
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
-import { ImageTextSaving } from '../type';
+import { ImagePropsType } from '../../../interfaces/common';
 import styles from './imageTextSaving_10.module.scss';
 import SwiperCustom from '../../ui/swiper/Swiper';
 
 const slidesPerView = 2.5;
 
-const ImageTextSaving_10 = ({ imagePartMobileSlider }: ImageTextSaving) => {
+const ImageTextSaving_10 = ({
+  imagePartMobileSlider,
+}: {
+  imagePartMobileSlider: ImagePropsType[];
+}) => {
   const isMobileView = useCheckMobileScreen();
 
   return (

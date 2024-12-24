@@ -1,5 +1,6 @@
 import {
   FooterProject,
+  ImagePropsType,
   ImageText,
   TextBlock,
   TextImageType,
@@ -22,7 +23,7 @@ export interface ProjectSavingTypes {
   imageTextSaving_7: ImageText;
   imageTextSaving_8: ImageText;
   imageTextSaving_9: ImageText;
-  imageTextSaving_10: ImageText;
+  imagePartMobileSlider: ImagePropsType[];
   imageTextSaving_11: ImageText;
   imageTextSaving_12: ImageText;
   imageTextSaving_13: TextSimpleBlock[];

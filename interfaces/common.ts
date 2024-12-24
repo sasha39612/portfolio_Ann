@@ -161,6 +161,12 @@ export interface PersonDataType {
   classNameContainer: string;
 }
 
+export interface ImagePartMobileSliders {
+  imagePartMobileSlider: ImagePropsType[];
+  id: string;
+  subTitle?: { text: string; className: string };
+}
+
 export interface ImagePartDesktopSliders {
   imagePartDesktopSlider: ImagePropsType[];
   id: string;
@@ -178,11 +184,7 @@ export interface ImageText {
   };
   imagePartDesktop?: ImagePropsType;
   imagePartMobile?: ImagePropsType;
-  imagePartMobileSliders?: {
-    imagePartMobileSlider: ImagePropsType[];
-    id: string;
-    subTitle?: { text: string; className: string };
-  }[];
+  imagePartMobileSliders?: ImagePartMobileSliders;
   imagePartDesktopSliders?: ImagePartDesktopSliders[];
   imagePartDesktopSlider?: ImagePropsType[];
   className?: string;

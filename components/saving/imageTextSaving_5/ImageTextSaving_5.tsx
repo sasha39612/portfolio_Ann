@@ -1,15 +1,15 @@
 'use client';
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
 import Text from '../../ui/text/Text';
-import { ImageTextSaving } from '../type';
+import { ImageText } from '../../../interfaces/common';
 import styles from './imageTextSaving_5.module.scss';
 import ImageComponent from '../../ui/image/Image';
 
 const ImageTextSaving_5 = ({
   textPart,
   imagePartDesktopSlider,
-  imagePartMobileSlider,
-}: ImageTextSaving) => {
+  imagePartMobileSliders,
+}: ImageText) => {
   const isMobileView = useCheckMobileScreen();
 
   return (
@@ -22,12 +22,18 @@ const ImageTextSaving_5 = ({
         />
       </div>
       <div className={styles.imageContainer}>
-        {imagePartDesktopSlider?.length && imagePartMobileSlider?.length ? (
+        {imagePartDesktopSlider?.length &&
+        imagePartMobileSliders?.imagePartMobileSlider?.length ? (
           <>
             {isMobileView ? (
               <ImageComponent
-                {...imagePartMobileSlider[0]}
-                className={styles[imagePartMobileSlider[0]?.className ?? '']}
+                {...imagePartMobileSliders?.imagePartMobileSlider[0]}
+                className={
+                  styles[
+                    imagePartMobileSliders?.imagePartMobileSlider[0]
+                      ?.className ?? ''
+                  ]
+                }
               />
             ) : (
               <ImageComponent
@@ -37,13 +43,19 @@ const ImageTextSaving_5 = ({
             )}
           </>
         ) : null}
-        {imagePartDesktopSlider?.length && imagePartMobileSlider?.length ? (
+        {imagePartDesktopSlider?.length &&
+        imagePartMobileSliders?.imagePartMobileSlider?.length ? (
           <>
             {isMobileView ? (
               <>
                 <ImageComponent
-                  {...imagePartMobileSlider[1]}
-                  className={styles[imagePartMobileSlider[1]?.className ?? '']}
+                  {...imagePartMobileSliders?.imagePartMobileSlider[1]}
+                  className={
+                    styles[
+                      imagePartMobileSliders?.imagePartMobileSlider[1]
+                        ?.className ?? ''
+                    ]
+                  }
                 />
               </>
             ) : (
