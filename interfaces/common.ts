@@ -120,16 +120,18 @@ export interface FooterProject {
   imageArrowRight: ImagePropsType;
 }
 
+export interface TextPartType {
+  id: string;
+  title: string;
+  subTitle: string;
+  description: string;
+  classNameSubTitle: string;
+  classNameTitle: string;
+  classNameDescription: string;
+}
+
 export interface ImageTextDesMobType {
-  textPart: {
-    id: string;
-    title: string;
-    subTitle: string;
-    description: string;
-    classNameSubTitle: string;
-    classNameTitle: string;
-    classNameDescription: string;
-  };
+  textPart: TextPartType;
   className?: string;
   classNameTextContainer: string;
   imagePartDesktop?: ImagePropsType;
@@ -202,4 +204,9 @@ export interface TextBlockListFlexType {
   textGrid: TextSimpleBlock[];
   className?: string;
   classNameContainer?: string;
+}
+
+export interface TitleTextImagesFlexType {
+  textPart: TextPartType;
+  imagesWithTitleList: ImageTextSimpleBlock[];
 }
