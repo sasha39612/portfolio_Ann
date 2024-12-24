@@ -4,15 +4,21 @@ import { ProjectRecipeTypes } from './type';
 import TextImageWithFlex from '../textImageWithFlex/TextImageWithFlex';
 import styles from './recipe.module.scss';
 import ImageTextDesMob from '../ui/imageTextDesMob/ImageTextDesMob';
+import ImageTextBlocksWithTitle from '../ui/imageTextBlocksWithTitle/ImageTextBlocksWithTitle';
 
 const ProjectRecipe = (props: ProjectRecipeTypes) => {
-  const { imageTextWithFlexRecipe, imageTextRecipeDesMob, footerProject } =
-    props;
+  const {
+    imageTextWithFlexRecipe,
+    imageTextWithTitleRecipe,
+    imageTextRecipeDesMob,
+    footerProject,
+  } = props;
 
   return (
     <>
       <TextImageWithFlex {...imageTextWithFlexRecipe} />
       <ImageTextDesMob {...imageTextRecipeDesMob} />
+      <ImageTextBlocksWithTitle imageTextWithTitle={imageTextWithTitleRecipe} />
       <FooterProject
         {...footerProject}
         className={styles[footerProject.className ?? ' ']}

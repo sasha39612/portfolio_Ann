@@ -72,6 +72,16 @@
   }
 }
 
+.titleImageTextVintage {
+  @include Zabal_font36_weight_700;
+  margin-bottom: 30px;
+  align-self: flex-start;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
 .titleImageTextVintage_1 {
   @include Zabal_font36_weight_700;
   text-align: center;
@@ -94,6 +104,15 @@
   }
 }
 
+.subTitleImageTextVintage {
+  @include Zabal_font20_weight_600;
+  align-self: flex-start;
+
+  @include tablet-up {
+    @include Zabal_font24_weight_600;
+  }
+}
+
 .subTitleImageTextVintage_1 {
   @include Zabal_font20_weight_600;
   margin: 30px 0px;
@@ -106,9 +125,19 @@
 .subTitleImageTextRecipe {
   @include Avenir_font28_weight_500;
   margin: 0px 0px 20px;
+  align-self: flex-start;
 
   @include tablet-up {
     @include Avenir_font30_weight_500;
+  }
+}
+
+.descriptionImageTextVintage {
+  @include Zabal_font16_weight_300;
+  margin-bottom: 30px;
+
+  @include tablet-up {
+    text-align: left;
   }
 }
 
@@ -159,7 +188,7 @@
   @extend .image;
 
   aspect-ratio: 335/240;
-  margin: 0px 0px 30px;
+  margin: 30px 0px 30px;
 }
 
 .imageTextVintageDesktop {

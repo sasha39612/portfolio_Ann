@@ -1,0 +1,243 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.wrapperTextWithTitle {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0px 30px;
+  gap: 36px;
+
+  @include tablet-up {
+    margin: 78px 0px 20px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.wrapperTextWithTitleSaving {
+  @extend .wrapperTextWithTitle;
+
+  @include tablet-up {
+    flex-wrap: wrap;
+  }
+}
+
+.wrapperTextWithTitleVintage {
+  @extend .wrapperTextWithTitle;
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    li {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.wrapperTextWithTitleVintage_1 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 0px 20px 0px;
+  margin: 0px -20px 0px;
+  justify-content: flex-start;
+
+  @include tablet {
+    padding: 0px 48px 0px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 0px 80px 0px;
+    margin: 0px -80px 0px;
+  }
+}
+
+.wrapperTextWithTitleVintage_2 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 30px 47px 60px;
+  margin: 0px -20px 0px;
+  align-items: center;
+
+  @include tablet {
+    padding: 30px 48px 60px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 34px 80px 80px;
+    margin: 0px -80px 0px;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+
+    li {
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 250px;
+      gap: 20px;
+      flex: 1 1 50%;
+
+      &:first-child {
+        div:first-child {
+          @include Zabal_font60_weight_700;
+          line-height: 1;
+        }
+        div:nth-child(2) {
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}
+
+.wrapperTextWithTitleRecipe {
+  @extend .wrapperTextWithTitle;
+  margin-top: 0px;
+  gap: 10px;
+
+  @include tablet-up {
+    margin-top: 60px;
+    gap: 36px;
+    flex-wrap: nowrap;
+
+    li {
+      flex: 1 1 50%;
+      height: fit-content;
+    }
+  }
+}
+
+.containerTextWithTitleSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  @include tablet-up {
+    max-width: 430px;
+    &:last-child {
+      max-width: 600px;
+    }
+  }
+}
+
+.containerTextWithTitleVintage {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.containerTextWithTitleVintage_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 220px;
+  width: 280px;
+  padding: 20px;
+  background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.containerTextWithTitleRecipe {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  @include tablet-up {
+    div:nth-child(1) {
+      order: 2;
+    }
+    div:nth-child(2) {
+      order: 3;
+    }
+    div:nth-child(3) {
+      order: 1;
+    }
+  }
+}
+
+.titleTextWithTitleSaving {
+  @include Grotesk_font24_weight500;
+}
+
+.titleTextWithTitleVintage {
+  @include Zabal_font36_weight_700;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
+.titleTextWithTitleVintage_01 {
+  @include Zabal_font24_weight_600;
+  margin-left: 30px;
+
+  @include tablet-up {
+    margin-left: 50px;
+  }
+}
+
+.titleTextWithTitleVintage_1 {
+  @include Zabal_font24_weight_600;
+  text-align: center;
+}
+
+.titleTextWithTitleVintage_2 {
+  @include Zabal_font24_weight_600;
+  text-align: center;
+}
+
+.titleTextWithTitleVintage_2 {
+  @include Zabal_font24_weight_600;
+  text-align: center;
+}
+
+.titleTextWithTitleRecipe {
+  @include Avenir_font28_weight_500;
+
+  @include tablet-up {
+    @include Avenir_font30_weight_500;
+  }
+}
+
+.descriptionTextWithTitleSaving {
+  @include Grotesk_font14_weight400;
+  color: #545454;
+}
+
+.descriptionTextWithTitleVintage {
+  @include Zabal_font16_weight_300;
+}
+
+.descriptionTextWithTitleVintage_2 {
+  @include Zabal_font14_weight_400;
+  line-height: 30px;
+}
+
+.descriptionTextWithTitleRecipe {
+  @include Avenir_font12_weight_350;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+}
+
+.imageTextRecipeDesktopMobile {
+  @extend .image;
+
+  aspect-ratio: 335/228;
+
+  @include tablet-up {
+    aspect-ratio: 429/292;
+    max-height: 408px;
+  }
+}

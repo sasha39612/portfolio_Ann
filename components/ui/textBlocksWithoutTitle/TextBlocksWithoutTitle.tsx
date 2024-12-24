@@ -1,9 +1,9 @@
 'use client';
-import Text from '../../ui/text/Text';
+import Text from '../text/Text';
 import { TextSimpleBlock } from '../../../interfaces/common';
-import styles from './textBlockWithoutTitle.module.scss';
+import styles from './textBlocksWithoutTitle.module.scss';
 
-const TextBlockWithoutTitle = ({
+const TextBlocksWithoutTitle = ({
   textWithoutTitle,
 }: {
   textWithoutTitle: TextSimpleBlock[];
@@ -24,4 +24,4 @@ const TextBlockWithoutTitle = ({
   );
 };
 
-export default TextBlockWithoutTitle;
+export default TextBlocksWithoutTitle;

@@ -54,6 +54,10 @@ export interface TextSimpleBlock {
   isDangerousHTML?: boolean;
 }
 
+export interface ImageTextSimpleBlock extends TextSimpleBlock {
+  image: ImagePropsType;
+}
+
 export interface TextBlockWithFlex {
   id?: string;
   title?: TextBlockElem;

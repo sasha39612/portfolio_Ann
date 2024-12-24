@@ -2,7 +2,7 @@
 import FooterProject from '../shared/footerProject/FooterProject';
 import TextBlock from './textBlock/TextBlock';
 import TextImageWithFlex from '../textImageWithFlex/TextImageWithFlex';
-import TextBlockWithTitle from '../ui/textBlockWithTitle/TextBlockWithTitle';
+import TextBlocksWithTitle from '../ui/textBlocksWithTitle/TextBlocksWithTitle';
 import ImageTextDesMob from '../ui/imageTextDesMob/ImageTextDesMob';
 import ImageComponent from '../ui/image/Image';
 import ImageTextSimple from '../ui/imageTextSimple/ImageTextSimple';
@@ -37,10 +37,10 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
     <>
       <TextImageWithFlex {...imageTextWithFlexVintage} />
       <TextImageWithFlex {...imageTextWithFlexVintage_1} />
-      <TextBlockWithTitle textWithTitle={textWithTitleVintage} />
+      <TextBlocksWithTitle textWithTitle={textWithTitleVintage} />
       <ImageTextDesMob {...imageTextVintageDesMob} />
-      <TextBlockWithTitle textWithTitle={textWithTitleVintage_1} />
-      <TextBlockWithTitle textWithTitle={textWithTitleVintage_2} />
+      <TextBlocksWithTitle textWithTitle={textWithTitleVintage_1} />
+      <TextBlocksWithTitle textWithTitle={textWithTitleVintage_2} />
       {isMobileView ? (
         <ImageComponent
           {...imagePartMobile}

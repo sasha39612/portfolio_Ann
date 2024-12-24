@@ -1,9 +1,9 @@
 'use client';
 import Text from '../text/Text';
 import { TextSimpleBlock } from '../../../interfaces/common';
-import styles from './textBlockWithTitle.module.scss';
+import styles from './textBlocksWithTitle.module.scss';
 
-const TextBlockWithTitle = ({
+const TextBlocksWithTitle = ({
   textWithTitle,
 }: {
   textWithTitle: TextSimpleBlock[];
@@ -25,4 +25,4 @@ const TextBlockWithTitle = ({
   );
 };
 
-export default TextBlockWithTitle;
+export default TextBlocksWithTitle;
