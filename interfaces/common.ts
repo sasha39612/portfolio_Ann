@@ -51,6 +51,7 @@ export interface TextSimpleBlock {
   classNameTitle?: string;
   classNameSubTitle?: string;
   classNameDescription?: string;
+  isDangerousHTML?: boolean;
 }
 
 export interface TextBlockWithFlex {

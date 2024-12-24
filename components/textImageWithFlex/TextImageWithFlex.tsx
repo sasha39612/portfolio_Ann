@@ -4,9 +4,21 @@ import { TextImageWithFlexType } from '../../interfaces/common';
 import ImageComponent from '../ui/image/Image';
 import TextBlockListFlex from '../ui/textBlockListFlex/TextBlockListFlex';
 import styles from './textImageWithFlex.module.scss';
+import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
+
+const isFirstTextBlockListFlexVisible = (
+  isMobileView: boolean,
+  className?: string,
+) => !(className === 'classNameGridContainerRecipe' && isMobileView);
+
+const isSecondTextBlockListFlexVisible = (
+  isMobileView: boolean,
+  className?: string,
+) => className === 'classNameGridContainerRecipe' && isMobileView;
 
 const TextImageWithFlex = (props: TextImageWithFlexType) => {
   const { textPart, imagePart, className, classNameContainer } = props;
+  const isMobileView = useCheckMobileScreen();
   const imageStyles = cn(styles.image, styles[imagePart?.className ?? '']);
 
   const getDangerousHTML = (text: string) => {
@@ -42,30 +54,16 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             {textPart?.description?.text}
           </div>
         )}
-        <TextBlockListFlex
-          textGrid={textPart?.textGrid ?? []}
-          className={textPart?.classNameGridContainer}
-          classNameContainer={textPart?.classNameTextPartGridContainer}
-        />
-        {/* <ul className={styles[textPart?.classNameTextPartGridContainer ?? '']}>
-          {Array.isArray(textPart?.textGrid)
-            ? textPart.textGrid.map((textBlock: TextSimpleBlock) => (
-                <li
-                  key={textBlock.id}
-                  className={styles[textPart?.classNameGridContainer ?? '']}
-                >
-                  <div className={styles?.[textBlock?.classNameTitle ?? '']}>
-                    {textBlock.title}
-                  </div>
-                  <div
-                    className={styles?.[textBlock?.classNameDescription ?? '']}
-                  >
-                    {textBlock.description}
-                  </div>
-                </li>
-              ))
-            : null}
-        </ul> */}
+        {isFirstTextBlockListFlexVisible(
+          isMobileView,
+          textPart?.classNameGridContainer,
+        ) ? (
+          <TextBlockListFlex
+            textGrid={textPart?.textGrid ?? []}
+            className={textPart?.classNameGridContainer}
+            classNameContainer={textPart?.classNameTextPartGridContainer}
+          />
+        ) : null}
       </div>
       <ImageComponent
         src={imagePart?.src ?? ''}
@@ -74,6 +72,16 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
         loading={imagePart?.loading}
         className={imageStyles}
       />
+      {isSecondTextBlockListFlexVisible(
+        isMobileView,
+        textPart?.classNameGridContainer,
+      ) ? (
+        <TextBlockListFlex
+          textGrid={textPart?.textGrid ?? []}
+          className={textPart?.classNameGridContainer}
+          classNameContainer={textPart?.classNameTextPartGridContainer}
+        />
+      ) : null}
     </article>
   );
 };

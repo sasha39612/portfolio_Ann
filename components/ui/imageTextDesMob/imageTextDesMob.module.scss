@@ -31,6 +31,16 @@
   }
 }
 
+.wrapperImageTextRecipeDesMob {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
 .classNameTextContainerVintageDesMob {
   display: flex;
   flex-direction: column;
@@ -51,6 +61,17 @@
   }
 }
 
+.classNameTextContainerRecipeDesMob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px 0px;
+
+  @include tablet-up {
+    align-items: flex-start;
+  }
+}
+
 .titleImageTextVintage_1 {
   @include Zabal_font36_weight_700;
   text-align: center;
@@ -59,6 +80,17 @@
   @include tablet-up {
     @include Zabal_font50_weight_700;
     text-align: left;
+  }
+}
+
+.titleImageTextRecipe {
+  @include Avenir_font36_weight_800;
+  margin-bottom: 20px;
+  color: #f0923f;
+  text-transform: uppercase;
+
+  @include tablet-up {
+    @include Avenir_font40_weight_800;
   }
 }
 
@@ -71,12 +103,25 @@
   }
 }
 
+.subTitleImageTextRecipe {
+  @include Avenir_font28_weight_500;
+  margin: 0px 0px 20px;
+
+  @include tablet-up {
+    @include Avenir_font30_weight_500;
+  }
+}
+
 .descriptionImageTextVintage_1 {
   @include Zabal_font16_weight_300;
 
   @include tablet-up {
     text-align: left;
   }
+}
+
+.descriptionImageTextRecipe {
+  @include Avenir_font12_weight_350;
 }
 
 .image {
@@ -107,6 +152,13 @@
   @extend .image;
   aspect-ratio: 240/120;
   max-width: 240px;
+  margin: 0px 0px 30px;
+}
+
+.imageTextRecipeMobile {
+  @extend .image;
+
+  aspect-ratio: 335/240;
   margin: 0px 0px 30px;
 }
 
@@ -147,5 +199,15 @@
     margin: 0px 0px 36px;
     aspect-ratio: 621/150;
     max-width: 800px;
+  }
+}
+
+.imageTextRecipeDesktop {
+  @extend .image;
+
+  @include tablet-up {
+    margin: 0px 0px 36px;
+    aspect-ratio: 406/292;
+    max-width: 535px;
   }
 }
