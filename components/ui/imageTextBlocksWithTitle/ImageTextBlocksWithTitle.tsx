@@ -19,10 +19,12 @@ const ImageTextBlocksWithTitle = ({
                 classNameTitle={styles[item.classNameTitle ?? '']}
                 classNameDescription={styles[item.classNameDescription ?? '']}
               />
-              <ImageComponent
-                {...item.image}
-                className={styles[item.image.className ?? '']}
-              />
+              {item.image?.src ? (
+                <ImageComponent
+                  {...item.image}
+                  className={styles[item.image.className ?? '']}
+                />
+              ) : null}
             </li>
           ))
         : null}

@@ -55,7 +55,7 @@ export interface TextSimpleBlock {
 }
 
 export interface ImageTextSimpleBlock extends TextSimpleBlock {
-  image: ImagePropsType;
+  image?: ImagePropsType;
 }
 
 export interface TextBlockWithFlex {

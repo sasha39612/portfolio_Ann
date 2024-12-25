@@ -11,5 +11,6 @@ export interface ProjectRecipeTypes {
   imageTextRecipeDesMob: ImageTextDesMobType;
   imageTextWithTitleRecipe: ImageTextSimpleBlock[];
   imagesTextWithTitleRecipe: TitleTextImagesFlexType;
+  titleTextImageGridRecipe: ImageTextSimpleBlock[];
   footerProject: FooterProject;
 }
