@@ -61,6 +61,7 @@ export interface ImageTextSimpleBlock extends TextSimpleBlock {
 export interface TextBlockWithFlex {
   id?: string;
   title?: TextBlockElem;
+  subTitle?: TextBlockElem;
   description?: TextBlockElem;
   textGrid: Array<TextSimpleBlock>;
   className?: string;

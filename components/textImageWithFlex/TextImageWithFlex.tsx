@@ -42,6 +42,18 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             {textPart?.title?.text}
           </div>
         ) : null}
+        {textPart?.subTitle?.isDangerousHTML ? (
+          <div
+            className={styles[textPart?.subTitle?.className ?? '']}
+            dangerouslySetInnerHTML={getDangerousHTML(
+              textPart?.title?.text ?? '',
+            )}
+          />
+        ) : textPart?.subTitle?.text ? (
+          <div className={styles[textPart?.subTitle?.className ?? '']}>
+            {textPart?.subTitle?.text}
+          </div>
+        ) : null}
         {textPart?.description?.isDangerousHTML ? (
           <div
             className={styles[textPart?.description?.className ?? '']}
@@ -65,13 +77,15 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
           />
         ) : null}
       </div>
-      <ImageComponent
-        src={imagePart?.src ?? ''}
-        alt={imagePart?.alt ?? 'Some image'}
-        priority={imagePart?.priority}
-        loading={imagePart?.loading}
-        className={imageStyles}
-      />
+      {imagePart?.src ? (
+        <ImageComponent
+          src={imagePart?.src}
+          alt={imagePart?.alt ?? 'Some image'}
+          priority={imagePart?.priority}
+          loading={imagePart?.loading}
+          className={imageStyles}
+        />
+      ) : null}
       {isSecondTextBlockListFlexVisible(
         isMobileView,
         textPart?.classNameGridContainer,

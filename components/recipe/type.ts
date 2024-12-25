@@ -12,5 +12,7 @@ export interface ProjectRecipeTypes {
   imageTextWithTitleRecipe: ImageTextSimpleBlock[];
   imagesTextWithTitleRecipe: TitleTextImagesFlexType;
   titleTextImageGridRecipe: ImageTextSimpleBlock[];
+  imageTextWithFlexRecipe_1: TextImageWithFlexType;
+  imageTextWithFlexRecipe_2: TextImageWithFlexType;
   footerProject: FooterProject;
 }
