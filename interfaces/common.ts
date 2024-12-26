@@ -13,6 +13,7 @@ export interface ImagePropsType extends NextImagePropsType {
 }
 
 export interface TextBlockElem {
+  id?: string;
   text?: string;
   image?: ImagePropsType;
   className?: string;
@@ -42,7 +43,7 @@ export interface TextBlock {
 }
 
 export interface TextSimpleBlock {
-  id: string;
+  id?: string;
   title?: string;
   subTitle?: string;
   description?: string;
@@ -86,6 +87,9 @@ export interface TextImageWithFlexType {
   imagePart?: ImagePropsType;
   className?: string;
   classNameContainer?: string;
+  classNameContainerTextPart?: string;
+  classNameContainerTextPartDescription?: string;
+  classNameTextGridWrapper?: string;
 }
 
 export interface AboutType {
@@ -210,4 +214,21 @@ export interface TextBlockListFlexType {
 export interface TitleTextImagesFlexType {
   textPart: TextPartType;
   imagesWithTitleList: ImageTextSimpleBlock[];
+}
+
+export interface TextBlockUserData
+  extends Omit<TextSimpleBlock, 'description'> {
+  description: TextBlockElem | TextBlockElem[];
+}
+
+export interface UserData extends TextImageWithFlexType {
+  textGrid: TextBlockUserData[];
+}
+
+export interface TitleTextImageGrid {
+  header: {
+    title: TextBlockElem;
+    description: TextBlockElem;
+  };
+  usersData: UserData[];
 }

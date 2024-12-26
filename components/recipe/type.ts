@@ -6,6 +6,7 @@ import {
   TitleTextImagesFlexType,
   TextSimpleBlock,
   TextBlockElem,
+  TitleTextImageGrid,
 } from '../../interfaces/common';
 
 export interface ProjectRecipeTypes {
@@ -20,5 +21,6 @@ export interface ProjectRecipeTypes {
     title: TextBlockElem;
     textWithTitle: TextSimpleBlock[];
   };
+  titleTextImageGridRecipe_1: TitleTextImageGrid;
   footerProject: FooterProject;
 }

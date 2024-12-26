@@ -11,7 +11,7 @@ const TextBlocksWithTitle = ({
   textWithTitle: TextSimpleBlock[];
 }) => {
   return (
-    <>
+    <section>
       <p className={styles[title?.className ?? '']}>{title?.text}</p>
       <ul className={styles[textWithTitle[0]?.className ?? '']}>
         {Array.isArray(textWithTitle)
@@ -29,7 +29,7 @@ const TextBlocksWithTitle = ({
             ))
           : null}
       </ul>
-    </>
+    </section>
   );
 };
 

@@ -487,6 +487,16 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin Avenir_font14_weight_300 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19.12px;
+  text-align: justified;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Avenir_font14_weight_350 {
   font-family: Avenir;
   font-size: 14px;
@@ -502,6 +512,27 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_400_italic {
+  font-family: Avenir;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_300 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.86px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -573,6 +604,16 @@
   font-weight: 500;
   line-height: 32.78px;
   text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font26_weight_800 {
+  font-family: Avenir;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 35.52px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }

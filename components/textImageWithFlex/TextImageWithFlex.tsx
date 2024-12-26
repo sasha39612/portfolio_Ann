@@ -28,7 +28,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
   };
 
   return (
-    <article className={styles[className ?? '']}>
+    <section className={styles[className ?? '']}>
       <div className={styles[classNameContainer ?? '']}>
         {textPart?.title?.isDangerousHTML ? (
           <div
@@ -96,7 +96,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
           classNameContainer={textPart?.classNameTextPartGridContainer}
         />
       ) : null}
-    </article>
+    </section>
   );
 };
 

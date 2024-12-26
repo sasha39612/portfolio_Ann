@@ -7,11 +7,12 @@
 }
 
 .classNameTitle {
-  @include Avenir_font40_weight_800;
+  @include Avenir_font26_weight_800;
   max-width: 160px;
   color: #f0923f;
 
   @include tablet-up {
+    @include Avenir_font40_weight_800;
     max-width: 100%;
   }
 }
