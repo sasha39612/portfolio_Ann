@@ -5,6 +5,7 @@ import {
   ImageTextDesMobType,
   ImageTextDesMobTypeWrapper,
   PersonDataType,
+  TextBlockElem,
   TextImageWithFlexType,
   TextSimpleBlock,
 } from '../../interfaces/common';
@@ -31,10 +32,19 @@ export interface ImageBackground {
 export interface ProjectVintageTypes {
   imageTextWithFlexVintage: TextImageWithFlexType;
   imageTextWithFlexVintage_1: TextImageWithFlexType;
-  textWithTitleVintage: TextSimpleBlock[];
+  textWithTitleVintage: {
+    title: TextBlockElem;
+    textWithTitle: TextSimpleBlock[];
+  };
   imageTextVintageDesMob: ImageTextDesMobType;
-  textWithTitleVintage_1: TextSimpleBlock[];
-  textWithTitleVintage_2: TextSimpleBlock[];
+  textWithTitleVintage_1: {
+    title: TextBlockElem;
+    textWithTitle: TextSimpleBlock[];
+  };
+  textWithTitleVintage_2: {
+    title: TextBlockElem;
+    textWithTitle: TextSimpleBlock[];
+  };
   imageBackground: ImageBackground;
   personDataVintage: PersonDataType;
   imageTextVintage_1: ImageText;

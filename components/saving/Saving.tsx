@@ -46,7 +46,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
     <>
       <TextImage {...imageTextSaving} />
       <TextImageWithFlex {...imageTextWithFlexSaving} />
-      <TextBlocksWithTitle textWithTitle={textWithTitleSaving} />
+      <TextBlocksWithTitle {...textWithTitleSaving} />
       <TextBlocksWithoutTitle textWithoutTitle={textWithoutTitleSaving} />
       <ImageTextSimple {...imageTextSaving_1} />
       <ImageTextSaving_2 {...imageTextSaving_2} />

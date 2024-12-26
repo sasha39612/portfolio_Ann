@@ -7,6 +7,7 @@ import ImageTextDesMob from '../ui/imageTextDesMob/ImageTextDesMob';
 import ImageTextBlocksWithTitle from '../ui/imageTextBlocksWithTitle/ImageTextBlocksWithTitle';
 import TitleTextImagesFlex from './titleTextImagesFlex/TitleTextImagesFlex';
 import TitleTextImageGrid from './titleTextImageGrid/TitleTextImageGrid';
+import TextBlocksWithTitle from '../ui/textBlocksWithTitle/TextBlocksWithTitle';
 
 const ProjectRecipe = (props: ProjectRecipeTypes) => {
   const {
@@ -17,6 +18,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
     titleTextImageGridRecipe,
     imageTextWithFlexRecipe_1,
     imageTextWithFlexRecipe_2,
+    textWithTitleRecipe_2,
     footerProject,
   } = props;
 
@@ -29,6 +31,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
       <TitleTextImageGrid titleTextImageGridRecipe={titleTextImageGridRecipe} />
       <TextImageWithFlex {...imageTextWithFlexRecipe_1} />
       <TextImageWithFlex {...imageTextWithFlexRecipe_2} />
+      <TextBlocksWithTitle {...textWithTitleRecipe_2} />
       <FooterProject
         {...footerProject}
         className={styles[footerProject.className ?? ' ']}

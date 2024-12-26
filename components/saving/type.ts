@@ -3,6 +3,7 @@ import {
   ImagePropsType,
   ImageText,
   TextBlock,
+  TextBlockElem,
   TextImageType,
   TextImageWithFlexType,
   TextSimpleBlock,
@@ -12,7 +13,10 @@ export interface ProjectSavingTypes {
   imageText: TextBlock;
   imageTextSaving: TextImageType;
   imageTextWithFlexSaving: TextImageWithFlexType;
-  textWithTitleSaving: TextSimpleBlock[];
+  textWithTitleSaving: {
+    title: TextBlockElem;
+    textWithTitle: TextSimpleBlock[];
+  };
   textWithoutTitleSaving: TextSimpleBlock[];
   imageTextSaving_1: ImageText;
   imageTextSaving_2: ImageText;

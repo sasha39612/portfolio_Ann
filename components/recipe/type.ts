@@ -4,6 +4,8 @@ import {
   ImageTextDesMobType,
   TextImageWithFlexType,
   TitleTextImagesFlexType,
+  TextSimpleBlock,
+  TextBlockElem,
 } from '../../interfaces/common';
 
 export interface ProjectRecipeTypes {
@@ -14,5 +16,9 @@ export interface ProjectRecipeTypes {
   titleTextImageGridRecipe: ImageTextSimpleBlock[];
   imageTextWithFlexRecipe_1: TextImageWithFlexType;
   imageTextWithFlexRecipe_2: TextImageWithFlexType;
+  textWithTitleRecipe_2: {
+    title: TextBlockElem;
+    textWithTitle: TextSimpleBlock[];
+  };
   footerProject: FooterProject;
 }

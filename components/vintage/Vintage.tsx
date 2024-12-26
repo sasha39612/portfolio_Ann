@@ -37,10 +37,10 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
     <>
       <TextImageWithFlex {...imageTextWithFlexVintage} />
       <TextImageWithFlex {...imageTextWithFlexVintage_1} />
-      <TextBlocksWithTitle textWithTitle={textWithTitleVintage} />
+      <TextBlocksWithTitle {...textWithTitleVintage} />
       <ImageTextDesMob {...imageTextVintageDesMob} />
-      <TextBlocksWithTitle textWithTitle={textWithTitleVintage_1} />
-      <TextBlocksWithTitle textWithTitle={textWithTitleVintage_2} />
+      <TextBlocksWithTitle {...textWithTitleVintage_1} />
+      <TextBlocksWithTitle {...textWithTitleVintage_2} />
       {isMobileView ? (
         <ImageComponent
           {...imagePartMobile}
