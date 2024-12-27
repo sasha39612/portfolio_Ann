@@ -22,5 +22,6 @@ export interface ProjectRecipeTypes {
     textWithTitle: TextSimpleBlock[];
   };
   titleTextImageGridRecipe_1: TitleTextImageGrid;
+  titleTextImageGridRecipe_2: TitleTextImageGrid;
   footerProject: FooterProject;
 }

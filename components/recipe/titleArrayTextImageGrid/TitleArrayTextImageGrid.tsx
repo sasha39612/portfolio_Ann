@@ -97,7 +97,6 @@ const TitleArrayTextImageGrid = ({ header, usersData }: TitleTextImageGrid) => {
                     ))}
                   </ul>
                 ) : null}
-                <></>
               </li>
             ))
           : null}

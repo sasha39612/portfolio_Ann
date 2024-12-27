@@ -528,6 +528,26 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin Avenir_font14_weight_500 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_800 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 19.12px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Avenir_font16_weight_300 {
   font-family: Avenir;
   font-size: 16px;
