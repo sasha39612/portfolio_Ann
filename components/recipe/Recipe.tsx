@@ -10,6 +10,7 @@ import TitleTextImageGrid from './titleTextImageGrid/TitleTextImageGrid';
 import TextBlocksWithTitle from '../ui/textBlocksWithTitle/TextBlocksWithTitle';
 import TitleArrayTextImageGrid from './titleArrayTextImageGrid/TitleArrayTextImageGrid';
 import TitleArrayTextImage from './titleArrayTextImage/TitleArrayTextImage';
+import ImageTextRecipe from './imageTextRecipe/ImageTextRecipe';
 
 const ProjectRecipe = (props: ProjectRecipeTypes) => {
   const {
@@ -23,6 +24,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
     textWithTitleRecipe_2,
     titleTextImageGridRecipe_1,
     titleTextImageGridRecipe_2,
+    imageTextRecipe,
     footerProject,
   } = props;
 
@@ -38,6 +40,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
       <TextBlocksWithTitle {...textWithTitleRecipe_2} />
       <TitleArrayTextImageGrid {...titleTextImageGridRecipe_1} />
       <TitleArrayTextImage {...titleTextImageGridRecipe_2} />
+      <ImageTextRecipe {...imageTextRecipe} />
       <FooterProject
         {...footerProject}
         className={styles[footerProject.className ?? ' ']}

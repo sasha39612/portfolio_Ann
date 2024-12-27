@@ -10,6 +10,7 @@ export interface SwiperType {
   images: ImagePropsType[];
   slidesPerView: number;
   classNameSwiper?: string;
+  classNameSwiperSlider?: string;
   classNameImage?: string;
 }
 
@@ -17,6 +18,7 @@ const SwiperCustom = ({
   images,
   slidesPerView,
   classNameSwiper,
+  classNameSwiperSlider,
   classNameImage,
 }: SwiperType) => {
   const swiperStyles = cn(styles.mySwiper, classNameSwiper);
@@ -30,7 +32,7 @@ const SwiperCustom = ({
       className={swiperStyles}
     >
       {images.map((image) => (
-        <SwiperSlide key={image.id}>
+        <SwiperSlide key={image.id} className={classNameSwiperSlider}>
           <ImageComponent {...image} className={classNameImage} />
         </SwiperSlide>
       ))}
