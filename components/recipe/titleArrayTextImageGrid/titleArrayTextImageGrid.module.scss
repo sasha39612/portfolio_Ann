@@ -116,6 +116,7 @@
 
   @include tablet-up {
     aspect-ratio: 176 / 220;
+    max-width: 176px;
   }
 }
 

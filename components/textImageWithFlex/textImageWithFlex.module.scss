@@ -59,7 +59,17 @@
   grid-template-columns: 1fr;
   padding: 40px 0px;
 
-  @include tablet-up {
+  @include tablet {
+    grid-template-areas: 'm e';
+    grid-template-columns: 60% 40%;
+  }
+
+  @include desktop {
+    grid-template-areas: 'm e';
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include desktop-large {
     grid-template-areas: 'm e';
     grid-template-columns: 2fr 1fr;
   }
