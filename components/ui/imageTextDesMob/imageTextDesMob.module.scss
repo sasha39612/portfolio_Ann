@@ -72,6 +72,17 @@
   }
 }
 
+.classNameTextContainerTitleTextImageDesMob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px 0px;
+
+  @include tablet-up {
+    align-items: flex-start;
+  }
+}
+
 .titleImageTextVintage {
   @include Zabal_font36_weight_700;
   margin-bottom: 30px;
@@ -130,6 +141,12 @@
   @include tablet-up {
     @include Avenir_font30_weight_500;
   }
+}
+
+.subTitleTextImageDesMob {
+  @include Avenir_font30_weight_500;
+  margin: 0px 0px 20px;
+  align-self: flex-start;
 }
 
 .descriptionImageTextVintage {
@@ -239,4 +256,47 @@
     aspect-ratio: 406/292;
     max-width: 535px;
   }
+}
+
+.imageTextRecipeDesWrapper {
+  @extend .image;
+  aspect-ratio: 196/44;
+  max-width: 196px;
+}
+
+.imageTextRecipeMobWrapper {
+  @extend .imageTextRecipeDesWrapper;
+}
+
+.imageTextRecipeDesWrapper_1 {
+  @extend .image;
+  aspect-ratio: 334/440;
+  max-width: 450px;
+}
+
+.imageTextRecipeMobWrapper_1 {
+  @extend .image;
+  aspect-ratio: 334/440;
+}
+
+.imageTextRecipeDesWrapper_2 {
+  @extend .image;
+  aspect-ratio: 380/26;
+  max-width: 490px;
+}
+
+.imageTextRecipeMobWrapper_2 {
+  @extend .image;
+  aspect-ratio: 334/57;
+}
+
+.imageTextRecipeDesWrapper_3 {
+  @extend .image;
+  aspect-ratio: 562/264;
+  max-width: 720px;
+}
+
+.imageTextRecipeMobWrapper_3 {
+  @extend .image;
+  aspect-ratio: 350/550;
 }

@@ -1,0 +1,60 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.classNameWrapperVintageDesMob_1 {
+  margin-bottom: 60px;
+}
+
+.titleImageTextRecipe {
+  @include Avenir_font36_weight_800;
+  margin-bottom: 40px;
+  color: #f0923f;
+
+  @include tablet-up {
+    @include Avenir_font40_weight_800;
+    margin-bottom: 30px;
+  }
+}
+
+.descriptionImageTextRecipe {
+  @include Avenir_font14_weight_350;
+  margin-bottom: 20px;
+}
+
+.classNameWrapperRecipeDesMob {
+  display: grid;
+  grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd';
+  grid-template-columns: 1fr;
+
+  @include tablet-up {
+    grid-template-areas:
+      'a b'
+      'c b'
+      'd d';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+  }
+}
+
+.classNameTextContainerTitleTextImageDesMob {
+  &:nth-child(1) {
+    grid-area: a;
+  }
+  &:nth-child(2) {
+    grid-area: b;
+  }
+
+  &:nth-child(3) {
+    grid-area: c;
+  }
+
+  &:last-child {
+    grid-area: d;
+  }
+}
