@@ -1,10 +1,10 @@
 'use client';
 import useCheckMobileScreen from '../../../lib/hooks/useCheckMobileScreen';
 import { ImageText } from '../../../interfaces/common';
-import styles from './imageTextSaving_8.module.scss';
-import ImageComponent from '../../ui/image/Image';
+import ImageComponent from '../image/Image';
+import styles from './imageTextBefaoreAfter.module.scss';
 
-const ImageTextSaving_8 = ({
+const ImageTextBeforeAfter = ({
   imagePartDesktopSlider,
   imagePartMobileSliders,
 }: ImageText) => {
@@ -62,4 +62,4 @@ const ImageTextSaving_8 = ({
   );
 };
 
-export default ImageTextSaving_8;
+export default ImageTextBeforeAfter;

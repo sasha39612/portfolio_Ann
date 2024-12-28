@@ -9,7 +9,7 @@ import TextBlocksWithTitle from '../ui/textBlocksWithTitle/TextBlocksWithTitle';
 import ImageTextSaving_5 from './imageTextSaving_5/ImageTextSaving_5';
 import ImageTextSaving_6 from './imageTextSaving_6/ImageTextSaving_6';
 import ImageTextSaving_7 from './imageTextSaving_7/ImageTextSaving_7';
-import ImageTextSaving_8 from './imageTextSaving_8/ImageTextSaving_8';
+import ImageTextBeforeAfter from '../ui/imageTextBeforeAfter/ImageTextBeforeAfter';
 import ImageTextSaving_9 from './imageTextSaving_9/ImageTextSaving_9';
 import ImageTextSaving_10 from './imageTextSaving_10/ImageTextSaving_10';
 import ImageTextSaving_11 from './imageTextSaving_11/ImageTextSaving_11';
@@ -55,7 +55,7 @@ const ProjectSaving = (props: ProjectSavingTypes) => {
       <ImageTextSaving_5 {...imageTextSaving_5} />
       <ImageTextSaving_6 {...imageTextSaving_6} />
       <ImageTextSaving_7 {...imageTextSaving_7} />
-      <ImageTextSaving_8 {...imageTextSaving_8} />
+      <ImageTextBeforeAfter {...imageTextSaving_8} />
       <ImageTextSaving_9 {...imageTextSaving_9} />
       <ImageTextSaving_10 imagePartMobileSlider={imagePartMobileSlider} />
       <ImageTextSaving_11 {...imageTextSaving_11} />
