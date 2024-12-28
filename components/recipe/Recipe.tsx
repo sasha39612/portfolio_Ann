@@ -29,6 +29,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
     imageTextRecipe,
     titleTextImageDesMob,
     titleTextImageGridRecipe_3,
+    textWithTitleRecipe_3,
     footerProject,
   } = props;
 
@@ -47,6 +48,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
       <ImageTextRecipe {...imageTextRecipe} />
       <TitleTextImageDesMob {...titleTextImageDesMob} />
       <TitleImageTextImage {...titleTextImageGridRecipe_3} />
+      <TextBlocksWithTitle {...textWithTitleRecipe_3} />
       <FooterProject
         {...footerProject}
         className={styles[footerProject.className ?? ' ']}

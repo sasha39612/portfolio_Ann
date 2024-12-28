@@ -19,6 +19,11 @@ export interface TitleTextImageDesMobType {
   imageTextRecipeDesMob: ImageTextDesMobType;
 }
 
+export interface TextWithTitleRecipe {
+  title: TextBlockElem;
+  textWithTitle: TextSimpleBlock[];
+}
+
 export interface ProjectRecipeTypes {
   imageTextWithFlexRecipe: TextImageWithFlexType;
   imageTextRecipeDesMob: ImageTextDesMobType;
@@ -27,14 +32,12 @@ export interface ProjectRecipeTypes {
   titleTextImageGridRecipe: ImageTextSimpleBlock[];
   imageTextWithFlexRecipe_1: TextImageWithFlexType;
   imageTextWithFlexRecipe_2: TextImageWithFlexType;
-  textWithTitleRecipe_2: {
-    title: TextBlockElem;
-    textWithTitle: TextSimpleBlock[];
-  };
+  textWithTitleRecipe_2: TextWithTitleRecipe;
   titleTextImageGridRecipe_1: TitleTextImageGrid;
   titleTextImageGridRecipe_2: TitleTextImageGrid;
   imageTextRecipe: ImageText;
   titleTextImageDesMob: TitleTextImageDesMobType;
   titleTextImageGridRecipe_3: TitleTextImageGrid;
+  textWithTitleRecipe_3: TextWithTitleRecipe;
   footerProject: FooterProject;
 }

@@ -109,6 +109,10 @@
   }
 }
 
+.wrapperTextWithTitleRecipe_3 {
+  @extend .wrapperTextWithTitleRecipe_2;
+}
+
 .containerTextWithTitleSaving {
   display: flex;
   flex-direction: column;
@@ -152,6 +156,11 @@
   background: #f3f3f3;
   border-radius: 20px;
   box-sizing: border-box;
+}
+
+.containerTextWithTitleRecipe_3 {
+  @extend .containerTextWithTitleRecipe_2;
+  padding: 53px 20px;
 }
 
 .classNameTitleRecipe {
@@ -203,6 +212,12 @@
   }
 }
 
+.titleTextWithTitleRecipe_3 {
+  @include Avenir_font18_weight_800;
+  text-align: center;
+  line-height: 1.45;
+}
+
 .descriptionTextWithTitleSaving {
   @include Grotesk_font14_weight400;
   color: #545454;
@@ -219,4 +234,8 @@
 
 .descriptionTextWithTitleRecipe_2 {
   @include Avenir_font12_weight_400;
+}
+
+.descriptionTextWithTitleRecipe_3 {
+  @extend .descriptionTextWithTitleRecipe_2;
 }
