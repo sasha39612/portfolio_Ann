@@ -224,12 +224,15 @@ export interface TextBlockUserData
 export interface UserData extends TextImageWithFlexType {
   textGrid: TextBlockUserData[];
   classNameImageWrapper?: string;
+  classNameTextPartGridContainer?: string;
+  imagePart?: ImagePropsType;
 }
 
 export interface TitleTextImageGrid {
   header: {
     title: TextBlockElem;
     description: TextBlockElem;
+    image?: ImagePropsType;
   };
-  usersData: UserData[];
+  usersData: UserData | UserData[];
 }
