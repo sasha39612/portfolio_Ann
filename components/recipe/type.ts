@@ -40,5 +40,6 @@ export interface ProjectRecipeTypes {
   titleTextImageGridRecipe_3: TitleTextImageGrid;
   textWithTitleRecipe_3: TextWithTitleRecipe;
   imageTextRecipe_2: ImageText;
+  titleTextImageGridRecipe_4: TitleTextImageGrid;
   footerProject: FooterProject;
 }

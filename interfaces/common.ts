@@ -233,6 +233,7 @@ export interface TitleTextImageGrid {
     title: TextBlockElem;
     description: TextBlockElem;
     image?: ImagePropsType;
+    className?: string;
   };
   usersData: UserData | UserData[];
 }

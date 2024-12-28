@@ -4,7 +4,7 @@ import styles from './titleImageTextImage.module.scss';
 
 const TitleImageTextImage = ({ header, usersData }: TitleTextImageGrid) => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles[header?.className ?? '']}>
       <div className={styles.headerContainer}>
         <h2 className={styles[header.title.className ?? '']}>
           {header.title?.text}
