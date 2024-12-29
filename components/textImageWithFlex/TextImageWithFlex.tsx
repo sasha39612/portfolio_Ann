@@ -1,10 +1,10 @@
 import cn from 'classnames';
-import he from 'he';
 import { TextImageWithFlexType } from '../../interfaces/common';
 import ImageComponent from '../ui/image/Image';
 import TextBlockListFlex from '../ui/textBlockListFlex/TextBlockListFlex';
 import styles from './textImageWithFlex.module.scss';
 import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
+import { getDangerousHTML } from '../../lib/getDangerousHTML';
 
 const isFirstTextBlockListFlexVisible = (
   isMobileView: boolean,
@@ -20,12 +20,6 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
   const { textPart, imagePart, className, classNameContainer } = props;
   const isMobileView = useCheckMobileScreen();
   const imageStyles = cn(styles.image, styles[imagePart?.className ?? '']);
-
-  const getDangerousHTML = (text: string) => {
-    return {
-      __html: he.decode(text),
-    };
-  };
 
   return (
     <section className={styles[className ?? '']}>
@@ -46,7 +40,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
           <div
             className={styles[textPart?.subTitle?.className ?? '']}
             dangerouslySetInnerHTML={getDangerousHTML(
-              textPart?.title?.text ?? '',
+              textPart?.subTitle?.text ?? '',
             )}
           />
         ) : textPart?.subTitle?.text ? (

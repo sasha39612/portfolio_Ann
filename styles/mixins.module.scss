@@ -588,6 +588,16 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin Avenir_font18_weight_350 {
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 24.59px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin Avenir_font18_weight_800 {
   font-family: Avenir;
   font-size: 18px;
@@ -693,6 +703,26 @@
   font-size: 44.41px;
   font-weight: 500;
   line-height: 60.66px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font50_weight_300 {
+  font-family: Avenir;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 68.3px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font50_weight_500 {
+  font-family: Avenir;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 68.3px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;

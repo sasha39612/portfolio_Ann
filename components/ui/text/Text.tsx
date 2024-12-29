@@ -1,12 +1,6 @@
 'use client';
 import { TextSimpleBlock } from '../../../interfaces/common';
-import he from 'he';
-
-const getDangerousHTML = (text: string) => {
-  return {
-    __html: he.decode(text),
-  };
-};
+import { getDangerousHTML } from '../../../lib/getDangerousHTML';
 
 const Text = ({
   title,

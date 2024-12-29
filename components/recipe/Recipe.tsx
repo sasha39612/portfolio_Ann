@@ -14,6 +14,7 @@ import ImageTextRecipe from './imageTextRecipe/ImageTextRecipe';
 import TitleTextImageDesMob from './titleTextImageDesMob/TitleTextImageDesMob';
 import TitleImageTextImage from './titleImageTextImage/TitleImageTextImage';
 import ImageTextBeforeAfter from '../ui/imageTextBeforeAfter/ImageTextBeforeAfter';
+import TitleImageText from './titleImageText/TitleImageText';
 
 const ProjectRecipe = (props: ProjectRecipeTypes) => {
   const {
@@ -32,6 +33,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
     titleTextImageGridRecipe_3,
     textWithTitleRecipe_3,
     imageTextRecipe_2,
+    imageTextWithFlexRecipe_3,
     titleTextImageGridRecipe_4,
     footerProject,
   } = props;
@@ -53,6 +55,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
       <TitleImageTextImage {...titleTextImageGridRecipe_3} />
       <TextBlocksWithTitle {...textWithTitleRecipe_3} />
       <ImageTextBeforeAfter {...imageTextRecipe_2} />
+      <TitleImageText {...imageTextWithFlexRecipe_3} />
       <TitleImageTextImage {...titleTextImageGridRecipe_4} />
       <FooterProject
         {...footerProject}
