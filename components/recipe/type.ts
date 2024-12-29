@@ -8,6 +8,7 @@ import {
   TextBlockElem,
   TitleTextImageGrid,
   ImageText,
+  ImagePropsType,
 } from '../../interfaces/common';
 
 export interface TitleTextImageDesMobType {
@@ -40,6 +41,7 @@ export interface ProjectRecipeTypes {
   titleTextImageGridRecipe_3: TitleTextImageGrid;
   textWithTitleRecipe_3: TextWithTitleRecipe;
   imageTextRecipe_2: ImageText;
+  imagesMulti: ImagePropsType[];
   imageTextSwiperMultiRecipe: ImageText;
   imageTextWithFlexRecipe_3: TextImageWithFlexType;
   titleTextImageGridRecipe_4: TitleTextImageGrid;

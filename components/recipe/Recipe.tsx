@@ -16,6 +16,7 @@ import TitleImageTextImage from './titleImageTextImage/TitleImageTextImage';
 import ImageTextBeforeAfter from '../ui/imageTextBeforeAfter/ImageTextBeforeAfter';
 import TitleImageText from './titleImageText/TitleImageText';
 import ImageTextSwiperMulti from '../ui/imageTextSwiperMulti/ImageTextSwiperMulti';
+import ImagesMulti from '../ui/imagesMulti/ImagesMulti';
 
 const ProjectRecipe = (props: ProjectRecipeTypes) => {
   const {
@@ -34,6 +35,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
     titleTextImageGridRecipe_3,
     textWithTitleRecipe_3,
     imageTextRecipe_2,
+    imagesMulti,
     imageTextSwiperMultiRecipe,
     imageTextWithFlexRecipe_3,
     titleTextImageGridRecipe_4,
@@ -57,6 +59,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
       <TitleImageTextImage {...titleTextImageGridRecipe_3} />
       <TextBlocksWithTitle {...textWithTitleRecipe_3} />
       <ImageTextBeforeAfter {...imageTextRecipe_2} />
+      <ImagesMulti images={imagesMulti} />
       <ImageTextSwiperMulti {...imageTextSwiperMultiRecipe} />
       <TitleImageText {...imageTextWithFlexRecipe_3} />
       <TitleImageTextImage {...titleTextImageGridRecipe_4} />
