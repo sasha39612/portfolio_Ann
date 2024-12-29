@@ -1,5 +1,6 @@
-import { ImageTextSimpleBlock } from '../../interfaces/common';
+import { FooterProject, ImageTextSimpleBlock } from '../../interfaces/common';
 
 export interface ProjectLiteraryTypes {
   imageTextWithTitleLiterary: ImageTextSimpleBlock[];
+  footerProject: FooterProject;
 }

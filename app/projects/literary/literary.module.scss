@@ -1,0 +1,49 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.footerProjectLiterary {
+  background: #2b47d4;
+}
+
+.classNameTitle {
+  @include SF_font24_weight_590;
+  max-width: 160px;
+  color: #ffffff;
+
+  @include tablet-up {
+    @include SF_font50_weight_590;
+    max-width: 100%;
+  }
+}
+
+.classNameLink {
+  background: #ffffff80;
+}
+
+.imageArrowName {
+  @include SF_font16_weight_400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.imageBackgroundVintageDesktop {
+  aspect-ratio: 1001/316;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+
+  @include desktop {
+    margin: 0px -80px 60px;
+  }
+}
+
+.imageBackgroundVintageMobile {
+  aspect-ratio: 375/269;
+  margin: 0px -20px 40px;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+}

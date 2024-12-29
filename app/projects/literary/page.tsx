@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import getPropsData from '../../../lib/getPropsData';
 import { ProjectLiteraryTypes } from '../../../components/literary/type';
 import ImageTextBlocksWithTitle from '../../../components/ui/imageTextBlocksWithTitle/ImageTextBlocksWithTitle';
+import FooterProject from '../../../components/shared/footerProject/FooterProject';
+import styles from './literary.module.scss';
 
 const Literary = () => {
   const projectProps = getPropsData(
@@ -12,12 +14,20 @@ const Literary = () => {
     notFound();
   }
 
-  const { imageTextWithTitleLiterary } = projectProps;
+  const { imageTextWithTitleLiterary, footerProject } = projectProps;
 
   return (
     <>
       <ImageTextBlocksWithTitle
         imageTextWithTitle={imageTextWithTitleLiterary}
+      />
+      <FooterProject
+        {...footerProject}
+        className={styles[footerProject.className ?? ' ']}
+        classNameTitle={styles.classNameTitle}
+        classNameImage={''}
+        classImageArrowName={styles.imageArrowName}
+        classNameLink={styles.classNameLink}
       />
     </>
   );
