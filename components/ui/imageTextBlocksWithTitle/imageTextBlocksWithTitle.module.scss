@@ -109,6 +109,17 @@
   }
 }
 
+.wrapperTextWithTitleLiterary {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 55px;
+  }
+}
+
 .wrapperImagesTextWithTitleRecipe {
   display: flex;
   flex-direction: column;
@@ -178,6 +189,12 @@
   }
 }
 
+.containerTextWithTitleLiterary {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .containerImagesTextWithTitleRecipe {
   display: flex;
   flex-direction: column;
@@ -242,6 +259,15 @@
   }
 }
 
+.titleTextWithTitleLiterary {
+  @include SF_font26_weight_510;
+  color: #1c1c1e;
+
+  @include tablet-up {
+    @include SF_font30_weight_510;
+  }
+}
+
 .titleImagesTextWithTitleRecipe {
   @include Avenir_font16_weight_500;
 
@@ -266,6 +292,10 @@
 
 .descriptionTextWithTitleRecipe {
   @include Avenir_font12_weight_350;
+}
+
+.descriptionTextWithTitleLiterary {
+  @include SF_font16_weight_274;
 }
 
 .classNameDescriptionRecipe {

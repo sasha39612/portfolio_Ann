@@ -20,9 +20,9 @@ const ImageTextDesMob = ({
         <div className={styles[classNameTextContainer ?? '']}>
           <Text
             {...textPart}
-            classNameTitle={styles[textPart.classNameTitle ?? '']}
-            classNameSubTitle={styles[textPart.classNameSubTitle ?? '']}
-            classNameDescription={styles[textPart.classNameDescription ?? '']}
+            classNameTitle={styles[textPart?.classNameTitle ?? '']}
+            classNameSubTitle={styles[textPart?.classNameSubTitle ?? '']}
+            classNameDescription={styles[textPart?.classNameDescription ?? '']}
           />
         </div>
 

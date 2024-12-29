@@ -747,3 +747,34 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+//SF Pro
+@mixin SF_font16_weight_274 {
+  font-family: SF Pro;
+  font-size: 16px;
+  font-weight: 274;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font26_weight_510 {
+  font-family: SF Pro;
+  font-size: 26px;
+  font-weight: 510;
+  line-height: 31.03px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font30_weight_510 {
+  font-family: SF Pro;
+  font-size: 30px;
+  font-weight: 510;
+  line-height: 35.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
