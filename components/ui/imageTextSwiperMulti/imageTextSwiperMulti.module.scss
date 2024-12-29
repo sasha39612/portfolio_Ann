@@ -23,6 +23,11 @@
   }
 }
 
+.titleImageTextSwiperMultiRecipe {
+  @include Avenir_font30_weight_500;
+  margin-bottom: 29px;
+}
+
 .descriptionImageTextSaving_1 {
   @include Grotesk_font16_weight400;
   text-align: center;
@@ -81,6 +86,11 @@
   aspect-ratio: 0.46;
 }
 
+.imageTextRecipeMobile {
+  @extend .image;
+  aspect-ratio: 194 / 419;
+}
+
 .imageTextSavingDesktop_9 {
   @extend .image;
   aspect-ratio: 1.28;
@@ -89,6 +99,11 @@
 .imageTextVintageDesktop_2 {
   @extend .image;
   aspect-ratio: 1.47;
+}
+
+.imageTextRecipeDesktop {
+  @extend .image;
+  aspect-ratio: 856/1501;
 }
 
 .swiperWrapper {
@@ -131,6 +146,22 @@
 
   &:last-child {
     margin-bottom: 60px;
+  }
+}
+
+.wrapperSwiperImageTextSwiperMultiRecipe {
+  margin: 0px -20px -2px;
+  padding: 26px 20px 40px;
+  background: #eeeeee;
+
+  @include tablet {
+    margin: 0px -48px -2px;
+    padding: 26px 48px 60px;
+  }
+
+  @include desktop {
+    margin: 0px -80px -2px;
+    padding: 26px 80px 60px;
   }
 }
 

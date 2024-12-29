@@ -7,7 +7,8 @@ import { ImageText } from '../../../interfaces/common';
 import DesktopMulti from '../desktopMulti/DesktopMulti';
 import styles from './imageTextSwiperMulti.module.scss';
 
-const slidesPerView = 2.5;
+const getSlidesPerView = (className?: string) =>
+  className === 'imageTextRecipeMobile' ? 1.5 : 2.5;
 
 const ImageTextSwiperMulti = ({
   textPart,
@@ -44,7 +45,9 @@ const ImageTextSwiperMulti = ({
                       <SwiperCustom
                         images={item.imagePartMobileSlider}
                         classNameSwiper={styles.swiper}
-                        slidesPerView={slidesPerView}
+                        slidesPerView={getSlidesPerView(
+                          item.imagePartMobileSlider?.[0].className,
+                        )}
                         classNameImage={
                           styles[
                             item.imagePartMobileSlider?.[0].className ?? ' '
