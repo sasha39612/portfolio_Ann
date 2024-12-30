@@ -4,6 +4,7 @@ import { ProjectLiteraryTypes } from '../../../components/literary/type';
 import ImageTextBlocksWithTitle from '../../../components/ui/imageTextBlocksWithTitle/ImageTextBlocksWithTitle';
 import FooterProject from '../../../components/shared/footerProject/FooterProject';
 import styles from './literary.module.scss';
+import TitleImageTextImage from '../../../components/recipe/titleImageTextImage/TitleImageTextImage';
 
 const Literary = () => {
   const projectProps = getPropsData(
@@ -14,13 +15,18 @@ const Literary = () => {
     notFound();
   }
 
-  const { imageTextWithTitleLiterary, footerProject } = projectProps;
+  const {
+    imageTextWithTitleLiterary,
+    titleTextImageGridLiterary,
+    footerProject,
+  } = projectProps;
 
   return (
     <>
       <ImageTextBlocksWithTitle
         imageTextWithTitle={imageTextWithTitleLiterary}
       />
+      <TitleImageTextImage {...titleTextImageGridLiterary} />
       <FooterProject
         {...footerProject}
         className={styles[footerProject.className ?? ' ']}
