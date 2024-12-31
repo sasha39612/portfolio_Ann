@@ -1,5 +1,6 @@
 import {
   FooterProject,
+  ImageTextDesMobType,
   ImageTextSimpleBlock,
   TextImageWithFlexType,
   TitleTextImageGrid,
@@ -7,6 +8,7 @@ import {
 
 export interface ProjectLiteraryTypes {
   imageTextWithFlexLiterary: TextImageWithFlexType;
+  imageTextLiteraryDesMob: ImageTextDesMobType;
   imageTextWithTitleLiterary: ImageTextSimpleBlock[];
   titleTextImageGridLiterary: TitleTextImageGrid;
   footerProject: FooterProject;
