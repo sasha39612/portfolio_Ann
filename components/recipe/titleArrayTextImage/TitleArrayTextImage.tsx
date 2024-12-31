@@ -6,10 +6,10 @@ const TitleArrayTextImage = ({ header, usersData }: TitleTextImageGrid) => {
   return (
     <section className={styles.wrapper}>
       <>
-        <h2 className={styles[header.title.className ?? '']}>
+        <h2 className={styles[header.title?.className ?? '']}>
           {header.title?.text}
         </h2>
-        <p className={styles[header.description.className ?? '']}>
+        <p className={styles[header.description?.className ?? '']}>
           {header.description?.text}
         </p>
       </>
@@ -18,7 +18,7 @@ const TitleArrayTextImage = ({ header, usersData }: TitleTextImageGrid) => {
           ? usersData.map((item) => (
               <li
                 key={item.id}
-                className={styles[item.classNameContainer ?? '']}
+                className={styles[item?.classNameContainer ?? '']}
               >
                 <p className={styles[item.textPart?.subTitle?.className ?? '']}>
                   {item.textPart?.subTitle?.text}
@@ -36,18 +36,28 @@ const TitleArrayTextImage = ({ header, usersData }: TitleTextImageGrid) => {
                         key={textBlock.id}
                         className={styles[textBlock.classNameContainer ?? '']}
                       >
-                        <h4 className={styles[textBlock.classNameTitle ?? '']}>
-                          {textBlock.title}
-                        </h4>
+                        {textBlock?.title ? (
+                          <h4
+                            className={styles[textBlock.classNameTitle ?? '']}
+                          >
+                            {textBlock.title}
+                          </h4>
+                        ) : null}
+                        {textBlock.image?.src ? (
+                          <ImageComponent
+                            {...textBlock.image}
+                            className={styles[textBlock.image?.className ?? '']}
+                          />
+                        ) : null}
                         {Array.isArray(textBlock.description) ? (
-                          <ul className={styles[textBlock.className ?? '']}>
+                          <ul className={styles[textBlock?.className ?? '']}>
                             {textBlock.description.map(
                               (textBlockDescription) => (
                                 <li key={textBlockDescription.id}>
                                   <span
                                     className={
                                       styles[
-                                        textBlockDescription.className ?? ''
+                                        textBlockDescription?.className ?? ''
                                       ]
                                     }
                                   >

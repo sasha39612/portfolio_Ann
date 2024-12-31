@@ -11,6 +11,7 @@ export interface ProjectLiteraryTypes {
   imageTextLiteraryDesMob: ImageTextDesMobType;
   imageTextWithTitleLiterary: ImageTextSimpleBlock[];
   titleTextImageGridLiterary_1: TitleTextImageGrid;
+  titleTextImageGridLiterary_2: TitleTextImageGrid;
   titleTextImageGridLiterary: TitleTextImageGrid;
   footerProject: FooterProject;
 }

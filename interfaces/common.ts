@@ -53,6 +53,7 @@ export interface TextSimpleBlock {
   classNameSubTitle?: string;
   classNameDescription?: string;
   isDangerousHTML?: boolean;
+  image?: ImagePropsType;
 }
 
 export interface ImageTextSimpleBlock extends TextSimpleBlock {

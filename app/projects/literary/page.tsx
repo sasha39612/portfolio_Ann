@@ -7,6 +7,7 @@ import styles from './literary.module.scss';
 import TitleImageTextImage from '../../../components/recipe/titleImageTextImage/TitleImageTextImage';
 import TextImageWithFlex from '../../../components/textImageWithFlex/TextImageWithFlex';
 import ImageTextDesMob from '../../../components/ui/imageTextDesMob/ImageTextDesMob';
+import TitleArrayTextImage from '../../../components/recipe/titleArrayTextImage/TitleArrayTextImage';
 
 const Literary = () => {
   const projectProps = getPropsData(
@@ -22,6 +23,7 @@ const Literary = () => {
     imageTextLiteraryDesMob,
     imageTextWithTitleLiterary,
     titleTextImageGridLiterary_1,
+    titleTextImageGridLiterary_2,
     titleTextImageGridLiterary,
     footerProject,
   } = projectProps;
@@ -34,6 +36,7 @@ const Literary = () => {
         imageTextWithTitle={imageTextWithTitleLiterary}
       />
       <TitleImageTextImage {...titleTextImageGridLiterary_1} />
+      <TitleArrayTextImage {...titleTextImageGridLiterary_2} />
       <TitleImageTextImage {...titleTextImageGridLiterary} />
       <FooterProject
         {...footerProject}
