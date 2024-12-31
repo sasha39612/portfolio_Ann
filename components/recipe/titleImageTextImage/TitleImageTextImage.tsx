@@ -32,12 +32,12 @@ const TitleImageTextImage = ({ header, usersData }: TitleTextImageGrid) => {
                     {textBlock.title}
                   </h4>
                   {Array.isArray(textBlock.description) ? (
-                    <ul className={styles[textBlock.className ?? '']}>
+                    <ul className={styles[textBlock?.className ?? '']}>
                       {textBlock.description.map((textBlockDescription) => (
                         <li key={textBlockDescription.id}>
                           <span
                             className={
-                              styles[textBlockDescription.className ?? '']
+                              styles[textBlockDescription?.className ?? '']
                             }
                           >
                             {textBlockDescription.text}

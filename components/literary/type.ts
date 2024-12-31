@@ -10,6 +10,7 @@ export interface ProjectLiteraryTypes {
   imageTextWithFlexLiterary: TextImageWithFlexType;
   imageTextLiteraryDesMob: ImageTextDesMobType;
   imageTextWithTitleLiterary: ImageTextSimpleBlock[];
+  titleTextImageGridLiterary_1: TitleTextImageGrid;
   titleTextImageGridLiterary: TitleTextImageGrid;
   footerProject: FooterProject;
 }

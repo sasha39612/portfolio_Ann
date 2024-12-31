@@ -819,6 +819,16 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin SF_font30_weight_700 {
+  font-family: SF Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin SF_font32_weight_510 {
   font-family: SF Pro;
   font-size: 32px;

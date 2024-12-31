@@ -21,6 +21,7 @@ const Literary = () => {
     imageTextWithFlexLiterary,
     imageTextLiteraryDesMob,
     imageTextWithTitleLiterary,
+    titleTextImageGridLiterary_1,
     titleTextImageGridLiterary,
     footerProject,
   } = projectProps;
@@ -32,6 +33,7 @@ const Literary = () => {
       <ImageTextBlocksWithTitle
         imageTextWithTitle={imageTextWithTitleLiterary}
       />
+      <TitleImageTextImage {...titleTextImageGridLiterary_1} />
       <TitleImageTextImage {...titleTextImageGridLiterary} />
       <FooterProject
         {...footerProject}

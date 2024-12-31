@@ -37,6 +37,24 @@
   margin: 60px 0px;
 }
 
+.classNameWrapperTitleTextImageGridLiterary_1 {
+  padding: 40px 20px;
+  margin: 80px -20px;
+  border-radius: 32px;
+  opacity: 0.8px;
+  background: #2b47d4;
+
+  @include tablet {
+    padding: 60px 48px;
+    margin: 120px -48px;
+  }
+
+  @include desktop {
+    padding: 60px 80px;
+    margin: 120px -80px;
+  }
+}
+
 .headerContainer {
   grid-area: a;
   margin-bottom: 30px;
@@ -66,6 +84,12 @@
   }
 }
 
+.classNameTitleTextImageGridLiterary_1 {
+  @extend .classNameTitleTextImageGridLiterary;
+  margin: 0;
+  color: $white;
+}
+
 .classNameTitleTextImageGridRecipe_4 {
   @extend .classNameTitleTextImageGridRecipe_3;
 }
@@ -91,6 +115,14 @@
   }
 }
 
+.titleTextImageGridLiterary_1 {
+  @extend .titleTextImageGridLiterary;
+
+  @include tablet-up {
+    @include SF_font30_weight_700;
+  }
+}
+
 .descriptionTitleTextImageGridRecipe_3 {
   @include Avenir_font14_weight_300;
 }
@@ -101,6 +133,10 @@
 
 .descriptionTitleTextImageGridLiterary {
   @include SF_font16_weight_274;
+}
+
+.descriptionTitleTextImageGridLiterary_1 {
+  @extend .descriptionTitleTextImageGridLiterary;
 }
 
 .classNameTextPartGridContainerTitleTextImageGridRecipe_3 {
@@ -133,6 +169,15 @@
   }
 }
 
+.classNameTextPartGridContainerTitleTextImageGridLiterary_1 {
+  @extend .classNameTextPartGridContainerTitleTextImageGridLiterary;
+  flex-wrap: wrap;
+
+  > li {
+    flex: 1 1 calc(44% - 14px);
+  }
+}
+
 .containerTitleTextImageGridRecipe_4 {
   display: flex;
   justify-content: space-between;
@@ -153,6 +198,14 @@
   @include tablet-up {
     width: 50%;
   }
+}
+
+.containerTitleTextImageGridLiterary_1 {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .wrapperTitleTextImageGridRecipe_3 {
@@ -186,6 +239,12 @@
 }
 
 .wrapperTitleTextImageGridRecipe_33 {
+  @extend .wrapperTitleTextImageGridRecipe_3;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.wrapperTitleTextImageGridLiterary_1 {
   @extend .wrapperTitleTextImageGridRecipe_3;
   list-style-type: disc;
   margin-left: 20px;
