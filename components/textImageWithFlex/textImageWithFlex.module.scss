@@ -75,6 +75,30 @@
   }
 }
 
+.classNameWrapperLiterary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  gap: 5px;
+
+  > :nth-child(1),
+  > :nth-child(2) {
+    flex: 1 1 45%;
+  }
+
+  @include tablet {
+    > :nth-child(1),
+    > :nth-child(2) {
+      flex: 1 1 35%;
+    }
+
+    > :nth-child(3) {
+      width: 100%;
+    }
+  }
+}
+
 .classNameContainerSaving {
   display: flex;
   flex-direction: column;
@@ -173,6 +197,17 @@
   }
 }
 
+.classNameTitleLiterary {
+  @include SF_font40_weight_700;
+  color: #2b47d4;
+  margin-bottom: 16px;
+
+  @include tablet-up {
+    @include SF_font90_weight_700;
+    margin-bottom: 23px;
+  }
+}
+
 .classNameSubTitleRecipe_2 {
   @include Avenir_font30_weight_500;
 }
@@ -211,6 +246,17 @@
   @include Avenir_font14_weight_350;
 }
 
+.classNameDescriptionLiterary {
+  @include SF_font12_weight_400;
+  margin-top: 16px;
+
+  @include tablet-up {
+    @include SF_font16_weight_400;
+    margin-top: 26px;
+    text-align: left;
+  }
+}
+
 .image {
   width: 100%;
   height: 100%;
@@ -236,7 +282,6 @@
   max-width: 375px;
 
   @include tablet-up {
-    // aspect-ratio: 375/233;
     max-width: 700px;
   }
 }
@@ -260,6 +305,27 @@
 
   @include tablet-up {
     aspect-ratio: 975/304;
+  }
+}
+
+.mainImageProjectLiterary {
+  @extend .image;
+  aspect-ratio: 177/209;
+
+  @include tablet-up {
+    aspect-ratio: 347/409;
+    max-width: 392px;
+  }
+}
+
+.textPartImageProjectLiterary {
+  width: 100%;
+  aspect-ratio: 115/15;
+  max-width: 115px;
+
+  @include tablet-up {
+    aspect-ratio: 390/52;
+    max-width: 440px;
   }
 }
 

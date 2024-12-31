@@ -68,6 +68,7 @@ export interface TextBlockWithFlex {
   className?: string;
   classNameTextPartGridContainer?: string;
   classNameGridContainer?: string;
+  image?: ImagePropsType;
 }
 
 export interface TextImageType {

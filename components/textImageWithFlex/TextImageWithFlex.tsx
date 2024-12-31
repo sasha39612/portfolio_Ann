@@ -1,4 +1,4 @@
-import cn from 'classnames';
+'use client';
 import { TextImageWithFlexType } from '../../interfaces/common';
 import ImageComponent from '../ui/image/Image';
 import TextBlockListFlex from '../ui/textBlockListFlex/TextBlockListFlex';
@@ -9,17 +9,22 @@ import { getDangerousHTML } from '../../lib/getDangerousHTML';
 const isFirstTextBlockListFlexVisible = (
   isMobileView: boolean,
   className?: string,
-) => !(className === 'classNameGridContainerRecipe' && isMobileView);
-
+) =>
+  !(
+    (className === 'classNameGridContainerRecipe' ||
+      className === 'classNameGridContainerLiterary') &&
+    isMobileView
+  );
 const isSecondTextBlockListFlexVisible = (
   isMobileView: boolean,
   className?: string,
-) => className === 'classNameGridContainerRecipe' && isMobileView;
+) =>
+  className === 'classNameGridContainerRecipe' ||
+  (className === 'classNameGridContainerLiterary' && isMobileView);
 
 const TextImageWithFlex = (props: TextImageWithFlexType) => {
   const { textPart, imagePart, className, classNameContainer } = props;
   const isMobileView = useCheckMobileScreen();
-  const imageStyles = cn(styles.image, styles[imagePart?.className ?? '']);
 
   return (
     <section className={styles[className ?? '']}>
@@ -35,6 +40,15 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
           <div className={styles[textPart?.title?.className ?? '']}>
             {textPart?.title?.text}
           </div>
+        ) : null}
+        {textPart?.image?.src ? (
+          <ImageComponent
+            src={textPart.image.src}
+            alt={textPart.image.alt ?? 'Some image'}
+            priority={textPart.image.priority}
+            loading={textPart.image.loading}
+            className={styles[textPart?.image?.className ?? '']}
+          />
         ) : null}
         {textPart?.subTitle?.isDangerousHTML ? (
           <div
@@ -77,7 +91,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
           alt={imagePart?.alt ?? 'Some image'}
           priority={imagePart?.priority}
           loading={imagePart?.loading}
-          className={imageStyles}
+          className={styles[imagePart?.className ?? '']}
         />
       ) : null}
       {isSecondTextBlockListFlexVisible(

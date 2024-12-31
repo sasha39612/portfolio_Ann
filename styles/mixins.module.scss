@@ -749,6 +749,26 @@
 }
 
 //SF Pro
+@mixin SF_font12_weight_400 {
+  font-family: SF Pro;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font14_weight_510 {
+  font-family: SF Pro;
+  font-size: 13.13px;
+  font-weight: 510;
+  line-height: 15.67px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin SF_font16_weight_274 {
   font-family: SF Pro;
   font-size: 16px;
@@ -830,12 +850,34 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin SF_font40_weight_700 {
+  font-family: SF Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin SF_font50_weight_590 {
   font-family: SF Pro;
   font-size: 50px;
   font-weight: 590;
   line-height: 50px;
   text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font90_weight_700 {
+  font-family: SF Pro;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 107.4px;
+  letter-spacing: 0.03em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }

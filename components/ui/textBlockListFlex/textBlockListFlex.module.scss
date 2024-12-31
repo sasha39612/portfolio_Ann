@@ -36,7 +36,6 @@
 
 .classNameTextPartGridContainerRecipe {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   margin: 0px 20px;
@@ -50,6 +49,30 @@
   @include tablet-up {
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+}
+
+.classNameTextPartGridContainerLiterary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 40px 0px 0px;
+  gap: 17px;
+
+  li {
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    margin: 85px 0px 0px;
+    justify-content: space-between;
+
+    li {
+      flex: 1 1 auto;
+      text-align: center;
+    }
   }
 }
 
@@ -100,6 +123,10 @@
   gap: 10px;
 }
 
+.classNameGridContainerLiterary {
+  @extend .classNameGridContainerRecipe;
+}
+
 .classNameTextGridTitleSaving {
   @include Grotesk_font16_weight500;
   width: 63px;
@@ -124,6 +151,11 @@
   color: #4a4a49;
 }
 
+.classNameTextGridTitleLiterary {
+  @include SF_font16_weight_400;
+  color: #4a4a49;
+}
+
 .classNameTextGridDescriptionSaving {
   @include Grotesk_font12_weight400;
   width: 119px;
@@ -136,6 +168,11 @@
 .classNameTextGridDescriptionRecipe {
   @include Avenir_font16_weight_500;
   color: #4a4a49;
+}
+
+.classNameTextGridDescriptionLiterary {
+  @include SF_font14_weight_510;
+  text-align: center;
 }
 
 .classNameTextGridTitleRecipe_2 {

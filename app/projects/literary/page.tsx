@@ -5,6 +5,7 @@ import ImageTextBlocksWithTitle from '../../../components/ui/imageTextBlocksWith
 import FooterProject from '../../../components/shared/footerProject/FooterProject';
 import styles from './literary.module.scss';
 import TitleImageTextImage from '../../../components/recipe/titleImageTextImage/TitleImageTextImage';
+import TextImageWithFlex from '../../../components/textImageWithFlex/TextImageWithFlex';
 
 const Literary = () => {
   const projectProps = getPropsData(
@@ -16,6 +17,7 @@ const Literary = () => {
   }
 
   const {
+    imageTextWithFlexLiterary,
     imageTextWithTitleLiterary,
     titleTextImageGridLiterary,
     footerProject,
@@ -23,6 +25,7 @@ const Literary = () => {
 
   return (
     <>
+      <TextImageWithFlex {...imageTextWithFlexLiterary} />
       <ImageTextBlocksWithTitle
         imageTextWithTitle={imageTextWithTitleLiterary}
       />
