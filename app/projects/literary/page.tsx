@@ -8,6 +8,7 @@ import TitleImageTextImage from '../../../components/recipe/titleImageTextImage/
 import TextImageWithFlex from '../../../components/textImageWithFlex/TextImageWithFlex';
 import ImageTextDesMob from '../../../components/ui/imageTextDesMob/ImageTextDesMob';
 import TitleArrayTextImage from '../../../components/recipe/titleArrayTextImage/TitleArrayTextImage';
+import ImageTextSwiperMulti from '../../../components/ui/imageTextSwiperMulti/ImageTextSwiperMulti';
 
 const Literary = () => {
   const projectProps = getPropsData(
@@ -24,6 +25,8 @@ const Literary = () => {
     imageTextWithTitleLiterary,
     titleTextImageGridLiterary_1,
     titleTextImageGridLiterary_2,
+    imageTextLiterary_2,
+    imageTextLiterary_3,
     titleTextImageGridLiterary,
     footerProject,
   } = projectProps;
@@ -37,6 +40,8 @@ const Literary = () => {
       />
       <TitleImageTextImage {...titleTextImageGridLiterary_1} />
       <TitleArrayTextImage {...titleTextImageGridLiterary_2} />
+      <ImageTextSwiperMulti {...imageTextLiterary_2} />
+      <ImageTextSwiperMulti {...imageTextLiterary_3} />
       <TitleImageTextImage {...titleTextImageGridLiterary} />
       <FooterProject
         {...footerProject}

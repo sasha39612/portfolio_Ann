@@ -28,10 +28,24 @@
   margin-bottom: 29px;
 }
 
+.titleImageTextLiterary_2 {
+  @include SF_font36_weight_590;
+  margin-bottom: 32px;
+  color: #1c1c1e;
+
+  @include tablet-up {
+    @include SF_font45_weight_590;
+  }
+}
+
 .descriptionImageTextSaving_1 {
   @include Grotesk_font16_weight400;
   text-align: center;
   color: #545454;
+}
+
+.descriptionImageTextLiterary_2 {
+  @include SF_font16_weight_274;
 }
 
 .containerImageTextSaving_1 {
@@ -91,6 +105,30 @@
   aspect-ratio: 194 / 419;
 }
 
+.imageTextLiteraryMobile_2 {
+  @extend .image;
+  aspect-ratio: 151 / 327;
+}
+
+.imageTextLiteraryMobile_3 {
+  @extend .image;
+  aspect-ratio: 153 / 341;
+}
+
+.imageTextLiteraryLabel_2 {
+  height: 48px;
+  width: 84px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageTextLiteraryLabel_3 {
+  height: 77px;
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .imageTextSavingDesktop_9 {
   @extend .image;
   aspect-ratio: 1.28;
@@ -104,6 +142,16 @@
 .imageTextRecipeDesktop {
   @extend .image;
   aspect-ratio: 856/1501;
+}
+
+.imageTextLiteraryDesktop_2 {
+  @extend .image;
+  aspect-ratio: 1043/837;
+}
+
+.imageTextLiteraryDesktop_3 {
+  @extend .image;
+  aspect-ratio: 1043/984;
 }
 
 .swiperWrapper {
@@ -163,6 +211,18 @@
     margin: 0px -80px -2px;
     padding: 26px 80px 60px;
   }
+}
+
+.wrapperSwiperImageTextLiterary_2 {
+  @extend .wrapperSwiperImageTextSwiperMultiRecipe;
+  background: #f5f7ff;
+  margin-top: 50px;
+}
+
+.wrapperSwiperImageTextLiterary_3 {
+  @extend .wrapperSwiperImageTextSwiperMultiRecipe;
+  background: #f6f6f6;
+  margin-top: 50px;
 }
 
 .swiper {

@@ -23,11 +23,13 @@ const ImageTextSwiperMulti = ({
 
   return (
     <div className={styles[className ?? '']}>
-      <div className={styles.containerImageTextSaving_1}>
+      <div className={styles[classNameImageContainer ?? '']}>
         <Text
           id={textPart.id}
-          title={textPart.title}
+          title={textPart?.title}
+          description={textPart?.description}
           classNameTitle={styles[textPart.classNameTitle ?? '']}
+          classNameDescription={styles[textPart.classNameDescription ?? '']}
         />
       </div>
       {imagePartDesktop?.src ||
@@ -39,6 +41,12 @@ const ImageTextSwiperMulti = ({
               {Array.isArray(imagePartMobileSliders)
                 ? imagePartMobileSliders.map((item) => (
                     <li key={item.id}>
+                      {item?.image?.src ? (
+                        <ImageComponent
+                          {...item.image}
+                          className={styles[item.image?.className ?? '']}
+                        />
+                      ) : null}
                       <p className={styles[item.subTitle?.className ?? '']}>
                         {item.subTitle?.text}
                       </p>
