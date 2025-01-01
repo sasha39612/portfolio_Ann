@@ -10,6 +10,7 @@ import ImageTextDesMob from '../../../components/ui/imageTextDesMob/ImageTextDes
 import TitleArrayTextImage from '../../../components/recipe/titleArrayTextImage/TitleArrayTextImage';
 import ImageTextSwiperMulti from '../../../components/ui/imageTextSwiperMulti/ImageTextSwiperMulti';
 import TitleImages from '../../../components/ui/titleImages/TitleImages';
+import TitleTextImageDesMob from '../../../components/recipe/titleTextImageDesMob/TitleTextImageDesMob';
 
 const Literary = () => {
   const projectProps = getPropsData(
@@ -29,6 +30,7 @@ const Literary = () => {
     imageTextLiterary_2,
     imageTextLiterary_3,
     titleImagesLiterary,
+    titleTextImageDesMobLiterary,
     imageTextLiterary_4,
     imageTextLiterary_5,
     titleTextImageGridLiterary,
@@ -47,6 +49,7 @@ const Literary = () => {
       <ImageTextSwiperMulti {...imageTextLiterary_2} />
       <ImageTextSwiperMulti {...imageTextLiterary_3} />
       <TitleImages {...titleImagesLiterary} />
+      <TitleTextImageDesMob {...titleTextImageDesMobLiterary} />
       <ImageTextSwiperMulti {...imageTextLiterary_4} />
       <ImageTextSwiperMulti {...imageTextLiterary_5} />
       <TitleImageTextImage {...titleTextImageGridLiterary} />

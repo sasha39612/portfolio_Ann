@@ -11,7 +11,7 @@ const TitleTextImageDesMob = ({
   imageTextRecipeDesMob,
 }: TitleTextImageDesMobType) => {
   return (
-    <>
+    <section className={styles.wrapper}>
       <h2 className={styles[classNameTitle ?? '']}>{title}</h2>
       <p className={styles[classNameDescription ?? '']}>{description}</p>
       <ul className={styles[classNameWrapper]}>
@@ -26,7 +26,7 @@ const TitleTextImageDesMob = ({
             ))
           : null}
       </ul>
-    </>
+    </section>
   );
 };
 

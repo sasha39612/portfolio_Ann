@@ -188,8 +188,19 @@
   margin: 0px 0px 8px;
 
   @include tablet-up {
-    @include Avenir_font30_weight_500;
+    @include SF_font30_weight_510;
     margin: 0px 0px 17px;
+  }
+}
+
+.subTitleTextImageDesMobLiterary {
+  @include SF_font36_weight_590;
+  align-self: flex-start;
+  margin: 0px 0px 32px;
+
+  @include tablet-up {
+    @include SF_font45_weight_590;
+    margin: 0px 0px 40px;
   }
 }
 
@@ -344,9 +355,42 @@
   max-width: 720px;
 }
 
+.imageTextLiteraryDesWrapper {
+  @extend .image;
+  aspect-ratio: 331/227;
+  max-width: 400px;
+}
+
+.imageTextLiteraryDesWrapper_1 {
+  @extend .image;
+  aspect-ratio: 600/407;
+  max-width: 600px;
+}
+
+.imageTextLiteraryDesWrapper_2 {
+  @extend .image;
+  aspect-ratio: 600/113;
+  max-width: 600px;
+}
+
 .imageTextRecipeMobWrapper_3 {
   @extend .image;
   aspect-ratio: 350/550;
+}
+
+.imageTextLiteraryMobWrapper {
+  @extend .image;
+  aspect-ratio: 335/247;
+}
+
+.imageTextLiteraryMobWrapper_1 {
+  @extend .image;
+  aspect-ratio: 370/340;
+}
+
+.imageTextLiteraryMobWrapper_2 {
+  @extend .image;
+  aspect-ratio: 273/260;
 }
 
 .imageTextLiteraryDesktop {
