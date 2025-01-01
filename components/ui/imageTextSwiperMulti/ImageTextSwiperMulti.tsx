@@ -7,8 +7,17 @@ import { ImageText } from '../../../interfaces/common';
 import DesktopMulti from '../desktopMulti/DesktopMulti';
 import styles from './imageTextSwiperMulti.module.scss';
 
-const getSlidesPerView = (className?: string) =>
-  className === 'imageTextRecipeMobile' ? 1.5 : 2.5;
+const getSlidesPerView = (className?: string) => {
+  switch (className) {
+    case 'imageTextRecipeMobile':
+      return 1.5;
+    case 'imageTextLiteraryMobile_4':
+    case 'imageTextLiteraryMobile_5':
+      return 1.8;
+    default:
+      return 2.5;
+  }
+};
 
 const ImageTextSwiperMulti = ({
   textPart,

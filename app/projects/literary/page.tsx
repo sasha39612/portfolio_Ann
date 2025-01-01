@@ -27,6 +27,8 @@ const Literary = () => {
     titleTextImageGridLiterary_2,
     imageTextLiterary_2,
     imageTextLiterary_3,
+    imageTextLiterary_4,
+    imageTextLiterary_5,
     titleTextImageGridLiterary,
     footerProject,
   } = projectProps;
@@ -42,6 +44,8 @@ const Literary = () => {
       <TitleArrayTextImage {...titleTextImageGridLiterary_2} />
       <ImageTextSwiperMulti {...imageTextLiterary_2} />
       <ImageTextSwiperMulti {...imageTextLiterary_3} />
+      <ImageTextSwiperMulti {...imageTextLiterary_4} />
+      <ImageTextSwiperMulti {...imageTextLiterary_5} />
       <TitleImageTextImage {...titleTextImageGridLiterary} />
       <FooterProject
         {...footerProject}

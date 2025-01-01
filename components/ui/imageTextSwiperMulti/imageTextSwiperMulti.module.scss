@@ -38,6 +38,16 @@
   }
 }
 
+.titleImageTextLiterary_4 {
+  @include SF_font36_weight_590;
+  margin: 60px 0px;
+  color: #1c1c1e;
+
+  @include tablet-up {
+    @include SF_font45_weight_590;
+  }
+}
+
 .descriptionImageTextSaving_1 {
   @include Grotesk_font16_weight400;
   text-align: center;
@@ -115,6 +125,16 @@
   aspect-ratio: 153 / 341;
 }
 
+.imageTextLiteraryMobile_4 {
+  @extend .image;
+  aspect-ratio: 198 / 402;
+}
+
+.imageTextLiteraryMobile_5 {
+  @extend .image;
+  aspect-ratio: 189 / 400;
+}
+
 .imageTextLiteraryLabel_2 {
   height: 48px;
   width: 84px;
@@ -123,10 +143,19 @@
 }
 
 .imageTextLiteraryLabel_3 {
+  @extend .imageTextLiteraryLabel_2;
   height: 77px;
   width: 125px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.imageTextLiteraryLabel_4 {
+  @extend .imageTextLiteraryLabel_2;
+  height: 85px;
+  width: 135px;
+}
+
+.imageTextLiteraryLabel_5 {
+  @extend .imageTextLiteraryLabel_3;
 }
 
 .imageTextSavingDesktop_9 {
@@ -152,6 +181,15 @@
 .imageTextLiteraryDesktop_3 {
   @extend .image;
   aspect-ratio: 1043/984;
+}
+
+.imageTextLiteraryDesktop_4 {
+  @extend .image;
+  aspect-ratio: 1043/1399;
+}
+
+.imageTextLiteraryDesktop_5 {
+  @extend .imageTextLiteraryDesktop_4;
 }
 
 .swiperWrapper {
@@ -222,6 +260,18 @@
 .wrapperSwiperImageTextLiterary_3 {
   @extend .wrapperSwiperImageTextSwiperMultiRecipe;
   background: #f6f6f6;
+  margin-top: 50px;
+}
+
+.wrapperSwiperImageTextLiterary_4 {
+  @extend .wrapperSwiperImageTextSwiperMultiRecipe;
+  background: #f6f7ff;
+  margin-top: 50px;
+}
+
+.wrapperSwiperImageTextLiterary_5 {
+  @extend .wrapperSwiperImageTextSwiperMultiRecipe;
+  background: #fbfbfb;
   margin-top: 50px;
 }
 
