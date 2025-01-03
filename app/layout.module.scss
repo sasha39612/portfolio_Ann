@@ -1,9 +1,9 @@
-@import "/styles/mixins.module.scss";
-@import "/styles/colors.module.scss";
-@import "/styles/variables.module.scss";
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
 
 .root {
-  @include make-side-padding($max-width: $max-content-width)
+  @include make-side-padding($max-width: $max-content-width);
 }
 
 .mainStyles {
@@ -18,18 +18,17 @@
 }
 
 .button {
-  width: 172px;
-  height: 64px;
+  @include font20_weight400;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 30px 20px 30px;
-  gap: 10px;
+  padding: 16px 30px;
   border-radius: 12px;
+  letter-spacing: 0.1rem;
   background: $black;
   color: $white;
   margin-top: 30px;
 }
 
-.notFoundText{
+.notFoundText {
   margin-bottom: 40px;
 }

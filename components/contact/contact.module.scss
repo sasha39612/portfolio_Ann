@@ -1,6 +1,6 @@
-@import "styles/mixins.module.scss";
-@import "styles/colors.module.scss";
-@import "styles/variables.module.scss";
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
 
 .contactWrapper {
   border: 1px $contactBorder solid;
@@ -57,15 +57,16 @@
   }
 
   & > textarea::placeholder {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 }
 
 .submitButton {
-  width: 182px;
-  height: 56px;
-  padding: 20px 30px;
-  gap: 10px;
+  @include font20_weight400;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 30px;
   border-radius: 12px;
+  letter-spacing: 0.1rem;
   margin-top: 31px;
 }

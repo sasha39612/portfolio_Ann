@@ -1,156 +1,162 @@
-@import "styles/mixins.module.scss";
-@import "styles/colors.module.scss";
-@import "styles/variables.module.scss";
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
 
 .buttonWrapper {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0px;
 }
 
 .buttonTitle {
-    border: none;
-    background: none;
-    color: #00000080;
-    @include font20_weight400;
+  border: none;
+  background: none;
+  color: #00000080;
+  @include font20_weight400;
 
-    @include tablet-up {
-        @include font30_weight400;
-    }
+  @include tablet-up {
+    @include font30_weight400;
+  }
 }
 
 .buttonTitleActive {
-    color: #000000;
+  color: #000000;
 }
 
 .projectsWrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    @include tablet-up {
-        flex-direction: row;
-    }
+  @include tablet-up {
+    flex-direction: row;
+  }
 }
 
 .projectNameStylesReverse {
-    @include font32_weight400;
-    color: $projectName;
-    text-align: center;
-    margin-top: 40px;
+  @include font32_weight400;
+  color: $projectName;
+  text-align: center;
+  margin-top: 40px;
 
-    @include tablet-up {
-        writing-mode: vertical-lr;
-        -webkit-writing-mode: vertical-lr;
-        text-orientation: mixed;
-        -webkit-text-orientation: mixed;
-        transform: rotateZ(-180deg);
-        margin-top: 0px;
-    }
+  @include tablet-up {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    text-orientation: mixed;
+    -webkit-text-orientation: mixed;
+    transform: rotateZ(-180deg);
+    margin-top: 0px;
+  }
 }
 
 .projectsUXWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 50px 0px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px 0px 70px;
+
+  @include tablet-up {
+    margin-left: 40px;
+  }
 }
 
 .projectsGraphicDesignWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    width: 100%;
-    margin: 50px 0px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin: 50px 0px 70px;
 }
 
 .projectsUXContainer {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 30px;
+  border: 1px $contactBorder solid;
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    border: 1px $projectBorder solid;
+    background: $backgroundProject_2;
+  }
+
+  @include tablet-up {
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
+  }
 
-    @include tablet-up {
-        max-width: 41%;
-        flex-direction: column;
-        border: 1px $contactBorder solid;
-        padding: 30px;
-
-        &:nth-child(2),
-        &:nth-child(3) {
-            border: 1px $projectBorder solid;
-            background: $projectBorder;
-        }
-    }
-    @include desktop {
-        max-width: 43%;
-    }
+  @include desktop {
+    max-width: 40%;
+  }
 }
 
 .projectsGraphicContainer {
-    gap: 40px;
-    width: 100%;
+  gap: 40px;
+  width: 100%;
 
-    @include tablet-up {
-        width: 45%;
-    }
+  @include tablet-up {
+    width: 45%;
+  }
 }
 
 .projectTitle {
-    @include font32_weight400;
+  @include font32_weight400;
+  text-align: center;
 
-    @include tablet-up {
-        @include font45_weight400;
-    }
+  @include tablet-up {
+    @include font45_weight400;
+    text-align: center;
+  }
 }
 
 .mainImage {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
 
-    @include tablet-up {
-        max-width: 352px;
-        margin: 0 40px;
-    }
+  @include tablet-up {
+    max-width: 352px;
+    margin: 0 40px;
+  }
 }
 
 .mainImageProject_1 {
-    width: 112px;
-    aspect-ratio: 112/226;
+  width: 112px;
+  aspect-ratio: 112/226;
 }
 
 .mainImageProject_2 {
-    aspect-ratio: 349/147;
-    max-width: 349px;
+  aspect-ratio: 349/147;
+  max-width: 349px;
 }
 
 .mainImageProject_3 {
-    aspect-ratio: 240/278;
-    max-width: 240px;
+  aspect-ratio: 240/278;
+  max-width: 240px;
 }
 
 .mainImageProject_4 {
-    object-fit: contain;
-    aspect-ratio: 1/1;
-    max-width: 227px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  max-width: 227px;
 }
 
 .imageGraphicDesign {
-    aspect-ratio: 1.53;
+  aspect-ratio: 1.53;
 
-    @include tablet-up {
-        max-width: 550px;
-    }
+  @include tablet-up {
+    max-width: 550px;
+  }
 }
 
 .textImagePropsProjectsButton {
-    width: 172px;
-    height: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 30px 20px 30px;
-    gap: 10px;
-    border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 30px;
+  border-radius: 12px;
+  letter-spacing: 0.1rem;
+
+  @include font20_weight400;
 }
