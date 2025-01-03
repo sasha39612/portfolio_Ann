@@ -41,9 +41,7 @@ const ImageTextSwiperMulti = ({
           classNameDescription={styles[textPart.classNameDescription ?? '']}
         />
       </div>
-      {imagePartDesktop?.src ||
-      (imagePartDesktopSliders &&
-        imagePartMobileSliders?.imagePartMobileSlider?.length) ? (
+      {imagePartDesktop?.src || imagePartDesktopSliders?.length ? (
         <div className={styles[classNameImageContainer ?? '']}>
           {isMobileView ? (
             <ul className={styles[classNameSwiperWrapper ?? '']}>

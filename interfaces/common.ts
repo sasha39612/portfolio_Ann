@@ -174,6 +174,7 @@ export interface ImagePartMobileSliders {
   imagePartMobileSlider: ImagePropsType[];
   id: string;
   subTitle?: { text: string; className: string };
+  image?: ImagePropsType;
 }
 
 export interface ImagePartDesktopSliders {
@@ -193,7 +194,7 @@ export interface ImageText {
   };
   imagePartDesktop?: ImagePropsType;
   imagePartMobile?: ImagePropsType;
-  imagePartMobileSliders?: ImagePartMobileSliders;
+  imagePartMobileSliders?: ImagePartMobileSliders[];
   imagePartDesktopSliders?: ImagePartDesktopSliders[];
   imagePartDesktopSlider?: ImagePropsType[];
   className?: string;
