@@ -1,6 +1,6 @@
-@import "/styles/mixins.module.scss";
-@import "/styles/colors.module.scss";
-@import "/styles/variables.module.scss";
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
 
 .popupOverlay {
   position: fixed;
@@ -22,16 +22,16 @@
   padding: 50px 20px;
   border-radius: 8px;
   position: relative;
-  max-width: 100%;
-  width: 100%;
   max-height: max-content;
   overflow-y: scroll;
+  margin: 10% 5% 0;
+  width: auto;
 
   @include tablet-up {
     max-width: fit-content;
     padding: 40px;
   }
-  
+
   @include desktop-large {
     max-width: $max-content-width;
     padding: 20px;

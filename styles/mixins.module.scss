@@ -850,12 +850,32 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin SF_font36_weight_800 {
+  font-family: Avenir;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49.18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin SF_font40_weight_700 {
   font-family: SF Pro;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font40_weight_800 {
+  font-family: Avenir;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54.64px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;

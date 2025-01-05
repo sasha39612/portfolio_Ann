@@ -15,7 +15,7 @@
 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 4px 8px;
+  gap: 21px 27px;
 
   @include tablet-up {
     grid-template-areas:
@@ -28,31 +28,36 @@
 
 .image {
   width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 219 / 200;
+
+  @include tablet-up {
+    aspect-ratio: unset;
+  }
 }
 
 .imagesMultiRecipeDesktopMobile_1 {
   grid-area: a;
   @extend .image;
-  aspect-ratio: 165 / 150;
 }
 
 .imagesMultiRecipeDesktopMobile_2 {
   grid-area: b;
   @extend .image;
-  aspect-ratio: 165 / 150;
 }
 
 .imagesMultiRecipeDesktopMobile_3 {
   grid-area: e;
   @extend .image;
-  aspect-ratio: 165 / 150;
 }
 
 .imagesMultiRecipeDesktopMobileMinusMargin {
   grid-area: d;
   @extend .image;
-  aspect-ratio: 165 / 158;
   margin-bottom: -8px;
+  height: 102%;
 
   @include desktop {
     margin-bottom: -17px;
@@ -66,5 +71,5 @@
 .imagesMultiRecipeDesktopMobileBig {
   grid-area: c;
   @extend .image;
-  aspect-ratio: 333 / 363;
+  aspect-ratio: 381 / 415;
 }

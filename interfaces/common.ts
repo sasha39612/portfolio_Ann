@@ -240,3 +240,25 @@ export interface TitleTextImageGrid {
   };
   usersData: UserData | UserData[];
 }
+
+export interface ImageTextPart {
+  id: string;
+  text: string;
+  classNameText: string;
+  classNameContainer: string;
+  image: ImagePropsType;
+  isTextLeftSide?: boolean;
+  isTextRightSide?: boolean;
+  popupContent?: string;
+}
+
+export interface TitleImagesTextType {
+  textPart: {
+    title: { text: string; className: string };
+    description: { text: string; className: string };
+    className?: string;
+  };
+  imagePartDesktop: ImagePropsType;
+  imagesTextPart: ImageTextPart[];
+  classNameImagesTextWrapper?: string;
+}

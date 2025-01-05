@@ -5,7 +5,7 @@ import styles from './imageComponentPopup.module.scss';
 
 interface ImageComponentPopupType {
   handleClosePopup: () => void;
-  content: ImagePropsType[];
+  content: ImagePropsType[] | string;
 }
 
 const ImageComponentPopup = ({
@@ -29,7 +29,9 @@ const ImageComponentPopup = ({
               );
             })}
           </ul>
-        ) : null}
+        ) : (
+          <p>{content}</p>
+        )}
       </Popup>
     </>
   );
