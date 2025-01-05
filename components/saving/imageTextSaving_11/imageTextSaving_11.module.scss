@@ -45,18 +45,18 @@
   @include tablet-up {
     flex-direction: row-reverse;
     justify-content: left;
-    gap: 70px;
+    gap: 23%;
     margin-bottom: 60px;
   }
 }
 
 .imageTextSavingDesktop_11 {
   @extend .image;
-  aspect-ratio: 0.91;
+  aspect-ratio: 1564 / 1464;
   max-width: 335px;
 
   @include tablet-up {
-    max-width: 500px;
+    max-width: 42%;
     aspect-ratio: 1.06;
   }
 }

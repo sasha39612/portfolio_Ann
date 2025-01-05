@@ -16,7 +16,7 @@
 
   @include tablet-up {
     flex-direction: row-reverse;
-    justify-content: left;
+    justify-content: space-between;
     gap: 120px;
     margin-bottom: 60px;
   }
@@ -24,12 +24,24 @@
 
 .imageTextSavingDesktop_12 {
   @extend .image;
-  aspect-ratio: 0.87;
+  aspect-ratio: 1688/1536;
   max-width: 335px;
 
   @include tablet-up {
-    max-width: 576px;
+    max-width: 46%;
     aspect-ratio: 1.18;
     margin-left: -100px;
   }
+}
+
+.descriptionImageTextSaving_1 {
+  padding: 138px 108px;
+  border-radius: 37px;
+  opacity: 0px;
+
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 0%,
+    rgba(248, 248, 248, 0.2) 100%
+  );
 }

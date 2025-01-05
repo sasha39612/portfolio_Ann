@@ -33,6 +33,7 @@
 .imageTextSavingDesktop_3 {
   @extend .image;
   aspect-ratio: 2.72;
+  max-width: 1140px;
 }
 
 .imageTextSavingButtonMobile_3 {
@@ -47,11 +48,11 @@
 
 .imageTextSavingButtonDesktop_3 {
   @extend .image;
-  aspect-ratio: 2.72;
+  aspect-ratio: 1152/328;
 
   @include tablet-up {
     margin-top: 0px;
-    max-width: 288px;
+    max-width: 360px;
   }
 }
 
