@@ -8,10 +8,10 @@ const TitleArrayTextImageGrid = ({ header, usersData }: TitleTextImageGrid) => {
   return (
     <section className={styles.wrapper}>
       <>
-        <h2 className={styles[header.title.className ?? '']}>
+        <h2 className={styles[header.title?.className ?? '']}>
           {header.title?.text}
         </h2>
-        <p className={styles[header.description.className ?? '']}>
+        <p className={styles[header.description?.className ?? '']}>
           {header.description?.text}
         </p>
       </>
@@ -56,7 +56,10 @@ const TitleArrayTextImageGrid = ({ header, usersData }: TitleTextImageGrid) => {
                 {Array.isArray(item?.textGrid) ? (
                   <ul className={styles[item.classNameTextGridWrapper ?? '']}>
                     {item.textGrid.map((textBlock) => (
-                      <li key={textBlock.id}>
+                      <li
+                        key={textBlock.id}
+                        className={styles[textBlock?.classNameContainer ?? '']}
+                      >
                         <h4 className={styles[textBlock.classNameTitle ?? '']}>
                           {textBlock.title}
                         </h4>

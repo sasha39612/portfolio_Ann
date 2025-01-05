@@ -18,6 +18,7 @@ export interface ProjectLiteraryTypes {
   imageTextLiterary_3: ImageText;
   titleImagesLiterary: ImageText;
   titleTextImageDesMobLiterary: TitleTextImageDesMobType;
+  titleTextImageGridLiterary_4: TitleTextImageGrid;
   imageTextLiterary_4: ImageText;
   imageTextLiterary_5: ImageText;
   titleTextImageGridLiterary: TitleTextImageGrid;

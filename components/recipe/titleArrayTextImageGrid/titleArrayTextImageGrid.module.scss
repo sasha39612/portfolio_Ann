@@ -17,8 +17,24 @@
   }
 }
 
+.classNameTitleTextImageGridLiterary_4 {
+  @include SF_font36_weight_590;
+  color: #1c1c1e;
+  margin: 40px 0px 30px;
+
+  @include tablet-up {
+    @include SF_font45_weight_590;
+    margin-top: 60px;
+  }
+}
+
 .classNameDescriptionTitleTextImageGridRecipe_1 {
   @include Avenir_font14_weight_350;
+  margin-bottom: 40px;
+}
+
+.classNameDescriptionTitleTextImageGridLiterary_4 {
+  @include SF_font16_weight_274;
   margin-bottom: 40px;
 }
 
@@ -75,6 +91,24 @@
   border-top: 1px solid #f0923f;
 }
 
+.classNameContainerLiterary_4 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  gap: 32px;
+
+  @include tablet-up {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 43px;
+    margin-bottom: 90px;
+
+    &:nth-child(2) {
+      flex-direction: row;
+    }
+  }
+}
+
 .classNameWrapperTextPartTextGridRecipe_1 {
   grid-area: c;
   display: grid;
@@ -117,6 +151,16 @@
   @include tablet-up {
     aspect-ratio: 176 / 220;
     max-width: 176px;
+  }
+}
+
+.imageTitleTextImageGridLiterary_4 {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 335 / 352;
+
+  @include tablet-up {
+    max-width: 483px;
   }
 }
 

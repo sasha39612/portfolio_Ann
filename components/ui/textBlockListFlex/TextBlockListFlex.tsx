@@ -17,9 +17,21 @@ const TextBlockListFlex = ({
               <div className={styles?.[textBlock?.classNameTitle ?? '']}>
                 {textBlock.title}
               </div>
-              <div className={styles?.[textBlock?.classNameDescription ?? '']}>
-                {textBlock.description}
-              </div>
+              {Array.isArray(textBlock.description) ? (
+                <ul className={styles.descriptionWrapper}>
+                  {textBlock.description.map((item) => (
+                    <li key={item.id} className={styles[item?.className ?? '']}>
+                      {item.text}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <div
+                  className={styles?.[textBlock?.classNameDescription ?? '']}
+                >
+                  {textBlock.description}
+                </div>
+              )}
             </li>
           ))
         : null}
