@@ -70,6 +70,7 @@
 
   @include desktop {
     padding: 0px;
+    width: 130%;
   }
 }
 
@@ -243,19 +244,24 @@
 
 .imageTextVintageMobWrapper_1 {
   @extend .image;
-  aspect-ratio: 335/190;
+  aspect-ratio: 2028/818;
   margin: 0px 0px 30px;
+
+  @include tablet {
+    max-width: 350px;
+  }
 }
 
 .imageTextVintageMobWrapper_2 {
   @extend .image;
-  aspect-ratio: 335/71;
+  aspect-ratio: 1076/312;
   margin: 0px 0px 30px;
+  max-width: 300px;
 }
 
 .imageTextVintageMobWrapper_3 {
   @extend .image;
-  aspect-ratio: 240/120;
+  aspect-ratio: 240/467;
   max-width: 240px;
   margin: 0px 0px 30px;
 }
@@ -273,7 +279,7 @@
   @include desktop {
     margin: 0px 0px 36px;
     aspect-ratio: 385/329;
-    max-width: 487px;
+    max-width: 536px;
   }
 }
 
@@ -283,10 +289,15 @@
 
   @include tablet-up {
     margin: 0px 0px 36px;
-    aspect-ratio: 345/219;
+    aspect-ratio: 2028/818;
     max-width: 678px;
   }
+
+  @include desktop {
+    max-width: 400px;
+  }
 }
+
 .imageTextVintageDesWrapper_2 {
   @extend .imageTextVintageMobile;
   max-width: 345px;
@@ -304,6 +315,10 @@
     margin: 0px 0px 36px;
     aspect-ratio: 621/150;
     max-width: 800px;
+  }
+
+  @include desktop {
+    max-width: 710px;
   }
 }
 

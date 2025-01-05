@@ -50,6 +50,17 @@
     }
   }
 
+  //TODO: finish background-color for inputs
+  // input:-webkit-autofill {
+  //   appearance: none;
+  //   background-color: #efedfb !important;
+  //   border: 1px solid #4a90e2 !important;
+  //   background-color: $white !important;
+  //   border: 1px solid $black !important;
+  //   box-shadow: 0 0 0px 1000px #e8f0fe inset !important;
+  //   transition: background-color 5000s ease-in-out 0s;
+  // }
+
   & > textarea {
     @include inputStyles;
     width: 100%;
