@@ -79,23 +79,20 @@
 .imagesDesktopTitleImagesTextRecipe {
   @extend .image;
   aspect-ratio: 986/760;
-  border-left: 0.2px solid #434343;
-  border-right: 0.2px solid #434343;
-
-  @include tablet-up {
-    border-left: none;
-    border-right: none;
-  }
 }
 
 .imagesMobileTitleImagesTextRecipe {
   @extend .image;
   width: 135px;
+  border-left: 0.2px #434343 solid;
+  border-right: 0.2px #434343 solid;
 }
 
 .imagesMobileTitleImagesTextRecipe_1 {
   @extend .imagesMobileTitleImagesTextRecipe;
   aspect-ratio: 135/39;
+  border-top: 0.2px #434343 solid;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .imagesMobileTitleImagesTextRecipe_2 {
@@ -136,4 +133,6 @@
 .imagesMobileTitleImagesTextRecipe_9 {
   @extend .imagesMobileTitleImagesTextRecipe;
   aspect-ratio: 135/77;
+  border-bottom: 0.2px #434343 solid;
+  border-radius: 0px 0px 5px 5px;
 }
