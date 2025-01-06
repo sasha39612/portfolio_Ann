@@ -25,11 +25,11 @@
   }
 
   @include desktop {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
   }
 
   @include desktop-large {
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
   }
 }
 
@@ -252,7 +252,7 @@
 
 .imageTitleTextImageGridRecipe_33 {
   width: 100%;
-  aspect-ratio: 335 / 401;
+  aspect-ratio: 1340 / 1604;
 }
 
 .imageTitleTextImageGridRecipe_3 {

@@ -56,21 +56,10 @@
   aspect-ratio: 0.46;
 }
 
-//TODO: Finish scroll for images with big height (8 & 9)
-
-// .imageTextRecipeMobile {
-//   height: 309px;
-//   width: 143px;
-// }
-// .imageTextRecipeMobile_1 {
-//   height: 693px;
-//   width: 143px;
-// }
-
-// .imageTextRecipeMobile_2 {
-//   height: 1037px;
-//   width: 143px;
-// }
+.imageTextRecipeMobile {
+  height: 309px;
+  width: 143px;
+}
 
 .imageTextRecipeDesktop {
   @extend .image;
