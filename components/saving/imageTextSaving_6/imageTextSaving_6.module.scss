@@ -52,11 +52,22 @@
 
 .imageTextSavingMobile_6 {
   @extend .image;
-  aspect-ratio: 2.63;
+  aspect-ratio: 1080 / 327;
 }
 
 .imageTextSavingDesktop_6 {
   @extend .image;
   aspect-ratio: 1368 / 556;
-  max-width: 440px;
+
+  @include tablet {
+    max-width: 300px;
+  }
+
+  @include desktop {
+    max-width: 400px;
+  }
+
+  @include desktop-large {
+    max-width: 440px;
+  }
 }

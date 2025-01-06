@@ -24,18 +24,29 @@
 
 .imageTextSavingDesktop_12 {
   @extend .image;
-  aspect-ratio: 1688/1536;
+  aspect-ratio: 1564/1464;
   max-width: 335px;
+  margin-left: -48px;
 
   @include tablet-up {
-    max-width: 46%;
-    aspect-ratio: 1.18;
     margin-left: -100px;
+  }
+
+  @include tablet {
+    max-width: 100%;
+  }
+
+  @include desktop {
+    max-width: 46%;
+  }
+
+  @include desktop-large {
+    max-width: 46%;
   }
 }
 
 .descriptionImageTextSaving_1 {
-  padding: 138px 108px;
+  padding: 138px 75px;
   border-radius: 37px;
   opacity: 0px;
 
@@ -44,4 +55,8 @@
     #f8f8f8 0%,
     rgba(248, 248, 248, 0.2) 100%
   );
+
+  @include tablet-up {
+    padding: 138px 108px;
+  }
 }

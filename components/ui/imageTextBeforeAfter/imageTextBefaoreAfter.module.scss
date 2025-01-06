@@ -22,7 +22,7 @@
 
 .imageTextSavingMobile_8 {
   @extend .image;
-  aspect-ratio: 1.25;
+  aspect-ratio: 1080 / 965;
 }
 
 .imageTextRecipeMobile_2 {
@@ -38,7 +38,14 @@
 .imageTextSavingPhoneDesktop_8 {
   @extend .image;
   aspect-ratio: 1.63;
-  max-width: 750px;
+
+  @include tablet-up {
+    max-width: 750px;
+  }
+
+  @include tablet {
+    max-width: 550px;
+  }
 }
 
 .imageTextRecipePhoneDesktop_2 {
