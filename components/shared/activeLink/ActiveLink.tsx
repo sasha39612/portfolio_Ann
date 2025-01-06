@@ -22,12 +22,14 @@ const ActiveLink = ({
   ...props
 }: ActiveLinkPropsType) => {
   const pathName = usePathname();
+  const path = pathName.split('/');
+  const isPathIncludesHref = path.find((item) => `/${item}` === href);
   const child = Children.only(children) as React.ReactElement<{
     className?: string;
   }>;
   let className = child.props.className || '';
 
-  if (pathName === href && activeLinkClassName && pathName !== '/') {
+  if (isPathIncludesHref && activeLinkClassName && pathName !== '/') {
     className = cn(className, activeLinkClassName);
   }
 

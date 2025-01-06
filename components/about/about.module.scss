@@ -1,14 +1,15 @@
-@import "/styles/mixins.module.scss";
-@import "/styles/colors.module.scss";
-@import "/styles/variables.module.scss";
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
 
 .container {
   display: flex;
   flex-direction: column;
-  margin: 40px 0;
+  padding: 0px 0px 40px;
 
   @include tablet-up {
     flex-direction: row;
+    padding: 60px 0;
   }
 }
 

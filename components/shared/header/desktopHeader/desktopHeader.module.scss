@@ -1,13 +1,12 @@
-@import "/styles/mixins.module.scss";
-@import "/styles/colors.module.scss";
-@import "/styles/variables.module.scss";
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
 
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 110px;
-  height: 110px;
+  min-height: 70px;
 }
 
 .mainLogoImage {

@@ -1,0 +1,75 @@
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0px;
+}
+
+.buttonTitle {
+  border: none;
+  background: none;
+  color: #00000080;
+  @include font20_weight400;
+
+  @include tablet-up {
+    @include font30_weight400;
+  }
+}
+
+.buttonTitleActive {
+  color: #000000;
+}
+
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.projectNameStylesReverse {
+  @include font32_weight400;
+  color: $projectName;
+  text-align: center;
+  margin-top: 40px;
+
+  @include tablet-up {
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    text-orientation: mixed;
+    -webkit-text-orientation: mixed;
+    transform: rotateZ(-180deg);
+    margin-top: 0px;
+  }
+}
+
+.projectsGraphicDesignWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin: 50px 0px 70px;
+}
+
+.projectsGraphicContainer {
+  gap: 40px;
+  width: 100%;
+
+  @include tablet-up {
+    width: 45%;
+  }
+}
+
+.imageGraphicDesign {
+  aspect-ratio: 1.53;
+
+  @include tablet-up {
+    max-width: 550px;
+  }
+}
