@@ -83,12 +83,17 @@
     background: $backgroundProject_2;
   }
 
+  @include tablet {
+    min-height: 584px;
+  }
+
   @include tablet-up {
     flex-direction: column;
   }
 
   @include desktop {
     max-width: 40%;
+    min-height: auto;
   }
 }
 

@@ -130,7 +130,7 @@
   @include tablet-up {
     margin: 0px 0px 10px;
     width: 190px;
-    aspect-ratio: 190 / 66;
+    height: 66px;
   }
 }
 
@@ -141,7 +141,7 @@
 
   @include tablet-up {
     margin-bottom: 10px;
-    width: 218px;
-    aspect-ratio: 764 / 264;
+    width: 244px;
+    height: 84px;
   }
 }

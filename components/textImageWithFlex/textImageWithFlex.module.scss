@@ -269,12 +269,16 @@
 
 .mainImageProjectSaving_2 {
   @extend .image;
-  aspect-ratio: 335/233;
+  aspect-ratio: 1601/932;
   max-width: 335px;
 
   @include tablet-up {
-    aspect-ratio: 414/233;
     max-width: 414px;
+    margin: 0px;
+  }
+
+  @include desktop-large {
+    margin: 0 40px;
   }
 }
 
