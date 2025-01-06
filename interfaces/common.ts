@@ -262,3 +262,7 @@ export interface TitleImagesTextType {
   imagesTextPart: ImageTextPart[];
   classNameImagesTextWrapper?: string;
 }
+
+export interface ImagesTextType extends Omit<TitleImagesTextType, 'textPart'> {
+  imagePartMobile: ImagePropsType;
+}

@@ -14,7 +14,7 @@ const useCheckMobileScreen = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return width <= 768;
+  return width < 768;
 };
 
 export default useCheckMobileScreen;

@@ -2,7 +2,6 @@
 import FooterProject from '../shared/footerProject/FooterProject';
 import { ProjectRecipeTypes } from './type';
 import TextImageWithFlex from '../textImageWithFlex/TextImageWithFlex';
-import styles from './recipe.module.scss';
 import ImageTextDesMob from '../ui/imageTextDesMob/ImageTextDesMob';
 import ImageTextBlocksWithTitle from '../ui/imageTextBlocksWithTitle/ImageTextBlocksWithTitle';
 import TitleTextImagesFlex from './titleTextImagesFlex/TitleTextImagesFlex';
@@ -18,6 +17,8 @@ import TitleImageText from './titleImageText/TitleImageText';
 import ImageTextSwiperMulti from '../ui/imageTextSwiperMulti/ImageTextSwiperMulti';
 import ImagesMulti from '../ui/imagesMulti/ImagesMulti';
 import TitleImagesText from './titleImagesText/TitleImagesText';
+import ImagesText from './imagesText/ImagesText';
+import styles from './recipe.module.scss';
 
 const ProjectRecipe = (props: ProjectRecipeTypes) => {
   const {
@@ -38,6 +39,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
     imageTextRecipe_2,
     titleImagesTextRecipe,
     imagesMulti,
+    imagesTextRecipe,
     imageTextSwiperMultiRecipe,
     imageTextWithFlexRecipe_3,
     titleTextImageGridRecipe_4,
@@ -63,6 +65,7 @@ const ProjectRecipe = (props: ProjectRecipeTypes) => {
       <ImageTextBeforeAfter {...imageTextRecipe_2} />
       <TitleImagesText {...titleImagesTextRecipe} />
       <ImagesMulti images={imagesMulti} />
+      <ImagesText {...imagesTextRecipe} />
       <ImageTextSwiperMulti {...imageTextSwiperMultiRecipe} />
       <TitleImageText {...imageTextWithFlexRecipe_3} />
       <TitleImageTextImage {...titleTextImageGridRecipe_4} />
