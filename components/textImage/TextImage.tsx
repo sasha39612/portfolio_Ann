@@ -14,6 +14,7 @@ const TextImage = (props: TextImageType) => {
     isReverse,
     projectName,
     container,
+    backgroundImage,
     className = ' ',
   } = props;
   const wrapperStyles = cn(
@@ -50,7 +51,13 @@ const TextImage = (props: TextImageType) => {
   );
 
   return (
-    <article className={wrapperStyles}>
+    <section className={wrapperStyles}>
+      {backgroundImage?.src ? (
+        <div
+          className={styles[backgroundImage?.imageClassName ?? '']}
+          style={{ backgroundImage: `url(${backgroundImage.src})` }}
+        />
+      ) : null}
       <div className={projectNameStyles}>{projectName}</div>
       <div className={containerStyles}>
         <div className={textPartContainerStyles}>
@@ -71,7 +78,7 @@ const TextImage = (props: TextImageType) => {
           className={imageStyles}
         />
       </div>
-    </article>
+    </section>
   );
 };
 

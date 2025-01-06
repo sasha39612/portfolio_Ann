@@ -83,6 +83,16 @@
 }
 
 //  font-family: Lato;
+@mixin font8_weight300 {
+  font-family: Lato;
+  font-size: 8.87px;
+  font-weight: 300;
+  line-height: 10.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin font12_weight300 {
   font-family: Lato;
   font-size: 12px;
@@ -706,6 +716,17 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font47_weight_500 {
+  font-family: Avenir;
+  font-size: 47.22px;
+  font-weight: 500;
+  line-height: 1.37;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $projectTitle;
 }
 
 @mixin Avenir_font50_weight_300 {

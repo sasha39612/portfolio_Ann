@@ -9,6 +9,7 @@ import {
 } from '../../../interfaces/common';
 import ImageComponentPopup from '../imageContentPopup/ImageContentPopup';
 import styles from './textPart.module.scss';
+import ImageComponent from '../image/Image';
 
 const getIconStyles = (iconClassName?: string) => {
   return cn(styles.icon, iconClassName ? styles[iconClassName] : '');
@@ -76,10 +77,9 @@ const TextPart = ({
       <h1 className={titleStyle}>
         {title?.text}
         {image?.src ? (
-          <span
-            onClick={(e) => handleOnClick(e, popupContent)}
-            className={getIconStyles(image?.className)}
-            style={getIconContent(image?.src)}
+          <ImageComponent
+            {...image}
+            className={styles[image.imageClassName ?? '']}
           />
         ) : null}
       </h1>

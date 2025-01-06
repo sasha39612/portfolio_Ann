@@ -26,15 +26,16 @@
   @include font18_weight300;
 }
 
+.textImagePropsProjectsSaving_1_subTitle {
+  @include font8_weight300;
+
+  @include tablet-up {
+    @include font12_weight300;
+  }
+}
+
 .textImagePropsProjects_2_title {
-  font-family: Avenir; //TODO: Ask for Avenir
-  font-size: 47.22px;
-  font-weight: 500;
-  line-height: 1.37;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: $projectTitle;
+  @include Avenir_font47_weight_500;
   text-align: center;
 
   @include tablet-up {
@@ -123,4 +124,16 @@
 .imageAboutCamera {
   width: 22px;
   height: 16px;
+}
+
+.labelImageProjectSaving1 {
+  width: 141px;
+  height: 49px;
+  margin-bottom: 6px;
+
+  @include tablet-up {
+    margin-bottom: 10px;
+    width: 218px;
+    aspect-ratio: 764 / 264;
+  }
 }

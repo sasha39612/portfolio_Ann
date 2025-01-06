@@ -38,8 +38,20 @@
 }
 
 .imageTextSavingDesktop_9 {
-  @extend .image;
+  width: auto;
   aspect-ratio: 4000 / 3128;
+
+  @include tablet {
+    margin: 35px -48px 80px;
+  }
+
+  @include desktop {
+    margin: 35px -80px 80px;
+  }
+
+  @include desktop-large {
+    margin: 35px 0px 80px;
+  }
 }
 
 .swiperWrapper {

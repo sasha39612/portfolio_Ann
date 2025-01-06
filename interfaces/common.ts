@@ -81,6 +81,7 @@ export interface TextImageType {
   imagePart?: ImagePropsType;
   className?: string;
   container?: TextBlockElem;
+  backgroundImage?: ImagePropsType;
 }
 
 export interface TextImageWithFlexType {
