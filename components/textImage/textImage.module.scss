@@ -86,7 +86,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 0px;
-    gap: 20px;
+    gap: 40px;
   }
 }
 
@@ -116,12 +116,20 @@
 }
 .project_2 {
   background-color: $backgroundProject_2;
+
+  @include tablet-up {
+    padding: 40px 0px 40px 120px;
+  }
 }
 .project_3 {
   background-color: $backgroundProject_3;
 }
 .project_4 {
   background-color: $backgroundProject_4;
+
+  @include tablet-up {
+    padding: 40px 0px 0px 120px;
+  }
 }
 
 .textPartContainer {
@@ -144,7 +152,7 @@
   @include tablet-up {
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 40px 0px 40px 120px;
+    padding: 40px 0px;
   }
 }
 

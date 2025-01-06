@@ -64,11 +64,7 @@
 }
 
 .textImagePropsProjects_2_subTitle {
-  font-family: Avenir; //TODO: Ask for Avenir
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.36;
-  padding-bottom: 32px;
+  @include Avenir_font14_weight_400;
   text-align: center;
 
   @include tablet-up {
@@ -124,6 +120,18 @@
 .imageAboutCamera {
   width: 22px;
   height: 16px;
+}
+
+.labelImageProject1 {
+  width: 141px;
+  height: 49px;
+  margin: 0px auto 6px auto;
+
+  @include tablet-up {
+    margin: 0px 0px 10px;
+    width: 190px;
+    aspect-ratio: 190 / 66;
+  }
 }
 
 .labelImageProjectSaving1 {
