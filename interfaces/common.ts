@@ -185,17 +185,19 @@ export interface ImagePartDesktopSliders {
   className?: string;
 }
 
+export interface TextPart {
+  id: string;
+  title: string;
+  description: string;
+  classNameTitle: string;
+  classNameDescription: string;
+}
+
 export interface ImageText {
-  textPart: {
-    id: string;
-    title: string;
-    description: string;
-    classNameTitle: string;
-    classNameDescription: string;
-  };
+  textPart: TextPart;
   imagePartDesktop?: ImagePropsType;
   imagePartMobile?: ImagePropsType;
-  imagePartMobileSliders?: ImagePartMobileSliders[];
+  imagePartMobileSliders?: ImagePartMobileSliders;
   imagePartDesktopSliders?: ImagePartDesktopSliders[];
   imagePartDesktopSlider?: ImagePropsType[];
   className?: string;

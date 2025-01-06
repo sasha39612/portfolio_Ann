@@ -2,6 +2,10 @@
 @import '/styles/colors.module.scss';
 @import '/styles/variables.module.scss';
 
+.container {
+  overflow-x: hidden;
+}
+
 .titleImageTextSaving_1 {
   @include Grotesk_font30_weight_500;
   text-align: center;
@@ -33,6 +37,17 @@
   }
 }
 
+.classNameImageContainerImageTextVintageDesMob {
+  width: 375px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  @include tablet-up {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
 .image {
   width: 100%;
   height: 100%;
@@ -46,7 +61,8 @@
 
 .imageTextVintageMobile_1 {
   @extend .image;
-  aspect-ratio: 0.5;
+  aspect-ratio: 1080 / 964;
+  margin-right: 50px;
 }
 
 .imageTextSavingDesktop_1 {

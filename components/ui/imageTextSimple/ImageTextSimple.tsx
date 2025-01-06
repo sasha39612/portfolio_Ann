@@ -9,11 +9,12 @@ const ImageTextSimple = ({
   textPart,
   imagePartDesktop,
   imagePartMobile,
+  classNameImageContainer,
 }: ImageText) => {
   const isMobileView = useCheckMobileScreen();
 
   return (
-    <>
+    <section>
       <div className={styles.containerImageTextSaving_1}>
         <Text
           id={textPart.id}
@@ -24,21 +25,23 @@ const ImageTextSimple = ({
         />
       </div>
       {imagePartDesktop?.src && imagePartMobile?.src ? (
-        <>
+        <div className={styles.container}>
           {isMobileView ? (
-            <ImageComponent
-              {...imagePartMobile}
-              className={styles[imagePartMobile?.className ?? '']}
-            />
+            <div className={styles[classNameImageContainer ?? '']}>
+              <ImageComponent
+                {...imagePartMobile}
+                className={styles[imagePartMobile?.className ?? '']}
+              />
+            </div>
           ) : (
             <ImageComponent
               {...imagePartDesktop}
               className={styles[imagePartDesktop.className ?? '']}
             />
           )}
-        </>
+        </div>
       ) : null}
-    </>
+    </section>
   );
 };
 
