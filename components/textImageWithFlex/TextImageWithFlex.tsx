@@ -6,7 +6,7 @@ import styles from './textImageWithFlex.module.scss';
 import useCheckMobileScreen from '../../lib/hooks/useCheckMobileScreen';
 import { getDangerousHTML } from '../../lib/getDangerousHTML';
 
-const isFirstTextBlockListFlexVisible = (
+const isTextBlockListFlexVisible = (
   isMobileView: boolean,
   className?: string,
 ) =>
@@ -15,12 +15,6 @@ const isFirstTextBlockListFlexVisible = (
       className === 'classNameGridContainerLiterary') &&
     isMobileView
   );
-const isSecondTextBlockListFlexVisible = (
-  isMobileView: boolean,
-  className?: string,
-) =>
-  className === 'classNameGridContainerRecipe' ||
-  (className === 'classNameGridContainerLiterary' && isMobileView);
 
 const TextImageWithFlex = (props: TextImageWithFlexType) => {
   const { textPart, imagePart, className, classNameContainer } = props;
@@ -74,7 +68,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             {textPart?.description?.text}
           </div>
         )}
-        {isFirstTextBlockListFlexVisible(
+        {isTextBlockListFlexVisible(
           isMobileView,
           textPart?.classNameGridContainer,
         ) ? (
@@ -94,7 +88,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
           className={styles[imagePart?.className ?? '']}
         />
       ) : null}
-      {isSecondTextBlockListFlexVisible(
+      {!isTextBlockListFlexVisible(
         isMobileView,
         textPart?.classNameGridContainer,
       ) ? (
