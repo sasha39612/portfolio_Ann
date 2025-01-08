@@ -76,12 +76,18 @@ const TextPart = ({
     <div className={containerStyles}>
       <h1 className={titleStyle}>
         {title?.text}
-        {image?.src ? (
+        {image?.src && !image?.src.includes('.svg') ? (
           <ImageComponent
             {...image}
             className={styles[image.imageClassName ?? '']}
           />
-        ) : null}
+        ) : (
+          <span
+            onClick={(e) => handleOnClick(e, popupContent)}
+            className={getIconStyles(image?.className)}
+            style={getIconContent(image?.src)}
+          />
+        )}
       </h1>
       <p className={subTitleStyle}>{subTitle?.text}</p>
       {Array.isArray(description) ? (
