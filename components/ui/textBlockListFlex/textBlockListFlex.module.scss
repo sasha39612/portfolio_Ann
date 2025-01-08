@@ -66,13 +66,18 @@
 
   @include tablet-up {
     flex-wrap: nowrap;
-    margin: 85px 0px 0px;
+    width: 107%;
+    margin: 85px 0px 0px -27px;
     justify-content: space-between;
 
     li {
       flex: 1 1 auto;
       text-align: center;
     }
+  }
+
+  @include desktop-large {
+    margin: 205px 0px 0px -27px;
   }
 }
 

@@ -57,7 +57,9 @@
   margin: 20px 0px 26px;
 
   @include tablet-up {
-    margin-left: 50%;
+    position: absolute;
+    top: 0px;
+    left: 50%;
   }
 }
 
@@ -74,8 +76,63 @@
   margin-bottom: 20px;
 
   @include tablet-up {
-    margin-left: 50%;
-    height: 1900px;
+    position: absolute;
+    top: 83px;
+    left: 50%;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px 21px;
+
+    & > :nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    & > :nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & > :nth-child(3) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    & > :nth-child(4) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+
+  @include desktop-large {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+
+    & > :nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    & > :nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & > :nth-child(3) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    & > :nth-child(4) {
+      grid-column: 2;
+      grid-row: 2;
+    }
   }
 }
 
@@ -92,11 +149,6 @@
 
 .classNameImageWrapperTextPartLiterary_2 {
   @extend .classNameImageWrapperTextPartRecipe_3;
-
-  @include tablet-up {
-    position: absolute;
-    top: 0;
-  }
 }
 
 .imageTitleTextImageGridRecipe_2 {

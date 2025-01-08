@@ -2,6 +2,15 @@
 @import '/styles/colors.module.scss';
 @import '/styles/variables.module.scss';
 
+.classNameWrapperLiterary_1 {
+  position: relative;
+  padding-top: 35px;
+
+  @include tablet-up {
+    padding-top: 90px;
+  }
+}
+
 .classNameWrapperSaving {
   display: flex;
   flex-direction: column;
@@ -81,6 +90,7 @@
   margin-bottom: 60px;
   box-sizing: border-box;
   gap: 5px;
+  position: relative;
 
   > :nth-child(1),
   > :nth-child(2) {
@@ -145,6 +155,11 @@
     width: 100%;
     padding: 0px 20px;
   }
+}
+
+.classNameContainerLiterary {
+  display: flex;
+  flex-direction: column;
 }
 
 .classNameTitleSaving {
@@ -320,7 +335,7 @@
 
   @include tablet-up {
     aspect-ratio: 347/409;
-    max-width: 392px;
+    max-width: 347px;
   }
 }
 
@@ -341,4 +356,44 @@
   width: 100%;
   aspect-ratio: 335/336;
   max-width: 335px;
+}
+
+.backgroundImageTextWithFlexLiterary {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100% + 0px);
+  width: calc(100% + 40px);
+  position: absolute;
+  top: -75px;
+  left: -20px;
+
+  @include tablet {
+    height: calc(100% + 387px);
+    width: calc(100% + 96px);
+    top: -345px;
+    left: -48px;
+  }
+
+  @include desktop {
+    height: calc(100% + 387px);
+    width: calc(100% + 160px);
+    top: -425px;
+    left: -80px;
+  }
+
+  @include desktop-large {
+    height: calc(100% + 635px);
+    width: 100%;
+    top: -570px;
+    left: 0px;
+  }
+}
+
+.backgroundImageDesktopTextWithFlexLiterary {
+  @extend .backgroundImageTextWithFlexLiterary;
+}
+
+.backgroundImageMobileTextWithFlexLiterary {
+  @extend .backgroundImageTextWithFlexLiterary;
 }

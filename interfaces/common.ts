@@ -90,9 +90,12 @@ export interface TextImageWithFlexType {
   imagePart?: ImagePropsType;
   className?: string;
   classNameContainer?: string;
+  classNameWrapper?: string;
   classNameContainerTextPart?: string;
   classNameContainerTextPartDescription?: string;
   classNameTextGridWrapper?: string;
+  backgroundImageMobile?: ImagePropsType;
+  backgroundImageDesktop?: ImagePropsType;
 }
 
 export interface AboutType {
