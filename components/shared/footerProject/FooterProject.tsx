@@ -17,6 +17,7 @@ const ImageNav = ({
       href={imageArrowHref ?? '/'}
       className={linkStyles}
       aria-label="Link to next project"
+      prefetch={false}
     >
       <ImageComponent
         {...arrow}

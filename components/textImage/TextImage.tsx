@@ -52,9 +52,12 @@ const TextImage = (props: TextImageType) => {
   return (
     <section className={wrapperStyles}>
       {backgroundImage?.src ? (
-        <div
+        <ImageComponent
+          src={backgroundImage.src}
+          alt={backgroundImage.alt || 'Background'}
+          priority={backgroundImage.priority}
+          loading={backgroundImage.loading}
           className={styles[backgroundImage?.imageClassName ?? '']}
-          style={{ backgroundImage: `url(${backgroundImage.src})` }}
         />
       ) : null}
       <div className={projectNameStyles}>{projectName}</div>
@@ -66,6 +69,7 @@ const TextImage = (props: TextImageType) => {
               href={textPart?.link?.href ?? '/'}
               className={buttonStyles}
               aria-label="Link to project"
+              prefetch={false}
             >
               {textPart.button.text}
             </Link>

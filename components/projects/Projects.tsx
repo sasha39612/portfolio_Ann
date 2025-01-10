@@ -23,6 +23,7 @@ const Projects = ({
           href={links[0] ?? '/'}
           className={buttonStyles}
           aria-label="UI/UX button link"
+          prefetch={false}
         >
           {buttonTitle[0]}
         </Link>
@@ -30,6 +31,7 @@ const Projects = ({
           href={links[1] ?? '/'}
           className={styles.buttonTitle}
           aria-label="Graphic Design"
+          prefetch={false}
         >
           {buttonTitle[1]}
         </Link>
@@ -55,6 +57,7 @@ const Projects = ({
                     ]
                   }
                   aria-label="Link to Home page"
+                  prefetch={false}
                 >
                   {project.button.text}
                 </Link>

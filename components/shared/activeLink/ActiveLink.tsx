@@ -34,7 +34,7 @@ const ActiveLink = ({
   }
 
   return (
-    <Link href={href} {...props} aria-label="Active link">
+    <Link href={href} {...props} aria-label="Active link" prefetch={false}>
       {React.cloneElement(child, { className })}
     </Link>
   );

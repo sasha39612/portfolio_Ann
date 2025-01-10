@@ -15,7 +15,7 @@ const ImageNavBrand = (props: ImageNavBrandProps) => {
   const { logoImage } = props;
 
   return (
-    <Link href="/" aria-label="Link to Home page">
+    <Link href="/" aria-label="Link to Home page" prefetch={false}>
       <ImageComponent
         {...logoImage}
         layout="fill"

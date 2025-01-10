@@ -35,9 +35,12 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
   return (
     <section className={styles[classNameWrapper ?? '']}>
       {backgroundImage?.src ? (
-        <div
+        <ImageComponent
+          src={backgroundImage.src}
+          alt={backgroundImage.alt || 'Background'}
+          priority={backgroundImage.priority}
+          loading={backgroundImage.loading}
           className={styles[backgroundImage?.imageClassName ?? '']}
-          style={{ backgroundImage: `url(${backgroundImage?.src})` }}
         />
       ) : null}
       <div className={styles[className ?? '']}>

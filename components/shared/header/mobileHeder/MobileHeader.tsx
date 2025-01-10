@@ -18,7 +18,7 @@ const ImageNavBrand = (props: ImageNavBrandProps) => {
 
   return (
     <div className={styles.logoWrapper}>
-      <Link href="/" aria-label="Link to Home page">
+      <Link href="/" aria-label="Link to Home page" prefetch={false}>
         <ImageComponent
           {...logoImage}
           layout="fill"

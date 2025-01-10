@@ -8,7 +8,12 @@ const FooterLinks = (props: FooterLinkTypes) => {
   const { href, icon, title, className } = props;
 
   return (
-    <Link href={href} className={className} aria-label="Contact link">
+    <Link
+      href={href}
+      className={className}
+      aria-label="Contact link"
+      prefetch={false}
+    >
       <div className={styles.contactLinkWrapper}>
         <ImageComponent
           {...icon}

@@ -408,14 +408,8 @@
   aspect-ratio: 273/260;
 }
 
-.imageTextLiteraryDesktop {
+.imageTextLiteraryDesktop_Mobile {
   @extend .image;
-  aspect-ratio: 295/287;
-  max-width: 295px;
-}
-
-.imageTextLiteraryMobile {
-  @extend .image;
-  aspect-ratio: 271/271;
+  aspect-ratio: 1080 / 1052;
   max-width: 295px;
 }

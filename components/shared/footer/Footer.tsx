@@ -14,6 +14,7 @@ const ImageNavBrand = (props: ImageNavBrandProps) => {
       href="/"
       className={styles.classNameLink}
       aria-label="Link to Home page"
+      prefetch={false}
     >
       <ImageComponent
         {...logoImage}
