@@ -12,6 +12,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>Ann Portfolio</title>
+      <meta
+        name="description"
+        content="This is portfolio for applying a job like UI/UX designer."
+      ></meta>
       <body className={styles.root}>
         <Suspense fallback={<Loading />}>
           <Header />

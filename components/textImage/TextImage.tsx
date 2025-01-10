@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { TextImageType } from '../../interfaces/common';
-import ButtonComponent from '../ui/button/button';
 import ImageComponent from '../ui/image/Image';
 import TextPart from '../ui/textPart/TextPart';
 import cn from 'classnames';
@@ -63,10 +62,12 @@ const TextImage = (props: TextImageType) => {
         <div className={textPartContainerStyles}>
           <TextPart {...textPart} />
           {textPart?.button?.text ? (
-            <Link href={textPart?.link?.href ?? '/'}>
-              <ButtonComponent background={'black'} className={buttonStyles}>
-                {textPart.button.text}
-              </ButtonComponent>
+            <Link
+              href={textPart?.link?.href ?? '/'}
+              className={buttonStyles}
+              aria-label="Link to project"
+            >
+              {textPart.button.text}
             </Link>
           ) : null}
         </div>

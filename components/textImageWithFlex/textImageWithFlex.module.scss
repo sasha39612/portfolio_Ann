@@ -321,12 +321,8 @@
 
 .mainImageProjectRecipe_2 {
   @extend .image;
-  aspect-ratio: 375/138;
+  aspect-ratio: 975/304;
   margin: 30px -20px;
-
-  @include tablet-up {
-    aspect-ratio: 975/304;
-  }
 }
 
 .mainImageProjectLiterary {

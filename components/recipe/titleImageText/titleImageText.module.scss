@@ -71,9 +71,5 @@
 .mainImageProjectRecipe_3 {
   @extend .image;
   width: 100%;
-  aspect-ratio: 375/138;
-
-  @include tablet-up {
-    aspect-ratio: 537/229;
-  }
+  aspect-ratio: 1080 / 460;
 }

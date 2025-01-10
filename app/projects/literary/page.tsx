@@ -3,7 +3,6 @@ import getPropsData from '../../../lib/getPropsData';
 import { ProjectLiteraryTypes } from '../../../components/literary/type';
 import ImageTextBlocksWithTitle from '../../../components/ui/imageTextBlocksWithTitle/ImageTextBlocksWithTitle';
 import FooterProject from '../../../components/shared/footerProject/FooterProject';
-import styles from './literary.module.scss';
 import TitleImageTextImage from '../../../components/recipe/titleImageTextImage/TitleImageTextImage';
 import TextImageWithFlex from '../../../components/textImageWithFlex/TextImageWithFlex';
 import ImageTextDesMob from '../../../components/ui/imageTextDesMob/ImageTextDesMob';
@@ -12,6 +11,7 @@ import ImageTextSwiperMulti from '../../../components/ui/imageTextSwiperMulti/Im
 import TitleImages from '../../../components/ui/titleImages/TitleImages';
 import TitleTextImageDesMob from '../../../components/recipe/titleTextImageDesMob/TitleTextImageDesMob';
 import TitleArrayTextImageGrid from '../../../components/recipe/titleArrayTextImageGrid/TitleArrayTextImageGrid';
+import styles from './literary.module.scss';
 
 const Literary = () => {
   const projectProps = getPropsData(

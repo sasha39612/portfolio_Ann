@@ -82,11 +82,15 @@ const TextPart = ({
             className={styles[image.imageClassName ?? '']}
           />
         ) : (
-          <span
-            onClick={(e) => handleOnClick(e, popupContent)}
-            className={getIconStyles(image?.className)}
-            style={getIconContent(image?.src)}
-          />
+          <>
+            {image?.src.includes('.svg') ? (
+              <span
+                onClick={(e) => handleOnClick(e, popupContent)}
+                className={getIconStyles(image?.className)}
+                style={getIconContent(image?.src)}
+              />
+            ) : null}
+          </>
         )}
       </h1>
       <p className={subTitleStyle}>{subTitle?.text}</p>

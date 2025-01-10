@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import cn from 'classnames';
-import ButtonComponent from '../ui/button/button';
 import ImageComponent from '../ui/image/Image';
 import { ProjectsUX_UI_Type, ProjectsTypes } from './type';
 import styles from './projects.module.scss';
@@ -20,10 +19,18 @@ const Projects = ({
   return (
     <section>
       <div className={styles.buttonWrapper}>
-        <Link href={links[0] ?? '/'} className={buttonStyles}>
+        <Link
+          href={links[0] ?? '/'}
+          className={buttonStyles}
+          aria-label="UI/UX button link"
+        >
           {buttonTitle[0]}
         </Link>
-        <Link href={links[1] ?? '/'} className={styles.buttonTitle}>
+        <Link
+          href={links[1] ?? '/'}
+          className={styles.buttonTitle}
+          aria-label="Graphic Design"
+        >
           {buttonTitle[1]}
         </Link>
       </div>
@@ -40,19 +47,16 @@ const Projects = ({
                   className={getImageStyles(project.image.imageClassName)}
                   objectFit="contain"
                 />
-                <Link href={project?.link?.href ?? '/'}>
-                  <ButtonComponent
-                    background={'black'}
-                    className={
-                      styles[
-                        project?.button?.className
-                          ? project.button.className
-                          : ''
-                      ]
-                    }
-                  >
-                    {project.button.text}
-                  </ButtonComponent>
+                <Link
+                  href={project?.link?.href ?? '/'}
+                  className={
+                    styles[
+                      project?.button?.className ? project.button.className : ''
+                    ]
+                  }
+                  aria-label="Link to Home page"
+                >
+                  {project.button.text}
                 </Link>
               </li>
             ))}

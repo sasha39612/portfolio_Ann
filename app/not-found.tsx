@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className={styles.messageContainer}>
       <h2>Not Found</h2>
       <p className={styles.notFoundText}>Could not find requested resource</p>
-      <Link className={styles.button} href="/">
+      <Link className={styles.button} href="/" aria-label="Link to Home page">
         Return Home
       </Link>
     </div>

@@ -19,10 +19,18 @@ const ProjectsDesign = ({
   return (
     <section>
       <div className={styles.buttonWrapper}>
-        <Link href={links[0] ?? '/'} className={styles.buttonTitle}>
+        <Link
+          href={links[0] ?? '/'}
+          className={styles.buttonTitle}
+          aria-label="UX/UI button"
+        >
           {buttonTitle[0]}
         </Link>
-        <Link href={links[1] ?? '/'} className={buttonStyles}>
+        <Link
+          href={links[1] ?? '/'}
+          className={buttonStyles}
+          aria-label="Graphic Design"
+        >
           {buttonTitle[1]}
         </Link>
       </div>

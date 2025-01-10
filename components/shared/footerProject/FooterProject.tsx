@@ -13,7 +13,11 @@ const ImageNav = ({
   const linkStyles = cn(styles.linkStyles, classNameLink);
   const imageStyles = cn(styles.imageStyles, classNameImage);
   return (
-    <Link href={imageArrowHref ?? '/'} className={linkStyles}>
+    <Link
+      href={imageArrowHref ?? '/'}
+      className={linkStyles}
+      aria-label="Link to next project"
+    >
       <ImageComponent
         {...arrow}
         layout="fill"

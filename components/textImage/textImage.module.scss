@@ -169,7 +169,7 @@
 .mainImageProject_1 {
   @extend .mainImage;
   max-width: 161px;
-  aspect-ratio: 161/329;
+  aspect-ratio: 644 / 1316;
   margin-top: 40px;
 
   @include tablet-up {
@@ -217,7 +217,7 @@
 }
 
 .mainImageProjectSaving_1 {
-  aspect-ratio: 178/372;
+  aspect-ratio: 644 / 1316;
   max-width: 125px;
 
   @include tablet-up {
@@ -232,6 +232,8 @@
   border-radius: 12px;
   letter-spacing: 0.1rem;
   @include font20_weight400;
+  color: $white;
+  background: $black;
 
   @include tablet-up {
     margin-left: 0px;

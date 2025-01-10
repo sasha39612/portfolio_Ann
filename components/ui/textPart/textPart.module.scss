@@ -109,7 +109,7 @@
 
 .icon {
   &::before {
-    content: var(--icon-content);
+    content: var(--icon-content, '⚙');
     display: inline-block;
     width: 12px;
     height: 16px;

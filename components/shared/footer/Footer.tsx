@@ -10,7 +10,11 @@ const ImageNavBrand = (props: ImageNavBrandProps) => {
   const { logoImage } = props;
 
   return (
-    <Link href="/" className={styles.classNameLink}>
+    <Link
+      href="/"
+      className={styles.classNameLink}
+      aria-label="Link to Home page"
+    >
       <ImageComponent
         {...logoImage}
         layout="fill"
