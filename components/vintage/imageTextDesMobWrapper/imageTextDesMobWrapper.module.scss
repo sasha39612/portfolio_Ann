@@ -1,0 +1,134 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.classNameWrapperVintageDesMob_1 {
+  margin-bottom: 60px;
+}
+
+.titleImageTextVintage_1 {
+  @include Zabal_font36_weight_700;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+    margin-bottom: 30px;
+  }
+}
+
+.classNameWrapperVintageDesMob_1 {
+  display: grid;
+  grid-template-areas:
+    'a'
+    'b'
+    'c'
+    'd';
+  grid-template-columns: 1fr;
+
+  @include tablet-up {
+    grid-template-areas:
+      'a b'
+      'c c'
+      'd e';
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include tablet {
+    margin: 0px -48px 60px;
+    padding: 0px 48px 20px;
+    border-bottom: 1.5px solid #d9d9d9;
+  }
+
+  @include desktop {
+    margin: 0px -80px 60px;
+    padding: 0px 80px 20px;
+    border-top: 1.5px solid #d9d9d9;
+    border-bottom: 1.5px solid #d9d9d9;
+  }
+
+  @include desktop-large {
+    margin: 0px -80px 60px;
+    padding: 0px 80px 20px;
+    border-top: 1.5px solid #d9d9d9;
+    border-bottom: 1.5px solid #d9d9d9;
+  }
+}
+
+.classNameTextContainerVintageDesMob_1 {
+  border-bottom: 1.5px solid #d9d9d9;
+  margin: 0px -20px;
+  padding: 0px 20px;
+
+  @include tablet {
+    margin: 0px -48px;
+    padding: 0px 48px;
+  }
+
+  @include desktop {
+    margin: 0px -80px;
+    padding: 0px 80px;
+  }
+
+  @include desktop-large {
+    margin: 0px -80px;
+    padding: 0px 80px;
+  }
+
+  &:nth-child(1) {
+    grid-area: a;
+
+    @include tablet {
+      border-bottom: none;
+      max-width: 350px;
+      border-top: 1.5px solid #d9d9d9;
+      border-right: 1.5px solid #d9d9d9;
+    }
+
+    @include desktop {
+      border-bottom: none;
+      max-width: 80%;
+      border-right: 1.5px solid #d9d9d9;
+    }
+
+    @include desktop-large {
+      border-bottom: none;
+      max-width: 80%;
+      border-right: 1.5px solid #d9d9d9;
+    }
+  }
+
+  &:nth-child(2) {
+    grid-area: b;
+
+    @include tablet {
+      border-bottom: none;
+      border-top: 1.5px solid #d9d9d9;
+    }
+
+    @include tablet-up {
+      border-bottom: none;
+    }
+  }
+
+  &:nth-child(3) {
+    grid-area: c;
+    border-bottom: none;
+
+    @include tablet {
+      border-top: 1.5px solid #d9d9d9;
+    }
+
+    @include desktop {
+      border-top: 1.5px solid #d9d9d9;
+    }
+
+    @include desktop-large {
+      border-top: 1.5px solid #d9d9d9;
+    }
+  }
+
+  &:last-child {
+    grid-area: d;
+    border: none;
+  }
+}

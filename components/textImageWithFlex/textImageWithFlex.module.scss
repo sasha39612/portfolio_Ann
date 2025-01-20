@@ -1,0 +1,395 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.classNameWrapperLiterary_1 {
+  position: relative;
+  padding-top: 35px;
+
+  @include tablet-up {
+    padding-top: 90px;
+  }
+}
+
+.classNameWrapperSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  gap: 65px;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.classNameWrapperVintage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+  gap: 65px;
+}
+
+.classNameWrapperVintage_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+  gap: 20px;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 65px;
+  }
+}
+
+.classNameWrapperRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px -20px 40px;
+  gap: 20px;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+
+  @include desktop {
+    margin: 0px -80px 60px;
+  }
+}
+
+.classNameWrapperRecipe_2 {
+  display: grid;
+  grid-template-areas:
+    'm'
+    'e';
+  grid-template-columns: 1fr;
+  padding: 40px 0px;
+
+  @include tablet {
+    grid-template-areas: 'm e';
+    grid-template-columns: 60% 40%;
+  }
+
+  @include desktop {
+    grid-template-areas: 'm e';
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include desktop-large {
+    grid-template-areas: 'm e';
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.classNameWrapperLiterary {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  gap: 5px;
+  position: relative;
+
+  > :nth-child(1),
+  > :nth-child(2) {
+    flex: 1 1 45%;
+  }
+
+  @include tablet {
+    > :nth-child(1),
+    > :nth-child(2) {
+      flex: 1 1 35%;
+    }
+
+    > :nth-child(3) {
+      width: 100%;
+    }
+  }
+}
+
+.classNameContainerSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 14px;
+
+  @include tablet-up {
+    gap: 10px;
+    align-items: start;
+  }
+}
+
+.classNameContainerVintage {
+  display: flex;
+  flex-direction: column;
+}
+
+.classNameContainerRecipe {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+
+  @include tablet-up {
+    width: 100%;
+
+    ul {
+      order: 1;
+      align-items: baseline;
+      margin-top: 40px;
+    }
+
+    div {
+      order: 2;
+    }
+  }
+}
+
+.classNameContainerRecipe_2 {
+  grid-area: m;
+  padding: 20px 0px;
+
+  @include tablet-up {
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+.classNameContainerLiterary {
+  display: flex;
+  flex-direction: column;
+}
+
+.classNameTitleSaving {
+  @include Grotesk_font30_weight_500;
+}
+
+.classNameTitleVintage {
+  @include Zabal_font42_weight_700;
+  color: #101110;
+
+  @include tablet-up {
+    @include Zabal_font60_weight_700;
+  }
+}
+
+.classNameTitleVintage_1 {
+  @include Zabal_font36_weight_700;
+
+  @include tablet-up {
+    @include Zabal_font50_weight_700;
+  }
+}
+
+.classNameTitleRecipe {
+  @include Avenir_font44_weight_300;
+  color: #f0923f;
+
+  span {
+    @include Avenir_font44_weight_500;
+  }
+
+  @include tablet-up {
+    @include Avenir_font80_weight_300;
+    margin-top: 70px;
+
+    span {
+      @include Avenir_font80_weight_500;
+    }
+  }
+}
+
+.classNameTitleRecipe_1 {
+  @include Avenir_font36_weight_800;
+  color: #f0923f;
+  text-transform: uppercase;
+  margin: 70px 0px 30px;
+
+  @include tablet-up {
+    @include Avenir_font40_weight_800;
+  }
+}
+
+.classNameTitleLiterary {
+  @include SF_font40_weight_700;
+  color: #2b47d4;
+  margin-bottom: 16px;
+
+  @include tablet-up {
+    @include SF_font90_weight_700;
+    margin-bottom: 23px;
+  }
+}
+
+.classNameSubTitleRecipe_2 {
+  @include Avenir_font30_weight_500;
+}
+
+.classNameDescriptionSaving {
+  @include Grotesk_font16_weight400;
+  text-align: center;
+
+  @include tablet-up {
+    text-align: start;
+  }
+}
+
+.classNameDescriptionVintage_1 {
+  @include Zabal_font16_weight_300;
+
+  span {
+    @include Zabal_font16_weight_600;
+  }
+
+  @include tablet-up {
+    text-align: start;
+  }
+}
+
+.classNameDescriptionRecipe {
+  @include Avenir_font13_weight_400;
+  color: #4a4a49;
+
+  @include tablet-up {
+    @include Avenir_font24_weight_400;
+  }
+}
+
+.classNameDescriptionRecipe_1 {
+  @include Avenir_font14_weight_350;
+}
+
+.classNameDescriptionLiterary {
+  @include SF_font12_weight_400;
+  margin-top: 16px;
+
+  @include tablet-up {
+    @include SF_font16_weight_400;
+    margin-top: 26px;
+    text-align: left;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  @include tablet-up {
+    margin: 0 40px;
+  }
+}
+
+.mainImageProjectSaving_2 {
+  @extend .image;
+  aspect-ratio: 1601/932;
+  max-width: 335px;
+
+  @include tablet-up {
+    max-width: 414px;
+    margin: 0px;
+  }
+
+  @include desktop-large {
+    margin: 0 40px;
+  }
+}
+
+.mainImageProjectVintage_2 {
+  @extend .image;
+  aspect-ratio: 355/205;
+  max-width: 375px;
+
+  @include tablet-up {
+    max-width: 700px;
+  }
+}
+
+.mainImageProjectVintage_22 {
+  @extend .image;
+  aspect-ratio: 335/230;
+  max-width: 335px;
+  border-radius: 32px;
+
+  @include tablet-up {
+    aspect-ratio: 489/301;
+    max-width: 614px;
+  }
+}
+
+.mainImageProjectRecipe_2 {
+  @extend .image;
+  aspect-ratio: 975/304;
+  margin: 30px -20px;
+}
+
+.mainImageProjectLiterary {
+  @extend .image;
+  aspect-ratio: 177/209;
+
+  @include tablet-up {
+    aspect-ratio: 347/409;
+    max-width: 347px;
+  }
+}
+
+.textPartImageProjectLiterary {
+  width: 100%;
+  aspect-ratio: 115/15;
+  max-width: 115px;
+
+  @include tablet-up {
+    aspect-ratio: 390/52;
+    max-width: 440px;
+  }
+}
+
+.imageTextWithFlexRecipe_2 {
+  grid-area: e;
+  @extend .image;
+  width: 100%;
+  aspect-ratio: 335/336;
+  max-width: 335px;
+}
+
+.backgroundImageTextWithFlexLiterary {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100% + 0px);
+  width: calc(100% + 40px);
+  position: absolute;
+  top: -75px;
+  left: -20px;
+
+  @include tablet {
+    height: calc(100% + 387px);
+    width: calc(100% + 96px);
+    top: -345px;
+    left: -48px;
+  }
+
+  @include desktop {
+    height: calc(100% + 387px);
+    width: calc(100% + 160px);
+    top: -425px;
+    left: -80px;
+  }
+
+  @include desktop-large {
+    height: calc(100% + 635px);
+    width: 100%;
+    top: -570px;
+    left: 0px;
+  }
+}
+
+.backgroundImageDesktopTextWithFlexLiterary {
+  @extend .backgroundImageTextWithFlexLiterary;
+}
+
+.backgroundImageMobileTextWithFlexLiterary {
+  @extend .backgroundImageTextWithFlexLiterary;
+}

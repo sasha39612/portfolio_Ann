@@ -1,0 +1,83 @@
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
+
+.contactWrapper {
+  border: 1px $contactBorder solid;
+  margin: 150px auto;
+  padding: 25px;
+
+  @include tablet-up {
+    max-width: 564px;
+    padding: 35px;
+    margin: 200px 0px;
+  }
+}
+
+.contactDescription {
+  @include font18_weight300;
+  margin-top: 15px;
+}
+
+.contactInputBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 31px;
+}
+
+.contactInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.inputStyle {
+  display: flex;
+  flex-direction: column;
+
+  & > input {
+    @include inputStyles;
+    width: 100%;
+
+    @include tablet-up {
+      width: 248px;
+    }
+  }
+
+  //TODO: finish background-color for inputs
+  // input:-webkit-autofill {
+  //   appearance: none;
+  //   background-color: #efedfb !important;
+  //   border: 1px solid #4a90e2 !important;
+  //   background-color: $white !important;
+  //   border: 1px solid $black !important;
+  //   box-shadow: 0 0 0px 1000px #e8f0fe inset !important;
+  //   transition: background-color 5000s ease-in-out 0s;
+  // }
+
+  & > textarea {
+    @include inputStyles;
+    width: 100%;
+    height: 132px;
+  }
+
+  & > textarea::placeholder {
+    padding-top: 5px;
+  }
+}
+
+.submitButton {
+  @include font20_weight400;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 30px;
+  border-radius: 12px;
+  letter-spacing: 0.1rem;
+  margin-top: 31px;
+}

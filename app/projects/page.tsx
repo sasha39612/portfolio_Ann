@@ -1,7 +1,18 @@
-const MyProjects = () => {
-    return (
-        <div>My Projects</div>
-    )
-}
+import { notFound } from 'next/navigation';
+import Projects from '../../components/projects/Projects';
+import { ProjectsTypes } from '../../components/projects/type';
+import getPropsData from '../../lib/getPropsData';
 
-export default MyProjects
+const MyProjects = () => {
+  const projectsProps = getPropsData(
+    'projects',
+    'projects.mdx',
+  ) as ProjectsTypes;
+  if (!projectsProps) {
+    notFound();
+  }
+
+  return <Projects {...projectsProps} />;
+};
+
+export default MyProjects;

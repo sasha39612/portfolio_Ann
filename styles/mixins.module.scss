@@ -1,4 +1,4 @@
-@import "./variables.module.scss";
+@import './variables.module.scss';
 
 @mixin mobile {
   @media (max-width: #{$tablet-width - 1px}) {
@@ -80,4 +80,855 @@
     outline: 2x solid green;
     outline-offset: 4px;
   }
+}
+
+//  font-family: Lato;
+@mixin font8_weight300 {
+  font-family: Lato;
+  font-size: 8.87px;
+  font-weight: 300;
+  line-height: 10.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font12_weight300 {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.1;
+  padding-bottom: 32px;
+}
+
+@mixin font14_weight400 {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.46;
+  margin-bottom: 24px;
+}
+
+@mixin font14_weight300 {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font16_weight300 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font18_weight300 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+  text-align: justified;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font20_weight400 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font24_weight400 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font30_weight400 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font32_weight400 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font32_weight600 {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font45_weight400 {
+  font-family: Lato;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin inputStyles {
+  box-sizing: border-box;
+  height: 45px;
+  padding: 10px 10px 5px 15px;
+  margin-top: 7px;
+  border-radius: 10px;
+  border: 0.4px $black solid;
+}
+
+// font-family: Space Grotesk;
+@mixin Grotesk_font12_weight400 {
+  font-family: Space Grotesk;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.31px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font14_weight400 {
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.86px;
+  letter-spacing: 0.013em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font16_weight400 {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.42px;
+  letter-spacing: 0.013em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font16_weight500 {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.42px;
+  letter-spacing: 0.013em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font24_weight400 {
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30.62px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font24_weight500 {
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30.62px;
+  letter-spacing: 0.013em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Grotesk_font30_weight_500 {
+  font-family: Space Grotesk;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38.28px;
+  letter-spacing: 0.013em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+//Zabal DEMO
+@mixin Zabal_font12_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.58px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font14_weight_400 {
+  font-family: Zabal DEMO;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.58px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font14_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.01px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font16_weight_300 {
+  font-family: Zabal DEMO;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font16_weight_400 {
+  font-family: Zabal DEMO;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font16_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.44px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font16_weight_600 {
+  font-family: Zabal DEMO;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font18_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.87px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font20_weight_600 {
+  font-family: Zabal DEMO;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.3px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font24_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.16px;
+  letter-spacing: 0.23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font24_weight_600 {
+  font-family: Zabal DEMO;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font24_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font32_weight_500 {
+  font-family: Zabal DEMO;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.88px;
+  letter-spacing: 0.23px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font42_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51.03px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font36_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.74px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font48_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font50_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Zabal_font60_weight_700 {
+  font-family: Zabal DEMO;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72.9px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+//Avenir
+@mixin Avenir_font12_weight_350 {
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 16.39px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font12_weight_400 {
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.39px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font13_weight_400 {
+  font-family: Avenir;
+  font-size: 13.32px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_300 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19.12px;
+  text-align: justified;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_350 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 19.12px;
+  text-align: justified;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_400 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_400_italic {
+  font-family: Avenir;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 19.12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_500 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font14_weight_800 {
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 19.12px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_300 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.86px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_400 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.86px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_500 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font16_weight_800 {
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 23.81px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font18_weight_350 {
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 24.59px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font18_weight_800 {
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26.78px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font20_weight_500 {
+  font-family: Avenir;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.32px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font24_weight_400 {
+  font-family: Avenir;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.78px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font24_weight_500 {
+  font-family: Avenir;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font26_weight_800 {
+  font-family: Avenir;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 35.52px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font28_weight_500 {
+  font-family: Avenir;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38.25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font30_weight_500 {
+  font-family: Avenir;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40.98px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font36_weight_800 {
+  font-family: Avenir;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49.18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font40_weight_800 {
+  font-family: Avenir;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font44_weight_300 {
+  font-family: Avenir;
+  font-size: 44.41px;
+  font-weight: 300;
+  line-height: 60.66px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font44_weight_500 {
+  font-family: Avenir;
+  font-size: 44.41px;
+  font-weight: 500;
+  line-height: 60.66px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font47_weight_500 {
+  font-family: Avenir;
+  font-size: 47.22px;
+  font-weight: 500;
+  line-height: 1.37;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $projectTitle;
+}
+
+@mixin Avenir_font50_weight_300 {
+  font-family: Avenir;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 68.3px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font50_weight_500 {
+  font-family: Avenir;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 68.3px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font80_weight_300 {
+  font-family: Avenir;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 109.28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin Avenir_font80_weight_500 {
+  font-family: Avenir;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 109.28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+//SF Pro
+@mixin SF_font12_weight_400 {
+  font-family: SF Pro;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font14_weight_510 {
+  font-family: SF Pro;
+  font-size: 13.13px;
+  font-weight: 510;
+  line-height: 15.67px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font16_weight_274 {
+  font-family: SF Pro;
+  font-size: 16px;
+  font-weight: 274;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font16_weight_400 {
+  font-family: SF Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font24_weight_590 {
+  font-family: SF Pro;
+  font-size: 24px;
+  font-weight: 590;
+  line-height: 28.64px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font26_weight_510 {
+  font-family: SF Pro;
+  font-size: 26px;
+  font-weight: 510;
+  line-height: 31.03px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font30_weight_510 {
+  font-family: SF Pro;
+  font-size: 30px;
+  font-weight: 510;
+  line-height: 35.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font30_weight_700 {
+  font-family: SF Pro;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font32_weight_510 {
+  font-family: SF Pro;
+  font-size: 32px;
+  font-weight: 510;
+  line-height: 38.19px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font36_weight_590 {
+  font-family: SF Pro;
+  font-size: 36px;
+  font-weight: 590;
+  line-height: 42.96px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font36_weight_800 {
+  font-family: Avenir;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49.18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font40_weight_700 {
+  font-family: SF Pro;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font40_weight_800 {
+  font-family: Avenir;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font45_weight_590 {
+  font-family: SF Pro;
+  font-size: 45px;
+  font-weight: 590;
+  line-height: 53.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font50_weight_590 {
+  font-family: SF Pro;
+  font-size: 50px;
+  font-weight: 590;
+  line-height: 50px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin SF_font90_weight_700 {
+  font-family: SF Pro;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 107.4px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }

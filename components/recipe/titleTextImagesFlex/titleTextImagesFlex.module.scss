@@ -1,0 +1,24 @@
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
+
+.titleImagesTextWithTitleRecipe {
+  @include Avenir_font36_weight_800;
+  text-transform: uppercase;
+  color: #f0923f;
+  margin: 60px 0px 20px;
+
+  @include tablet-up {
+    @include Avenir_font40_weight_800;
+    margin-top: 80px;
+  }
+}
+
+.subTitleImagesTextWithTitleRecipe {
+  @include Avenir_font30_weight_500;
+  margin-bottom: 10px;
+}
+
+.descriptionImagesTextWithTitleRecipe {
+  @include Avenir_font14_weight_350;
+}
