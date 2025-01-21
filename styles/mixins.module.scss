@@ -138,6 +138,14 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin fontButton {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: justified;
+  letter-spacing: 0.03em;
+}
+
 @mixin font20_weight400 {
   font-family: Lato;
   font-size: 20px;
@@ -203,6 +211,70 @@
   margin-top: 7px;
   border-radius: 10px;
   border: 0.4px $black solid;
+}
+
+@mixin labelStyle {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+@mixin paragraphXXL {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+@mixin paragraphXL {
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+@mixin paragraphL {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+@mixin paragraphM {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.6px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+@mixin paragraphS {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+@mixin paragraphXS {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-align: left;
 }
 
 // font-family: Space Grotesk;

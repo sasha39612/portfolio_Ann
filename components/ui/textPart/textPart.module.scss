@@ -23,7 +23,7 @@
 }
 
 .textImagePropsTitleDescription {
-  @include font18_weight300;
+  @include paragraphXL;
 }
 
 .textImagePropsProjectsSaving_1_subTitle {
@@ -72,12 +72,12 @@
   }
 }
 
-.textImagePropsTitleDescription {
-  @include font12_weight300;
-  font-size: 26px;
-  line-height: 1.21;
-  letter-spacing: 0.02em;
-}
+// .textImagePropsTitleDescription {
+//   @include font12_weight300;
+//   font-size: 26px;
+//   line-height: 1.21;
+//   letter-spacing: 0.02em;
+// }
 
 .textImagePropsAboutDescription {
   @include font18_weight300;

@@ -13,10 +13,10 @@
   border: none;
   background: none;
   color: #00000080;
-  @include font20_weight400;
+  @include fontButton;
 
   @include tablet-up {
-    @include font30_weight400;
+    @include fontButton;
   }
 }
 

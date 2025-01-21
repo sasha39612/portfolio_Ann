@@ -231,7 +231,7 @@
   padding: 16px 30px;
   border-radius: 12px;
   letter-spacing: 0.1rem;
-  @include font20_weight400;
+  @include fontButton;
   color: $white;
   background: $black;
 
