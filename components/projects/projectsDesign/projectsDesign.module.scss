@@ -34,7 +34,7 @@
 }
 
 .projectNameStylesReverse {
-  @include font32_weight400;
+  @include paragraphXXL;
   color: $projectName;
   text-align: center;
   margin-top: 40px;

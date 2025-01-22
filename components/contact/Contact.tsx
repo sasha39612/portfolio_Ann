@@ -48,7 +48,7 @@ const ContactComponent = ({
 
   return (
     <form onSubmit={handleSubmit} className={styles.contactWrapper}>
-      <h1>{contactTitle}</h1>
+      <h2>{contactTitle}</h2>
       <p className={styles.contactDescription}>{contactDescription}</p>
       <div className={styles.contactInputBlock}>
         <div className={styles.contactInputContainer}>

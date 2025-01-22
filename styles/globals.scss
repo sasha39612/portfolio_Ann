@@ -7,7 +7,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Lato';
+  font-family: 'Lato', Arial, sans-serif;
   background-color: $white;
 }
 
@@ -36,7 +36,6 @@ ul {
 }
 
 h1 {
-  font-family: Lato;
   font-size: 80px;
   font-weight: 800;
   line-height: 1.2;
@@ -45,7 +44,6 @@ h1 {
 }
 
 h2 {
-  font-family: Lato;
   font-size: 50px;
   font-weight: 700;
   line-height: 72.5px;
@@ -54,7 +52,6 @@ h2 {
 }
 
 h3 {
-  font-family: Lato;
   font-size: 28px;
   font-weight: 600;
   line-height: 36.4px;
@@ -63,7 +60,6 @@ h3 {
 }
 
 H4 {
-  font-family: Lato;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;

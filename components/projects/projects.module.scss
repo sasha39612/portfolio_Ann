@@ -14,10 +14,6 @@
   background: none;
   color: #00000080;
   @include fontButton;
-
-  @include tablet-up {
-    @include font30_weight400;
-  }
 }
 
 .buttonTitleActive {
@@ -34,7 +30,7 @@
 }
 
 .projectNameStylesReverse {
-  @include font32_weight400;
+  @include paragraphXXL;
   color: $projectName;
   text-align: center;
   margin-top: 40px;
@@ -99,7 +95,7 @@
   text-align: center;
 
   @include tablet-up {
-    @include font45_weight400;
+    @include font48_weight500;
     text-align: center;
   }
 }

@@ -5,7 +5,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 40px 0;
+  margin: 140px 0;
   position: relative;
 
   @include tablet-up {
@@ -48,7 +48,7 @@
 }
 
 .projectNameStylesReverse {
-  @include font32_weight400;
+  @include paragraphXXL;
   color: $projectName;
 
   @include tablet-up {
@@ -88,6 +88,11 @@
     padding: 40px 0px;
     gap: 40px;
   }
+}
+
+.container_2 {
+  @extend .container;
+  padding-top: 20px;
 }
 
 .labelImageProject1 {
@@ -152,7 +157,7 @@
   @include tablet-up {
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 40px 0px;
+    padding: 0px 0px 40px;
   }
 }
 

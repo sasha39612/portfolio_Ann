@@ -18,7 +18,7 @@ const Projects = ({
 
   return (
     <section>
-      <div className={styles.buttonWrapper}>
+      <h3 className={styles.buttonWrapper}>
         <Link
           href={links[0] ?? '/'}
           className={buttonStyles}
@@ -35,7 +35,7 @@ const Projects = ({
         >
           {buttonTitle[1]}
         </Link>
-      </div>
+      </h3>
       <div className={styles.projectsWrapper}>
         <div className={styles.projectNameStylesReverse}>{proudText}</div>
 
