@@ -48,12 +48,14 @@ const ContactComponent = ({
 
   return (
     <form onSubmit={handleSubmit} className={styles.contactWrapper}>
-      <h1>{contactTitle}</h1>
+      <h2>{contactTitle}</h2>
       <p className={styles.contactDescription}>{contactDescription}</p>
       <div className={styles.contactInputBlock}>
         <div className={styles.contactInputContainer}>
           <div className={styles.inputStyle}>
-            <label htmlFor="form-name">{inputName.name}</label>
+            <label htmlFor="form-name" className={styles.labelStyle}>
+              {inputName.name}
+            </label>
             <input
               id="form-name"
               name="name"
@@ -66,7 +68,9 @@ const ContactComponent = ({
             />
           </div>
           <div className={styles.inputStyle}>
-            <label htmlFor="form-email">{inputEmail.name}</label>
+            <label htmlFor="form-email" className={styles.labelStyle}>
+              {inputEmail.name}
+            </label>
             <input
               id="form-email"
               name="email"
@@ -79,7 +83,9 @@ const ContactComponent = ({
           </div>
         </div>
         <div className={styles.inputStyle}>
-          <label htmlFor="form-message">{inputMessage.name}</label>
+          <label htmlFor="form-message" className={styles.labelStyle}>
+            {inputMessage.name}
+          </label>
           <textarea
             id="form-message"
             name="message"

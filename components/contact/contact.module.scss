@@ -10,12 +10,12 @@
   @include tablet-up {
     max-width: 564px;
     padding: 35px;
-    margin: 200px 0px;
+    margin: 140px 0px;
   }
 }
 
 .contactDescription {
-  @include font18_weight300;
+  @include paragraphM;
   margin-top: 15px;
 }
 
@@ -37,12 +37,17 @@
   }
 }
 
+.labelStyle {
+  @include labelStyle;
+}
+
 .inputStyle {
   display: flex;
   flex-direction: column;
 
   & > input {
     @include inputStyles;
+    @include paragraphXS;
     width: 100%;
 
     @include tablet-up {
@@ -63,6 +68,7 @@
 
   & > textarea {
     @include inputStyles;
+    @include paragraphXS;
     width: 100%;
     height: 132px;
   }
@@ -73,7 +79,7 @@
 }
 
 .submitButton {
-  @include font20_weight400;
+  @include fontButton;
   margin-left: auto;
   margin-right: auto;
   padding: 16px 30px;

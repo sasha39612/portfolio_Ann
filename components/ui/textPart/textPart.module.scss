@@ -7,7 +7,6 @@
 
   @include tablet-up {
     max-width: 498px;
-    margin-bottom: 16px;
     padding-bottom: 0;
   }
 }
@@ -23,7 +22,7 @@
 }
 
 .textImagePropsTitleDescription {
-  @include font18_weight300;
+  @include paragraphXL;
 }
 
 .textImagePropsProjectsSaving_1_subTitle {
@@ -35,7 +34,6 @@
 }
 
 .textImagePropsProjects_2_title {
-  @include Avenir_font47_weight_500;
   text-align: center;
 
   @include tablet-up {
@@ -44,19 +42,18 @@
 }
 
 .textImagePropsProjects_3_title {
-  @include font32_weight400;
   text-align: center;
 
   @include tablet-up {
     text-align: left;
-    font-size: 48px;
   }
 }
 
 .textImagePropsProjects_1_subTitle {
-  @include font12_weight300;
+  @include paragraphM;
   text-align: center;
   padding-top: 4px;
+  padding-bottom: 40px;
 
   @include tablet-up {
     text-align: left;
@@ -64,20 +61,21 @@
 }
 
 .textImagePropsProjects_2_subTitle {
-  @include Avenir_font14_weight_400;
+  @include paragraphM;
   text-align: center;
+  padding-bottom: 40px;
 
   @include tablet-up {
     text-align: left;
   }
 }
 
-.textImagePropsTitleDescription {
-  @include font12_weight300;
-  font-size: 26px;
-  line-height: 1.21;
-  letter-spacing: 0.02em;
-}
+// .textImagePropsTitleDescription {
+//   @include font12_weight300;
+//   font-size: 26px;
+//   line-height: 1.21;
+//   letter-spacing: 0.02em;
+// }
 
 .textImagePropsAboutDescription {
   @include font18_weight300;
@@ -85,12 +83,12 @@
 }
 
 .textImagePropsProjectsDescription {
-  @include font14_weight400;
+  @include paragraphL;
   text-align: center;
   padding: 10px;
 
   @include tablet-up {
-    padding: 0;
+    padding: 0px 0px 40px;
     text-align: left;
   }
 }
@@ -131,6 +129,17 @@
     margin: 0px 0px 10px;
     width: 190px;
     height: 66px;
+  }
+}
+
+.labelImageProject2 {
+  width: 268px;
+  height: auto;
+  aspect-ratio: 1039 / 189;
+  margin: 0px auto 6px auto;
+
+  @include tablet-up {
+    margin: 0px 0px 10px;
   }
 }
 

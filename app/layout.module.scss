@@ -18,7 +18,7 @@
 }
 
 .button {
-  @include font20_weight400;
+  @include fontButton;
   margin-left: auto;
   margin-right: auto;
   padding: 16px 30px;
