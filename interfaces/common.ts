@@ -102,7 +102,7 @@ export interface AboutType {
   textImageProps: TextImageType;
   educationBlock: TextBlock[];
   skillsBlock: TextBlock;
-  programsBlock: { title: TextBlockElem; images: ImagePropsType[] };
+  programsBlock: { subTitle: TextBlockElem; images: ImagePropsType[] };
 }
 
 export interface contactInputType {
