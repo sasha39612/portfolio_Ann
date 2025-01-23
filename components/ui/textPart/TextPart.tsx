@@ -74,8 +74,9 @@ const TextPart = ({
 
   return (
     <div className={containerStyles}>
-      <h2 className={titleStyle}>
-        {title?.text}
+      <h2 className={titleStyle}>{title?.text}</h2>
+      <h3 className={subTitleStyle}>
+        {subTitle?.text}
         {image?.src && !image?.src.includes('.svg') ? (
           <ImageComponent
             {...image}
@@ -92,8 +93,7 @@ const TextPart = ({
             ) : null}
           </>
         )}
-      </h2>
-      <p className={subTitleStyle}>{subTitle?.text}</p>
+      </h3>
       {Array.isArray(description) ? (
         <ul>
           {description?.map((item: TextBlockElemArr) => (

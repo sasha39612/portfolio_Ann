@@ -31,12 +31,12 @@ const AboutComponent = ({
               ))
             : null}
         </ul>
-        <div>
+        <div className={styles.skillsBlockContainer}>
           <TextPart {...skillsBlock} />
           <>
-            <div className={styles?.[programsBlock?.title?.className ?? '']}>
-              {programsBlock.title?.text}
-            </div>
+            <h3 className={styles?.[programsBlock?.subTitle?.className ?? '']}>
+              {programsBlock.subTitle?.text}
+            </h3>
             <ul className={styles.containerLogos}>
               {Array.isArray(programsBlock.images)
                 ? programsBlock.images.map((program) => (

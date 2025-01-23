@@ -9,7 +9,7 @@
 
   @include tablet-up {
     flex-direction: row;
-    padding: 60px 0;
+    padding: 0px 0px 60px;
   }
 }
 
@@ -20,16 +20,21 @@
 
   @include tablet-up {
     flex-direction: row;
-    gap: 60px;
+    gap: 90px;
   }
 }
 
-.titleAboutMain {
-  @include font32_weight600;
+.skillsBlockContainer {
+  margin-top: 60px;
 }
 
-.titleAbout {
-  @include font20_weight400;
+.titleAboutMain {
+  @include font48_weight500;
+  margin-bottom: 12px;
+}
+
+.subTitleAboutMain {
+  margin-bottom: 12px;
 }
 
 .mainImage {
