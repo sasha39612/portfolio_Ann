@@ -38,6 +38,7 @@ export interface TextBlock {
   link?: { href: string };
   container?: TextBlockElem;
   image?: ImagePropsType;
+  imageH3?: ImagePropsType;
   popupContent?: ImagePropsType[];
   className?: string;
 }
