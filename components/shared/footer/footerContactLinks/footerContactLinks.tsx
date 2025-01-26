@@ -9,18 +9,20 @@ const FooterLinks = (props: FooterLinkTypes) => {
 
   return (
     <Link
-      href={href}
+      href={href ?? ''}
       className={className}
       aria-label="Contact link"
       prefetch={false}
     >
       <div className={styles.contactLinkWrapper}>
-        <ImageComponent
-          {...icon}
-          layout="fill"
-          objectFit="contain"
-          className={styles[icon?.className ?? '']}
-        />
+        {icon?.src ? (
+          <ImageComponent
+            {...icon}
+            layout="fill"
+            objectFit="contain"
+            className={styles[icon?.className ?? '']}
+          />
+        ) : null}
         <span className={styles.title}>{title}</span>
       </div>
     </Link>

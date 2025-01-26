@@ -33,6 +33,7 @@ const TextPart = ({
   description,
   container,
   image,
+  imageH3,
   popupContent,
   className = ' ',
 }: TextBlock) => {
@@ -74,9 +75,8 @@ const TextPart = ({
 
   return (
     <div className={containerStyles}>
-      <h2 className={titleStyle}>{title?.text}</h2>
-      <h3 className={subTitleStyle}>
-        {subTitle?.text}
+      <h2 className={titleStyle}>
+        {title?.text}
         {image?.src && !image?.src.includes('.svg') ? (
           <ImageComponent
             {...image}
@@ -89,6 +89,25 @@ const TextPart = ({
                 onClick={(e) => handleOnClick(e, popupContent)}
                 className={getIconStyles(image?.className)}
                 style={getIconContent(image?.src)}
+              />
+            ) : null}
+          </>
+        )}
+      </h2>
+      <h3 className={subTitleStyle}>
+        {subTitle?.text}
+        {imageH3?.src && !imageH3?.src.includes('.svg') ? (
+          <ImageComponent
+            {...imageH3}
+            className={styles[imageH3.imageClassName ?? '']}
+          />
+        ) : (
+          <>
+            {imageH3?.src.includes('.svg') ? (
+              <span
+                onClick={(e) => handleOnClick(e, popupContent)}
+                className={getIconStyles(imageH3?.className)}
+                style={getIconContent(imageH3?.src)}
               />
             ) : null}
           </>

@@ -1,6 +1,6 @@
-@import '../../../styles/mixins.module.scss';
-@import '../../../styles/colors.module.scss';
-@import '../../../styles/variables.module.scss';
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
 
 .wrapper {
   color: $black;
@@ -9,18 +9,21 @@
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid $black;
-  padding: 0px 10px;
   margin-top: 30px;
   grid-template-areas:
     'a'
-    'b';
+    'b'
+    'c';
 
   @include tablet-up {
-    height: 250px;
+    height: 373px;
     justify-items: start;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: 'b a';
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas:
+      'b a'
+      'c c';
     margin-top: 60px;
     margin-bottom: 30px;
   }
@@ -28,6 +31,7 @@
 
 .classNameLink {
   grid-area: a;
+  padding: 0px 10px;
   justify-self: center;
 
   @include tablet-up {
@@ -50,6 +54,7 @@
 
 .contacts {
   grid-area: b;
+  padding: 0px 10px;
 
   @include tablet-up {
     margin-left: 40px;
@@ -77,5 +82,31 @@
   }
   @include tablet {
     gap: 32px 60px;
+  }
+}
+
+.contactLinksBottom {
+  @include paragraphM;
+  grid-area: c;
+  align-self: center;
+  justify-self: center;
+  padding: 30px 0px 40px;
+  width: 100%;
+  border-top: 0.1px #989696 solid;
+
+  & > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > li:nth-child(1),
+    & > li:nth-child(2) {
+      text-decoration: underline;
+      align-self: center;
+    }
+    & > li:nth-child(3) {
+      align-self: center;
+    }
   }
 }

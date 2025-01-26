@@ -38,8 +38,10 @@ export interface TextBlock {
   link?: { href: string };
   container?: TextBlockElem;
   image?: ImagePropsType;
+  imageH3?: ImagePropsType;
   popupContent?: ImagePropsType[];
   className?: string;
+  isDangerousHTML?: boolean;
 }
 
 export interface TextSimpleBlock {
@@ -118,6 +120,13 @@ export interface ContactType {
   inputMessage: contactInputType;
   button: TextBlockElem;
 }
+
+export interface ImpressumType {
+  firstTextBlock: TextBlock;
+  secondTextBlock: { title: TextBlockElem; textBlocksList: TextBlock[] };
+}
+
+export type DatenschutzType = ImpressumType;
 
 export interface FooterProject {
   title: string;

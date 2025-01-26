@@ -31,7 +31,13 @@ const Footer = () => {
   if (!props) {
     notFound();
   }
-  const { logoImage, footerTitle, footerLinksLeft, footerLinksRight } = props;
+  const {
+    logoImage,
+    footerTitle,
+    footerLinksLeft,
+    footerLinksRight,
+    footerLinksBottom,
+  } = props;
 
   return (
     <div className={styles.wrapper}>
@@ -43,6 +49,9 @@ const Footer = () => {
         </div>
       </div>
       <ImageNavBrand logoImage={logoImage[0]} />
+      <div className={styles.contactLinksBottom}>
+        <FooterContactLinks footerLinks={footerLinksBottom} />
+      </div>
     </div>
   );
 };
