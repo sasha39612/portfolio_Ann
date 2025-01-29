@@ -55,8 +55,7 @@
 }
 
 .DescriptionTextWithoutTitleSaving {
-  @include Grotesk_font14_weight400;
-  line-height: 17.86px;
-  letter-spacing: 0.013em;
+  @include paragraphXS;
+  text-align: center;
   color: #545454;
 }

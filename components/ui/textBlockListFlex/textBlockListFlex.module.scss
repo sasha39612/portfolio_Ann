@@ -99,13 +99,13 @@
   height: 30px;
   align-items: center;
   justify-content: space-between;
-  padding: 11px 0px;
+  padding: 16px 0px;
 
   &:nth-child(odd) {
     width: 122px;
 
     @include tablet-up {
-      width: 225px;
+      width: 260px;
       border-bottom: 0.5px #818182 solid;
     }
   }
@@ -114,8 +114,14 @@
     width: 202px;
 
     @include tablet-up {
-      width: 225px;
+      width: 260px;
       border-bottom: 0.5px #818182 solid;
+    }
+  }
+
+  li:last-child {
+    @include tablet-up {
+      border-bottom: none;
     }
   }
 }
@@ -136,7 +142,7 @@
 }
 
 .classNameTextGridTitleSaving {
-  @include Grotesk_font16_weight500;
+  @include paragraphL;
   width: 63px;
 
   @include tablet-up {
@@ -170,11 +176,11 @@
 }
 
 .classNameTextGridDescriptionSaving {
-  @include Grotesk_font12_weight400;
+  @include paragraphM;
   width: 119px;
 
   @include tablet-up {
-    width: 130px;
+    width: 170px;
   }
 }
 

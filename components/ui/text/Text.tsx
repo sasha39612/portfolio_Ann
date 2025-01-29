@@ -13,7 +13,7 @@ const Text = ({
 }: TextSimpleBlock) => {
   return (
     <>
-      {title ? <div className={classNameTitle}>{title}</div> : null}
+      {title ? <h2 className={classNameTitle}>{title}</h2> : null}
       {subTitle ? <div className={classNameSubTitle}>{subTitle}</div> : null}
       {description ? (
         isDangerousHTML ? (

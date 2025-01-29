@@ -5,7 +5,10 @@
   font-weight: 300;
   font-display: swap;
   src: url(/fonts/latolightitalic.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* lato */
@@ -14,8 +17,12 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/fonts/latolight.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  src: url(/fonts/lato-v24-latin-300.woff2) format('woff2');
+  // src: url(/fonts/latolight.woff2) format('woff2');
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* lato-italic */
@@ -25,7 +32,11 @@
   font-weight: 400;
   font-display: swap;
   src: url(/fonts/latoitalic.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato */
@@ -34,8 +45,13 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/latoregular.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  src: url(/fonts/lato-v24-latin-regular.woff2) format('woff2');
+  // src: url(/fonts/latoregular.woff2) format('woff2');
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato-italic */
@@ -45,7 +61,11 @@
   font-weight: 500;
   font-display: swap;
   src: url(/fonts/latomediumitalic.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato */
@@ -55,7 +75,11 @@
   font-weight: 500;
   font-display: swap;
   src: url(/fonts/latomedium.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato-italic */
@@ -65,7 +89,11 @@
   font-weight: 600;
   font-display: swap;
   src: url(/fonts/latosemibolditalic.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato */
@@ -75,7 +103,11 @@
   font-weight: 600;
   font-display: swap;
   src: url(/fonts/latosemibold.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato-italic */
@@ -85,7 +117,11 @@
   font-weight: 700;
   font-display: swap;
   src: url(/fonts/latobolditalic.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }
 
 /* lato */
@@ -95,5 +131,9 @@
   font-weight: 700;
   font-display: swap;
   src: url(/fonts/latobold.woff2) format('woff2');
-  unicode-range: U+0041-005A, U+0061-007A;
+  unicode-range: U+0020-007E, U+00C4, U+00D6, U+00DC, U+00E4, U+00F6, U+00FC,
+    U+00DF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 }

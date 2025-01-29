@@ -46,16 +46,16 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
       <div className={styles[className ?? '']}>
         <div className={styles[classNameContainer ?? '']}>
           {textPart?.title?.isDangerousHTML ? (
-            <div
+            <h2
               className={styles[textPart?.title?.className ?? '']}
               dangerouslySetInnerHTML={getDangerousHTML(
                 textPart?.title?.text ?? '',
               )}
             />
           ) : textPart?.title?.text ? (
-            <div className={styles[textPart?.title?.className ?? '']}>
+            <h2 className={styles[textPart?.title?.className ?? '']}>
               {textPart?.title?.text}
-            </div>
+            </h2>
           ) : null}
           {textPart?.image?.src ? (
             <ImageComponent
