@@ -12,13 +12,7 @@
 }
 
 .titleImageTextVintage_1 {
-  @include Zabal_font36_weight_700;
-  height: 38px;
-  margin-bottom: 20px;
-
-  @include tablet-up {
-    @include Zabal_font50_weight_700;
-  }
+  margin-bottom: 16px;
 }
 
 .descriptionImageTextSaving_1 {
@@ -28,8 +22,8 @@
 }
 
 .descriptionImageTextVintage_1 {
-  @include Grotesk_font16_weight400;
-  color: #545454;
+  @include paragraphL;
+  margin-bottom: 40px;
 
   @include tablet-up {
     text-align: left;

@@ -8,11 +8,7 @@
 }
 
 .titleImageTextVintage_2 {
-  @include Zabal_font36_weight_700;
-
-  @include tablet-up {
-    @include Zabal_font50_weight_700;
-  }
+  margin-top: 80px;
 
   @include desktop {
     padding-left: 80px;
@@ -93,7 +89,7 @@
 
 .containerImageTextVintage_2 {
   @include desktop {
-    margin: 0px -80px 60px;
+    margin: 0px -80px -15px;
   }
 }
 

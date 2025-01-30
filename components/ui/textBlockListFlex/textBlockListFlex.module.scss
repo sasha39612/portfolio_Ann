@@ -156,12 +156,12 @@
 }
 
 .classNameTextGridTitleVintage {
-  @include Zabal_font14_weight_500;
+  @include font14_weight500_Vintage_Page;
   text-transform: uppercase;
   color: #434343;
 
   @include tablet-up {
-    @include Zabal_font12_weight_500;
+    @include font14_weight500_Vintage_Page;
   }
 }
 

@@ -41,17 +41,19 @@ const ProjectVintage = (props: ProjectVintageTypes) => {
       <ImageTextDesMob {...imageTextVintageDesMob} />
       <TextBlocksWithTitle {...textWithTitleVintage_1} />
       <TextBlocksWithTitle {...textWithTitleVintage_2} />
-      {isMobileView ? (
-        <ImageComponent
-          {...imagePartMobile}
-          className={styles[imagePartMobile?.className ?? '']}
-        />
-      ) : (
-        <ImageComponent
-          {...imagePartDesktop}
-          className={styles[imagePartDesktop?.className ?? '']}
-        />
-      )}
+      <section className={styles.imageComponentWrapper}>
+        {isMobileView ? (
+          <ImageComponent
+            {...imagePartMobile}
+            className={styles[imagePartMobile?.className ?? '']}
+          />
+        ) : (
+          <ImageComponent
+            {...imagePartDesktop}
+            className={styles[imagePartDesktop?.className ?? '']}
+          />
+        )}
+      </section>
       <PersonData {...personDataVintage} />
       <ImageTextSimple {...imageTextVintage_1} />
       <ImageTextSwiperMulti {...imageTextVintage_2} />

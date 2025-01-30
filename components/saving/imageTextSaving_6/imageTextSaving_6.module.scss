@@ -38,13 +38,11 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  margin-bottom: 60px;
 
   @include tablet-up {
     flex-direction: row-reverse;
     justify-content: left;
     gap: 70px;
-    margin-bottom: 60px;
   }
 }
 

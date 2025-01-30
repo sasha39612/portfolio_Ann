@@ -10,10 +10,10 @@ const PersonData = ({
   classNameContainer,
 }: PersonDataType) => {
   return (
-    <>
-      <div className={styles[textPart.title.className ?? '']}>
+    <section>
+      <h2 className={styles[textPart.title.className ?? '']}>
         {textPart.title.text}
-      </div>
+      </h2>
       <div className={styles[className ?? '']}>
         <div className={styles[classNameContainer ?? '']}>
           <ImageComponent
@@ -61,7 +61,7 @@ const PersonData = ({
           </ul>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

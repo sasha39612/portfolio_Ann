@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 0;
+  padding: 0px 0px 35px;
   gap: 65px;
 
   @include tablet-up {
@@ -34,8 +34,7 @@
 .classNameWrapperVintage_1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 60px 0;
+  margin: 140px 0 70px;
   gap: 20px;
 
   @include tablet-up {
@@ -165,20 +164,16 @@
 // .classNameTitleSaving {}
 
 .classNameTitleVintage {
-  @include Zabal_font42_weight_700;
+  @include font80_weight800_H1;
   color: #101110;
 
   @include tablet-up {
-    @include Zabal_font60_weight_700;
+    @include font80_weight800_H1;
   }
 }
 
 .classNameTitleVintage_1 {
-  @include Zabal_font36_weight_700;
-
-  @include tablet-up {
-    @include Zabal_font50_weight_700;
-  }
+  margin-bottom: 16px;
 }
 
 .classNameTitleRecipe {
@@ -235,10 +230,11 @@
 }
 
 .classNameDescriptionVintage_1 {
-  @include Zabal_font16_weight_300;
+  @include paragraphL;
 
   span {
-    @include Zabal_font16_weight_600;
+    @include paragraphL;
+    font-weight: 600;
   }
 
   @include tablet-up {
@@ -307,12 +303,11 @@
 
 .mainImageProjectVintage_22 {
   @extend .image;
-  aspect-ratio: 335/230;
+  aspect-ratio: 1760 / 1204;
   max-width: 335px;
   border-radius: 32px;
 
   @include tablet-up {
-    aspect-ratio: 489/301;
     max-width: 614px;
   }
 }
