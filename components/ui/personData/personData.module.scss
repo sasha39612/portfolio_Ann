@@ -9,7 +9,7 @@
   padding: 20px;
   background: #f2f2f2;
   border-radius: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .containerPersonDataVintage {
@@ -49,6 +49,10 @@
   flex-direction: column;
   gap: 12px;
   justify-content: space-evenly;
+
+  li:first-child > span {
+    @include font28_weight600_H3;
+  }
 }
 
 .additionalInfoNamePersonDataVintage {
@@ -58,10 +62,7 @@
   gap: 10px;
 }
 
-.titleNamePersonDataVintage {
-  @include Zabal_font36_weight_700;
-  margin-bottom: 70px;
-}
+// .titleNamePersonDataVintage {}
 
 .mainInfoNamePersonDataVintage {
   display: flex;
@@ -95,6 +96,6 @@
 }
 
 .attachmentDescriptionPersonDataVintage {
-  @include Zabal_font14_weight_400;
+  @include paragraphM;
   text-align: left;
 }

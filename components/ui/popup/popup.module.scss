@@ -28,6 +28,7 @@
   width: auto;
 
   @include tablet-up {
+    margin: 5% 5% 0;
     max-width: fit-content;
     padding: 40px;
   }

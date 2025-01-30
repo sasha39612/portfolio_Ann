@@ -8,10 +8,10 @@
     #e1dff7 1.16%,
     rgba(248, 248, 248, 0.5) 98.7%
   );
+  margin-bottom: 140px;
 }
 
 .classNameTitle {
-  @include Grotesk_font24_weight400;
   max-width: 160px;
 
   @include tablet-up {

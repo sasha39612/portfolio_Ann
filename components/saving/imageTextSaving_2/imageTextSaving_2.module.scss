@@ -3,14 +3,15 @@
 @import '/styles/variables.module.scss';
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
   height: 38px;
+  margin-top: 108px;
+  margin-bottom: 16px;
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
+  @include paragraphL;
   text-align: center;
-  color: #545454;
+  margin-bottom: 35px;
 }
 
 .containerImageTextSaving_1 {

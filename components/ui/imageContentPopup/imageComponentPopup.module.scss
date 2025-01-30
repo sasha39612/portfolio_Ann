@@ -1,12 +1,13 @@
-@import "/styles/mixins.module.scss";
-@import "/styles/colors.module.scss";
-@import "/styles/variables.module.scss";
+@import '/styles/mixins.module.scss';
+@import '/styles/colors.module.scss';
+@import '/styles/variables.module.scss';
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
+  margin-top: 30px;
 }
 
 .popupsPhotos {
@@ -52,6 +53,24 @@
   width: 330px;
   height: 100%;
   aspect-ratio: 0.88;
+
+  @include tablet-up {
+    width: 600px;
+  }
+
+  @include desktop {
+    width: 743;
+  }
+
+  @include desktop-large {
+    width: 743;
+  }
+}
+
+.popupsPhotosCertificates_1 {
+  width: 330px;
+  height: 100%;
+  aspect-ratio: 0.69;
 
   @include tablet-up {
     width: 600px;

@@ -3,16 +3,14 @@
 @import '/styles/variables.module.scss';
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
   text-align: center;
-  height: 38px;
+  margin-top: 140px;
+  margin-bottom: 70px;
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
+  @include paragraphL;
   text-align: center;
-
-  color: #545454;
 
   @include tablet-up {
     text-align: left;
@@ -72,15 +70,16 @@
 
   @include tablet {
     flex-direction: row;
-    margin-bottom: 25px;
   }
 
   @include desktop {
+    margin-top: 70px;
     flex-direction: row;
     gap: 60px;
   }
 
   @include desktop-large {
+    margin-top: 70px;
     flex-direction: row;
     gap: 60px;
   }

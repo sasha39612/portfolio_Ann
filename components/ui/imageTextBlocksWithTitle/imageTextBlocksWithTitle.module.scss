@@ -19,6 +19,7 @@
 
   @include tablet-up {
     flex-wrap: wrap;
+    gap: 140px 36px;
   }
 }
 
@@ -282,7 +283,6 @@
 .descriptionTextWithTitleSaving {
   @include paragraphL;
   text-align: center;
-  color: #545454;
 }
 
 .descriptionTextWithTitleVintage {

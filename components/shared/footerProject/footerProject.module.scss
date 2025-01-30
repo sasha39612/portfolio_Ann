@@ -24,6 +24,7 @@
 }
 
 .imageContainer {
+  @include paragraphL;
   display: flex;
   flex-direction: column;
   align-items: center;

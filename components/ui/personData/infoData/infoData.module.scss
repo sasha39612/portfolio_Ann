@@ -4,11 +4,11 @@
 
 .titleMainInfoNamePersonDataVintage,
 .titleAdditionalInfoNamePersonDataVintage {
-  @include Zabal_font16_weight_500;
+  @include paragraphL;
 }
 
 .descriptionAdditionalInfoNamePersonDataVintage {
-  @include Zabal_font14_weight_400;
+  @include paragraphM;
   text-align: left;
 }
 

@@ -14,7 +14,7 @@ const Text = ({
   return (
     <>
       {title ? <h2 className={classNameTitle}>{title}</h2> : null}
-      {subTitle ? <div className={classNameSubTitle}>{subTitle}</div> : null}
+      {subTitle ? <h3 className={classNameSubTitle}>{subTitle}</h3> : null}
       {description ? (
         isDangerousHTML ? (
           <div

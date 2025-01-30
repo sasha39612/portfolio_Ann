@@ -7,30 +7,23 @@
 }
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
+  margin-bottom: 16px;
   text-align: center;
-  height: 38px;
 }
 
 .titleImageTextVintage_1 {
-  @include Zabal_font36_weight_700;
-  height: 38px;
-  margin-bottom: 20px;
-
-  @include tablet-up {
-    @include Zabal_font50_weight_700;
-  }
+  margin-bottom: 16px;
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
+  @include paragraphL;
+  margin-bottom: 70px;
   text-align: center;
-  color: #545454;
 }
 
 .descriptionImageTextVintage_1 {
-  @include Grotesk_font16_weight400;
-  color: #545454;
+  @include paragraphL;
+  margin-bottom: 40px;
 
   @include tablet-up {
     text-align: left;
