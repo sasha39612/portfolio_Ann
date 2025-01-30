@@ -7,9 +7,8 @@
 }
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
+  margin-bottom: 16px;
   text-align: center;
-  height: 38px;
 }
 
 .titleImageTextVintage_1 {
@@ -23,9 +22,9 @@
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
+  @include paragraphL;
+  margin-bottom: 70px;
   text-align: center;
-  color: #545454;
 }
 
 .descriptionImageTextVintage_1 {

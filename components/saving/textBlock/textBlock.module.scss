@@ -9,7 +9,7 @@
   margin: 0px 0px 40px;
 
   @include tablet-up {
-    margin: 40px 0px;
+    margin: 40px 0px 140px;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
@@ -18,15 +18,21 @@
     .containerTextBlockSaving {
       &:first-child {
         flex: 1 1 calc(50% - 30px);
+        order: 2;
       }
 
       &:nth-child(2) {
         flex: 0 1 calc(50% - 30px);
+        order: 4;
+      }
+      &:nth-child(3) {
+        flex: 0 1 calc(50% - 30px);
+        order: 3;
       }
 
       &:last-child {
         flex: 1 1 calc(50% - 30px);
-        order: -1;
+        order: 1;
       }
     }
   }
@@ -37,13 +43,13 @@
 }
 
 .titleTextBlockSaving {
-  @include Grotesk_font30_weight_500;
   text-align: center;
+  margin-top: 140px;
+  margin-bottom: 70px;
 }
 
 .subtitleTextBlockSaving {
-  @include Grotesk_font24_weight500;
-  margin: 36px 0px 12px;
+  margin: 0px 0px 16px;
   text-align: center;
 
   @include tablet-up {
@@ -52,8 +58,7 @@
 }
 
 .descriptionTextBlockSaving {
-  @include Grotesk_font16_weight400;
-  color: #545454;
+  @include paragraphL;
   padding-left: 10px;
 
   &::before {

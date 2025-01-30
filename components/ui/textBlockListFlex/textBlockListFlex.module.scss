@@ -119,7 +119,7 @@
     }
   }
 
-  li:last-child {
+  &:last-child {
     @include tablet-up {
       border-bottom: none;
     }

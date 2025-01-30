@@ -3,14 +3,14 @@
 @import '/styles/variables.module.scss';
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
-  height: 38px;
+  margin-top: 140px;
+  margin-bottom: 16px;
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
+  @include paragraphL;
   text-align: center;
-  color: #545454;
+  margin-bottom: 70px;
 }
 
 .containerImageTextSaving_1 {
@@ -20,10 +20,6 @@
   justify-content: center;
   list-style: none;
   gap: 8px;
-
-  @include tablet-up {
-    gap: 24px;
-  }
 }
 
 .image {

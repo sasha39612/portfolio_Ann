@@ -62,7 +62,7 @@ const FooterProject = (props: FooterProjectProps) => {
       ) : (
         <div className={styles.linkUnvisitableStyles} />
       )}
-      <p className={classNameTitle}>{title}</p>
+      <h2 className={classNameTitle}>{title}</h2>
       {imageArrowRight?.src ? (
         <div className={styles.imageContainer}>
           <ImageNav
