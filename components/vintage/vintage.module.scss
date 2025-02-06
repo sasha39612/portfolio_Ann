@@ -4,14 +4,17 @@
 
 .footerProjectVintage {
   background: #596e65;
+  margin-bottom: 140px;
 }
 
 .classNameTitle {
-  @include Grotesk_font24_weight400;
   max-width: 160px;
   color: #ffffff;
+  @include font24_weight500_H3_Mobile;
+  text-align: center;
 
   @include tablet-up {
+    @include font50_weight700_H2;
     max-width: 100%;
   }
 }
@@ -22,7 +25,7 @@
 }
 
 .imageArrowName {
-  @include Zabal_font16_weight_400;
+  @include paragraphL;
   text-align: center;
   color: #ffffff;
 }

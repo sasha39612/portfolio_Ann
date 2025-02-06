@@ -20,11 +20,7 @@
 }
 
 .titleImageTextVintage_3 {
-  @include Zabal_font36_weight_700;
-
-  @include tablet-up {
-    @include Zabal_font50_weight_700;
-  }
+  margin-bottom: 24px;
 }
 
 .titleImageTextSwiperMultiRecipe {
@@ -33,22 +29,18 @@
 }
 
 .titleImageTextLiterary_2 {
-  @include SF_font36_weight_590;
-  margin-bottom: 32px;
-  color: #1c1c1e;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include SF_font45_weight_590;
+    margin-bottom: 16px;
   }
 }
 
 .titleImageTextLiterary_4 {
-  @include SF_font36_weight_590;
-  margin: 60px 0px;
-  color: #1c1c1e;
+  margin-bottom: 40px;
 
   @include tablet-up {
-    @include SF_font45_weight_590;
+    margin-bottom: 16px;
   }
 }
 
@@ -59,7 +51,8 @@
 }
 
 .descriptionImageTextLiterary_2 {
-  @include SF_font16_weight_274;
+  @include paragraphL;
+  margin-bottom: 70px;
 }
 
 .containerImageTextSaving_1 {
@@ -267,25 +260,25 @@
 .wrapperSwiperImageTextLiterary_2 {
   @extend .wrapperSwiperImageTextSwiperMultiRecipe;
   background: #f5f7ff;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .wrapperSwiperImageTextLiterary_3 {
   @extend .wrapperSwiperImageTextSwiperMultiRecipe;
   background: #f6f6f6;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .wrapperSwiperImageTextLiterary_4 {
   @extend .wrapperSwiperImageTextSwiperMultiRecipe;
   background: #f6f7ff;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .wrapperSwiperImageTextLiterary_5 {
   @extend .wrapperSwiperImageTextSwiperMultiRecipe;
   background: #fbfbfb;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .swiper {
@@ -296,12 +289,10 @@
 }
 
 .subTitleImageTextVintage_3 {
-  @include Zabal_font24_weight_500;
   text-align: left;
-  margin: 30px 0px -20px;
+  margin: 70px 0px -20px;
 
   @include tablet-up {
-    @include Zabal_font32_weight_500;
     text-align: left;
     margin-bottom: -30px;
   }

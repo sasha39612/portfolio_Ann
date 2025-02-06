@@ -3,12 +3,20 @@
 @import '/styles/variables.module.scss';
 
 .classNameWrapperVintageDesMob_1 {
-  margin-bottom: 60px;
+  margin-bottom: 116px;
+
+  @include tablet-up {
+    margin-bottom: 60px;
+  }
 }
 
 .titleImageTextVintage_1 {
-  margin-top: 80px;
+  margin-top: 140px;
   margin-bottom: 16px;
+
+  @include tablet-up {
+    margin-top: 80px;
+  }
 }
 
 .classNameWrapperVintageDesMob_1 {
