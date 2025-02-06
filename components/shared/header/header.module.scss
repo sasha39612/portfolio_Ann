@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   z-index: 10;
+  padding-top: 10px;
 
   @include make-side-padding($max-width: $max-content-width);
 }

@@ -4,13 +4,21 @@
 
 .titleImageTextSaving_1 {
   margin-top: 140px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
 }
 
 .descriptionImageTextSaving_1 {
   @include paragraphL;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
 }
 
 .containerImageTextSaving_1 {
@@ -19,7 +27,6 @@
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 8px;
 }
 
 .image {
@@ -39,6 +46,6 @@
 }
 
 .swiper {
-  margin: 30px 0px 60px;
+  margin: 30px 0px 70px;
   background: $white;
 }

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px 0px 40px;
+  margin: 0px 0px 140px;
 
   @include tablet-up {
     margin: 40px 0px 140px;
@@ -45,15 +45,20 @@
 .titleTextBlockSaving {
   text-align: center;
   margin-top: 140px;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
 }
 
 .subtitleTextBlockSaving {
-  margin: 0px 0px 16px;
+  margin: 40px 0px 12px;
   text-align: center;
 
   @include tablet-up {
     text-align: left;
+    margin: 0px 0px 16px;
   }
 }
 
