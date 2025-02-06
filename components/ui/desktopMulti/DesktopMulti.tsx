@@ -11,9 +11,9 @@ const DesktopMulti = ({
     <ul className={styles[className ?? '']}>
       {imagePartDesktopSliders.map((item) => (
         <li key={item.id}>
-          <p className={styles[item.subTitle?.className ?? '']}>
+          <h3 className={styles[item.subTitle?.className ?? '']}>
             {item.subTitle?.text}
-          </p>
+          </h3>
           <div className={styles[item?.className ?? '']}>
             {Array.isArray(item?.imagePartDesktopSlider)
               ? item.imagePartDesktopSlider.map((image) => (

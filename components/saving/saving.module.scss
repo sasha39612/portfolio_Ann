@@ -13,8 +13,11 @@
 
 .classNameTitle {
   max-width: 160px;
+  @include font24_weight500_H3_Mobile;
+  text-align: center;
 
   @include tablet-up {
+    @include font50_weight700_H2;
     max-width: 100%;
   }
 }

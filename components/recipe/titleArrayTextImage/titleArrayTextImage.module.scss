@@ -3,7 +3,7 @@
 @import '/styles/variables.module.scss';
 
 .wrapper {
-  margin: 60px 0px;
+  margin: 140px 0px;
 }
 
 .container {
@@ -26,12 +26,10 @@
 }
 
 .classNameTitleTextImageGridLiterary_2 {
-  @include SF_font36_weight_590;
-  margin: 40px 0px 30px;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include SF_font45_weight_590;
-    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -53,8 +51,8 @@
 }
 
 .subTitleTextImageGridLiterary_2 {
-  @include SF_font16_weight_274;
-  margin: 20px 0px 26px;
+  @include paragraphL;
+  margin-bottom: 40px;
 
   @include tablet-up {
     position: absolute;
@@ -70,10 +68,11 @@
 }
 
 .classNameTextPartGridContainerTitleTextImageGridLiterary_2 {
+  @include paragraphL;
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 
   @include tablet-up {
     position: absolute;

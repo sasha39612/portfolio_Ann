@@ -12,11 +12,7 @@
 .footerContactLinkWrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px 0px;
-
-  @include tablet-up {
-    gap: 32px 60px;
-  }
+  gap: 32px 60px;
 }
 
 .footerLinkEmail {

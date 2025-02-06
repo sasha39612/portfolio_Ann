@@ -13,19 +13,20 @@
 }
 
 .titleTitleImagesLiterary {
-  @include SF_font36_weight_590;
-  margin: 60px 0px 30px;
-  color: #1c1c1e;
+  margin: 140px 0px 12px;
 
   @include tablet-up {
-    @include SF_font45_weight_590;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 }
 
 .descriptionTitleImagesLiterary {
-  @include SF_font16_weight_274;
-  margin-bottom: 24px;
+  @include paragraphL;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
 }
 
 .titleImagesLiterary {

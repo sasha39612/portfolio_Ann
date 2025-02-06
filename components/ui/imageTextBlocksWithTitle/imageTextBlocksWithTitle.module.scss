@@ -112,7 +112,7 @@
 .wrapperTextWithTitleLiterary {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 70px;
 
   @include tablet-up {
     flex-direction: row;
@@ -192,7 +192,6 @@
 .containerTextWithTitleLiterary {
   display: flex;
   flex-direction: column;
-  gap: 14px;
 
   @include tablet-up {
     width: 50%;
@@ -264,11 +263,13 @@
 }
 
 .titleTextWithTitleLiterary {
-  @include SF_font26_weight_510;
+  @include font24_weight500_H3_Mobile;
   color: #1c1c1e;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include SF_font30_weight_510;
+    @include font28_weight600_H3;
+    margin-bottom: 16px;
   }
 }
 
@@ -299,7 +300,7 @@
 }
 
 .descriptionTextWithTitleLiterary {
-  @include SF_font16_weight_274;
+  @include paragraphL;
 }
 
 .classNameDescriptionRecipe {

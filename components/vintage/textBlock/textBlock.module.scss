@@ -6,14 +6,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px 0px 40px;
+  margin: 0px 0px 140px;
 
   @include tablet-up {
-    margin: 40px 0px;
+    margin: 0px 0px 140px;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 0px 60px;
+    min-height: 150px;
 
     .containerTextBlockVintage {
       flex: 1 1 calc(50% - 30px);
@@ -51,26 +52,25 @@
 }
 
 .titleTextBlockVintage {
-  @include Zabal_font36_weight_700;
-  margin-top: 40px;
+  margin-top: 140px;
+  margin-bottom: 40px;
 
   @include tablet-up {
-    @include Zabal_font50_weight_700;
+    margin-bottom: 16px;
   }
 }
 
 .subtitleTextBlockVintage {
-  @include Zabal_font24_weight_700;
-  margin: 36px 0px 12px;
+  margin: 40px 0px 12px;
 
   @include tablet-up {
     text-align: left;
-    margin: 0px 0px 12px;
+    margin: 0px 0px 16px;
   }
 }
 
 .descriptionTextBlockVintage {
-  @include Zabal_font16_weight_400;
+  @include paragraphL;
   padding-left: 10px;
 
   &::before {

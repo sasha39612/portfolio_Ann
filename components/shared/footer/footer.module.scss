@@ -5,11 +5,10 @@
 .wrapper {
   color: $black;
   background-color: $white;
-  height: 218px;
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid $black;
-  margin-top: 30px;
+  margin-top: 140px;
   grid-template-areas:
     'a'
     'b'
@@ -24,7 +23,6 @@
     grid-template-areas:
       'b a'
       'c c';
-    margin-top: 60px;
     margin-bottom: 30px;
   }
 }
@@ -54,7 +52,7 @@
 
 .contacts {
   grid-area: b;
-  padding: 0px 10px;
+  padding: 32px 22px 28px;
 
   @include tablet-up {
     margin-left: 40px;
@@ -73,14 +71,17 @@
 
 .contactLinkWrapper {
   display: flex;
-  flex-direction: row;
-  margin-top: 36px;
+  flex-direction: column;
+  margin-top: 32px;
   justify-content: space-between;
+  gap: 32px 0px;
 
   @include tablet-up {
+    flex-direction: row;
     gap: 32px 100px;
   }
   @include tablet {
+    flex-direction: row;
     gap: 32px 60px;
   }
 }
@@ -90,7 +91,8 @@
   grid-area: c;
   align-self: center;
   justify-self: center;
-  padding: 30px 0px 40px;
+  padding: 22px 0px 28px;
+  gap: 28px 60px;
   width: 100%;
   border-top: 0.1px #989696 solid;
 

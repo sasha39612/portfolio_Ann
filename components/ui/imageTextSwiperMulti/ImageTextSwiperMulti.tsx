@@ -54,9 +54,9 @@ const ImageTextSwiperMulti = ({
                           className={styles[item.image?.className ?? '']}
                         />
                       ) : null}
-                      <p className={styles[item.subTitle?.className ?? '']}>
+                      <h3 className={styles[item.subTitle?.className ?? '']}>
                         {item.subTitle?.text}
-                      </p>
+                      </h3>
                       <SwiperCustom
                         images={item.imagePartMobileSlider}
                         classNameSwiper={styles.swiper}

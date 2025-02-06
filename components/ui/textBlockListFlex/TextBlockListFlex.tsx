@@ -14,9 +14,9 @@ const TextBlockListFlex = ({
       {Array.isArray(textGrid) && textGrid?.length
         ? textGrid.map((textBlock: TextSimpleBlock) => (
             <li key={textBlock.id} className={styles[className ?? '']}>
-              <div className={styles?.[textBlock?.classNameTitle ?? '']}>
+              <h3 className={styles?.[textBlock?.classNameTitle ?? '']}>
                 {textBlock.title}
-              </div>
+              </h3>
               {Array.isArray(textBlock.description) ? (
                 <ul className={styles.descriptionWrapper}>
                   {textBlock.description.map((item) => (

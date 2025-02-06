@@ -224,12 +224,54 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin font40_weight800_H1_Mobile {
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+
 @mixin font80_weight800_H1 {
   font-family: Lato;
   font-size: 80px;
   font-weight: 800;
   line-height: 96px;
   letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font50_weight700_H2 {
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 72.5px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font36_weight600_H2_Mobile {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48.6px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font24_weight500_H3_Mobile {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  letter-spacing: 0.03em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -257,66 +299,93 @@
 
 @mixin labelStyle {
   font-family: Lato;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 21.6px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: left;
+
+  @include tablet-up {
+    font-size: 18px;
+  }
 }
 
 @mixin paragraphXXL {
   font-family: Lato;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 38.4px;
-  letter-spacing: 0.01em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   text-align: left;
+
+  @include tablet-up {
+    font-size: 32px;
+    letter-spacing: 0.01em;
+  }
 }
 
 @mixin paragraphXL {
   font-family: Lato;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 300;
   font-style: normal;
   line-height: 1.45;
   letter-spacing: 0.03em;
   text-align: left;
+
+  @include tablet-up {
+    font-size: 28px;
+  }
 }
 
 @mixin paragraphL {
   font-family: Lato;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 25.6px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-align: left;
+
+  @include tablet-up {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
 
 @mixin paragraphM {
   font-family: Lato;
   font-size: 16px;
   font-weight: 300;
-  line-height: 25.6px;
-  letter-spacing: 0.04em;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
   text-align: left;
+
+  @include tablet-up {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 
 @mixin paragraphS {
   font-family: Lato;
   font-size: 14px;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.05em;
   text-align: left;
 }
 
 @mixin paragraphXS {
   font-family: Lato;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.5;
   letter-spacing: 0.05em;
   text-align: left;
+
+  @include tablet-up {
+    font-size: 14px;
+  }
 }
 
 // font-family: Space Grotesk;

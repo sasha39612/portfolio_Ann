@@ -7,7 +7,11 @@
 }
 
 .mainStyles {
-  margin-top: 210px;
+  margin-top: 160px;
+
+  @include tablet-up {
+    margin-top: 210px;
+  }
 }
 
 .messageContainer {

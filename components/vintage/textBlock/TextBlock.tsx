@@ -5,10 +5,10 @@ import styles from './textBlock.module.scss';
 
 const TextBlock = ({ textPart }: { textPart: TextSimpleBlock[] }) => {
   return (
-    <>
-      <div className={styles[textPart[0].classNameTitle ?? '']}>
+    <section>
+      <h2 className={styles[textPart[0].classNameTitle ?? '']}>
         {textPart[0].title}
-      </div>
+      </h2>
       <ul className={styles.textBlockWrapper}>
         {Array.isArray(textPart)
           ? textPart.map((item) => (
@@ -26,7 +26,7 @@ const TextBlock = ({ textPart }: { textPart: TextSimpleBlock[] }) => {
             ))
           : null}
       </ul>
-    </>
+    </section>
   );
 };
 

@@ -34,24 +34,23 @@
 }
 
 .classNameWrapperTitleTextImageGridLiterary {
-  margin: 60px 0px;
+  margin: 140px 0px;
 }
 
 .classNameWrapperTitleTextImageGridLiterary_1 {
   padding: 40px 20px;
-  margin: 80px -20px;
+  margin: 140px -20px;
   border-radius: 32px;
-  opacity: 0.8px;
   background: #2b47d4;
 
   @include tablet {
     padding: 60px 48px;
-    margin: 120px -48px;
+    margin: 140px -48px;
   }
 
   @include desktop {
     padding: 60px 80px;
-    margin: 120px -80px;
+    margin: 140px -80px;
   }
 }
 
@@ -73,14 +72,10 @@
 }
 
 .classNameTitleTextImageGridLiterary {
-  @include SF_font36_weight_590;
-  color: #1c1c1e;
-  margin: 40px 0px 0px;
-  text-transform: uppercase;
+  margin-bottom: 40px;
 
   @include tablet-up {
-    @include SF_font45_weight_590;
-    margin-top: 60px;
+    margin-bottom: 16px;
   }
 }
 
@@ -107,20 +102,16 @@
 }
 
 .titleTextImageGridLiterary {
-  @include SF_font26_weight_510;
-  margin-bottom: 8px;
+  @include font24_weight500_H3_Mobile;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include SF_font32_weight_510;
+    @include font28_weight600_H3;
   }
 }
 
 .titleTextImageGridLiterary_1 {
   @extend .titleTextImageGridLiterary;
-
-  @include tablet-up {
-    @include SF_font30_weight_700;
-  }
 }
 
 .descriptionTitleTextImageGridRecipe_3 {
@@ -132,7 +123,7 @@
 }
 
 .descriptionTitleTextImageGridLiterary {
-  @include SF_font16_weight_274;
+  @include paragraphL;
 }
 
 .descriptionTitleTextImageGridLiterary_1 {
@@ -161,8 +152,7 @@
 .classNameTextPartGridContainerTitleTextImageGridLiterary {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  margin: 30px 0px;
+  gap: 40px;
 
   @include tablet-up {
     flex-direction: row;
@@ -193,7 +183,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 10px;
 
   @include tablet-up {
     width: 50%;
