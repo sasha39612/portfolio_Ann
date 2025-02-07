@@ -5,7 +5,11 @@
 .titleImageTextSaving_1 {
   text-align: center;
   margin-top: 140px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
 }
 
 .descriptionImageTextSaving_1 {
@@ -42,6 +46,7 @@
 
 .imageTextSavingButtonMobile_3 {
   @extend .image;
+  margin: 70px 0px 0px;
   aspect-ratio: 3.51;
 
   @include tablet-up {
@@ -61,6 +66,14 @@
   @include tablet-up {
     margin-top: 0px;
     max-width: 360px;
+  }
+
+  @include desktop {
+    margin: 0px;
+  }
+
+  @include desktop-large {
+    margin: 0px;
   }
 }
 

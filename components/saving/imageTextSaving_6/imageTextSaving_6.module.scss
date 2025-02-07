@@ -5,14 +5,20 @@
 .titleImageTextSaving_1 {
   text-align: center;
   margin-top: 140px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
 }
 
 .descriptionImageTextSaving_1 {
   @include paragraphL;
   text-align: center;
+  margin-top: 10px;
 
   @include tablet-up {
+    margin-top: 0px;
     text-align: left;
   }
 }

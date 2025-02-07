@@ -30,12 +30,15 @@
 }
 
 .projectNameStylesReverse {
-  @include paragraphXXL;
-  color: $projectName;
-  text-align: center;
-  margin-top: 40px;
+  display: none;
 
   @include tablet-up {
+    display: block;
+    @include paragraphXXL;
+    color: $projectName;
+    text-align: center;
+    margin-top: 40px;
+
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     text-orientation: mixed;

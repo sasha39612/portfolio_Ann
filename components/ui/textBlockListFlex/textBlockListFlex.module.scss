@@ -3,7 +3,7 @@
 @import '/styles/variables.module.scss';
 
 .classNameTextPartGridContainerSaving {
-  padding: 20px 0px;
+  padding: 40px 0px 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -97,15 +97,14 @@
 
 .classNameGridContainerSaving {
   display: flex;
-  height: 30px;
-  align-items: center;
   justify-content: space-between;
-  padding: 16px 0px;
+  padding: 0px 0px 24px;
 
   &:nth-child(odd) {
     width: 122px;
 
     @include tablet-up {
+      padding: 16px 0px;
       width: 260px;
       border-bottom: 0.5px #818182 solid;
     }
@@ -115,6 +114,7 @@
     width: 202px;
 
     @include tablet-up {
+      padding: 16px 0px;
       width: 260px;
       border-bottom: 0.5px #818182 solid;
     }

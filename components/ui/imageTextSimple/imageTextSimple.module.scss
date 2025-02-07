@@ -7,8 +7,12 @@
 }
 
 .titleImageTextSaving_1 {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   text-align: center;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
 }
 
 .titleImageTextVintage_1 {
