@@ -26,7 +26,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
     backgroundImageDesktop,
     backgroundImageMobile,
   } = props;
-  const isMobileView = useCheckMobileScreen();
+  const isMobileView: boolean = useCheckMobileScreen();
 
   const backgroundImage = isMobileView
     ? backgroundImageMobile
@@ -108,6 +108,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             priority={imagePart?.priority}
             loading={imagePart?.loading}
             className={styles[imagePart?.className ?? '']}
+            objectFit="contain"
           />
         ) : null}
         {!isTextBlockListFlexVisible(

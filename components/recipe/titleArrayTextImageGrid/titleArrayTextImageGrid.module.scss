@@ -36,6 +36,11 @@
 .subTitleTextImageGridRecipe_1 {
   @include font20_weight600_H4;
   text-align: left;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
 }
 
 .classNameContainerRecipe_2 {

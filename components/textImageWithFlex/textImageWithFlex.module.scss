@@ -148,6 +148,7 @@
     h2,
     div {
       order: 2;
+      text-align: center;
     }
   }
 }
@@ -182,6 +183,7 @@
 
   @include tablet-up {
     @include font80_weight800_H1;
+    text-align: center;
   }
 }
 
@@ -262,11 +264,9 @@
 }
 
 .classNameDescriptionRecipe {
-  @include Avenir_font13_weight_400;
   color: #4a4a49;
 
   @include tablet-up {
-    @include Avenir_font24_weight_400;
   }
 }
 

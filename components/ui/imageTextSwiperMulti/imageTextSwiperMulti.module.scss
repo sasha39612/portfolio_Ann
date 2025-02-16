@@ -3,7 +3,6 @@
 @import '/styles/variables.module.scss';
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
   height: 38px;
 }
 
@@ -48,7 +47,6 @@
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
   text-align: center;
   color: #545454;
 }

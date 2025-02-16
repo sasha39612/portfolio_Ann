@@ -216,13 +216,11 @@
 .classNameGridContainerTitleTextImageGridRecipe_1 {
   display: flex;
   flex-direction: column;
-  @include SF_font16_weight_274;
 }
 
 .classNameGridContainerTitleTextImageGridRecipe_1 {
   display: flex;
   flex-direction: column;
-  @include Avenir_font16_weight_300;
 }
 
 .classNameTextPartGridContainerTitleTextImageGridRecipe_1 {
@@ -240,4 +238,12 @@
   @include tablet-up {
     margin-bottom: 16px;
   }
+}
+
+.titleTextImageGridRecipe_1 {
+  @include paragraphL;
+}
+
+.descriptionTitleTextImageGridRecipe_1 {
+  @include paragraphL;
 }

@@ -81,7 +81,6 @@
 
       &:first-child {
         div:first-child {
-          @include Zabal_font60_weight_700;
           line-height: 1;
         }
         div:nth-child(2) {
@@ -218,19 +217,15 @@
 }
 
 // .titleTextWithTitleSaving {
-//   @include Grotesk_font24_weight500;
+
 // }
 
 .titleTextWithTitleVintage {
-  @include Zabal_font36_weight_700;
-
   @include tablet-up {
-    @include Zabal_font50_weight_700;
   }
 }
 
 .titleTextWithTitleVintage_01 {
-  @include Zabal_font24_weight_600;
   margin-left: 30px;
 
   @include tablet-up {
@@ -239,17 +234,14 @@
 }
 
 .titleTextWithTitleVintage_1 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
 .titleTextWithTitleVintage_2 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
 .titleTextWithTitleVintage_2 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
@@ -286,11 +278,9 @@
 }
 
 .descriptionTextWithTitleVintage {
-  @include Zabal_font16_weight_300;
 }
 
 .descriptionTextWithTitleVintage_2 {
-  @include Zabal_font14_weight_400;
   line-height: 30px;
 }
 
