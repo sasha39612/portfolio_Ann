@@ -19,5 +19,6 @@
   @include tablet-up {
     @include font50_weight700_H2;
     max-width: 100%;
+    text-align: center;
   }
 }

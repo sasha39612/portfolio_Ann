@@ -3,40 +3,32 @@
 @import '/styles/variables.module.scss';
 
 .wrapper {
-  margin: 100px -20px;
-  padding: 0px 20px 32px;
+  margin: 0px -20px;
+  padding: 140px 20px 70px;
   border-bottom: 0.3px #dbdbdb solid;
 
   @include tablet {
-    margin: 100px -48px;
-    padding: 0px 48px;
+    margin: 0px -48px;
+    padding: 140px 48px 70px;
   }
 
   @include desktop {
-    margin: 100px -80px;
-    padding: 0px 80px;
+    margin: 0px -80px;
+    padding: 140px 80px 70px;
   }
 
   @include desktop-large {
-    margin: 100px -80px;
-    padding: 0px 80px;
+    margin: 0px -80px;
+    padding: 140px 80px 70px;
   }
 }
 
 .classNameTitleImagesTextRecipe {
-  @include SF_font36_weight_800;
   color: #f0923f;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-
-  @include tablet-up {
-    @include SF_font40_weight_800;
-    margin-bottom: 19px;
-  }
+  margin-bottom: 70px;
 }
 
 .classNameDescriptionImagesTextRecipe {
-  @include SF_font30_weight_510;
 }
 
 .classNameImagesTextWrapperTitleImagesTextRecipe {
@@ -51,8 +43,6 @@
 }
 
 .classNameTextTitleImagesTextRecipe {
-  @include SF_font12_weight_400;
-  line-height: 23px;
   text-align: center;
   color: #f0923f;
   border: 1px #f0923f solid;

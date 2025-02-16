@@ -15,13 +15,11 @@
 }
 
 .classNameTitleTextImageGridRecipe_2 {
-  @include Avenir_font36_weight_800;
   color: #f0923f;
-  margin: 40px 0px 30px;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include Avenir_font40_weight_800;
-    margin-top: 60px;
+    margin-bottom: 16px;
   }
 }
 
@@ -34,20 +32,29 @@
 }
 
 .titleTextImageGridRecipe_2 {
-  @include Avenir_font14_weight_800;
+  @include paragraphL;
+  color: #f0923f;
+  margin-right: 4px;
 }
 
 .descriptionTitleTextImageGridRecipe_2 {
-  @include Avenir_font14_weight_500;
+  @include paragraphL;
 }
 
 .descriptionTitleTextImageGridLiterary_2 {
-  @include SF_font16_weight_274;
+}
+
+.classNameDescriptionTitleTextImageGridRecipe_2 {
+  @include paragraphL;
 }
 
 .subTitleTextImageGridRecipe_2 {
-  @include Avenir_font14_weight_300;
-  margin: 20px 0px;
+  @include paragraphL_italic;
+  margin: 12px 0px 40px;
+
+  @include tablet-up {
+    margin: 16px 0px 24px;
+  }
 }
 
 .subTitleTextImageGridLiterary_2 {
@@ -65,6 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-bottom: 70px;
 }
 
 .classNameTextPartGridContainerTitleTextImageGridLiterary_2 {
@@ -133,6 +141,12 @@
       grid-row: 2;
     }
   }
+}
+
+.titleTitleTextImageGridRecipe_2 {
+  @include paragraphL;
+  color: #f0923f;
+  margin-right: 28px;
 }
 
 .classNameImageWrapperTextPartRecipe_3 {
@@ -212,7 +226,7 @@
 
 .containerTitleTextImageGridRecipe_2 {
   display: flex;
-  gap: 20px;
+  @include paragraphL;
 }
 
 .containerTitleTextImageGridLiterary_2 {

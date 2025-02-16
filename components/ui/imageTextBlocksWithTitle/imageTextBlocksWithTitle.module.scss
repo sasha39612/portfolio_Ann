@@ -81,7 +81,6 @@
 
       &:first-child {
         div:first-child {
-          @include Zabal_font60_weight_700;
           line-height: 1;
         }
         div:nth-child(2) {
@@ -94,7 +93,8 @@
 
 .wrapperTextWithTitleRecipe {
   @extend .wrapperTextWithTitle;
-  margin-top: 0px;
+  margin-top: 70px;
+  padding: 0px;
   gap: 10px;
 
   @include tablet-up {
@@ -123,13 +123,12 @@
 .wrapperImagesTextWithTitleRecipe {
   display: flex;
   flex-direction: column;
-  margin: 30px 0px 60px;
-  gap: 10px;
+  margin: 70px 0px 140px;
+  gap: 70px;
 
   @include tablet-up {
     flex-direction: row;
-    margin: 60px 0px 80px;
-    gap: 36px;
+    gap: 0px;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
@@ -171,13 +170,12 @@
 .containerTextWithTitleRecipe {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   background: $white;
   border-radius: 20px;
   box-sizing: border-box;
 
   @include tablet-up {
-    div:nth-child(1) {
+    h2:nth-child(1) {
       order: 2;
     }
     div:nth-child(2) {
@@ -207,7 +205,7 @@
   border-radius: 20px;
   box-sizing: border-box;
 
-  div:nth-child(1) {
+  h2:nth-child(1) {
     order: 2;
   }
   div:nth-child(2) {
@@ -219,19 +217,15 @@
 }
 
 // .titleTextWithTitleSaving {
-//   @include Grotesk_font24_weight500;
+
 // }
 
 .titleTextWithTitleVintage {
-  @include Zabal_font36_weight_700;
-
   @include tablet-up {
-    @include Zabal_font50_weight_700;
   }
 }
 
 .titleTextWithTitleVintage_01 {
-  @include Zabal_font24_weight_600;
   margin-left: 30px;
 
   @include tablet-up {
@@ -240,25 +234,26 @@
 }
 
 .titleTextWithTitleVintage_1 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
 .titleTextWithTitleVintage_2 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
 .titleTextWithTitleVintage_2 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
 .titleTextWithTitleRecipe {
-  @include Avenir_font28_weight_500;
+  @include font24_weight500_H3_Mobile;
+  margin-top: 60px;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include Avenir_font30_weight_500;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    @include font28_weight600_H3;
   }
 }
 
@@ -274,11 +269,7 @@
 }
 
 .titleImagesTextWithTitleRecipe {
-  @include Avenir_font16_weight_500;
-
-  @include tablet-up {
-    @include Avenir_font30_weight_500;
-  }
+  @include font20_weight600_H4;
 }
 
 .descriptionTextWithTitleSaving {
@@ -287,16 +278,19 @@
 }
 
 .descriptionTextWithTitleVintage {
-  @include Zabal_font16_weight_300;
 }
 
 .descriptionTextWithTitleVintage_2 {
-  @include Zabal_font14_weight_400;
   line-height: 30px;
 }
 
 .descriptionTextWithTitleRecipe {
-  @include Avenir_font12_weight_350;
+  @include paragraphL;
+  margin-bottom: 70px;
+
+  @include tablet-up {
+    margin-bottom: 0px;
+  }
 }
 
 .descriptionTextWithTitleLiterary {
@@ -304,8 +298,8 @@
 }
 
 .classNameDescriptionRecipe {
-  @include Avenir_font12_weight_350;
-  line-height: 25px;
+  @include paragraphM;
+  margin-bottom: 6px;
   text-align: center;
 }
 
@@ -317,6 +311,7 @@
 
 .imageTextRecipeDesktopMobile {
   @extend .image;
+  margin: 0px;
 
   aspect-ratio: 335/228;
 

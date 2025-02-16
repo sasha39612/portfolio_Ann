@@ -78,6 +78,10 @@
       min-height: 250px;
       flex: 1 1 50%;
 
+      @include tablet {
+        min-height: 350px;
+      }
+
       &:first-child {
         h2:first-child {
           font-size: 80px;
@@ -95,20 +99,23 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 0;
+  gap: 24px;
 
   li {
-    flex: 1 1 calc(50% - 18px);
+    flex: 1 1 calc(50% - 24px);
     box-sizing: border-box;
     height: inherit;
   }
 
   @include tablet-up {
     flex-wrap: nowrap;
+    height: auto;
   }
 }
 
 .wrapperTextWithTitleRecipe_3 {
   @extend .wrapperTextWithTitleRecipe_2;
+  margin-bottom: 70px;
 }
 
 .containerTextWithTitleSaving {
@@ -166,16 +173,12 @@
 }
 
 .classNameTitleRecipe {
-  @include Avenir_font30_weight_500;
-  margin-bottom: 10px;
-
-  @include tablet-up {
-    margin-bottom: 20px;
-  }
+  margin-top: 70px;
+  margin-bottom: 24px;
 }
 
 // .titleTextWithTitleSaving {
-//   @include Grotesk_font24_weight500;
+
 // }
 
 .titleTextWithTitleVintage {
@@ -201,23 +204,17 @@
 }
 
 .titleTextWithTitleVintage_2 {
-  @include Zabal_font24_weight_600;
   text-align: center;
 }
 
 .titleTextWithTitleRecipe_2 {
-  @include Avenir_font16_weight_800;
+  @include font20_weight600_H4;
   text-align: center;
-
-  @include tablet-up {
-    @include Avenir_font18_weight_800;
-  }
 }
 
 .titleTextWithTitleRecipe_3 {
-  @include Avenir_font18_weight_800;
+  @include font20_weight600_H4;
   text-align: center;
-  line-height: 1.45;
 }
 
 .descriptionTextWithTitleSaving {
@@ -236,7 +233,8 @@
 }
 
 .descriptionTextWithTitleRecipe_2 {
-  @include Avenir_font12_weight_400;
+  @include paragraphL;
+  text-align: center;
 }
 
 .descriptionTextWithTitleRecipe_3 {

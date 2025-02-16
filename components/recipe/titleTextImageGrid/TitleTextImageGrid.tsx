@@ -20,6 +20,7 @@ const TitleTextImageGrid = ({
                 <Text
                   {...item}
                   classNameTitle={styles[item.classNameTitle ?? '']}
+                  classNameSubTitle={styles[item.classNameSubTitle ?? '']}
                   classNameDescription={styles[item.classNameDescription ?? '']}
                 />
                 {item.image?.src ? (

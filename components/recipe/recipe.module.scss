@@ -15,16 +15,15 @@
   @include tablet-up {
     @include font50_weight700_H2;
     max-width: 100%;
+    text-align: center;
   }
 }
 
 .classNameLink {
-  @include Zabal_font48_weight_700;
   background: #ffffff80;
 }
 
 .imageArrowName {
-  @include Avenir_font16_weight_400;
   text-align: center;
   color: $black;
 }

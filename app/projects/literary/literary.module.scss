@@ -7,7 +7,6 @@
 }
 
 .classNameTitle {
-  @include SF_font24_weight_590;
   max-width: 160px;
   color: #ffffff;
   @include font24_weight500_H3_Mobile;
@@ -16,6 +15,7 @@
   @include tablet-up {
     @include font50_weight700_H2;
     max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -24,7 +24,6 @@
 }
 
 .imageArrowName {
-  @include SF_font16_weight_400;
   text-align: center;
   color: #ffffff;
 }

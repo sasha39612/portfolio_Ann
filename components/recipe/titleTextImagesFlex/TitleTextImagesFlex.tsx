@@ -11,9 +11,9 @@ const TitleTextImagesFlex = ({
       <h2 className={styles[textPart.classNameTitle ?? '']}>
         {textPart.title}
       </h2>
-      <div className={styles[textPart.classNameSubTitle ?? '']}>
+      <h3 className={styles[textPart.classNameSubTitle ?? '']}>
         {textPart.subTitle}
-      </div>
+      </h3>
       <div className={styles[textPart.classNameDescription ?? '']}>
         {textPart.description}
       </div>

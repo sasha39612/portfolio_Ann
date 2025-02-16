@@ -3,7 +3,6 @@
 @import '/styles/variables.module.scss';
 
 .titleImageTextSaving_1 {
-  @include Grotesk_font30_weight_500;
   height: 38px;
 }
 
@@ -24,8 +23,11 @@
 }
 
 .titleImageTextSwiperMultiRecipe {
-  @include Avenir_font30_weight_500;
-  margin-bottom: 29px;
+  @include font24_weight500_H3_Mobile;
+
+  @include tablet-up {
+    @include font28_weight600_H3;
+  }
 }
 
 .titleImageTextLiterary_2 {
@@ -45,7 +47,6 @@
 }
 
 .descriptionImageTextSaving_1 {
-  @include Grotesk_font16_weight400;
   text-align: center;
   color: #545454;
 }
@@ -110,6 +111,7 @@
 .imageTextRecipeMobile {
   @extend .image;
   aspect-ratio: 194 / 419;
+  margin-bottom: 48px;
 }
 
 .imageTextLiteraryMobile_2 {
@@ -243,17 +245,17 @@
 
 .wrapperSwiperImageTextSwiperMultiRecipe {
   margin: 0px -20px -2px;
-  padding: 26px 20px 40px;
+  padding: 40px 20px 40px;
   background: #eeeeee;
 
   @include tablet {
     margin: 0px -48px -2px;
-    padding: 26px 48px 60px;
+    padding: 40px 48px 60px;
   }
 
   @include desktop {
     margin: 0px -80px -2px;
-    padding: 26px 80px 60px;
+    padding: 40px 80px 60px;
   }
 }
 

@@ -26,7 +26,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
     backgroundImageDesktop,
     backgroundImageMobile,
   } = props;
-  const isMobileView = useCheckMobileScreen();
+  const isMobileView: boolean = useCheckMobileScreen();
 
   const backgroundImage = isMobileView
     ? backgroundImageMobile
@@ -67,16 +67,16 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             />
           ) : null}
           {textPart?.subTitle?.isDangerousHTML ? (
-            <div
+            <h3
               className={styles[textPart?.subTitle?.className ?? '']}
               dangerouslySetInnerHTML={getDangerousHTML(
                 textPart?.subTitle?.text ?? '',
               )}
             />
           ) : textPart?.subTitle?.text ? (
-            <div className={styles[textPart?.subTitle?.className ?? '']}>
+            <h3 className={styles[textPart?.subTitle?.className ?? '']}>
               {textPart?.subTitle?.text}
-            </div>
+            </h3>
           ) : null}
           {textPart?.description?.isDangerousHTML ? (
             <div
@@ -108,6 +108,7 @@ const TextImageWithFlex = (props: TextImageWithFlexType) => {
             priority={imagePart?.priority}
             loading={imagePart?.loading}
             className={styles[imagePart?.className ?? '']}
+            objectFit="contain"
           />
         ) : null}
         {!isTextBlockListFlexVisible(
