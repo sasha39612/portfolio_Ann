@@ -19,18 +19,17 @@
 }
 
 .titleImageTextRecipe {
-  @include Avenir_font36_weight_800;
-  text-transform: uppercase;
+  @include font36_weight600_H2_Mobile;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include Avenir_font40_weight_800;
+    margin-bottom: 16px;
+    @include font50_weight700_H2;
   }
 }
 
 .descriptionImageTextRecipe {
-  @include Grotesk_font16_weight400;
-
-  color: #545454;
+  @include paragraphL;
 }
 
 .containerImageTextRecipe {
@@ -79,19 +78,9 @@
 }
 
 .swiper {
-  margin: 30px 0px 60px;
+  margin: 70px 0px 60px;
   background: #f3f3f3;
+
+  --swiper-pagination-bullet-inactive-color: #dadada;
+  --swiper-theme-color: #7d7e81;
 }
-
-//TODO: Finish scroll for images with big height (8 & 9)
-
-// .swiperSlide {
-//   position: relative;
-//   flex-shrink: 0; /* Prevent shrinking of slides */
-//   height: 300px; /* Match the container's height */
-//   max-height: 100%; /* Limit height to container's height */
-//   overflow-y: scroll;
-//   display: flex;
-//   justify-content: center; /* Center image horizontally */
-//   align-items: flex-start; /* Align image to the top */
-// }

@@ -3,7 +3,7 @@
 @import '/styles/variables.module.scss';
 
 .wrapper {
-  margin: 7cap 0px;
+  margin: 140px 0px;
 }
 
 .classNameWrapperVintageDesMob_1 {
@@ -41,19 +41,17 @@
 }
 
 .titleImageTextRecipe {
-  @include Avenir_font36_weight_800;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
   color: #f0923f;
 
   @include tablet-up {
-    @include Avenir_font40_weight_800;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 }
 
 .descriptionImageTextRecipe {
-  @include Avenir_font14_weight_350;
-  margin-bottom: 20px;
+  @include paragraphL;
+  margin-bottom: 70px;
 }
 
 .classNameWrapperRecipeDesMob {

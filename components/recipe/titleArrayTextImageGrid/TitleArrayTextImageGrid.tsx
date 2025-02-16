@@ -26,6 +26,7 @@ const TitleArrayTextImageGrid = ({ header, usersData }: TitleTextImageGrid) => {
                   {item.imagePart?.src ? (
                     <ImageComponent
                       {...item.imagePart}
+                      objectFit="contain"
                       className={styles[item.imagePart?.className ?? '']}
                     />
                   ) : null}

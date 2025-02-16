@@ -79,10 +79,9 @@
 .classNameTextContainerRecipeDesMob {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px 0px;
 
   @include tablet-up {
+    align-items: center;
     align-items: flex-start;
   }
 }
@@ -130,13 +129,12 @@
 }
 
 .titleImageTextRecipe {
-  @include Avenir_font36_weight_800;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #f0923f;
-  text-transform: uppercase;
+  text-align: left;
 
   @include tablet-up {
-    @include Avenir_font40_weight_800;
+    margin-bottom: 16px;
   }
 }
 
@@ -162,18 +160,16 @@
 }
 
 .subTitleImageTextRecipe {
-  @include Avenir_font28_weight_500;
-  margin: 0px 0px 20px;
+  margin: 0px 0px 12px;
   align-self: flex-start;
 
   @include tablet-up {
-    @include Avenir_font30_weight_500;
+    margin: 0px 0px 16px;
   }
 }
 
 .subTitleTextImageDesMob {
-  @include Avenir_font30_weight_500;
-  margin: 0px 0px 20px;
+  margin-bottom: 24px;
   align-self: flex-start;
 }
 
@@ -217,7 +213,8 @@
 }
 
 .descriptionImageTextRecipe {
-  @include Avenir_font12_weight_350;
+  @include paragraphL;
+  margin-bottom: 70px;
 }
 
 .descriptionImageTextLiterary {
@@ -264,7 +261,7 @@
   @extend .image;
 
   aspect-ratio: 335/240;
-  margin: 30px 0px 30px;
+  margin: 0px;
 }
 
 .imageTextVintageDesktop {
@@ -334,6 +331,7 @@
 
 .imageTextRecipeMobWrapper {
   @extend .imageTextRecipeDesWrapper;
+  margin: 0px 0px 70px;
 }
 
 .imageTextRecipeDesWrapper_1 {
@@ -344,7 +342,8 @@
 
 .imageTextRecipeMobWrapper_1 {
   @extend .image;
-  aspect-ratio: 2248 / 1112;
+  aspect-ratio: 1336 / 1144;
+  margin: 0px 0px 70px;
 }
 
 .imageTextRecipeDesWrapper_2 {
@@ -356,6 +355,7 @@
 .imageTextRecipeMobWrapper_2 {
   @extend .image;
   aspect-ratio: 334/57;
+  margin: 0px 0px 70px;
 }
 
 .imageTextRecipeDesWrapper_3 {
@@ -385,6 +385,7 @@
 .imageTextRecipeMobWrapper_3 {
   @extend .image;
   aspect-ratio: 334/384;
+  margin: 0px;
 }
 
 .imageTextLiteraryMobWrapper {

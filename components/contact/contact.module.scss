@@ -45,36 +45,32 @@
   display: flex;
   flex-direction: column;
 
-  & > input {
-    @include inputStyles;
-    @include paragraphXS;
-    width: 100%;
-
-    @include tablet-up {
-      width: 248px;
-    }
-  }
-
-  //TODO: finish background-color for inputs
-  // input:-webkit-autofill {
-  //   appearance: none;
-  //   background-color: #efedfb !important;
-  //   border: 1px solid #4a90e2 !important;
-  //   background-color: $white !important;
-  //   border: 1px solid $black !important;
-  //   box-shadow: 0 0 0px 1000px #e8f0fe inset !important;
-  //   transition: background-color 5000s ease-in-out 0s;
-  // }
-
+  & > input,
   & > textarea {
     @include inputStyles;
     @include paragraphXS;
     width: 100%;
+    transition: border-color 0.3s ease;
+
+    @include tablet-up {
+      width: 248px;
+    }
+
+    &:focus {
+      // border-color: #b5aede; // TODO: change border-color on Focus;
+      outline: none;
+      border: 2px #000000 solid;
+    }
+  }
+
+  & > textarea {
     height: 132px;
+    width: 100%;
+    resize: vertical;
   }
 
   & > textarea::placeholder {
-    padding-top: 5px;
+    color: #999;
   }
 }
 

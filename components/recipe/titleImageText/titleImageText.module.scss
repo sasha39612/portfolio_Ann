@@ -3,17 +3,17 @@
 @import '/styles/variables.module.scss';
 
 .classNameWrapperRecipe_3 {
-  margin: 0px -20px 40px;
+  margin: 0px -20px 140px;
   padding: 0px 20px 40px;
   background: #eeeeee;
 
   @include tablet {
-    margin: 0px -48px 60px;
+    margin: 0px -48px 140px;
     padding: 0px 48px 60px;
   }
 
   @include desktop {
-    margin: 0px -80px 60px;
+    margin: 0px -80px 140px;
     padding: 0px 80px 60px;
   }
 }
@@ -54,12 +54,12 @@
 }
 
 .classNameSubTitleRecipe_3 {
-  @include Avenir_font30_weight_500;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .classNameDescriptionRecipe_3 {
-  @include Avenir_font18_weight_350;
+  @include paragraphL;
+  text-align: center;
 }
 
 .image {

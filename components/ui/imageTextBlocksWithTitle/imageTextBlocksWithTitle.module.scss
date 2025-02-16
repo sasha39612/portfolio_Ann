@@ -94,7 +94,8 @@
 
 .wrapperTextWithTitleRecipe {
   @extend .wrapperTextWithTitle;
-  margin-top: 0px;
+  margin-top: 70px;
+  padding: 0px;
   gap: 10px;
 
   @include tablet-up {
@@ -123,13 +124,12 @@
 .wrapperImagesTextWithTitleRecipe {
   display: flex;
   flex-direction: column;
-  margin: 30px 0px 60px;
-  gap: 10px;
+  margin: 70px 0px 140px;
+  gap: 70px;
 
   @include tablet-up {
     flex-direction: row;
-    margin: 60px 0px 80px;
-    gap: 36px;
+    gap: 0px;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
@@ -171,13 +171,12 @@
 .containerTextWithTitleRecipe {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   background: $white;
   border-radius: 20px;
   box-sizing: border-box;
 
   @include tablet-up {
-    div:nth-child(1) {
+    h2:nth-child(1) {
       order: 2;
     }
     div:nth-child(2) {
@@ -207,7 +206,7 @@
   border-radius: 20px;
   box-sizing: border-box;
 
-  div:nth-child(1) {
+  h2:nth-child(1) {
     order: 2;
   }
   div:nth-child(2) {
@@ -255,10 +254,14 @@
 }
 
 .titleTextWithTitleRecipe {
-  @include Avenir_font28_weight_500;
+  @include font24_weight500_H3_Mobile;
+  margin-top: 60px;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include Avenir_font30_weight_500;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    @include font28_weight600_H3;
   }
 }
 
@@ -274,11 +277,7 @@
 }
 
 .titleImagesTextWithTitleRecipe {
-  @include Avenir_font16_weight_500;
-
-  @include tablet-up {
-    @include Avenir_font30_weight_500;
-  }
+  @include font20_weight600_H4;
 }
 
 .descriptionTextWithTitleSaving {
@@ -296,7 +295,12 @@
 }
 
 .descriptionTextWithTitleRecipe {
-  @include Avenir_font12_weight_350;
+  @include paragraphL;
+  margin-bottom: 70px;
+
+  @include tablet-up {
+    margin-bottom: 0px;
+  }
 }
 
 .descriptionTextWithTitleLiterary {
@@ -304,8 +308,8 @@
 }
 
 .classNameDescriptionRecipe {
-  @include Avenir_font12_weight_350;
-  line-height: 25px;
+  @include paragraphM;
+  margin-bottom: 6px;
   text-align: center;
 }
 
@@ -317,6 +321,7 @@
 
 .imageTextRecipeDesktopMobile {
   @extend .image;
+  margin: 0px;
 
   aspect-ratio: 335/228;
 

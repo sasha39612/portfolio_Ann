@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 20% 40% 40%;
   grid-template-rows: auto;
-  row-gap: 15px;
+  row-gap: 40px;
   column-gap: 10px;
   padding: 0;
   margin: 0px 20px 60px 0px;
@@ -25,18 +25,17 @@
 }
 
 .titleTextImageGridRecipe_1 {
-  @include Avenir_font36_weight_800;
-  text-transform: uppercase;
   color: #f0923f;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   @include tablet-up {
-    @include Avenir_font40_weight_800;
+    margin-bottom: 12px;
   }
 }
 
 .descriptionTitleTextImageGridRecipe_1 {
-  @include Avenir_font14_weight_350;
+  @include paragraphL;
+  margin-bottom: 70px;
 }
 
 .containerTitleTextImageGridRecipe_2 {
@@ -64,12 +63,12 @@
   max-width: 190px;
   max-height: 41px;
   margin: 30px 0px;
-  place-self: start;
+  place-self: center;
 }
 
 .titleTextImageGridRecipe_2 {
   grid-area: b;
-  @include Avenir_font20_weight_500;
+  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
@@ -81,7 +80,8 @@
 
 .descriptionTitleTextImageGridRecipe_2 {
   grid-area: c;
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
+  align-self: start;
 }
 
 .containerTitleTextImageGridRecipe_3 {
@@ -97,7 +97,7 @@
 
 .titleTextImageGridRecipe_3 {
   grid-area: d;
-  @include Avenir_font20_weight_500;
+  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
@@ -109,7 +109,7 @@
 
 .descriptionTitleTextImageGridRecipe_3 {
   grid-area: e;
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_5 {
@@ -121,7 +121,7 @@
 }
 
 .titleTextImageGridRecipe_5 {
-  @include Avenir_font20_weight_500;
+  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
@@ -138,12 +138,13 @@
 }
 
 .subTitleTextImageGridRecipe_6 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_6 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_7 {
@@ -153,12 +154,13 @@
 }
 
 .subTitleTextImageGridRecipe_7 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_7 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_8 {
@@ -168,12 +170,13 @@
 }
 
 .subTitleTextImageGridRecipe_8 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_8 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_9 {
@@ -183,12 +186,13 @@
 }
 
 .subTitleTextImageGridRecipe_9 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_9 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_10 {
@@ -218,12 +222,12 @@
   max-width: 130px;
   max-height: 56px;
   margin: 30px 0px;
-  place-self: start;
+  place-self: center;
 }
 
 .titleTextImageGridRecipe_10 {
   grid-area: z;
-  @include Avenir_font20_weight_500;
+  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
@@ -235,7 +239,7 @@
 
 .descriptionTitleTextImageGridRecipe_10 {
   grid-area: w;
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_11 {
@@ -257,7 +261,7 @@
 
 .titleTextImageGridRecipe_11 {
   grid-area: s;
-  @include Avenir_font20_weight_500;
+  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
@@ -269,7 +273,7 @@
 
 .descriptionTitleTextImageGridRecipe_11 {
   grid-area: p;
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_12 {
@@ -285,7 +289,7 @@
 }
 
 .titleTextImageGridRecipe_12 {
-  @include Avenir_font20_weight_500;
+  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
@@ -307,12 +311,13 @@
 }
 
 .subTitleTextImageGridRecipe_13 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_13 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_14 {
@@ -326,12 +331,13 @@
 }
 
 .subTitleTextImageGridRecipe_14 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_14 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_15 {
@@ -346,12 +352,13 @@
 }
 
 .subTitleTextImageGridRecipe_15 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_15 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_16 {
@@ -366,10 +373,11 @@
 }
 
 .subTitleTextImageGridRecipe_16 {
-  @include Avenir_font20_weight_500;
   color: #f0923f;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .descriptionTitleTextImageGridRecipe_16 {
-  @include Avenir_font12_weight_350;
+  @include paragraphXS;
 }

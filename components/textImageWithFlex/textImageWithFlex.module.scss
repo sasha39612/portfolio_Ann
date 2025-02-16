@@ -47,15 +47,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px -20px 40px;
+  margin: 0px -20px 70px;
   gap: 20px;
 
   @include tablet {
-    margin: 0px -48px 60px;
+    margin: 0px -48px 70px;
   }
 
   @include desktop {
-    margin: 0px -80px 60px;
+    margin: 0px -80px 70px;
   }
 }
 
@@ -65,7 +65,7 @@
     'm'
     'e';
   grid-template-columns: 1fr;
-  padding: 40px 0px;
+  padding: 70px 0px;
 
   @include tablet {
     grid-template-areas: 'm e';
@@ -145,6 +145,7 @@
       margin-top: 40px;
     }
 
+    h2,
     div {
       order: 2;
     }
@@ -153,11 +154,11 @@
 
 .classNameContainerRecipe_2 {
   grid-area: m;
-  padding: 20px 0px;
+  padding: 0px 0px 70px;
 
   @include tablet-up {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px;
   }
 }
 
@@ -211,13 +212,11 @@
 }
 
 .classNameTitleRecipe_1 {
-  @include Avenir_font36_weight_800;
   color: #f0923f;
-  text-transform: uppercase;
-  margin: 70px 0px 30px;
+  margin: 140px 0px 12px;
 
   @include tablet-up {
-    @include Avenir_font40_weight_800;
+    margin: 140px 0px 16px;
   }
 }
 
@@ -233,7 +232,11 @@
 }
 
 .classNameSubTitleRecipe_2 {
-  @include Avenir_font30_weight_500;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
 }
 
 .classNameDescriptionSaving {
@@ -268,7 +271,7 @@
 }
 
 .classNameDescriptionRecipe_1 {
-  @include Avenir_font14_weight_350;
+  @include paragraphL;
 }
 
 .classNameDescriptionLiterary {

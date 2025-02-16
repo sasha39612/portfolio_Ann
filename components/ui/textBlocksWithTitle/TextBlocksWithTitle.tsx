@@ -12,7 +12,7 @@ const TextBlocksWithTitle = ({
 }) => {
   return (
     <section>
-      <p className={styles[title?.className ?? '']}>{title?.text}</p>
+      <h3 className={styles[title?.className ?? '']}>{title?.text}</h3>
       <ul className={styles[textWithTitle[0]?.className ?? '']}>
         {Array.isArray(textWithTitle)
           ? textWithTitle.map((item) => (

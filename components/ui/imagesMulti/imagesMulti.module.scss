@@ -3,23 +3,23 @@
 @import '/styles/variables.module.scss';
 
 .wrapper {
-  margin: 60px -20px;
-  padding: 0px 20px;
+  margin: 0px -20px;
+  padding: 70px 20px;
   border-bottom: 0.3px #dbdbdb solid;
 
   @include tablet {
-    margin: 60px -48px;
-    padding: 0px 48px 40px;
+    margin: 0px -48px;
+    padding: 70px 48px;
   }
 
   @include desktop {
-    margin: 60px -80px;
-    padding: 0px 80px 40px;
+    margin: 0px -80px;
+    padding: 70px 80px;
   }
 
   @include desktop-large {
-    margin: 60px -80px;
-    padding: 0px 80px 40px;
+    margin: 0px -80px;
+    padding: 70px 80px;
   }
 }
 

@@ -288,6 +288,27 @@
   text-decoration-skip-ink: none;
 }
 
+@mixin font20_weight600_H4 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@mixin font20_weight500_H5 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @mixin inputStyles {
   box-sizing: border-box;
   height: 45px;
@@ -317,6 +338,9 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 
   @include tablet-up {
     font-size: 32px;
@@ -345,6 +369,27 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+
+  @include tablet-up {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@mixin paragraphL_italic {
+  font-family: Lato;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 
   @include tablet-up {
     font-size: 16px;
@@ -382,6 +427,26 @@
   line-height: 1.5;
   letter-spacing: 0.05em;
   text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+
+  @include tablet-up {
+    font-size: 14px;
+  }
+}
+
+@mixin paragraphXS_italic {
+  font-family: Lato;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
 
   @include tablet-up {
     font-size: 14px;

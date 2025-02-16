@@ -16,9 +16,9 @@ const TitleImageText = (props: TextImageWithFlexType) => {
 
   return (
     <section className={styles[className ?? '']}>
-      <div className={styles[textPart?.subTitle?.className ?? '']}>
+      <h3 className={styles[textPart?.subTitle?.className ?? '']}>
         {textPart?.subTitle?.text}
-      </div>
+      </h3>
       <div className={styles[classNameContainer ?? '']}>
         <div className={styles[classNameContainerTextPart ?? '']}>
           <div
