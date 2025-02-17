@@ -56,14 +56,14 @@
 .imagesMobileImagesTextRecipe {
   @extend .image;
   width: 120px;
-  border-left: 0.2px #434343 solid;
-  border-right: 0.2px #434343 solid;
+  border-left: 0.2px $border_1 solid;
+  border-right: 0.2px $border_1 solid;
 }
 
 .imagesMobileImagesTextRecipe_11 {
   @extend .imagesMobileImagesTextRecipe;
   aspect-ratio: 121/124;
-  border-top: 0.2px #434343 solid;
+  border-top: 0.2px $border_1 solid;
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -75,7 +75,7 @@
 .imagesMobileImagesTextRecipe_13 {
   @extend .imagesMobileImagesTextRecipe;
   aspect-ratio: 121/15;
-  border-bottom: 0.2px #434343 solid;
+  border-bottom: 0.2px $border_1 solid;
   border-radius: 0px 0px 5px 5px;
   margin-top: -8px;
 }

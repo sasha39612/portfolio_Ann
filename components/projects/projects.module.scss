@@ -12,12 +12,12 @@
 .buttonTitle {
   border: none;
   background: none;
-  color: #00000080;
+  color: $black;
   @include fontButton;
 }
 
 .buttonTitleActive {
-  color: #000000;
+  color: $black;
 }
 
 .projectsWrapper {

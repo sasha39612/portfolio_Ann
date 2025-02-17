@@ -48,7 +48,7 @@
 
 .descriptionImageTextSaving_1 {
   text-align: center;
-  color: #545454;
+  color: $backgroundVintage_1;
 }
 
 .descriptionImageTextLiterary_2 {
@@ -219,7 +219,7 @@
 
 .wrapperSwiperImageTextVintage_2 {
   @extend .swiperWrapper;
-  background: #262c29;
+  background: $imageTextVintage;
 
   &:first-child {
     margin-top: 30px;

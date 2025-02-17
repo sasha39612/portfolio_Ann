@@ -12,7 +12,7 @@
 .buttonTitle {
   border: none;
   background: none;
-  color: #00000080;
+  color: $black;
   @include fontButton;
 
   @include tablet-up {
@@ -21,7 +21,7 @@
 }
 
 .buttonTitleActive {
-  color: #000000;
+  color: $black;
 }
 
 .projectsWrapper {

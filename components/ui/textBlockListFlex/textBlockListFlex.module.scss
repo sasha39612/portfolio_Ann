@@ -105,7 +105,7 @@
     @include tablet-up {
       padding: 16px 0px;
       width: 260px;
-      border-bottom: 0.5px #818182 solid;
+      border-bottom: 0.5px $border_3 solid;
     }
   }
 
@@ -115,7 +115,7 @@
     @include tablet-up {
       padding: 16px 0px;
       width: 260px;
-      border-bottom: 0.5px #818182 solid;
+      border-bottom: 0.5px $border_3 solid;
     }
   }
 
@@ -158,7 +158,7 @@
 .classNameTextGridTitleVintage {
   @include font14_weight500_Vintage_Page;
   text-transform: uppercase;
-  color: #434343;
+  color: $border_1;
 
   @include tablet-up {
     @include font14_weight500_Vintage_Page;
@@ -171,7 +171,7 @@
 
 .classNameTextGridTitleLiterary {
   @include paragraphM;
-  color: #4a4a49;
+  color: $descriptionRecipe;
 }
 
 .classNameTextGridDescriptionSaving {
@@ -194,7 +194,7 @@
 }
 
 .classNameTextGridTitleRecipe_2 {
-  color: #8f8f8e;
+  color: $border_2;
 }
 
 .titleTextImageGridLiterary_4 {

@@ -178,7 +178,7 @@
 
 .classNameTitleVintage {
   @include font40_weight800_H1_Mobile;
-  color: #101110;
+  color: $titleTextVintage;
   text-align: center;
 
   @include tablet-up {
@@ -224,7 +224,7 @@
 
 .classNameTitleLiterary {
   @include font40_weight800_H1_Mobile;
-  color: #2b47d4;
+  color: $backgroundLiterary_1;
   margin-bottom: 16px;
 
   @include tablet-up {
@@ -264,7 +264,7 @@
 }
 
 .classNameDescriptionRecipe {
-  color: #4a4a49;
+  color: $descriptionRecipe;
 
   @include tablet-up {
   }

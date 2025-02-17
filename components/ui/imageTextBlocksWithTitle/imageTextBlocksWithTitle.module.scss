@@ -259,7 +259,7 @@
 
 .titleTextWithTitleLiterary {
   @include font24_weight500_H3_Mobile;
-  color: #1c1c1e;
+  color: $titleTextLiterary;
   margin-bottom: 12px;
 
   @include tablet-up {

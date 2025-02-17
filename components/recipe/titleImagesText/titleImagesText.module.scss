@@ -74,14 +74,14 @@
 .imagesMobileTitleImagesTextRecipe {
   @extend .image;
   width: 135px;
-  border-left: 0.2px #434343 solid;
-  border-right: 0.2px #434343 solid;
+  border-left: 0.2px $border_1 solid;
+  border-right: 0.2px $border_1 solid;
 }
 
 .imagesMobileTitleImagesTextRecipe_1 {
   @extend .imagesMobileTitleImagesTextRecipe;
   aspect-ratio: 135/39;
-  border-top: 0.2px #434343 solid;
+  border-top: 0.2px $border_1 solid;
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -123,6 +123,6 @@
 .imagesMobileTitleImagesTextRecipe_9 {
   @extend .imagesMobileTitleImagesTextRecipe;
   aspect-ratio: 135/77;
-  border-bottom: 0.2px #434343 solid;
+  border-bottom: 0.2px $border_1 solid;
   border-radius: 0px 0px 5px 5px;
 }

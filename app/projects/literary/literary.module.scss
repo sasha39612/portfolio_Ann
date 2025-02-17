@@ -3,12 +3,12 @@
 @import '/styles/variables.module.scss';
 
 .footerProjectLiterary {
-  background: #2b47d4;
+  background: $backgroundLiterary_1;
 }
 
 .classNameTitle {
   max-width: 160px;
-  color: #ffffff;
+  color: $white;
   @include font24_weight500_H3_Mobile;
   text-align: center;
 
