@@ -12,10 +12,10 @@
 }
 
 .descriptionImageTextSaving_1 {
-  text-align: center;
   margin-bottom: 40px;
 
   @include paragraphL;
+  text-align: center;
 
   @include tablet-up {
     margin-bottom: 70px;

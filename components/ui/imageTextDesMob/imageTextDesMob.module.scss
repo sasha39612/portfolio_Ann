@@ -317,6 +317,10 @@
 .imageTextRecipeDesktop {
   @extend .image;
 
+  @include tablet {
+    min-width: 275px;
+  }
+
   @include tablet-up {
     margin: 0px 0px 36px;
     aspect-ratio: 406/292;
