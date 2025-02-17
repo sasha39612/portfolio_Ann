@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .wrapperTextWithTitle {
   display: flex;
@@ -273,8 +273,9 @@
 }
 
 .descriptionTextWithTitleSaving {
-  @include paragraphL;
   text-align: center;
+
+  @include paragraphL;
 }
 
 .descriptionTextWithTitleVintage {
@@ -285,8 +286,9 @@
 }
 
 .descriptionTextWithTitleRecipe {
-  @include paragraphL;
   margin-bottom: 70px;
+
+  @include paragraphL;
 
   @include tablet-up {
     margin-bottom: 0px;
@@ -298,9 +300,10 @@
 }
 
 .classNameDescriptionRecipe {
-  @include paragraphM;
   margin-bottom: 6px;
   text-align: center;
+
+  @include paragraphM;
 }
 
 .image {

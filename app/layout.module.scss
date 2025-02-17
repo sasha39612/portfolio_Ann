@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .root {
   @include make-side-padding($max-width: $max-content-width);
@@ -23,13 +23,13 @@
 
 .button {
   @include fontButton;
+  color: $white;
   margin-left: auto;
   margin-right: auto;
   padding: 16px 30px;
   border-radius: 12px;
   letter-spacing: 0.1rem;
   background: $black;
-  color: $white;
   margin-top: 30px;
 }
 

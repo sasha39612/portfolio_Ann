@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .classNameWrapperLiterary_1 {
   position: relative;
@@ -177,13 +177,15 @@
 }
 
 .classNameTitleVintage {
-  @include font40_weight800_H1_Mobile;
-  color: $titleTextVintage;
   text-align: center;
+  color: $titleTextVintage;
+
+  @include font40_weight800_H1_Mobile;
 
   @include tablet-up {
-    @include font80_weight800_H1;
     text-align: center;
+
+    @include font80_weight800_H1;
   }
 }
 
@@ -242,8 +244,9 @@
 }
 
 .classNameDescriptionSaving {
-  @include paragraphL;
   text-align: center;
+
+  @include paragraphL;
 
   @include tablet-up {
     text-align: start;
@@ -254,8 +257,9 @@
   @include paragraphL;
 
   span {
-    @include paragraphL;
     font-weight: 600;
+
+    @include paragraphL;
   }
 
   @include tablet-up {
@@ -265,9 +269,6 @@
 
 .classNameDescriptionRecipe {
   color: $descriptionRecipe;
-
-  @include tablet-up {
-  }
 }
 
 .classNameDescriptionRecipe_1 {
@@ -275,8 +276,9 @@
 }
 
 .classNameDescriptionLiterary {
-  @include paragraphXS;
   margin-top: 16px;
+
+  @include paragraphXS;
 
   @include tablet-up {
     @include paragraphL;

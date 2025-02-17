@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .wrapper {
   margin: 140px 0px;
@@ -24,19 +24,22 @@
 }
 
 .classNameDescriptionTitleTextImageGridRecipe_1 {
-  @include paragraphL;
   margin-bottom: 70px;
+
+  @include paragraphL;
 }
 
 .classNameDescriptionTitleTextImageGridLiterary_4 {
-  @include paragraphL;
   margin-bottom: 70px;
+
+  @include paragraphL;
 }
 
 .subTitleTextImageGridRecipe_1 {
-  @include font20_weight600_H4;
   text-align: left;
   margin-bottom: 12px;
+
+  @include font20_weight600_H4;
 
   @include tablet-up {
     margin-bottom: 16px;
@@ -171,8 +174,9 @@
 }
 
 .descriptionTitleTextImageGridRecipeItalic_1 {
-  @include paragraphXS_italic;
   margin: 30px 0px;
+
+  @include paragraphXS_italic;
 
   @include tablet-up {
     margin-top: -20px;

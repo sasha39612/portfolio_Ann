@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .wrapper {
   display: flex;
@@ -62,13 +62,13 @@
 
 .mobileHeaderBackground {
   @include mobile {
+    color: $white;
+    background-color: $black;
     z-index: 10;
     width: 100vw;
     height: 100vh;
 
     font-weight: 400;
-    background-color: $black;
-    color: $white;
     position: fixed;
     overflow: hidden;
     top: 0;

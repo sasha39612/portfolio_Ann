@@ -1,6 +1,4 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
 
 .wrapperPersonDataVintage {
   padding: 20px;

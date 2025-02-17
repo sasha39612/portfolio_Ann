@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .classNameWrapperTitleTextImageGridRecipe_3 {
   display: grid;
@@ -81,8 +81,8 @@
 
 .classNameTitleTextImageGridLiterary_1 {
   @extend .classNameTitleTextImageGridLiterary;
-  margin: 0;
   color: $white;
+  margin: 0;
 }
 
 .classNameTitleTextImageGridRecipe_4 {
@@ -214,6 +214,7 @@
   gap: 5px;
   list-style-type: decimal;
   margin-left: 20px;
+
   @include paragraphL;
 
   @include tablet-up {

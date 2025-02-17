@@ -1,6 +1,4 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
 
 .container {
   padding-bottom: 40px;
@@ -50,10 +48,11 @@
 }
 
 .textImagePropsProjects_1_subTitle {
-  @include paragraphM;
   text-align: center;
   padding-top: 4px;
   padding-bottom: 40px;
+
+  @include paragraphM;
 
   @include tablet-up {
     text-align: left;
@@ -61,9 +60,10 @@
 }
 
 .textImagePropsProjects_2_subTitle {
-  @include paragraphM;
   text-align: center;
   padding-bottom: 40px;
+
+  @include paragraphM;
 
   @include tablet-up {
     text-align: left;
@@ -83,9 +83,10 @@
 }
 
 .textImagePropsProjectsDescription {
+  padding: 10px;
+
   @include paragraphL;
   text-align: center;
-  padding: 10px;
 
   @include tablet-up {
     padding: 0px 0px 40px;

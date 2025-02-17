@@ -1,5 +1,6 @@
-@import './variables.module.scss';
-@import 'styles/fonts.scss';
+@use './variables.module.scss' as *;
+@use './colors.module.scss' as *;
+@use 'styles/fonts.scss' as *;
 
 @mixin mobile {
   @media (max-width: #{$tablet-width - 1px}) {

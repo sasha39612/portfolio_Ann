@@ -24,11 +24,12 @@
 }
 
 .imageContainer {
-  @include paragraphL;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
+
+  @include paragraphL;
 }
 
 .imageContainerUnvisitable {
