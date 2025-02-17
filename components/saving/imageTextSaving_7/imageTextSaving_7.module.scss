@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .titleImageTextSaving_1 {
   margin-top: 140px;
@@ -12,9 +12,10 @@
 }
 
 .descriptionImageTextSaving_1 {
-  @include paragraphL;
   text-align: center;
   margin-bottom: 40px;
+
+  @include paragraphL;
 
   @include tablet-up {
     margin-bottom: 70px;

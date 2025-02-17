@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .textBlockWrapper {
   display: flex;
@@ -69,7 +69,6 @@
 }
 
 .descriptionTextBlockVintage {
-  @include paragraphL;
   padding-left: 10px;
 
   &::before {
@@ -77,10 +76,12 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #545454;
+    background: $backgroundVintage_1;
     display: inline-block;
     margin-right: 10px;
     margin-left: -17px;
     vertical-align: middle;
   }
+
+  @include paragraphL;
 }

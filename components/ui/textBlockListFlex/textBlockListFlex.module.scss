@@ -1,6 +1,6 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
 
 .classNameTextPartGridContainerSaving {
   padding: 40px 0px 5px;
@@ -105,7 +105,7 @@
     @include tablet-up {
       padding: 16px 0px;
       width: 260px;
-      border-bottom: 0.5px #818182 solid;
+      border-bottom: 0.5px $border_3 solid;
     }
   }
 
@@ -115,7 +115,7 @@
     @include tablet-up {
       padding: 16px 0px;
       width: 260px;
-      border-bottom: 0.5px #818182 solid;
+      border-bottom: 0.5px $border_3 solid;
     }
   }
 
@@ -142,8 +142,9 @@
 }
 
 .classNameTextGridTitleSaving {
-  @include paragraphL;
   width: 63px;
+
+  @include paragraphL;
 
   @include tablet-up {
     width: 80px;
@@ -158,7 +159,7 @@
 .classNameTextGridTitleVintage {
   @include font14_weight500_Vintage_Page;
   text-transform: uppercase;
-  color: #434343;
+  color: $border_1;
 
   @include tablet-up {
     @include font14_weight500_Vintage_Page;
@@ -170,13 +171,15 @@
 }
 
 .classNameTextGridTitleLiterary {
+  color: $descriptionRecipe;
+
   @include paragraphM;
-  color: #4a4a49;
 }
 
 .classNameTextGridDescriptionSaving {
-  @include paragraphM;
   width: 119px;
+
+  @include paragraphM;
 
   @include tablet-up {
     width: 170px;
@@ -194,7 +197,7 @@
 }
 
 .classNameTextGridTitleRecipe_2 {
-  color: #8f8f8e;
+  color: $border_2;
 }
 
 .titleTextImageGridLiterary_4 {

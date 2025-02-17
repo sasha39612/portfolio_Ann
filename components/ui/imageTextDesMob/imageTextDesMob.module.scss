@@ -1,6 +1,4 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
 
 .wrapperImageTextVintageDesMob {
   display: flex;
@@ -181,19 +179,22 @@
 }
 
 .subTitleTextImageDesMobLiterary {
-  @include font36_weight600_H2_Mobile;
   align-self: flex-start;
   margin: 0px 0px 40px;
 
+  @include font36_weight600_H2_Mobile;
+
   @include tablet-up {
-    @include font50_weight700_H2;
     margin: 0px 0px 20px;
+
+    @include font50_weight700_H2;
   }
 }
 
 .descriptionImageTextVintage {
-  @include paragraphL;
   margin-bottom: 40px;
+
+  @include paragraphL;
 
   @include tablet-up {
     text-align: left;
@@ -202,8 +203,9 @@
 }
 
 .descriptionImageTextVintage_1 {
-  @include paragraphL;
   margin-bottom: 24px;
+
+  @include paragraphL;
 
   @include tablet-up {
     text-align: left;
@@ -211,8 +213,9 @@
 }
 
 .descriptionImageTextRecipe {
-  @include paragraphL;
   margin-bottom: 70px;
+
+  @include paragraphL;
 }
 
 .descriptionImageTextLiterary {

@@ -1,6 +1,5 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
 
 .wrapper {
   list-style: none;
@@ -34,8 +33,9 @@
 }
 
 .descriptionTitleTextImageGridRecipe_1 {
-  @include paragraphL;
   margin-bottom: 70px;
+
+  @include paragraphL;
 }
 
 .containerTitleTextImageGridRecipe_2 {
@@ -68,10 +68,11 @@
 
 .titleTextImageGridRecipe_2 {
   grid-area: b;
-  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
+
+  @include font20_weight500_H5;
 
   @include tablet-up {
     width: 50px;
@@ -80,8 +81,9 @@
 
 .descriptionTitleTextImageGridRecipe_2 {
   grid-area: c;
-  @include paragraphXS;
   align-self: start;
+
+  @include paragraphXS;
 }
 
 .containerTitleTextImageGridRecipe_3 {
@@ -97,10 +99,11 @@
 
 .titleTextImageGridRecipe_3 {
   grid-area: d;
-  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
+
+  @include font20_weight500_H5;
 
   @include tablet-up {
     width: 50px;
@@ -121,10 +124,11 @@
 }
 
 .titleTextImageGridRecipe_5 {
-  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
+
+  @include font20_weight500_H5;
 
   @include tablet-up {
     width: 50px;
@@ -227,10 +231,11 @@
 
 .titleTextImageGridRecipe_10 {
   grid-area: z;
-  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
+
+  @include font20_weight500_H5;
 
   @include tablet-up {
     display: none;
@@ -261,10 +266,11 @@
 
 .titleTextImageGridRecipe_11 {
   grid-area: s;
-  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
+
+  @include font20_weight500_H5;
 
   @include tablet-up {
     display: none;
@@ -289,10 +295,11 @@
 }
 
 .titleTextImageGridRecipe_12 {
-  @include font20_weight500_H5;
   color: #f0923f;
   transform: rotate(-90deg);
   text-wrap: wrap;
+
+  @include font20_weight500_H5;
 
   @include tablet-up {
     display: none;
@@ -324,6 +331,7 @@
   grid-column: 3;
   grid-row: 8;
   margin-bottom: 20px;
+
   @include tablet-up {
     grid-column: 6;
     grid-row: 4;

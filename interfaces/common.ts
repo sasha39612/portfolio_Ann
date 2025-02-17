@@ -84,6 +84,7 @@ export interface TextImageType {
   className?: string;
   container?: TextBlockElem;
   backgroundImage?: ImagePropsType;
+  backgroundColor?: string;
 }
 
 export interface TextImageWithFlexType {

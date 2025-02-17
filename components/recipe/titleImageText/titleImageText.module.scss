@@ -1,6 +1,5 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
 
 .classNameWrapperRecipe_3 {
   margin: 0px -20px 140px;

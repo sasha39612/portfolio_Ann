@@ -14,8 +14,10 @@ const TextImage = (props: TextImageType) => {
     projectName,
     container,
     backgroundImage,
+    backgroundColor,
     className = ' ',
   } = props;
+
   const wrapperStyles = cn(
     styles.wrapper,
     isProject
@@ -59,6 +61,9 @@ const TextImage = (props: TextImageType) => {
           loading={backgroundImage.loading}
           className={styles[backgroundImage?.imageClassName ?? '']}
         />
+      ) : null}
+      {backgroundColor ? (
+        <div className={styles[backgroundColor ?? '']} />
       ) : null}
       <div className={projectNameStyles}>{projectName}</div>
       <div className={containerStyles}>

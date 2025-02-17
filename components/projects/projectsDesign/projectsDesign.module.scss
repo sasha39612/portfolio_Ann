@@ -1,6 +1,6 @@
-@import 'styles/mixins.module.scss';
-@import 'styles/colors.module.scss';
-@import 'styles/variables.module.scss';
+@use 'styles/mixins.module.scss' as *;
+@use 'styles/colors.module.scss' as *;
+@use 'styles/variables.module.scss' as *;
 
 .buttonWrapper {
   display: flex;
@@ -12,7 +12,7 @@
 .buttonTitle {
   border: none;
   background: none;
-  color: #00000080;
+  color: $projectName;
   @include fontButton;
 
   @include tablet-up {
@@ -21,7 +21,7 @@
 }
 
 .buttonTitleActive {
-  color: #000000;
+  color: $black;
 }
 
 .projectsWrapper {
@@ -36,25 +36,26 @@
 .projectNameStylesReverse {
   display: none;
 
-  @include tablet-up {
+  @include desktop {
     display: block;
-    @include paragraphXXL;
-    color: $projectName;
-    text-align: center;
     margin-top: 40px;
-
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
     text-orientation: mixed;
     -webkit-text-orientation: mixed;
     transform: rotateZ(-180deg);
     margin-top: 0px;
+    color: $projectName;
+
+    @include paragraphXXL;
+    text-align: center;
   }
 }
 
 .projectsGraphicDesignWrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   width: 100%;
   margin: 50px 0px 70px;

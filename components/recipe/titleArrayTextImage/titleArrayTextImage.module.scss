@@ -1,6 +1,5 @@
-@import '/styles/mixins.module.scss';
-@import '/styles/colors.module.scss';
-@import '/styles/variables.module.scss';
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
 
 .wrapper {
   margin: 140px 0px;
@@ -32,9 +31,10 @@
 }
 
 .titleTextImageGridRecipe_2 {
-  @include paragraphL;
   color: #f0923f;
   margin-right: 4px;
+
+  @include paragraphL;
 }
 
 .descriptionTitleTextImageGridRecipe_2 {
@@ -58,8 +58,9 @@
 }
 
 .subTitleTextImageGridLiterary_2 {
-  @include paragraphL;
   margin-bottom: 40px;
+
+  @include paragraphL;
 
   @include tablet-up {
     position: absolute;
@@ -76,11 +77,12 @@
 }
 
 .classNameTextPartGridContainerTitleTextImageGridLiterary_2 {
-  @include paragraphL;
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-bottom: 70px;
+
+  @include paragraphL;
 
   @include tablet-up {
     position: absolute;
@@ -144,9 +146,10 @@
 }
 
 .titleTitleTextImageGridRecipe_2 {
-  @include paragraphL;
   color: #f0923f;
   margin-right: 28px;
+
+  @include paragraphL;
 }
 
 .classNameImageWrapperTextPartRecipe_3 {
@@ -180,8 +183,9 @@
 
 .imageTitleTextImageGridRecipe_22 {
   width: 100%;
-  @extend .imageTitleTextImageGridRecipe_2;
   aspect-ratio: 3560 / 4152;
+
+  @extend .imageTitleTextImageGridRecipe_2;
 }
 
 .imageTitleTextImageGridLiterary_2 {
