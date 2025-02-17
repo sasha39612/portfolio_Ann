@@ -48,11 +48,12 @@
 }
 
 .textImagePropsProjects_1_subTitle {
-  text-align: center;
   padding-top: 4px;
   padding-bottom: 40px;
 
   @include paragraphM;
+
+  text-align: center;
 
   @include tablet-up {
     text-align: left;
@@ -60,10 +61,10 @@
 }
 
 .textImagePropsProjects_2_subTitle {
-  text-align: center;
   padding-bottom: 40px;
 
   @include paragraphM;
+  text-align: center;
 
   @include tablet-up {
     text-align: left;

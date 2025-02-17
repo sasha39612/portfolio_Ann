@@ -43,6 +43,10 @@
   aspect-ratio: 811 / 857;
   margin: 40px 0px;
 
+  @include tablet {
+    min-width: 210px;
+  }
+
   @include tablet-up {
     max-width: 372px;
     margin: 0px 40px 40px 0px;

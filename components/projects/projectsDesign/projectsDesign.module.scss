@@ -12,7 +12,7 @@
 .buttonTitle {
   border: none;
   background: none;
-  color: $black;
+  color: $projectName;
   @include fontButton;
 
   @include tablet-up {
@@ -36,9 +36,8 @@
 .projectNameStylesReverse {
   display: none;
 
-  @include tablet-up {
+  @include desktop {
     display: block;
-    text-align: center;
     margin-top: 40px;
     writing-mode: vertical-lr;
     -webkit-writing-mode: vertical-lr;
@@ -49,12 +48,14 @@
     color: $projectName;
 
     @include paragraphXXL;
+    text-align: center;
   }
 }
 
 .projectsGraphicDesignWrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   width: 100%;
   margin: 50px 0px 70px;

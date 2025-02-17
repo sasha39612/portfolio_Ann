@@ -91,8 +91,6 @@
   font-weight: 300;
   line-height: 10.64px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font12_weight300 {
@@ -117,8 +115,6 @@
   font-weight: 300;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font16_weight300 {
@@ -127,8 +123,6 @@
   font-weight: 300;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font18_weight300 {
@@ -136,8 +130,6 @@
   font-weight: 300;
   line-height: 1.3;
   text-align: justified;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin fontButton {
@@ -154,8 +146,6 @@
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font24_weight400 {
@@ -164,8 +154,6 @@
   font-weight: 400;
   line-height: 28.8px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font30_weight400 {
@@ -173,8 +161,6 @@
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font32_weight400 {
@@ -182,8 +168,6 @@
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font32_weight600 {
@@ -192,8 +176,6 @@
   font-weight: 600;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font45_weight400 {
@@ -202,8 +184,6 @@
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font48_weight500 {
@@ -221,8 +201,6 @@
   line-height: 16.8px;
   letter-spacing: 0.03em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font40_weight800_H1_Mobile {
@@ -241,8 +219,6 @@
   line-height: 96px;
   letter-spacing: 0.04em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font50_weight700_H2 {
@@ -252,8 +228,6 @@
   line-height: 72.5px;
   letter-spacing: 0.02em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font36_weight600_H2_Mobile {
@@ -263,8 +237,6 @@
   line-height: 48.6px;
   letter-spacing: 0.02em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font24_weight500_H3_Mobile {
@@ -274,8 +246,6 @@
   line-height: 31.2px;
   letter-spacing: 0.03em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font28_weight600_H3 {
@@ -285,8 +255,6 @@
   line-height: 36.4px;
   letter-spacing: 0.02em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font20_weight600_H4 {
@@ -296,8 +264,6 @@
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin font20_weight500_H5 {
@@ -306,8 +272,6 @@
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin inputStyles {
@@ -462,8 +426,6 @@
   font-weight: 300;
   line-height: 60.66px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin Avenir_font44_weight_500 {
@@ -472,8 +434,6 @@
   font-weight: 500;
   line-height: 60.66px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin Avenir_font50_weight_300 {
@@ -482,8 +442,6 @@
   font-weight: 300;
   line-height: 68.3px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin Avenir_font50_weight_500 {
@@ -492,8 +450,6 @@
   font-weight: 500;
   line-height: 68.3px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin Avenir_font80_weight_300 {
@@ -502,8 +458,6 @@
   font-weight: 300;
   line-height: 109.28px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 @mixin Avenir_font80_weight_500 {
@@ -512,6 +466,4 @@
   font-weight: 500;
   line-height: 109.28px;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }

@@ -14,6 +14,40 @@
   }
 }
 
+.backgroundImageTextSaving {
+  position: absolute;
+  inset: 0;
+  width: calc(100% + 40px);
+  margin: 0 -20px;
+
+  background: linear-gradient(
+      89.63deg,
+      rgba(218, 218, 218, 0.02) 36.48%,
+      rgba(179, 179, 179, 0.05) 60.34%,
+      rgba(179, 179, 179, 0.1) 99.5%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(179, 179, 179, 0.02) 1%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+
+  @include tablet {
+    width: calc(100% + 96px);
+    margin: 0 -48px;
+  }
+
+  @include desktop {
+    width: calc(100% + 160px);
+    margin: 0 -80px;
+  }
+
+  @include desktop-large {
+    width: calc(100% + 160px);
+    margin: 0 -80px;
+  }
+}
+
 .wrapperProjectReverse {
   @include tablet-up {
     margin-right: -80px;
@@ -49,9 +83,10 @@
 }
 
 .projectNameStylesReverse {
-  @include paragraphXXL;
   color: $projectName;
   margin-bottom: 6px;
+
+  @include paragraphXXL;
 
   @include tablet-up {
     margin-bottom: 0px;
