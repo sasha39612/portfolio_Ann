@@ -106,6 +106,10 @@
       width: 100%;
     }
   }
+
+  @include desktop-large {
+    margin-left: 60px;
+  }
 }
 
 .classNameContainerSaving {
@@ -177,15 +181,14 @@
 }
 
 .classNameTitleVintage {
-  text-align: center;
   color: $titleTextVintage;
 
   @include font40_weight800_H1_Mobile;
+  text-align: center;
 
   @include tablet-up {
-    text-align: center;
-
     @include font80_weight800_H1;
+    text-align: center;
   }
 }
 
@@ -336,7 +339,7 @@
 
 .mainImageProjectRecipe_2 {
   @extend .image;
-  aspect-ratio: 975/304;
+  aspect-ratio: 3840 / 1413;
   margin: 30px -20px;
 }
 

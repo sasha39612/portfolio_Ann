@@ -316,6 +316,7 @@
 
 .imageTextRecipeDesktop {
   @extend .image;
+  aspect-ratio: 1632 / 1168;
 
   @include tablet {
     min-width: 275px;
@@ -323,7 +324,6 @@
 
   @include tablet-up {
     margin: 0px 0px 36px;
-    aspect-ratio: 406/292;
     max-width: 535px;
   }
 }
@@ -383,8 +383,8 @@
 
 .imageTextLiteraryDesWrapper_2 {
   @extend .image;
-  aspect-ratio: 2312 / 491;
-  max-width: 600px;
+  aspect-ratio: 1038 / 1106;
+  max-width: 400px;
 }
 
 .imageTextRecipeMobWrapper_3 {

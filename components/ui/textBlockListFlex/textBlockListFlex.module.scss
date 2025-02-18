@@ -70,6 +70,10 @@
     margin: 85px 0px 0px -27px;
     justify-content: space-between;
 
+    @include tablet {
+      width: 160%;
+    }
+
     li {
       flex: 1 1 auto;
       text-align: center;
