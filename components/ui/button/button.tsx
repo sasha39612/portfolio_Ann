@@ -7,10 +7,17 @@ export interface ButtonComponentType {
   className?: string;
   background: 'black' | 'white';
   children: ReactNode;
+  disabled?: boolean;
 }
 
 const ButtonComponent = (props: ButtonComponentType) => {
-  const { type = 'button', background, children, className = '' } = props;
+  const {
+    type = 'button',
+    background,
+    children,
+    className = '',
+    disabled = true,
+  } = props;
 
   const backgroundColor = cn(styles.backgroundWrapper, {
     [styles.black]: background === 'black',
@@ -18,7 +25,15 @@ const ButtonComponent = (props: ButtonComponentType) => {
   });
 
   return (
-    <button type={type} className={cn(backgroundColor, className)}>
+    <button
+      type={type}
+      className={cn(
+        backgroundColor,
+        className,
+        disabled ? styles.disabled : '',
+      )}
+      disabled={disabled}
+    >
       {children}
     </button>
   );

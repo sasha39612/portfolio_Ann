@@ -1,8 +1,15 @@
 'use client';
-import { FormEvent } from 'react';
+import { FormEvent, FormEventHandler, useRef, useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { ContactType } from '../../interfaces/common';
 import ButtonComponent from '../ui/button/button';
 import styles from './contact.module.scss';
+
+interface ApiResponse {
+  success?: string;
+  error?: string;
+  result?: string;
+}
 
 const ContactComponent = ({
   contactTitle,
@@ -12,39 +19,67 @@ const ContactComponent = ({
   inputMessage,
   button,
 }: ContactType) => {
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    const formData = new FormData(form);
-    const data = {
-      name: formData.get('name')?.toString() || 'Anonymous', // Fallback to "Anonymous" if name is not provided
-      email: formData.get('email')?.toString() || '',
-      message: formData.get('message')?.toString() || 'No message provided', // Fallback if message is not provided
-    };
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isVerified, setIsVerified] = useState(false);
+  const [token, setToken] = useState<string | null>(null);
 
+  const handleSubmit: FormEventHandler<HTMLFormElement> = async (
+    event: FormEvent<HTMLFormElement>,
+  ) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    if (!token) {
+      alert('Please complete the reCAPTCHA verification');
+      return;
+    }
+
+    formData.append('token', token);
     try {
       const response = await fetch('/api', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json', // Specify content type as JSON
-        },
-        body: JSON.stringify(data), // Convert data to JSON
+        body: formData,
       });
 
       if (!response.ok) {
         throw new Error(`response status: ${response.status}`);
       }
-      const responseData = await response.json();
 
-      if (responseData?.message) {
-        alert('Message successfully sent');
-        form.reset();
+      const data = (await response.json()) as { result: ApiResponse };
+
+      if (data.result?.error) {
+        alert(`Error: ${data?.result?.error}`);
+        throw new Error(`Response status: ${data.result?.result}`);
       }
+
+      alert('Message successfully sent');
     } catch (err) {
       console.error(err);
       alert('Error, please try resubmitting the form');
     }
+    // Reset form fields
+    form.reset();
+
+    // Reset ReCAPTCHA
+    if (recaptchaRef.current) {
+      recaptchaRef.current.reset();
+    }
+
+    // Reset token and disable submit button
+    setToken(null);
+    setIsVerified(false);
   };
+
+  const handleChange = (token: string | null) => {
+    setToken(token);
+    setIsVerified(!!token); // Ensure the button is enabled when token is valid
+  };
+
+  function handleExpired() {
+    setToken(null);
+    setIsVerified(false);
+  }
 
   return (
     <form onSubmit={handleSubmit} className={styles.contactWrapper}>
@@ -94,9 +129,16 @@ const ContactComponent = ({
           />
         </div>
       </div>
+      <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_SITE_KEY_RECAPTCHA || ''}
+        ref={recaptchaRef}
+        onChange={handleChange}
+        onExpired={handleExpired}
+      />
       <ButtonComponent
         type="submit"
         background="black"
+        disabled={!isVerified}
         className={styles.submitButton}
       >
         {button.text}
