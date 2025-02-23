@@ -1,9 +1,9 @@
-@import "styles/mixins.module.scss";
-@import "styles/colors.module.scss";
-@import "styles/variables.module.scss";
+@import 'styles/mixins.module.scss';
+@import 'styles/colors.module.scss';
+@import 'styles/variables.module.scss';
 
 .backgroundWrapper {
-  opacity: 0px;
+  opacity: 1;
 }
 
 .white {
@@ -14,4 +14,8 @@
 .black {
   background-color: $black;
   color: $white;
+}
+
+.disabled {
+  opacity: 0.4;
 }

@@ -22,6 +22,10 @@
   justify-content: space-around;
   align-items: center;
   @include paragraphL;
+
+  @include tablet {
+    width: 480px;
+  }
 }
 
 .link {

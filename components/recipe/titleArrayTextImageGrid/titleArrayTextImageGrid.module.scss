@@ -70,11 +70,20 @@
   gap: 40px 10px;
 
   @include tablet-up {
+    grid-template-columns: 1fr 5fr;
     grid-template-areas:
       'a c'
       'b c';
-    grid-template-columns: 1fr 5fr;
     gap: 30px 50px;
+  }
+
+  @include tablet {
+    gap: 30px 50px;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas:
+      'a c'
+      'b c'
+      'w c';
   }
 }
 
@@ -121,6 +130,12 @@
     li:nth-child(2) {
       grid-column: 1 / 3;
       grid-row: 2;
+
+      & > h4 {
+        @include tablet-up {
+          margin-top: 0px;
+        }
+      }
     }
     li:nth-child(3) {
       grid-column: 1;
@@ -160,16 +175,18 @@
 
   @include tablet-up {
     max-width: 483px;
+    width: 200%;
   }
 }
 
 .imageTitleTextImageGridLiterary_42 {
   width: 100%;
   height: 100%;
-  aspect-ratio: 456 / 520;
+  aspect-ratio: 1820 / 2118;
 
   @include tablet-up {
     max-width: 483px;
+    width: 220%;
   }
 }
 

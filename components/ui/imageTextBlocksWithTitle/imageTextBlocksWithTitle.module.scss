@@ -273,9 +273,8 @@
 }
 
 .descriptionTextWithTitleSaving {
-  text-align: center;
-
   @include paragraphL;
+  text-align: center;
 }
 
 .descriptionTextWithTitleVintage {
@@ -301,9 +300,9 @@
 
 .classNameDescriptionRecipe {
   margin-bottom: 6px;
-  text-align: center;
 
   @include paragraphM;
+  text-align: center;
 }
 
 .image {

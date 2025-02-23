@@ -369,9 +369,12 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
   text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  text-rendering: optimizeLegibility;
 
   @include tablet-up {
-    font-size: 16px;
     letter-spacing: 0.04em;
   }
 }

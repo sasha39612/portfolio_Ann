@@ -9,16 +9,16 @@
 
 .classNameTitle {
   max-width: 160px;
-  text-align: center;
 
   color: $white;
   @include font24_weight500_H3_Mobile;
+  text-align: center;
 
   @include tablet-up {
     max-width: 100%;
-    text-align: center;
 
     @include font50_weight700_H2;
+    text-align: center;
   }
 }
 

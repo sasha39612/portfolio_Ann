@@ -15,6 +15,7 @@
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
       'a a'
+      'c d'
       'c d';
     grid-gap: 0px 30px;
   }
@@ -24,7 +25,7 @@
   }
 
   @include desktop {
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 60% 40%;
   }
 
   @include desktop-large {
@@ -58,7 +59,7 @@
   margin-bottom: 40px;
 
   @include tablet-up {
-    margin-bottom: 70px;
+    margin-bottom: 16px;
   }
 }
 
@@ -247,6 +248,7 @@
 }
 
 .imageTitleTextImageGridRecipe_33 {
+  grid-area: d;
   width: 100%;
   aspect-ratio: 1340 / 1604;
 }

@@ -34,13 +34,7 @@
 .containerImageTextRecipe {
   display: flex;
   flex-direction: column;
-  align-items: center;
   list-style: none;
-  gap: 8px;
-
-  @include tablet-up {
-    gap: 24px;
-  }
 }
 
 .image {
@@ -62,7 +56,7 @@
 .imageTextRecipeDesktop {
   @extend .image;
   aspect-ratio: 877/1059;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .swiperWrapper {

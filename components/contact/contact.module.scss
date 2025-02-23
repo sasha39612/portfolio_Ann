@@ -51,6 +51,7 @@
     @include paragraphXS;
     width: 100%;
     transition: border-color 0.3s ease;
+    margin-bottom: 20px;
 
     @include tablet-up {
       width: 248px;
