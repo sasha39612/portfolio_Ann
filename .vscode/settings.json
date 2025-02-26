@@ -1,0 +1,21 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.enableDebugLogs": true,
+  "prettier.useTabs": false,
+  "files.autoSave": "onFocusChange",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

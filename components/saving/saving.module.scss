@@ -1,0 +1,25 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+
+.footerProjectSaving {
+  background: linear-gradient(
+    181.44deg,
+    #e1dff7 1.16%,
+    rgba(248, 248, 248, 0.5) 98.7%
+  );
+  margin-bottom: 140px;
+}
+
+.classNameTitle {
+  max-width: 160px;
+
+  @include font24_weight500_H3_Mobile;
+  text-align: center;
+
+  @include tablet-up {
+    max-width: 100%;
+
+    @include font50_weight700_H2;
+    text-align: center;
+  }
+}

@@ -1,0 +1,39 @@
+@use 'styles/mixins.module.scss' as *;
+@use 'styles/colors.module.scss' as *;
+@use 'styles/variables.module.scss' as *;
+
+.firstTextBlockDescriptionWrapper {
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  margin: 16px 0px 70px;
+}
+
+.firstTextBlockDescription {
+  @include paragraphM;
+}
+
+.secondTextBlockTitle {
+  margin-bottom: 40px;
+}
+
+.secondTextBlockSubTitle {
+  margin-bottom: 16px;
+}
+
+.secondTextBlockDescriptionWrapper {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  margin: 40px 0px 140px;
+}
+
+.secondTextBlockSubDescription {
+  @include paragraphM;
+}
+
+.secondTextBlockSubDescription {
+  & > a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,24 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+
+.titleImagesTextWithTitleRecipe {
+  color: #f0923f;
+  margin: 140px 0px 20px;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.subTitleImagesTextWithTitleRecipe {
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.descriptionImagesTextWithTitleRecipe {
+  @include paragraphL;
+}

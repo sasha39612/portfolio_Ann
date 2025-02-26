@@ -1,0 +1,242 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.wrapperTextWithTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 36px;
+  }
+}
+
+.wrapperTextWithTitleSaving {
+  @extend .wrapperTextWithTitle;
+
+  @include tablet-up {
+    flex-wrap: wrap;
+    gap: 140px 36px;
+  }
+}
+
+.wrapperTextWithTitleVintage {
+  @extend .wrapperTextWithTitle;
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    li {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.wrapperTextWithTitleVintage_1 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 0px 20px 0px;
+  margin: 0px -20px 0px;
+  justify-content: flex-start;
+
+  @include tablet {
+    padding: 0px 48px 0px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 0px 80px 0px;
+    margin: 0px -80px 0px;
+  }
+}
+
+.wrapperTextWithTitleVintage_2 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 16px 47px 60px;
+  margin: 0px -20px 0px;
+  align-items: center;
+
+  @include tablet {
+    padding: 16px 48px 60px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 16px 80px 80px;
+    margin: 0px -80px 0px;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+
+    li {
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 250px;
+      flex: 1 1 50%;
+
+      @include tablet {
+        min-height: 350px;
+      }
+
+      &:first-child {
+        h2:first-child {
+          font-size: 80px;
+        }
+        // div:nth-child(2) {
+        //   margin-top: -30px;
+        // }
+      }
+    }
+  }
+}
+
+.wrapperTextWithTitleRecipe_2 {
+  @extend .wrapperTextWithTitle;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 0;
+  gap: 24px;
+
+  li {
+    flex: 1 1 calc(50% - 24px);
+    box-sizing: border-box;
+    height: inherit;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+
+.wrapperTextWithTitleRecipe_3 {
+  @extend .wrapperTextWithTitleRecipe_2;
+  margin-bottom: 70px;
+}
+
+.containerTextWithTitleSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @include tablet-up {
+    gap: 16px;
+    max-width: 430px;
+    &:last-child {
+      max-width: 600px;
+    }
+  }
+}
+
+.containerTextWithTitleVintage {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @include tablet-up {
+    gap: 8px;
+  }
+}
+
+.containerTextWithTitleVintage_2 {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  width: 280px;
+  padding: 20px;
+  background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.containerTextWithTitleRecipe_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 220px;
+  width: 280px;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.containerTextWithTitleRecipe_3 {
+  @extend .containerTextWithTitleRecipe_2;
+  padding: 53px 20px;
+}
+
+.classNameTitleRecipe {
+  margin-top: 70px;
+  margin-bottom: 24px;
+}
+
+// .titleTextWithTitleSaving {
+
+// }
+
+.titleTextWithTitleVintage {
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.titleTextWithTitleVintage_01 {
+  @include font28_weight600_H3;
+  margin-left: 30px;
+  margin-bottom: 16px;
+
+  @include tablet-up {
+    margin-left: 0px;
+  }
+}
+
+.titleTextWithTitleVintage_1 {
+  @include font28_weight600_H3;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.titleTextWithTitleVintage_2 {
+  text-align: center;
+}
+
+.titleTextWithTitleRecipe_2 {
+  @include font20_weight600_H4;
+  text-align: center;
+}
+
+.titleTextWithTitleRecipe_3 {
+  @include font20_weight600_H4;
+  text-align: center;
+}
+
+.descriptionTextWithTitleSaving {
+  @include paragraphL;
+  text-align: center;
+}
+
+.descriptionTextWithTitleVintage {
+  @include paragraphL;
+}
+
+.descriptionTextWithTitleVintage_2 {
+  line-height: 30px;
+  @include paragraphL;
+  text-align: center;
+}
+
+.descriptionTextWithTitleRecipe_2 {
+  @include paragraphL;
+  text-align: center;
+}
+
+.descriptionTextWithTitleRecipe_3 {
+  @extend .descriptionTextWithTitleRecipe_2;
+}

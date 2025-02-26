@@ -1,0 +1,95 @@
+@use '/styles/mixins.module.scss' as *;
+
+.wrapper {
+  margin: 0px -20px;
+  padding: 70px 20px;
+  border-bottom: 0.3px #dbdbdb solid;
+
+  @include tablet {
+    margin: 0px -48px;
+    padding: 70px 48px;
+  }
+
+  @include desktop {
+    margin: 0px -80px;
+    padding: 70px 80px;
+  }
+
+  @include desktop-large {
+    margin: 0px -80px;
+    padding: 70px 80px;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'a b'
+    'd e'
+    'c c';
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 21px 27px;
+
+  @include tablet-up {
+    grid-template-areas:
+      'a b c'
+      'd e c';
+
+    // grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 25% 25% 50%;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 219 / 200;
+
+  @include tablet-up {
+    aspect-ratio: unset;
+  }
+}
+
+.imagesMultiRecipeDesktopMobile_1 {
+  grid-area: a;
+  @extend .image;
+  aspect-ratio: 661 / 603;
+}
+
+.imagesMultiRecipeDesktopMobile_2 {
+  grid-area: b;
+  @extend .image;
+  aspect-ratio: 876 / 800;
+}
+
+.imagesMultiRecipeDesktopMobile_3 {
+  grid-area: e;
+  @extend .image;
+  aspect-ratio: 876 / 844;
+}
+
+.imagesMultiRecipeDesktopMobileMinusMargin {
+  grid-area: d;
+  @extend .image;
+  margin-bottom: -8px;
+  height: 102%;
+  aspect-ratio: 660 / 634;
+
+  @include desktop {
+    margin-bottom: -17px;
+  }
+
+  @include desktop-large {
+    margin-bottom: -17px;
+  }
+}
+
+.imagesMultiRecipeDesktopMobileBig {
+  grid-area: c;
+  @extend .image;
+  aspect-ratio: 1524 / 1728;
+}

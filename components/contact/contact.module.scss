@@ -1,0 +1,90 @@
+@use 'styles/mixins.module.scss' as *;
+@use 'styles/colors.module.scss' as *;
+@use 'styles/variables.module.scss' as *;
+
+.contactWrapper {
+  border: 1px $contactBorder solid;
+  margin: 150px auto;
+  padding: 25px;
+
+  @include tablet-up {
+    max-width: 564px;
+    padding: 35px;
+    margin: 140px 0px;
+  }
+}
+
+.contactDescription {
+  @include paragraphM;
+  margin-top: 15px;
+}
+
+.contactInputBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  gap: 31px;
+}
+
+.contactInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.labelStyle {
+  @include labelStyle;
+}
+
+.inputStyle {
+  display: flex;
+  flex-direction: column;
+
+  & > input,
+  & > textarea {
+    @include inputStyles;
+    @include paragraphXS;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+
+    @include tablet-up {
+      width: 248px;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px $black solid;
+    }
+  }
+
+  & > textarea {
+    height: 132px;
+    width: 100%;
+    resize: vertical;
+  }
+
+  & > textarea::placeholder {
+    color: #999;
+  }
+
+  & > input:-webkit-autofill {
+    background-color: transparent !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+  }
+}
+
+.submitButton {
+  @include fontButton;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 30px;
+  border-radius: 12px;
+  letter-spacing: 0.1rem;
+  margin-top: 31px;
+}

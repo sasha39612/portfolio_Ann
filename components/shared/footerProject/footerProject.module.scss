@@ -1,0 +1,58 @@
+@import '../../../styles/mixins.module.scss';
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/variables.module.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 315px;
+  padding: 0px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include tablet {
+    margin-left: -48px;
+    margin-right: -48px;
+    padding: 0px 48px;
+  }
+  @include desktop {
+    margin-left: -80px;
+    margin-right: -80px;
+    padding: 0px 80px;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  @include paragraphL;
+  text-align: center;
+}
+
+.imageContainerUnvisitable {
+  @extend .imageContainer;
+  visibility: hidden;
+}
+
+.linkStyles {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 16px;
+  border-radius: 50%;
+  background: #ffffff80;
+}
+
+.linkUnvisitableStyles {
+  @extend .linkStyles;
+  visibility: hidden;
+}
+
+.imageStyles {
+  width: 100%;
+  height: 100%;
+}

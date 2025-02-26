@@ -1,0 +1,77 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 110px;
+  height: 110px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+}
+
+.LogoAndCloseWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  background: inherit;
+}
+
+.wrapperBrandImageComponent {
+  width: 65px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.wrapperCloseImageMobile {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.closeButton {
+  background-color: inherit;
+  border: none;
+}
+
+.containerLinks {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 70px;
+  gap: 24px;
+}
+
+.link {
+  @include font24_weight500_H3_Mobile;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.navLinkCollapseWrapper {
+  position: relative;
+}
+
+.mobileHeaderBackground {
+  @include mobile {
+    color: $white;
+    background-color: $black;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+
+    font-weight: 400;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+  }
+}

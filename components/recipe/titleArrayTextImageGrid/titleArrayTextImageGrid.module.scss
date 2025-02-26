@@ -1,0 +1,214 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.wrapper {
+  margin: 140px 0px;
+}
+
+.classNameTitleTextImageGridRecipe_1 {
+  color: #f0923f;
+  margin: 140px 0px 12px;
+
+  @include tablet-up {
+    margin: 140px 0px 16px;
+  }
+}
+
+.classNameTitleTextImageGridLiterary_4 {
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.classNameDescriptionTitleTextImageGridRecipe_1 {
+  margin-bottom: 70px;
+
+  @include paragraphL;
+}
+
+.classNameDescriptionTitleTextImageGridLiterary_4 {
+  margin-bottom: 70px;
+
+  @include paragraphL;
+}
+
+.subTitleTextImageGridRecipe_1 {
+  text-align: left;
+  margin-bottom: 12px;
+
+  @include font20_weight600_H4;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.classNameContainerRecipe_2 {
+  border-top: 0.3px solid $border_2;
+  border-bottom: 0.3px solid $border_2;
+  margin: 0px -20px;
+  padding: 70px 20px;
+
+  @include tablet {
+    margin: 0px -48px;
+    padding: 70px 48px;
+  }
+
+  @include desktop {
+    margin: 0px -80px;
+    padding: 70px 80px;
+  }
+
+  display: grid;
+  grid-template-areas:
+    'a b'
+    'c c';
+  grid-template-columns: 1fr 2fr;
+  gap: 40px 10px;
+
+  @include tablet-up {
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+      'a c'
+      'b c';
+    gap: 30px 50px;
+  }
+
+  @include tablet {
+    gap: 30px 50px;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas:
+      'a c'
+      'b c'
+      'w c';
+  }
+}
+
+.classNameContainerTextPartRecipe_2 {
+  grid-area: b;
+}
+
+.classNameContainerTextPartTextGridRecipe_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  padding: 8px 0px 0px 20px;
+  border-top: 1px solid #f0923f;
+}
+
+.classNameContainerLiterary_4 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  gap: 40px;
+  margin-bottom: 70px;
+
+  @include tablet-up {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 43px;
+
+    &:nth-child(2) {
+      flex-direction: row;
+    }
+  }
+}
+
+.classNameWrapperTextPartTextGridRecipe_1 {
+  grid-area: c;
+  display: grid;
+
+  @include tablet-up {
+    gap: 20px 90px;
+    li:nth-child(1) {
+      grid-column: 2 / 3;
+      grid-row: 1;
+    }
+    li:nth-child(2) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+
+      & > h4 {
+        @include tablet-up {
+          margin-top: 0px;
+        }
+      }
+    }
+    li:nth-child(3) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    li:nth-child(4) {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    li:nth-child(5) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+    li:nth-child(6) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+  }
+}
+
+.imageTitleTextImageGridRecipe_1 {
+  grid-area: a;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 122 / 153;
+
+  @include tablet-up {
+    aspect-ratio: 176 / 220;
+    max-width: 176px;
+  }
+}
+
+.imageTitleTextImageGridLiterary_4 {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 456 / 425;
+
+  @include tablet-up {
+    max-width: 483px;
+    width: 200%;
+  }
+}
+
+.imageTitleTextImageGridLiterary_42 {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1820 / 2118;
+
+  @include tablet-up {
+    max-width: 483px;
+    width: 220%;
+  }
+}
+
+.descriptionTitleTextImageGridRecipeItalic_1 {
+  margin: 30px 0px;
+
+  @include paragraphXS_italic;
+
+  @include tablet-up {
+    margin-top: -20px;
+  }
+}
+
+.titleTitleTextImageGridRecipe_1 {
+  margin: 40px 0px 8px;
+  text-align: left;
+
+  @include tablet-up {
+    margin: 40px 0px 16px;
+  }
+}
+
+.descriptionTitleTextImageGridRecipe_1 {
+  @include paragraphXS;
+}

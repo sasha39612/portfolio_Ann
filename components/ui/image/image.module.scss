@@ -1,0 +1,15 @@
+.wrapper { 
+    position: relative;
+
+    .fitContain {
+        object-fit: contain;
+    }
+
+    .fitCover {
+        object-fit: cover;
+    }
+    
+    .fitFill {
+        object-fit: fill;
+    }
+}

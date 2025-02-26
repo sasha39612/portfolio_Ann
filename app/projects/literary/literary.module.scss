@@ -1,0 +1,52 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.footerProjectLiterary {
+  background: $backgroundLiterary_1;
+}
+
+.classNameTitle {
+  max-width: 160px;
+
+  color: $white;
+  @include font24_weight500_H3_Mobile;
+  text-align: center;
+
+  @include tablet-up {
+    max-width: 100%;
+
+    @include font50_weight700_H2;
+    text-align: center;
+  }
+}
+
+.classNameLink {
+  background: #ffffff80;
+}
+
+.imageArrowName {
+  color: $white;
+  text-align: center;
+}
+
+.imageBackgroundVintageDesktop {
+  aspect-ratio: 1001/316;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+
+  @include desktop {
+    margin: 0px -80px 60px;
+  }
+}
+
+.imageBackgroundVintageMobile {
+  aspect-ratio: 375/269;
+  margin: 0px -20px 40px;
+
+  @include tablet {
+    margin: 0px -48px 60px;
+  }
+}

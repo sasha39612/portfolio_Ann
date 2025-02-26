@@ -1,0 +1,331 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.wrapperTextWithTitle {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0px 35px;
+  gap: 36px;
+
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.wrapperTextWithTitleSaving {
+  @extend .wrapperTextWithTitle;
+
+  @include tablet-up {
+    flex-wrap: wrap;
+    gap: 140px 36px;
+  }
+}
+
+.wrapperTextWithTitleVintage {
+  @extend .wrapperTextWithTitle;
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    li {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.wrapperTextWithTitleVintage_1 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 0px 20px 0px;
+  margin: 0px -20px 0px;
+  justify-content: flex-start;
+
+  @include tablet {
+    padding: 0px 48px 0px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 0px 80px 0px;
+    margin: 0px -80px 0px;
+  }
+}
+
+.wrapperTextWithTitleVintage_2 {
+  @extend .wrapperTextWithTitle;
+  background: #f2f2f2;
+  padding: 30px 47px 60px;
+  margin: 0px -20px 0px;
+  align-items: center;
+
+  @include tablet {
+    padding: 30px 48px 60px;
+    margin: 0px -48px 0px;
+  }
+
+  @include desktop {
+    padding: 34px 80px 80px;
+    margin: 0px -80px 0px;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+
+    li {
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 250px;
+      gap: 20px;
+      flex: 1 1 50%;
+
+      &:first-child {
+        div:first-child {
+          line-height: 1;
+        }
+        div:nth-child(2) {
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}
+
+.wrapperTextWithTitleRecipe {
+  @extend .wrapperTextWithTitle;
+  margin-top: 70px;
+  padding: 0px;
+  gap: 10px;
+
+  @include tablet-up {
+    margin-top: 60px;
+    gap: 36px;
+    flex-wrap: nowrap;
+
+    li {
+      flex: 1 1 50%;
+      height: fit-content;
+    }
+  }
+}
+
+.wrapperTextWithTitleLiterary {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 55px;
+  }
+}
+
+.wrapperImagesTextWithTitleRecipe {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0px 140px;
+  gap: 70px;
+
+  @include tablet-up {
+    flex-direction: row;
+    gap: 0px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+
+.containerTextWithTitleSaving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @include tablet-up {
+    max-width: 430px;
+    &:last-child {
+      max-width: 600px;
+    }
+  }
+}
+
+.containerTextWithTitleVintage {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.containerTextWithTitleVintage_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 220px;
+  width: 280px;
+  padding: 20px;
+  background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.containerTextWithTitleRecipe {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  @include tablet-up {
+    h2:nth-child(1) {
+      order: 2;
+    }
+    div:nth-child(2) {
+      order: 3;
+    }
+    div:nth-child(3) {
+      order: 1;
+    }
+  }
+}
+
+.containerTextWithTitleLiterary {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-up {
+    width: 50%;
+  }
+}
+
+.containerImagesTextWithTitleRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  h2:nth-child(1) {
+    order: 2;
+  }
+  div:nth-child(2) {
+    order: 3;
+  }
+  div:nth-child(3) {
+    order: 1;
+  }
+}
+
+// .titleTextWithTitleSaving {
+
+// }
+
+.titleTextWithTitleVintage {
+  @include tablet-up {
+  }
+}
+
+.titleTextWithTitleVintage_01 {
+  margin-left: 30px;
+
+  @include tablet-up {
+    margin-left: 0px;
+  }
+}
+
+.titleTextWithTitleVintage_1 {
+  text-align: center;
+}
+
+.titleTextWithTitleVintage_2 {
+  text-align: center;
+}
+
+.titleTextWithTitleVintage_2 {
+  text-align: center;
+}
+
+.titleTextWithTitleRecipe {
+  @include font24_weight500_H3_Mobile;
+  margin-top: 60px;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    @include font28_weight600_H3;
+  }
+}
+
+.titleTextWithTitleLiterary {
+  @include font24_weight500_H3_Mobile;
+  color: $titleTextLiterary;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    @include font28_weight600_H3;
+    margin-bottom: 16px;
+  }
+}
+
+.titleImagesTextWithTitleRecipe {
+  @include font20_weight600_H4;
+}
+
+.descriptionTextWithTitleSaving {
+  @include paragraphL;
+  text-align: center;
+}
+
+.descriptionTextWithTitleVintage {
+}
+
+.descriptionTextWithTitleVintage_2 {
+  line-height: 30px;
+}
+
+.descriptionTextWithTitleRecipe {
+  margin-bottom: 70px;
+
+  @include paragraphL;
+
+  @include tablet-up {
+    margin-bottom: 0px;
+  }
+}
+
+.descriptionTextWithTitleLiterary {
+  @include paragraphL;
+}
+
+.classNameDescriptionRecipe {
+  margin-bottom: 6px;
+
+  @include paragraphM;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+}
+
+.imageTextRecipeDesktopMobile {
+  @extend .image;
+  margin: 0px;
+
+  aspect-ratio: 335/228;
+
+  @include tablet-up {
+    aspect-ratio: 429/292;
+    max-height: 408px;
+  }
+}
+
+.imagesTextWithTitleRecipeDesktopMobile {
+  @extend .image;
+
+  width: 157px;
+  height: 147px;
+}

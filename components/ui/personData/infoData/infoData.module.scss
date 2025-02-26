@@ -1,0 +1,16 @@
+@use '/styles/mixins.module.scss' as *;
+
+.titleMainInfoNamePersonDataVintage,
+.titleAdditionalInfoNamePersonDataVintage {
+  @include paragraphL;
+}
+
+.descriptionAdditionalInfoNamePersonDataVintage {
+  @include paragraphM;
+  text-align: left;
+}
+
+.descriptionMainInfoNamePersonDataVintage {
+  @extend .descriptionAdditionalInfoNamePersonDataVintage;
+  width: max-content;
+}

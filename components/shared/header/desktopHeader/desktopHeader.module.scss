@@ -1,0 +1,51 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 100px;
+  padding-bottom: 35px;
+}
+
+.mainLogoImage {
+  width: 82px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.containerLinks {
+  width: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include paragraphL;
+
+  @include tablet {
+    width: 480px;
+  }
+}
+
+.link {
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.activeClassName {
+  background-color: $black !important;
+  color: $white !important;
+}
+
+.linkClassNave {
+  background-color: $white;
+  padding: 10px 12px 10px 12px;
+  border-radius: 18px;
+  color: $black;
+}
+
+.activeLinkClassName {
+  background-color: $black !important;
+  color: $white !important;
+}

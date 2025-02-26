@@ -1,0 +1,66 @@
+@use '/styles/mixins.module.scss' as *;
+
+.titleImageTextSaving_1 {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 10px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
+}
+
+.descriptionImageTextSaving_1 {
+  @include paragraphL;
+  text-align: center;
+
+  @include tablet-up {
+    text-align: left;
+  }
+}
+
+.containerImageTextSaving_1 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 8px;
+
+  @include tablet-up {
+    gap: 24px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin: 30px 0px 60px;
+}
+
+.imageTextSaving_4TextImageWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @include tablet-up {
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 70px;
+    margin-bottom: 60px;
+  }
+}
+
+.imageTextSavingMobile_4 {
+  @extend .image;
+  aspect-ratio: 2.83;
+  max-width: 187px;
+}
+
+.imageTextSavingDesktop_4 {
+  @extend .imageTextSavingMobile_4;
+  margin-bottom: 36px;
+
+  @include tablet-up {
+    margin: 0px;
+  }
+}

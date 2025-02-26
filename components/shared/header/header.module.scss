@@ -1,0 +1,31 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 10px;
+
+  @include make-side-padding($max-width: $max-content-width);
+}
+
+.mobileHeader {
+  @include tablet-up {
+    display: none;
+    visibility: hidden;
+    background-color: $black;
+  }
+}
+
+.desktopHeader {
+  background-color: $white;
+
+  @include mobile {
+    display: none;
+    visibility: hidden;
+  }
+}

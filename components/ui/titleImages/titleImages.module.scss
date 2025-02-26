@@ -1,0 +1,34 @@
+@use '/styles/mixins.module.scss' as *;
+
+.wrapperTitleImagesLiterary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  @include tablet-up {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.titleTitleImagesLiterary {
+  margin: 140px 0px 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.descriptionTitleImagesLiterary {
+  margin-bottom: 40px;
+
+  @include paragraphL;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
+}
+
+.titleImagesLiterary {
+  width: 100%;
+  aspect-ratio: 162 / 162;
+}

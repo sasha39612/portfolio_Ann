@@ -1,0 +1,80 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.textBlockWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 0px 140px;
+
+  @include tablet-up {
+    margin: 40px 0px 140px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0px 60px;
+
+    .containerTextBlockSaving {
+      &:first-child {
+        flex: 1 1 calc(50% - 30px);
+        order: 2;
+      }
+
+      &:nth-child(2) {
+        flex: 0 1 calc(50% - 30px);
+        order: 4;
+      }
+      &:nth-child(3) {
+        flex: 0 1 calc(50% - 30px);
+        order: 3;
+      }
+
+      &:last-child {
+        flex: 1 1 calc(50% - 30px);
+        order: 1;
+      }
+    }
+  }
+}
+
+.classNameTitle {
+  display: none;
+}
+
+.titleTextBlockSaving {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 0px;
+
+  @include tablet-up {
+    margin-bottom: 70px;
+  }
+}
+
+.subtitleTextBlockSaving {
+  margin: 40px 0px 12px;
+  text-align: center;
+
+  @include tablet-up {
+    text-align: left;
+    margin: 0px 0px 16px;
+  }
+}
+
+.descriptionTextBlockSaving {
+  @include paragraphL;
+  padding-left: 10px;
+
+  &::before {
+    content: '\a';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $backgroundVintage_1;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: -17px;
+    vertical-align: middle;
+  }
+}

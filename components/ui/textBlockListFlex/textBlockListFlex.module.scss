@@ -1,0 +1,256 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.classNameTextPartGridContainerSaving {
+  padding: 40px 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include tablet-up {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.classNameTextPartGridContainerVintage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  padding: 40px 0px;
+  gap: 15px;
+
+  li {
+    flex: 1 1 calc(50% - 15px);
+    list-style-type: disc;
+  }
+
+  @include tablet-up {
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+}
+
+.classNameTextPartGridContainerRecipe {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 20px;
+  gap: 14px;
+
+  li {
+    flex: 1 1 calc(50% - 7px);
+    text-align: center;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.classNameTextPartGridContainerLiterary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 40px 0px 0px;
+  gap: 24px;
+
+  li {
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+  }
+
+  @include tablet-up {
+    flex-wrap: nowrap;
+    width: 107%;
+    margin: 85px 0px 0px -27px;
+    justify-content: space-between;
+
+    @include tablet {
+      width: 160%;
+    }
+
+    li {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+
+  @include desktop-large {
+    margin: 205px 0px 0px -27px;
+  }
+}
+
+.classNameGridContainerRecipe_2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 12px 20px 0px 0px;
+  gap: 14px 10px;
+
+  @include tablet-up {
+    margin: 16px 20px 0px 0px;
+    justify-content: flex-start;
+  }
+}
+
+.classNameGridContainerSaving {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 24px;
+
+  &:nth-child(odd) {
+    width: 122px;
+
+    @include tablet-up {
+      padding: 16px 0px;
+      width: 260px;
+      border-bottom: 0.5px $border_3 solid;
+    }
+  }
+
+  &:nth-child(even) {
+    width: 202px;
+
+    @include tablet-up {
+      padding: 16px 0px;
+      width: 260px;
+      border-bottom: 0.5px $border_3 solid;
+    }
+  }
+
+  &:last-child {
+    @include tablet-up {
+      border-bottom: none;
+    }
+  }
+}
+
+.classNameGridContainerVintage {
+  width: 100%;
+}
+
+.classNameGridContainerRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.classNameGridContainerLiterary {
+  @extend .classNameGridContainerRecipe;
+}
+
+.classNameTextGridTitleSaving {
+  width: 63px;
+
+  @include paragraphL;
+
+  @include tablet-up {
+    width: 80px;
+  }
+}
+
+.descriptionWrapper {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.classNameTextGridTitleVintage {
+  @include font14_weight500_Vintage_Page;
+  text-transform: uppercase;
+  color: $border_1;
+
+  @include tablet-up {
+    @include font14_weight500_Vintage_Page;
+  }
+}
+
+.classNameTextGridTitleRecipe {
+  @include paragraphM;
+}
+
+.classNameTextGridTitleLiterary {
+  color: $descriptionRecipe;
+
+  @include paragraphM;
+}
+
+.classNameTextGridDescriptionSaving {
+  width: 119px;
+
+  @include paragraphM;
+
+  @include tablet-up {
+    width: 170px;
+  }
+}
+
+.classNameTextGridDescriptionRecipe {
+  @include paragraphL;
+  text-align: center;
+}
+
+.classNameTextGridDescriptionLiterary {
+  @include paragraphL;
+  text-align: center;
+}
+
+.classNameTextGridTitleRecipe_2 {
+  color: $border_2;
+}
+
+.titleTextImageGridLiterary_4 {
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.classNameTextGridDescriptionRecipe_2 {
+  @include paragraphL;
+}
+
+.descriptionTitleTextImageGridLiterary_4 {
+  @include paragraphL;
+}
+
+.classNameGridContainerTitleTextImageGridRecipe_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.classNameGridContainerTitleTextImageGridRecipe_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.classNameTextPartGridContainerTitleTextImageGridRecipe_1 {
+  display: flex;
+  gap: 5px;
+  text-align: start;
+}
+
+.classNameTextPartGridContainerTitleTextImageGridLiterary_4 {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.titleTextImageGridRecipe_1 {
+  @include paragraphL;
+}
+
+.descriptionTitleTextImageGridRecipe_1 {
+  @include paragraphL;
+}

@@ -1,0 +1,46 @@
+@use 'styles/mixins.module.scss' as *;
+@use 'styles/colors.module.scss' as *;
+@use 'styles/variables.module.scss' as *;
+
+.contactLinkWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  cursor: pointer;
+}
+
+.footerContactLinkWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 60px;
+}
+
+.footerLinkEmail {
+  cursor: pointer;
+  width: 16px;
+  height: 12px;
+}
+.footerLinkProfile {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.footerLinkPhone {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.footerLinkLocation {
+  cursor: pointer;
+  width: 12px;
+  height: 18px;
+}
+.footerLinkCopyProof {
+  cursor: pointer;
+  width: 22px;
+  height: 24px;
+}
+
+.title {
+  @include font14_weight300;
+}

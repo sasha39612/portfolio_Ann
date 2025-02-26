@@ -1,0 +1,261 @@
+@use '/styles/mixins.module.scss' as *;
+@use '/styles/colors.module.scss' as *;
+@use '/styles/variables.module.scss' as *;
+
+.classNameWrapperTitleTextImageGridRecipe_3 {
+  display: grid;
+  grid-template-areas:
+    'a'
+    'c'
+    'b';
+  grid-gap: 10px 0px;
+  grid-template-columns: 1fr;
+
+  @include tablet-up {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      'a a'
+      'c d'
+      'c d';
+    grid-gap: 0px 30px;
+  }
+
+  @include tablet {
+    grid-template-columns: 60% 40%;
+  }
+
+  @include desktop {
+    grid-template-columns: 60% 40%;
+  }
+
+  @include desktop-large {
+    grid-template-columns: 2.5fr 1fr;
+  }
+}
+
+.classNameWrapperTitleTextImageGridLiterary {
+  margin: 140px 0px;
+}
+
+.classNameWrapperTitleTextImageGridLiterary_1 {
+  padding: 40px 20px;
+  margin: 140px -20px;
+  border-radius: 32px;
+  background: $backgroundLiterary_1;
+
+  @include tablet {
+    padding: 60px 48px;
+    margin: 140px -48px;
+  }
+
+  @include desktop {
+    padding: 60px 80px;
+    margin: 140px -80px;
+  }
+}
+
+.headerContainer {
+  grid-area: a;
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.classNameTitleTextImageGridRecipe_3 {
+  color: #f0923f;
+  margin: 0px 0px 12px;
+
+  @include tablet-up {
+    margin: 0px 0px 16px;
+  }
+}
+
+.classNameTitleTextImageGridLiterary {
+  margin-bottom: 40px;
+
+  @include tablet-up {
+    margin-bottom: 16px;
+  }
+}
+
+.classNameTitleTextImageGridLiterary_1 {
+  @extend .classNameTitleTextImageGridLiterary;
+  color: $white;
+  margin: 0;
+}
+
+.classNameTitleTextImageGridRecipe_4 {
+  @extend .classNameTitleTextImageGridRecipe_3;
+}
+
+.titleTextImageGridRecipe_3 {
+  @include font24_weight500_H3_Mobile;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    @include font28_weight600_H3;
+    margin-bottom: 16px;
+  }
+}
+
+.titleTextImageGridRecipe_4 {
+  @extend .titleTextImageGridRecipe_3;
+
+  @include tablet-up {
+    width: 30%;
+  }
+}
+
+.titleTextImageGridLiterary {
+  @include font24_weight500_H3_Mobile;
+  margin-bottom: 12px;
+
+  @include tablet-up {
+    @include font28_weight600_H3;
+  }
+}
+
+.titleTextImageGridLiterary_1 {
+  @extend .titleTextImageGridLiterary;
+}
+
+.descriptionTitleTextImageGridRecipe_3 {
+  @include paragraphL;
+}
+
+.descriptionTitleTextImageGridRecipe_4 {
+  @extend .descriptionTitleTextImageGridRecipe_3;
+}
+
+.descriptionTitleTextImageGridLiterary {
+  @include paragraphL;
+}
+
+.descriptionTitleTextImageGridLiterary_1 {
+  @extend .descriptionTitleTextImageGridLiterary;
+}
+
+.classNameTextPartGridContainerTitleTextImageGridRecipe_3 {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0px 0px 70px;
+
+  @include tablet-up {
+    margin: 0;
+  }
+}
+
+.classNameTextPartGridContainerTitleTextImageGridRecipe_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px 0px 140px;
+}
+
+.classNameTextPartGridContainerTitleTextImageGridLiterary {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.classNameTextPartGridContainerTitleTextImageGridLiterary_1 {
+  @extend .classNameTextPartGridContainerTitleTextImageGridLiterary;
+  flex-wrap: wrap;
+
+  > li {
+    flex: 1 1 calc(44% - 14px);
+  }
+}
+
+.containerTitleTextImageGridRecipe_4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include tablet-up {
+    flex-direction: row;
+  }
+}
+
+.containerTitleTextImageGridLiterary {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include tablet-up {
+    width: 50%;
+  }
+}
+
+.containerTitleTextImageGridLiterary_1 {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.wrapperTitleTextImageGridRecipe_3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapperTitleTextImageGridRecipe_4 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: decimal;
+  margin-left: 20px;
+
+  @include paragraphL;
+
+  @include tablet-up {
+    flex: 1 1 50%;
+  }
+}
+
+.wrapperTitleTextImageGridLiterary {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: disc;
+  margin-left: 20px;
+
+  @include tablet-up {
+    flex: 1 1 50%;
+  }
+}
+
+.wrapperTitleTextImageGridRecipe_33 {
+  @extend .wrapperTitleTextImageGridRecipe_3;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.wrapperTitleTextImageGridLiterary_1 {
+  @extend .wrapperTitleTextImageGridRecipe_3;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.imageTitleTextImageGridRecipe_33 {
+  grid-area: d;
+  width: 100%;
+  aspect-ratio: 1340 / 1604;
+}
+
+.imageTitleTextImageGridRecipe_3 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 201 / 16;
+  max-width: 201px;
+}
