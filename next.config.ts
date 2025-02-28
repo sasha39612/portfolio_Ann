@@ -9,7 +9,7 @@ const nextConfig: NextConfig = bundleAnalyzer({
   /* config options here */
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
-    includePaths: ['./styles'],
+    includePaths: ['./styles', 'node_modules'],
   },
   compress: true,
   swcMinify: true,

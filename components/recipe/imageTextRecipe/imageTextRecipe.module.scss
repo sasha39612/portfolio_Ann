@@ -72,8 +72,8 @@
 
 .swiper {
   margin: 70px 0px 60px;
-  background: #f3f3f3;
+  background: #f3f3f3 !important;
 
-  --swiper-pagination-bullet-inactive-color: #dadada;
-  --swiper-theme-color: #7d7e81;
+  --swiper-pagination-bullet-inactive-color: #dadada !important;
+  --swiper-theme-color: #7d7e81 !important;
 }

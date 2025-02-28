@@ -2,6 +2,9 @@
 @use 'styles/mixins.module.scss' as *;
 @use 'styles/colors.module.scss' as *;
 @use 'styles/variables.module.scss' as *;
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
 
 html,
 body {

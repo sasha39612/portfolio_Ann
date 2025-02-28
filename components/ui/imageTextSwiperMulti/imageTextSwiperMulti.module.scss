@@ -220,7 +220,7 @@
 
 .wrapperSwiperImageTextVintage_2 {
   @extend .swiperWrapper;
-  background: $imageTextVintage;
+  background: $imageTextVintage !important;
 
   &:first-child {
     margin-top: 30px;
@@ -285,10 +285,10 @@
 }
 
 .swiper {
-  background: inherit;
+  background: inherit !important;
 
-  --swiper-pagination-bullet-inactive-color: #dadada;
-  --swiper-theme-color: #7d7e81;
+  --swiper-pagination-bullet-inactive-color: #dadada !important;
+  --swiper-theme-color: #7d7e81 !important;
 }
 
 .subTitleImageTextVintage_3 {

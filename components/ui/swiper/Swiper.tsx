@@ -3,7 +3,7 @@ import { Pagination } from 'swiper/modules';
 import cn from 'classnames';
 import { ImagePropsType } from '../../../interfaces/common';
 import ImageComponent from '../image/Image';
-import 'swiper/swiper-bundle.css';
+import 'swiper/scss';
 import styles from './swiper.module.scss';
 
 export interface SwiperType {
