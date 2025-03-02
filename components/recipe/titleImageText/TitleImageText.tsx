@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { TextImageWithFlexType } from '../../../interfaces/common';
 import ImageComponent from '../../ui/image/Image';
 import { getDangerousHTML } from '../../../lib/getDangerousHTML';
-import styles from './TitleImageText.module.scss';
+import styles from './titleImageText.module.scss';
 
 const TitleImageText = (props: TextImageWithFlexType) => {
   const {
