@@ -3,7 +3,11 @@
 @use '/styles/variables.module.scss' as *;
 
 .wrapper {
-  margin: 140px 0px;
+  margin: 70px 0px;
+
+  @include tablet-up {
+    margin: 140px 0px;
+  }
 }
 
 .classNameTitleTextImageGridRecipe_1 {

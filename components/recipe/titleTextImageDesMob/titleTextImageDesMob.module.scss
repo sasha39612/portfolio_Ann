@@ -2,7 +2,11 @@
 @use '/styles/colors.module.scss' as *;
 
 .wrapper {
-  margin: 140px 0px;
+  margin: 70px 0px;
+
+  @include tablet-up {
+    margin: 70px 0px 140px;
+  }
 }
 
 .classNameWrapperVintageDesMob_1 {
