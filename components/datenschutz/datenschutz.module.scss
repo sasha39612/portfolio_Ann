@@ -2,6 +2,19 @@
 @use 'styles/colors.module.scss' as *;
 @use 'styles/variables.module.scss' as *;
 
+.titleTextBlock {
+  margin-bottom: 70px;
+}
+
+.subTitleTextBlock {
+  margin-bottom: 16px;
+}
+
+.titleTextBlockDescription {
+  margin-bottom: 70px;
+  @include paragraphM;
+}
+
 .firstTextBlockDescriptionWrapper {
   display: flex;
   gap: 7px;
@@ -11,29 +24,59 @@
 
 .firstTextBlockDescription {
   @include paragraphM;
-}
 
-.secondTextBlockTitle {
-  margin-bottom: 40px;
-}
-
-.secondTextBlockSubTitle {
-  margin-bottom: 16px;
-}
-
-.secondTextBlockDescriptionWrapper {
-  display: flex;
-  gap: 40px;
-  flex-direction: column;
-  margin: 40px 0px 140px;
-}
-
-.secondTextBlockSubDescription {
-  @include paragraphM;
-}
-
-.secondTextBlockSubDescription {
   & > a {
     text-decoration: underline;
   }
+}
+
+.secondTextBlockTextBlocksListParagraph {
+  @include paragraphM;
+
+  & > span {
+    margin-left: 10px;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  & > span:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: $black;
+  }
+}
+
+.secondTextBlockTextBlocksList {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 70px;
+}
+
+.secondTextBlockTextBlocksListDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondTextBlockSubTitle {
+  margin-top: 70px;
+  margin-bottom: 16px;
+}
+
+.secondTextBlockTextBlocksListDescription {
+  @include paragraphM;
+  display: list-item;
+  list-style-type: square;
+  list-style-position: inside;
+
+  & > a {
+    text-decoration: underline;
+  }
+}
+
+.secondTextBlockTextBlocksListDescription_1 {
+  @extend .secondTextBlockTextBlocksListDescription;
+  margin-left: 30px;
 }

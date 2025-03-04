@@ -127,7 +127,32 @@ export interface ImpressumType {
   secondTextBlock: { title: TextBlockElem; textBlocksList: TextBlock[] };
 }
 
-export type DatenschutzType = ImpressumType;
+export interface TextArr {
+  id: string;
+  paragraph: TextBlockElem;
+  description: TextBlockElem[];
+}
+
+export type DatenschutzType = {
+  titleTextBlock: {
+    title: TextBlockElem;
+    subTitle: TextBlockElem;
+    description: TextBlockElem;
+  };
+  firstTextBlock: {
+    title: TextBlockElem;
+    description: { id: string; text: string; className: string };
+  };
+  secondTextBlock: {
+    textBlocksList: [
+      {
+        id: string;
+        title: TextBlockElem;
+        textArr: TextArr[];
+      },
+    ];
+  };
+};
 
 export interface FooterProject {
   title: string;
