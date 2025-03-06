@@ -2,10 +2,10 @@
 @use '/styles/colors.module.scss' as *;
 
 .wrapper {
-  margin: 70px 0px;
+  margin: 70px 0px 140px;
 
   @include tablet-up {
-    margin: 70px 0px 140px;
+    margin: 70px 0px 80px;
   }
 }
 

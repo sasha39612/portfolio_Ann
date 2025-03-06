@@ -173,8 +173,11 @@
 }
 
 .classNameTitleRecipe {
-  margin-top: 70px;
   margin-bottom: 24px;
+
+  @include desktop {
+    margin-top: 70px;
+  }
 }
 
 // .titleTextWithTitleSaving {
