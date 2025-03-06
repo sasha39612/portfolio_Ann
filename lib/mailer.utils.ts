@@ -45,7 +45,12 @@ export async function sendEmail({
       'https://www.google.com/recaptcha/api/siteverify',
       {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
         body: new URLSearchParams({
           secret: SECRET_KEY_RECAPTCHA,
           response: token,
