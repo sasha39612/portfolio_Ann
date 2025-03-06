@@ -1,5 +1,4 @@
-// "use client"
-import React, { Children, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import cn from 'classnames';
@@ -22,20 +21,21 @@ const ActiveLink = ({
   ...props
 }: ActiveLinkPropsType) => {
   const pathName = usePathname();
-  const path = pathName.split('/');
-  const isPathIncludesHref = path.find((item) => `/${item}` === href);
-  const child = Children.only(children) as React.ReactElement<{
-    className?: string;
-  }>;
-  let className = child.props.className || '';
 
-  if (isPathIncludesHref && activeLinkClassName && pathName !== '/') {
-    className = cn(className, activeLinkClassName);
-  }
+  // Ensure the `href` is fully matched (not a partial match)
+  const isActive = pathName.startsWith(href) && pathName !== '/';
+
+  const child = React.isValidElement(children) ? (
+    children
+  ) : (
+    <span>{children}</span>
+  );
 
   return (
     <Link href={href} {...props} aria-label="Active link" prefetch={false}>
-      {React.cloneElement(child, { className })}
+      {React.cloneElement(child, {
+        className: cn(child.props.className, isActive && activeLinkClassName),
+      })}
     </Link>
   );
 };
