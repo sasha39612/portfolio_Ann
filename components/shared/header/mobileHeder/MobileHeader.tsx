@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
 import Link from 'next/link';
 import cn from 'classnames';
 import ActiveLink from '../../activeLink/ActiveLink';
@@ -13,26 +13,36 @@ import {
 } from '../type';
 import styles from './mobileHeader.module.scss';
 
-const ImageNavBrand = ({ logoImage }: ImageNavBrandProps) => (
-  <div className={styles.logoWrapper}>
-    <Link href="/" aria-label="Link to Home page" prefetch={false}>
-      <ImageComponent
-        {...logoImage}
-        layout="fill"
-        objectFit="contain"
-        className={styles.wrapperBrandImageComponent}
-      />
-    </Link>
-  </div>
-);
+const ImageNavBrand = (props: ImageNavBrandProps) => {
+  const { logoImage } = props;
 
-const NavLink = ({ href, title }: NavLinkProps) => (
-  <div>
-    <ActiveLink href={href}>
-      <span>{title}</span>
-    </ActiveLink>
-  </div>
-);
+  return (
+    <div className={styles.logoWrapper}>
+      <Link href="/" aria-label="Link to Home page" prefetch={false}>
+        <ImageComponent
+          {...logoImage}
+          layout="fill"
+          objectFit="contain"
+          className={styles.wrapperBrandImageComponent}
+        />
+      </Link>
+    </div>
+  );
+};
+
+const NavLink = (props: NavLinkProps) => {
+  const { href, title } = props;
+
+  return (
+    <div>
+      {
+        <ActiveLink href={href}>
+          <span>{title}</span>
+        </ActiveLink>
+      }
+    </div>
+  );
+};
 
 const MobileHeader = ({
   logoImage,
@@ -40,82 +50,78 @@ const MobileHeader = ({
   links,
   className,
 }: HeaderPropsLinksMobileType) => {
+  const [isOverID, setIsOverID] = useState(99999);
   const [mounted, setMounted] = useState(false);
-  const [portalContainer, setPortalContainer] = useState<HTMLElement | null>(
-    null,
-  );
 
-  useEffect(() => {
-    setPortalContainer(document.body);
-  }, []);
-
-  const onLinkClick = () => {
-    setTimeout(() => setMounted(false), 200);
+  const handleOnClick = (id: number) => {
+    setIsOverID(id);
+    setMounted(false);
   };
 
-  const onCloseMenu = () => setMounted(false);
-  const onOpenMenu = () => setMounted(true);
+  useEffect(() => {
+    setMounted(false);
+  }, []);
 
-  const modalContent = (
-    <Background background="black" className={styles.mobileHeaderBackground}>
-      <nav className={cn(styles.wrapper, className)}>
-        <div className={styles.logoAndCloseWrapper}>
-          <ImageNavBrand logoImage={logoImage[0]} />
-          <button
-            type="button"
-            className={styles.closeButton}
-            onClick={onCloseMenu}
-          >
-            <ImageComponent
-              {...menuManageImage?.[0]}
-              layout="fill"
-              objectFit="contain"
-              className={styles.wrapperCloseImageMobile}
-            />
-          </button>
-        </div>
-        <ul className={styles.containerLinks} id="mobile">
-          {links.map((link) => (
-            <li
-              key={link.id}
-              className={styles.link}
-              onClick={() => onLinkClick()}
+  const onCloseMenu = () => {
+    setMounted(false);
+  };
+
+  const onOpenMenu = () => {
+    setMounted(true);
+  };
+
+  const modal = mounted ? (
+    ReactDom.createPortal(
+      <Background
+        background={'black'}
+        className={styles.mobileHeaderBackground}
+      >
+        <nav className={cn(styles.wrapper, className)}>
+          <div className={styles.logoAndCloseWrapper}>
+            <ImageNavBrand logoImage={logoImage[0]} />
+            <button
+              type="button"
+              className={styles.closeButton}
+              onClick={onCloseMenu}
             >
-              <NavLink {...link} />
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </Background>
+              <ImageComponent
+                {...menuManageImage?.[0]}
+                layout="fill"
+                objectFit="contain"
+                className={styles.wrapperCloseImageMobile}
+              />
+            </button>
+          </div>
+          <ul className={styles.containerLinks} id="mobile">
+            {links.map((link) => (
+              <li
+                key={link.id}
+                className={styles.link}
+                onClick={() => handleOnClick(link.id)}
+              >
+                <NavLink isOverID={isOverID} {...link} />
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </Background>,
+      document.body,
+    )
+  ) : (
+    <div className={cn(styles.logoAndCloseWrapper, className)}>
+      <ImageNavBrand logoImage={logoImage[1]} />
+      <button type="button" className={styles.closeButton} onClick={onOpenMenu}>
+        <ImageComponent
+          {...menuManageImage?.[2]}
+          layout="fill"
+          objectFit="contain"
+          className={styles.wrapperCloseImageMobile}
+        />
+      </button>
+    </div>
   );
 
-  const modal =
-    mounted && portalContainer
-      ? ReactDOM.createPortal(modalContent, portalContainer)
-      : null;
-
-  return (
-    <>
-      {modal}
-      {!mounted && (
-        <div className={cn(styles.logoAndCloseWrapper, className)}>
-          <ImageNavBrand logoImage={logoImage[1]} />
-          <button
-            type="button"
-            className={styles.closeButton}
-            onClick={onOpenMenu}
-          >
-            <ImageComponent
-              {...menuManageImage?.[2]}
-              layout="fill"
-              objectFit="contain"
-              className={styles.wrapperCloseImageMobile}
-            />
-          </button>
-        </div>
-      )}
-    </>
-  );
+  return <>{modal}</>;
 };
 
 export default MobileHeader;
