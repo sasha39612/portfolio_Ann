@@ -20,91 +20,79 @@ export async function sendEmail({
   message,
   token,
 }: {
-  name: FormDataEntryValue | null | string;
-  email: FormDataEntryValue | null | string;
-  message: FormDataEntryValue | null | string;
-  token: null | string;
+  name: string | null;
+  email: string | null;
+  message: string | null;
+  token: string | null;
 }) {
-  const ACCESS_TOKEN = await OAuth2_client.getAccessToken();
-
-  if (!ACCESS_TOKEN.token) {
-    console.error('Failed to obtain access token');
-    return { error: 'Failed to obtain access token' };
-  }
-
-  // Prepare ReCAPTCHA verification
-  if (!SECRET_KEY_RECAPTCHA) {
-    throw new Error('❌ SECRET_KEY_RECAPTCHA is not defined');
-  }
-
-  if (!token) {
-    console.error('❌ ReCaptcha token is missing');
-    return { error: 'ReCaptcha token is missing' };
-  }
-
-  const bodyParams = new URLSearchParams();
-  bodyParams.append('secret', SECRET_KEY_RECAPTCHA);
-  bodyParams.append('response', token);
-
   try {
-    const response = await fetch(
+    const ACCESS_TOKEN = await OAuth2_client.getAccessToken();
+
+    if (!ACCESS_TOKEN.token) {
+      throw new Error('Failed to obtain access token');
+    }
+
+    if (!SECRET_KEY_RECAPTCHA) {
+      throw new Error('SECRET_KEY_RECAPTCHA is not defined');
+    }
+
+    if (!token) {
+      throw new Error('ReCaptcha token is missing');
+    }
+
+    // Validate ReCAPTCHA token
+    const recaptchaResponse = await fetch(
       'https://www.google.com/recaptcha/api/siteverify',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: bodyParams,
+        body: new URLSearchParams({
+          secret: SECRET_KEY_RECAPTCHA,
+          response: token,
+        }),
       },
     );
 
-    if (!response.ok) {
-      throw new Error(`Failed to verify ReCAPTCHA: ${response.statusText}`);
+    const recaptchaResult = await recaptchaResponse.json();
+    if (!recaptchaResult.success) {
+      throw new Error(
+        `ReCAPTCHA verification failed: ${recaptchaResult['error-codes']}`,
+      );
     }
 
-    const result = await response.json();
+    console.log('ReCAPTCHA verified successfully');
 
-    if (!result.success) {
-      console.error('❌ Failed to verify!', result['error-codes']);
-      return {
-        error: '❌ Failed to verify!',
-        result: `ReCAPTCHA verification failed: ${result['error-codes']}`,
-      };
-    }
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        type: 'OAuth2',
+        user: EMAIL_USERNAME,
+        clientId: CLIENT_ID,
+        clientSecret: CLIENT_SECRET,
+        refreshToken: REFRESH_TOKEN,
+        accessToken: ACCESS_TOKEN.token,
+      },
+    });
 
-    console.log('✅ Verify ReCaptcha successfully');
-  } catch (error) {
-    console.error('❌ ReCAPTCHA Request Failed:', error);
-    return { error: 'ReCAPTCHA verification request failed' };
-  }
-
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      type: 'OAuth2',
-      user: EMAIL_USERNAME,
-      clientId: CLIENT_ID,
-      clientSecret: CLIENT_SECRET,
-      refreshToken: REFRESH_TOKEN,
-      accessToken: ACCESS_TOKEN.token,
-    },
-  });
-  try {
     await transporter.verify();
-    console.log('✅ SMTP Connected Successfully');
-  } catch (error) {
-    console.error('❌ SMTP Connection Error:', error);
-    return { error: 'SMTP Connection Failed' };
-  }
-  try {
+    console.log('SMTP connected successfully');
+
     const sendResult = await transporter.sendMail({
       from: EMAIL_USERNAME,
       to: PERSONAL_EMAIL,
-      subject: `Response on mailer app from: ${email}`,
-      html: `<h2>From ${name}</h2><p>${message}</p>`,
+      subject: `Response from: ${email}`,
+      html: `<h2>From: ${name}</h2><p>${message}</p>`,
     });
 
     return { success: 'Email sent successfully', result: sendResult };
-  } catch (error) {
-    console.error('❌ Email Sending Error:', error);
-    return error;
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      // Now you can safely access error.message
+      console.error('Error sending email:', error.message);
+      return { error: error.message };
+    }
+    // Handle unexpected error types
+    console.error('Unknown error occurred');
+    return { error: 'An unknown error occurred' };
   }
 }
