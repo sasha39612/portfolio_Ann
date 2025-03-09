@@ -4,6 +4,8 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { ContactType } from '../../interfaces/common';
 import ButtonComponent from '../ui/button/button';
 import styles from './contact.module.scss';
+import dotenv from 'dotenv';
+dotenv.config();
 
 interface ApiResponse {
   success?: string;
