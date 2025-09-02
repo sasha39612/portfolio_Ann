@@ -8,23 +8,6 @@ The design is **mobile-first responsive** and showcases **modern frontend practi
 
 ---
 
-## 🖼️ Live Preview
-
-This project was built as a portfolio for a professional UI/UX designer.  
-The screenshots below demonstrate both **desktop** and **mobile** views of the main sections.
-
-| Section         | Desktop View | Mobile View |
-|-----------------|-------------|------------|
-| Home Page       | ![Home Desktop](docs/screenshots/home.png) | ![Home Mobile](docs/screenshots/mobile-home.png) |
-| Portfolio       | ![Portfolio Desktop](docs/screenshots/portfolio.png) | ![Portfolio Mobile](docs/screenshots/mobile-portfolio.png) |
-| Contact Form    | ![Contact Desktop](docs/screenshots/contact.png) | ![Contact Mobile](docs/screenshots/mobile-contact.png) |
-| About / Bio     | ![About Desktop](docs/screenshots/about.png) | ![About Mobile](docs/screenshots/mobile-about.png) |
-
-> Screenshots are stored in `/docs/screenshots`.  
-> Make sure images match the naming convention for consistency.
-
----
-
 ## 🚀 Tech Stack
 
 - **Next.js 15** – React-based full-stack framework  
@@ -97,8 +80,8 @@ lint – lint code with ESLint
 
 ## 💡 Why This Project Adds Value to My Portfolio
 
-### ✅ Real-world delivery – built and deployed for a professional UI/UX designer.
-### ✅ Frontend depth – responsive design, animations, and rich UI interactions.
-### ✅ Backend integration – secure contact form with Nodemailer, Google APIs, and reCAPTCHA.
-### ✅ Content management – MDX & Markdown for dynamic project content.
-### ✅ Production readiness – deployed live with performance optimizations.
+#### ✅ Real-world delivery – built and deployed for a professional UI/UX designer.
+#### ✅ Frontend depth – responsive design, animations, and rich UI interactions.
+#### ✅ Backend integration – secure contact form with Nodemailer, Google APIs, and reCAPTCHA.
+#### ✅ Content management – MDX & Markdown for dynamic project content.
+#### ✅ Production readiness – deployed live with performance optimizations.
