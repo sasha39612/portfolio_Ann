@@ -1,5 +1,5 @@
-@use '/styles/mixins.module.scss' as *;
-@use '/styles/colors.module.scss' as *;
+@use '../../../styles/mixins' as *;
+@use '../../../styles/colors' as *;
 
 .wrapper {
   margin: 70px 0px 140px;

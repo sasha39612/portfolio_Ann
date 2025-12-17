@@ -4,8 +4,6 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { ContactType } from '../../interfaces/common';
 import ButtonComponent from '../ui/button/button';
 import styles from './contact.module.scss';
-import dotenv from 'dotenv';
-dotenv.config();
 
 interface ApiResponse {
   success?: string;
@@ -37,7 +35,7 @@ const ContactComponent = ({
       return;
     }
 
-    formData.append('token', token);
+      formData.append('token', token);
     try {
       const response = await fetch('/api', {
         method: 'POST',
@@ -131,12 +129,12 @@ const ContactComponent = ({
           />
         </div>
       </div>
-      <ReCAPTCHA
-        sitekey={process.env.NEXT_PUBLIC_SITE_KEY_RECAPTCHA || ''}
-        ref={recaptchaRef}
-        onChange={handleChange}
-        onExpired={handleExpired}
-      />
+        <ReCAPTCHA
+          sitekey={process.env.NEXT_PUBLIC_SITE_KEY_RECAPTCHA || ''}
+          ref={recaptchaRef}
+          onChange={handleChange}
+          onExpired={handleExpired}
+        />
       <ButtonComponent
         type="submit"
         background="black"
