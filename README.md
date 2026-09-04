@@ -3,15 +3,15 @@
 This project is a **real-world portfolio website** built for a professional **UI/UX designer**:  
 👉 [www.annastoliarova.com](https://www.annastoliarova.com/)  
 
-It was implemented with **Next.js 15**, **React 18**, **TypeScript**, and a variety of supporting libraries.  
+It was implemented with **Next.js 16**, **React 19**, **TypeScript**, and a variety of supporting libraries.  
 The design is **mobile-first responsive** and showcases **modern frontend practices**, along with backend integrations for contact forms and dynamic content.  
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Next.js 15** – React-based full-stack framework  
-- **React 18** – modern frontend UI library  
+- **Next.js 16** – React-based full-stack framework  
+- **React 19** – modern frontend UI library  
 - **TypeScript** – type safety and maintainability  
 - **Sass** – styling with flexibility and scalability  
 - **Swiper** – interactive carousels & sliders  
@@ -65,7 +65,7 @@ $ npm run start
 
 #### 🎞️ Interactive UI Elements – carousels & sliders powered by Swiper
 
-#### ⚡ Optimized Build – Next.js 15 with performance-oriented configuration
+#### ⚡ Optimized Build – Next.js 16 with performance-oriented configuration
 
 
 ## 📂 Project Scripts (package.json)
@@ -77,6 +77,10 @@ start – run production server
 
 lint – lint code with ESLint
 
+
+## 🧪 Testing
+
+No automated test suite yet — next step for this project.
 
 ## 💡 Why This Project Adds Value to My Portfolio
 

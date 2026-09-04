@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ReactDom from 'react-dom';
 import Link from 'next/link';
 import cn from 'classnames';
@@ -57,10 +57,6 @@ const MobileHeader = ({
     setIsOverID(id);
     setMounted(false);
   };
-
-  useEffect(() => {
-    setMounted(false);
-  }, []);
 
   const onCloseMenu = () => {
     setMounted(false);
