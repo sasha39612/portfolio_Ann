@@ -1,68 +1,88 @@
-# 🎨 Designer Portfolio Website
+# 🎨 Anna Stoliarova — UX/UI Designer Portfolio
 
-A real-world portfolio website built and delivered for a professional UI/UX designer
-(German-market client). Implemented with Next.js 16, React 19 and TypeScript, with a
-mobile-first responsive design, MDX-driven content, and a Gmail OAuth2 contact form.
+A portfolio website for Anna Stoliarova, a UX/UI designer based in Hamburg, showcasing her
+design case studies. Built with Next.js 16, React 19 and TypeScript.
 
-> **Note:** This was a paid client project delivered to production. The live deployment
-> has since been retired at the client's request after project completion; the codebase
-> is preserved here.
+## 🔗 Live Demo
+https://portfolio-ann-designer.vercel.app/
+
+## 📖 Overview
+This is a personal project, not paid client work. The design, content, and case studies
+are Anna's own work. My contribution is the frontend engineering: I built the Next.js
+codebase from her design and deployed it to production on Vercel.
+
+The site presents four design case studies — Mikro, EasyKitchen, Vintage clothing, and a
+Literary podcast — alongside an about page and a working contact form.
 
 ## 🚀 Tech Stack
-- **Next.js 16** – React-based full-stack framework
-- **React 19** – modern frontend UI library
+- **Next.js 16** (App Router, Turbopack) – React-based full-stack framework
+- **React 19** – frontend UI library
 - **TypeScript** – type safety and maintainability
-- **Sass** – styling with flexibility and scalability
+- **Sass** – component-scoped styling (CSS Modules)
 - **Swiper** – interactive carousels & sliders
-- **MDX / gray-matter / next-mdx-remote** – content rendering from Markdown/MDX files
-- **Nodemailer + Google APIs (OAuth2)** – contact-form email delivery
-- **reCAPTCHA** – bot protection for form submissions
+- **MDX / gray-matter / next-mdx-remote** – content authored as Markdown/MDX
+- **Nodemailer + Google APIs (OAuth2)** – contact-form email delivery via Gmail
+- **react-google-recaptcha** – bot protection for form submissions
 
-## 📦 Installation
+## 🎨 Features
+- 🖼️ **Design case studies** – four in-depth project pages (Mikro, EasyKitchen, Vintage
+  clothing, Literary podcast) rendered from MDX content
+- 📱 **Responsive layout** – mobile-first design across all pages
+- 📧 **Contact form** – submits to a Next.js API route (`app/api/route.ts`), which sends
+  the message via Gmail using Nodemailer with OAuth2 (`lib/mailer.utils.ts`)
+- 🔒 **Spam protection** – reCAPTCHA token generated client-side and verified
+  server-side before any email is sent
+- ⚖️ **Legal pages** – Impressum and Datenschutz (German-language legal notices, as
+  required for a German audience) at `/policy/impressum` and `/policy/datenschutz`
+
+> Note: the site's UI copy is in English throughout; only the Impressum/Datenschutz pages
+> are in German, per German legal requirements. There is no EN/DE language switcher.
+
+## 📦 Getting Started
 ```bash
 npm install
-```
-
-## ⚙️ Environment Setup
-Create a `.env` file in the root directory based on `.env.example`. You'll need:
-- Google OAuth2 credentials (for Gmail sending)
-- reCAPTCHA site & secret keys
-- Email transport configuration
-
-The site builds and runs without these — only the contact form's email delivery
-requires them.
-
-## 🏃 Running the Project
-**Development**
-```bash
 npm run dev
 ```
-**Production**
+
+**Production build**
 ```bash
 npm run build
 npm run start
 ```
 
-## 🎨 Features
-- 📱 **Responsive design (mobile-first)** – adaptive layout for phones, tablets, desktops
-- 🖼️ **Portfolio case studies** – dynamic project pages rendered from MDX
-- 📧 **Contact form** – Gmail OAuth2 delivery via Nodemailer + Google APIs
-- 🔒 **Spam protection** – server-side reCAPTCHA validation
-- 🎞️ **Interactive UI** – carousels & sliders powered by Swiper
-- 🏗️ **Component architecture** – shared UI library composed via typed MDX content
+### Environment variables
+The contact form needs the following variables, set in the Vercel dashboard (or a local
+`.env` file, never committed — see `.env.example`):
 
-## 📂 Scripts
-- `dev` – start development server
-- `build` – build for production
-- `start` – run production server
-- `lint` – lint code with ESLint 9 (flat config)
+- `EMAIL_USERNAME`
+- `PERSONAL_EMAIL`
+- `CLIENT_ID`
+- `CLIENT_SECRET`
+- `REFRESH_TOKEN`
+- `NEXT_PUBLIC_SITE_KEY_RECAPTCHA`
+- `SECRET_KEY_RECAPTCHA`
 
-## 🧪 Testing
-No automated test suite yet — next step for this project.
+The site builds and runs without them — only the contact form's email delivery depends
+on these being configured.
+
+## 📂 Project Structure
+```
+app/            Next.js App Router pages (home, about, projects, contact, policy, api)
+components/     UI components, organized per page/section
+content/        MDX content for pages and case studies
+lib/            Content loading (getPropsData) and the mailer utility
+interfaces/     Shared TypeScript types
+styles/         Global Sass (variables, mixins, fonts, colors)
+public/         Images, fonts, icons
+```
+
+## 🧪 Roadmap
+- Add automated test coverage (no test suite exists yet)
 
 ## 💡 Why This Project
-- ✅ **Real client delivery** – built and shipped for a professional UI/UX designer.
-- ✅ **Frontend depth** – responsive design, animations, rich UI interactions.
-- ✅ **Backend integration** – Gmail OAuth2 contact form with server-side reCAPTCHA.
-- ✅ **Content-driven architecture** – MDX/Markdown for dynamic project content, composed
-  through a reusable component library.
+- ✅ **Design-to-code collaboration** – translated Anna's UX/UI designs into a
+  production Next.js codebase.
+- ✅ **Content-driven architecture** – MDX-based case studies composed from a reusable
+  component library.
+- ✅ **Backend integration** – a working contact form with Gmail OAuth2 delivery and
+  server-side reCAPTCHA validation.
