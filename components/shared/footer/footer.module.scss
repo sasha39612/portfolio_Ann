@@ -64,10 +64,6 @@
 .contactLinkTitle {
   @include font24_weight400;
   align-self: flex-start;
-
-  @include tablet-up {
-    margin-top: 40px;
-  }
 }
 
 .contactLinkWrapper {
