@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   z-index: 1000;
+  overflow-y: auto;
 
   @include tablet-up {
     align-items: center;
@@ -22,8 +23,8 @@
   padding: 50px 20px;
   border-radius: 8px;
   position: relative;
-  max-height: max-content;
-  overflow-y: scroll;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
   margin: 10% 5% 0;
   width: auto;
 
